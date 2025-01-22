@@ -198,6 +198,7 @@ describe('RadioCheckToggleCard', () => {
     it('should render unchecked state UI correctly', () => {
       const { asFragment } = render(
         <RadioCheckToggleCard
+          backgroundColor='secondary.lightest'
           cardType='toggle'
           name='radio-1'
           title='Title'

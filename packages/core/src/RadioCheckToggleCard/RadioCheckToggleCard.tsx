@@ -6,6 +6,7 @@ import { Box } from '../Box/Box'
 import { Flex } from '../Flex/Flex'
 import { Toggle } from '../Toggle/Toggle'
 import { getPaletteColor } from '../utils/utils'
+import { type PaletteColor } from '../theme/theme'
 
 /**
  * @public
@@ -41,17 +42,18 @@ export type TVPositions = (typeof RadioCheckToggleCardVPositions)[number]
  * @public
  */
 export type RadioCheckToggleCardProps = {
-  children?: React.ReactNode
+  backgroundColor?: PaletteColor
   cardType?: TCardTypes
+  children?: React.ReactNode
   hPosition?: THPositions
-  vPosition?: TVPositions
+  isSelected: boolean
   isTakingFullHeightOfCard?: boolean
-  title: string
   isTitleBold?: boolean
   name: string
-  value: string
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
-  isSelected: boolean
+  title: string | React.ReactElement
+  value: string
+  vPosition?: TVPositions
 }
 
 const CombinedInput = styled.input`
@@ -97,7 +99,6 @@ const CombinedInput = styled.input`
 `
 
 const RCTCardContainer = styled(Flex)`
-  background-color: ${getPaletteColor('background.lightest')};
   border: 1px solid transparent;
   border-radius: ${themeGet('borderRadii.action-lg')};
   box-shadow: ${themeGet('shadows.sm')};
@@ -170,21 +171,20 @@ const buttonIcon = (cardType: TCardTypes) => {
 /**
  * @public
  */
-export function RadioCheckToggleCard(props: RadioCheckToggleCardProps) {
-  const {
-    children,
-    cardType,
-    hPosition,
-    vPosition,
-    isTakingFullHeightOfCard,
-    title,
-    isTitleBold,
-    name,
-    value,
-    onChange,
-    isSelected,
-  } = props
-
+export function RadioCheckToggleCard({
+  backgroundColor = 'background.lightest',
+  cardType = 'radio',
+  children,
+  hPosition = 'right',
+  isSelected,
+  isTakingFullHeightOfCard = false,
+  isTitleBold = false,
+  name,
+  onChange = () => {},
+  title,
+  value,
+  vPosition = 'top',
+}: RadioCheckToggleCardProps) {
   const id = `${name}_${value}`
   const ButtonIcon = buttonIcon(cardType)
 
@@ -199,7 +199,7 @@ export function RadioCheckToggleCard(props: RadioCheckToggleCardProps) {
         onChange={onChange}
         checked={isSelected}
       />
-      <RCTCardContainer flexDirection='column' data-testId='rdt-card-main'>
+      <RCTCardContainer flexDirection='column' data-testId='rdt-card-main' color={backgroundColor}>
         <CardHeader
           alignItems={vPosition}
           flexDirection={hPosition === 'left' ? 'row-reverse' : 'row'}
@@ -222,12 +222,3 @@ export function RadioCheckToggleCard(props: RadioCheckToggleCardProps) {
 }
 
 RadioCheckToggleCard.displayName = 'RadioCheckToggleCard'
-
-RadioCheckToggleCard.defaultProps = {
-  cardType: 'radio' as TCardTypes,
-  isTitleBold: false,
-  hPosition: 'right' as THPositions,
-  vPosition: 'top' as TVPositions,
-  isTakingFullHeightOfCard: false,
-  onChange: () => {},
-}
