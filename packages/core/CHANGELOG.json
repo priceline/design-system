@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.26.0",
+      "tag": "pcln-design-system_v6.26.0",
+      "date": "Wed, 22 Jan 2025 14:48:12 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "adds backgroundColor to RadioCheckToggleCard",
+            "author": "Michael Alterio <michael.alterio@priceline.com>",
+            "commit": "d11fe091e62744e573abd4221a5c9af20011c005"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.25.4",
       "tag": "pcln-design-system_v6.25.4",
       "date": "Tue, 07 Jan 2025 16:55:52 GMT",
