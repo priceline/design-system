@@ -1,21 +1,17 @@
 import { ArgTypes } from '@storybook/react/*'
-import {
-  RadioCheckToggleCard,
-  RadioCheckToggleCardHPositions,
-  RadioCheckToggleCardVPositions,
-} from './RadioCheckToggleCard'
+import { RadioCheckToggleCardHPositions, RadioCheckToggleCardVPositions } from './RadioCheckToggleCard'
 
 export const argTypes: ArgTypes = {
   hPosition: {
     control: { type: 'radio' },
     options: RadioCheckToggleCardHPositions,
-    defaultValue: RadioCheckToggleCard.defaultProps.hPosition,
+    defaultValue: 'right',
     description: 'Controlling the button icon horizontal position',
   },
   vPosition: {
     control: { type: 'radio' },
     options: RadioCheckToggleCardVPositions,
-    defaultValue: RadioCheckToggleCard.defaultProps.vPosition,
+    defaultValue: 'top',
     description: 'Controlling the button icon vertical position',
   },
   isTakingFullHeightOfCard: {

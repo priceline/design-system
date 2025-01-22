@@ -38,7 +38,6 @@ const EnabledStateCard = styled(Box)`
   flex: 1 1 30%;
 
   & > label > div {
-    background-color: ${getPaletteColor('background.lightest')} !important;
     border-color: transparent !important;
 
     & div.cardIcon > svg {
@@ -53,7 +52,6 @@ const HoverStateCard = styled(Box)`
   flex: 1 1 30%;
 
   & > label > div {
-    background-color: ${getPaletteColor('background.lightest')} !important;
     border-color: ${getPaletteColor('primary.base')} !important;
 
     & div.cardIcon > svg {
@@ -68,7 +66,6 @@ const FocusStateCard = styled(Box)`
   flex: 1 1 30%;
 
   & > label > div {
-    background-color: ${getPaletteColor('background.lightest')} !important;
     border-color: transparent !important;
 
     & div.cardIcon > svg {
@@ -141,7 +138,7 @@ const DefaultDocPage = () => {
     options: {
       hPosition: THPositions
       vPosition: TVPositions
-      title: string
+      title: string | React.ReactElement
       value: string
     }[]
   } = {
@@ -279,6 +276,45 @@ const DefaultDocPage = () => {
             </RadioCheckToggleCard>
           </FocusStateCard>
 
+          <EnabledStateCard>
+            <RadioCheckToggleCard
+              name='states-radio'
+              title={<Text>Enabled - with backgroundColor</Text>}
+              value='example-1-1'
+              isSelected={false}
+              onChange={() => {}}
+              backgroundColor='success.light'
+            >
+              <Box width='100%' height='75px' />
+            </RadioCheckToggleCard>
+          </EnabledStateCard>
+
+          <HoverStateCard>
+            <RadioCheckToggleCard
+              name='states-radio'
+              title='Hover - with backgroundColor'
+              value='example-2-2'
+              isSelected={false}
+              onChange={() => {}}
+              backgroundColor='success.light'
+            >
+              <Box width='100%' height='75px' />
+            </RadioCheckToggleCard>
+          </HoverStateCard>
+
+          <FocusStateCard>
+            <RadioCheckToggleCard
+              name='states-radio'
+              title='Focus - with backgroundColor'
+              value='example-3-3'
+              isSelected={false}
+              onChange={() => {}}
+              backgroundColor='success.light'
+            >
+              <Box width='100%' height='75px' />
+            </RadioCheckToggleCard>
+          </FocusStateCard>
+
           <SelectedStateCard>
             <RadioCheckToggleCard
               name='states-radio'
@@ -286,6 +322,7 @@ const DefaultDocPage = () => {
               value='example-4'
               isSelected={true}
               onChange={() => {}}
+              backgroundColor='success.light' // set the backgroundColor, but ensure isSelected style overrides backgroundColor
             >
               <Box width='100%' height='75px' />
             </RadioCheckToggleCard>
