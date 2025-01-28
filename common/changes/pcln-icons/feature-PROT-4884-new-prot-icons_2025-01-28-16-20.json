@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "adds new protection product icons",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
