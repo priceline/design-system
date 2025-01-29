@@ -41,6 +41,24 @@ describe('Accordion', () => {
     expect(onToggle).toHaveBeenCalled()
   })
 
+  it('toggles items with text toggle', () => {
+    const onToggle = jest.fn()
+    const items = testItems[0]
+    render(<Accordion items={[items]} onToggle={onToggle} useTextToggle />)
+    const header1 = screen.getByText('Header 1')
+    const moreTextTriggers = screen.getByText(/more/i)
+    const lessTextTriggers = screen.getByText(/less/i)
+
+    expect(moreTextTriggers).toHaveStyle('display: none')
+    expect(lessTextTriggers).toHaveStyle('display: inline')
+
+    fireEvent.click(header1)
+
+    expect(onToggle).toHaveBeenCalled()
+    expect(moreTextTriggers).toHaveStyle('display: inline')
+    expect(lessTextTriggers).toHaveStyle('display: none')
+  })
+
   it('toggles items isExternallyControlled', () => {
     const onToggle = jest.fn()
     render(<Accordion items={testItems} onToggle={onToggle} isExternallyControlled />)

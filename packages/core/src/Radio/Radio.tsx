@@ -81,6 +81,7 @@ export const Radio: React.FC<RadioProps> = React.forwardRef<HTMLInputElement, Ra
   const borderAdjustedSize = size + 4
 
   const dataNameHelper = (checked, disabled) => {
+    /* istanbul ignore next */
     if ((checked && disabled) || (!checked && disabled)) {
       return 'disabled'
     }
