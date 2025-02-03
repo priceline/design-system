@@ -2,9 +2,9 @@ import React from 'react'
 import styled, { css, keyframes } from 'styled-components'
 import { Box, type BoxProps } from '../Box/Box'
 import {
+  ShimmerVariationType,
   VARIATION_BACKGROUND_COLORS,
   VARIATION_GLARE_GRADIENTS,
-  ShimmerVariationType,
   type ShimmerVariation,
 } from './constants'
 
@@ -58,20 +58,19 @@ export type ShimmerProps = BoxProps & {
 /**
  * @public
  */
-export function Shimmer({ animationWidth, disable, ...props }: ShimmerProps): JSX.Element {
+export function Shimmer({
+  animationWidth = 100,
+  disable = false,
+  variation = ShimmerVariationType.Base,
+  ...props
+}: ShimmerProps): JSX.Element {
   return (
-    <Wrapper {...props} data-testid='Shimmer__Wrapper'>
+    <Wrapper {...props} data-testid='Shimmer__Wrapper' variation={variation}>
       {!disable && (
-        <Glare animationWidth={animationWidth + 200} data-testid='Shimmer__Glare' variation={props.variation}>
+        <Glare animationWidth={animationWidth + 200} data-testid='Shimmer__Glare' variation={variation}>
           &zwnj;
         </Glare>
       )}
     </Wrapper>
   )
-}
-
-Shimmer.defaultProps = {
-  animationWidth: 100,
-  disable: false,
-  variation: ShimmerVariationType.Base,
 }
