@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.26.1",
+      "tag": "pcln-design-system_v6.26.1",
+      "date": "Tue, 04 Feb 2025 16:10:35 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Remove DefaultProps from the Shimmer Component",
+            "author": "Remy Gratwohl <135156184+Remy-Gratwohl@users.noreply.github.com>",
+            "commit": "d6c7c287743ed1c7b5d434d6fa9ec59ccc96dcb6"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.26.0",
       "tag": "pcln-design-system_v6.26.0",
       "date": "Wed, 22 Jan 2025 14:48:12 GMT",

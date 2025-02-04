@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "6.9.0",
+      "tag": "pcln-icons_v6.9.0",
+      "date": "Tue, 04 Feb 2025 16:10:35 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "adds new protection product icons",
+            "author": "Michael Alterio <michael.alterio@priceline.com>",
+            "commit": "fd30d49628e08f34e7570a516da2997831feafe1"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.8.0",
       "tag": "pcln-icons_v6.8.0",
       "date": "Fri, 15 Nov 2024 20:57:31 GMT",

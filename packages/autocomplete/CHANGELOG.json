@@ -2,6 +2,24 @@
   "name": "pcln-autocomplete",
   "entries": [
     {
+      "version": "6.0.58",
+      "tag": "pcln-autocomplete_v6.0.58",
+      "date": "Tue, 04 Feb 2025 16:10:35 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.26.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `6.9.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^6.26.0` to `6.26.1`"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.0.57",
       "tag": "pcln-autocomplete_v6.0.57",
       "date": "Wed, 22 Jan 2025 14:48:12 GMT",

@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Fri, 15 Nov 2024 20:57:31 GMT and should not be manually modified.
+This log was last generated on Tue, 04 Feb 2025 16:10:35 GMT and should not be manually modified.
+
+## 6.9.0
+Tue, 04 Feb 2025 16:10:35 GMT
+
+### Minor changes
+
+- adds new protection product icons
 
 ## 6.8.0
 Fri, 15 Nov 2024 20:57:31 GMT

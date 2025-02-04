@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 22 Jan 2025 14:48:12 GMT and should not be manually modified.
+This log was last generated on Tue, 04 Feb 2025 16:10:35 GMT and should not be manually modified.
+
+## 6.26.1
+Tue, 04 Feb 2025 16:10:35 GMT
+
+### Patches
+
+- Remove DefaultProps from the Shimmer Component
 
 ## 6.26.0
 Wed, 22 Jan 2025 14:48:12 GMT

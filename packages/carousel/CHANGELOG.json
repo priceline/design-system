@@ -2,6 +2,30 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "3.2.21",
+      "tag": "pcln-carousel_v3.2.21",
+      "date": "Tue, 04 Feb 2025 16:10:35 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.26.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" to `6.1.43`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `6.9.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^6.26.0` to `6.26.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" from `^6.8.0` to `6.9.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.2.20",
       "tag": "pcln-carousel_v3.2.20",
       "date": "Wed, 22 Jan 2025 14:48:12 GMT",
