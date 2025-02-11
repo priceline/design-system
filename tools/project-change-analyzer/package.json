@@ -40,12 +40,12 @@
     "yargs": "^17.4.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-is": "^18.3.1",
-    "react-test-renderer": "^18.3.1"
+    "react-is": "^18.3.1"
   },
   "devDependencies": {
     "@types/node": "^20.12.7",
     "eslint": "^8.48.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "react-test-renderer": "^18.3.1"
   }
 }

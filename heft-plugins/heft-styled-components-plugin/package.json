@@ -24,8 +24,7 @@
   "dependencies": {
     "@babel/cli": "^7.24.1",
     "@babel/core": "^7.24.4",
-    "babel-plugin-styled-components": "^2.1.4",
-    "react-test-renderer": "^18.3.1"
+    "babel-plugin-styled-components": "^2.1.4"
   },
   "devDependencies": {
     "@rushstack/heft": "^0.66.3",
@@ -36,7 +35,8 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-is": "^18.3.1",
-    "styled-components": "^5.3.11"
+    "styled-components": "^5.3.11",
+    "react-test-renderer": "^18.3.1"
   },
   "peerDependencies": {
     "@rushstack/heft": "^0.66.3",

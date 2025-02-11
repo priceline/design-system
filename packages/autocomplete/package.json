@@ -24,8 +24,7 @@
   },
   "dependencies": {
     "downshift": "^7.6.2",
-    "styled-system": "^5.1.5",
-    "react-test-renderer": "^18.3.1"
+    "styled-system": "^5.1.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.23.4",
@@ -52,6 +51,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-is": "^18.3.1",
+    "react-test-renderer": "^18.3.1",
     "rimraf": "^3.0.2",
     "styled-components": "^5.3.11",
     "us": "^2.0.0"
