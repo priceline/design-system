@@ -53,9 +53,7 @@
     "styled-components": "^5.3.11",
     "typescript": "^5.3.3",
     "vite": "^4.5.3",
-    "vite-plugin-turbosnap": "^1.0.3"
-  },
-  "dependencies": {
+    "vite-plugin-turbosnap": "^1.0.3",
     "react-test-renderer": "^18.3.1"
   }
 }

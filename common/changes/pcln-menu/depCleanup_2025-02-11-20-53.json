@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-menu",
+      "comment": "move package react-test-renderer to devDependency",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-menu"
+}

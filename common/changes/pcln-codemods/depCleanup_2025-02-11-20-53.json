@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-codemods",
+      "comment": "move package react-test-renderer to devDependency",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-codemods"
+}
