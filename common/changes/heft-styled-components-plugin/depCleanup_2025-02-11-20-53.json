@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "heft-styled-components-plugin",
+      "comment": "moved react-test-renderer to devdep",
+      "type": "minor"
+    }
+  ],
+  "packageName": "heft-styled-components-plugin"
+}

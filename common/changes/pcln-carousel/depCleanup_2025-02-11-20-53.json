@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "move package react-test-renderer to devDependency",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}

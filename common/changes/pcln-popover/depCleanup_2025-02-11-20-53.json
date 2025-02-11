@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-popover",
+      "comment": "move package react-test-renderer to devDependency",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-popover"
+}
