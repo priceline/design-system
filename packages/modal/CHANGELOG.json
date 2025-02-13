@@ -2,6 +2,25 @@
   "name": "pcln-modal",
   "entries": [
     {
+      "version": "6.1.0",
+      "tag": "pcln-modal_v6.1.0",
+      "date": "Thu, 13 Feb 2025 20:17:16 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "move package react-test-renderer to devDependency",
+            "author": "Brandon Soong <bsoong99@gmail.com>",
+            "commit": "60c0f45c762c85e3de0b08279b3a0c75a3065006"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-menu\" to `6.1.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.0.62",
       "tag": "pcln-modal_v6.0.62",
       "date": "Tue, 04 Feb 2025 16:10:35 GMT",

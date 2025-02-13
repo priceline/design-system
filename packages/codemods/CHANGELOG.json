@@ -2,6 +2,20 @@
   "name": "pcln-codemods",
   "entries": [
     {
+      "version": "3.1.0",
+      "tag": "pcln-codemods_v3.1.0",
+      "date": "Thu, 13 Feb 2025 20:17:16 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "move package react-test-renderer to devDependency",
+            "author": "Brandon Soong <bsoong99@gmail.com>",
+            "commit": "60c0f45c762c85e3de0b08279b3a0c75a3065006"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.0.45",
       "tag": "pcln-codemods_v3.0.45",
       "date": "Tue, 04 Feb 2025 16:10:35 GMT",

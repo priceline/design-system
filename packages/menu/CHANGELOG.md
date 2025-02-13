@@ -1,6 +1,13 @@
 # Change Log - pcln-menu
 
-This log was last generated on Tue, 04 Feb 2025 16:10:35 GMT and should not be manually modified.
+This log was last generated on Thu, 13 Feb 2025 20:17:16 GMT and should not be manually modified.
+
+## 6.1.0
+Thu, 13 Feb 2025 20:17:16 GMT
+
+### Minor changes
+
+- move package react-test-renderer to devDependency
 
 ## 6.0.62
 Tue, 04 Feb 2025 16:10:35 GMT

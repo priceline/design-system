@@ -2,6 +2,20 @@
   "name": "heft-styled-components-plugin",
   "entries": [
     {
+      "version": "0.2.0",
+      "tag": "heft-styled-components-plugin_v0.2.0",
+      "date": "Thu, 13 Feb 2025 20:17:16 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "moved react-test-renderer to devdep",
+            "author": "Brandon Soong <bsoong99@gmail.com>",
+            "commit": "60c0f45c762c85e3de0b08279b3a0c75a3065006"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.1.1",
       "tag": "heft-styled-components-plugin_v0.1.1",
       "date": "Thu, 19 Sep 2024 14:45:03 GMT",
