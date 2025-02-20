@@ -3,6 +3,7 @@ import React from 'react'
 import { SpaceProps } from 'styled-system'
 import { Box } from '../Box/Box'
 import { Flex } from '../Flex/Flex'
+import { Text } from '../Text/Text'
 import {
   IconContainer,
   StyledAccordionRoot,
@@ -23,6 +24,7 @@ export type AccordionProps = SpaceProps & {
   variation?: string
   isExternallyControlled?: boolean
   headerDividerColor?: string
+  useTextToggle?: boolean
 }
 
 /**
@@ -50,6 +52,7 @@ export function Accordion({
   variation = 'default',
   p = '12px',
   headerDividerColor,
+  useTextToggle = false,
   ...props
 }: AccordionProps): React.ReactElement {
   return items ? (
@@ -66,35 +69,48 @@ export function Accordion({
         isolation: 'isolate',
       }}
     >
-      {items.map((child: AccordionItemProps, index) => (
-        <RadixAccordion.Item key={child.value} asChild value={child.value}>
-          <StyledItem
-            variation={variation}
-            overflow='hidden'
-            borderRadius='12px'
-            marginBottom='12px'
-            headerBg={child.headerBg}
-            hoverBg={child.hoverBg}
-            data-testid={`styled-item-${child.value}`}
-            headerDividerColor={index > 0 && headerDividerColor}
-          >
-            <StyledTrigger {...props} p={p} variation={variation}>
-              <Flex width='100%' justifyContent='space-between' alignItems='center'>
-                {child.headerLabel}
-                {child.headerActions ? (
-                  <Box onClick={(e) => e.preventDefault()}>{child.headerActions}</Box>
-                ) : null}
-              </Flex>
-              <IconContainer margin='auto' height='25px'>
-                <StyledChevron className='chevron' variation={variation} />
-              </IconContainer>
-            </StyledTrigger>
-            <StyledContent {...props} p={p} variation={variation} contentBg={child.contentBg}>
-              {child.content}
-            </StyledContent>
-          </StyledItem>
-        </RadixAccordion.Item>
-      ))}
+      {items.map((child: AccordionItemProps, index) => {
+        return (
+          <RadixAccordion.Item key={child.value} asChild value={child.value}>
+            <StyledItem
+              variation={variation}
+              overflow='hidden'
+              borderRadius='12px'
+              marginBottom='12px'
+              headerBg={child.headerBg}
+              hoverBg={child.hoverBg}
+              data-testid={`styled-item-${child.value}`}
+              headerDividerColor={index > 0 && headerDividerColor}
+            >
+              <StyledTrigger {...props} p={p} variation={variation} hoverBg={child.hoverBg}>
+                <Flex width='100%' justifyContent='space-between' alignItems='center'>
+                  {child.headerLabel}
+                  {child.headerActions ? (
+                    <Box onClick={(e) => e.preventDefault()}>{child.headerActions}</Box>
+                  ) : null}
+                </Flex>
+                {useTextToggle ? (
+                  <>
+                    <Text.span textStyle='captionBold' color='primary.base' className='lessText'>
+                      Less
+                    </Text.span>
+                    <Text.span textStyle='captionBold' color='primary.base' className='moreText'>
+                      More
+                    </Text.span>
+                  </>
+                ) : (
+                  <IconContainer margin='auto' height='25px'>
+                    <StyledChevron className='chevron' variation={variation} />
+                  </IconContainer>
+                )}
+              </StyledTrigger>
+              <StyledContent {...props} p={p} variation={variation} contentBg={child.contentBg}>
+                {child.content}
+              </StyledContent>
+            </StyledItem>
+          </RadixAccordion.Item>
+        )
+      })}
     </StyledAccordionRoot>
   ) : null
 }

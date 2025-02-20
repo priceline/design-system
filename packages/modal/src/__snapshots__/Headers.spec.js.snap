@@ -24,6 +24,12 @@ exports[`ModalHeader render 1`] = `
   align-items: center;
 }
 
+.c3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
 .c10 {
   -webkit-flex: none;
   -ms-flex: none;
@@ -34,12 +40,6 @@ exports[`ModalHeader render 1`] = `
 
 .c11 {
   outline: none;
-}
-
-.c3 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
 }
 
 .c6 {
