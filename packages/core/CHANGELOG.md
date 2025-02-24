@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 04 Feb 2025 16:10:35 GMT and should not be manually modified.
+This log was last generated on Mon, 24 Feb 2025 19:52:35 GMT and should not be manually modified.
+
+## 6.26.2
+Mon, 24 Feb 2025 19:52:35 GMT
+
+### Patches
+
+- add useTextToggle prop to accordion
 
 ## 6.26.1
 Tue, 04 Feb 2025 16:10:35 GMT

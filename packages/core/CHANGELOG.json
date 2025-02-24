@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.26.2",
+      "tag": "pcln-design-system_v6.26.2",
+      "date": "Mon, 24 Feb 2025 19:52:35 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "add useTextToggle prop to accordion",
+            "author": "Tommy Liang <84786278+tommyliang-dev@users.noreply.github.com>",
+            "commit": "ee78aa5c89961b18b2c3a228c8b132209c5607f3"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.26.1",
       "tag": "pcln-design-system_v6.26.1",
       "date": "Tue, 04 Feb 2025 16:10:35 GMT",
