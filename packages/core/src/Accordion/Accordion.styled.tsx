@@ -53,9 +53,14 @@ export const StyledContent = styled(Accordion.Content)`
 `
 
 export const StyledTrigger = styled(Accordion.Trigger).attrs(borderRadiusAttrs)`
+  .moreText,
+  .lessText {
+    padding-left: 8px;
+  }
   all: unset;
   box-sizing: border-box;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
   color: ${(props) => (props.variation === 'hug' ? getPaletteColor('text.lightest')(props) : '')};
@@ -63,8 +68,22 @@ export const StyledTrigger = styled(Accordion.Trigger).attrs(borderRadiusAttrs)`
     transform: rotate(180deg);
   }
   &[data-state='closed'] {
+    .lessText {
+      display: none;
+    }
+    .moreText {
+      display: inline;
+    }
     ${(props) =>
       props.variation === 'flatCard' ? `background-color: ${getPaletteColor('background.light')(props)}` : ''}
+  }
+  &[data-state='open'] {
+    .lessText {
+      display: inline;
+    }
+    .moreText {
+      display: none;
+    }
   }
   ${(props) =>
     props.variation === 'ladder'
