@@ -35,14 +35,6 @@ const ${componentName} = styled(BaseComponent)\`
 
 ${componentName}.isIcon = true
 
-${componentName}.defaultProps = {
-  size: 24,
-  tabIndex: -1,
-  focusable: false,
-  'aria-hidden': true,
-  role: 'img'
-}
-
 export default ${componentName}`
 
 module.exports = {

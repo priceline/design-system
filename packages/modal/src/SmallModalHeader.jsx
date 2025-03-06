@@ -6,18 +6,13 @@ const HeaderBar = styled(Box)`
   height: 8px;
 `
 
-const SmallModalHeader = ({ bg, color }) => <HeaderBar bg={bg} color={color} />
+const SmallModalHeader = ({ bg = 'green', color = 'secondary.base' }) => <HeaderBar bg={bg} color={color} />
 
 SmallModalHeader.displayName = SmallModalHeader
 
 SmallModalHeader.propTypes = {
   bg: deprecatedColorValue(),
   color: deprecatedColorValue(),
-}
-
-SmallModalHeader.defaultProps = {
-  bg: 'green',
-  color: 'secondary.base',
 }
 
 export default SmallModalHeader

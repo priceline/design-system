@@ -75,36 +75,38 @@ export type RadioProps = ComponentPropsWithoutRef<'input'> & {
 /**
  * @public
  */
-export const Radio: React.FC<RadioProps> = React.forwardRef<HTMLInputElement, RadioProps>((props, ref) => {
-  const { checked, disabled, size } = props
+export const Radio: React.FC<RadioProps> = React.forwardRef<HTMLInputElement, RadioProps>(
+  ({ color = 'primary', checked, disabled, size = 24, ...props }, ref) => {
+    const borderAdjustedSize = size + 4
 
-  const borderAdjustedSize = size + 4
+    const dataNameHelper = (checked, disabled) => {
+      if ((checked && disabled) || (!checked && disabled)) {
+        return 'disabled'
+      }
+      if (checked && !disabled) {
+        return 'checked'
+      }
+      return 'unchecked'
+    }
 
-  const dataNameHelper = (checked, disabled) => {
-    if ((checked && disabled) || (!checked && disabled)) {
-      return 'disabled'
-    }
-    if (checked && !disabled) {
-      return 'checked'
-    }
-    return 'unchecked'
+    return (
+      <RadioWrap
+        color={color}
+        checked={checked}
+        disabled={disabled}
+        data-name={dataNameHelper(checked, disabled)}
+      >
+        <RadioInput
+          type='radio'
+          color={color}
+          checked={checked}
+          disabled={disabled}
+          size={size}
+          {...props}
+          ref={ref}
+        />
+        <RadioIcon checked={checked} size={borderAdjustedSize} />
+      </RadioWrap>
+    )
   }
-
-  return (
-    <RadioWrap
-      color={props.color}
-      checked={checked}
-      disabled={disabled}
-      data-name={dataNameHelper(checked, disabled)}
-    >
-      <RadioInput type='radio' {...props} ref={ref} />
-      <RadioIcon checked={checked} size={borderAdjustedSize} />
-    </RadioWrap>
-  )
-})
-
-Radio.displayName = 'Radio'
-Radio.defaultProps = {
-  color: 'primary',
-  size: 24,
-}
+)

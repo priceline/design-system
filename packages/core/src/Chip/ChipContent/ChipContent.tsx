@@ -1,12 +1,12 @@
 import { ArrowRight } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'
+import { ResponsiveValue } from 'styled-system'
 import { Box, type BoxProps } from '../../Box/Box'
 import { Flex } from '../../Flex/Flex'
 import { Text } from '../../Text/Text'
 import { getPaletteColor } from '../../utils/utils'
 import { ChipContentWrapper } from '../ChipContentWrapper'
-import { ResponsiveValue } from 'styled-system'
 
 const ImageWrapper = styled(Flex)`
   background-color: ${getPaletteColor('background.lightest')};
@@ -64,14 +64,17 @@ export function ChipContent({
   facet,
   action,
   image,
-  size,
+  size = 'sm',
   bridgeLabel,
   /* eslint-disable @typescript-eslint/naming-convention */
-  BridgeIcon,
+  BridgeIcon = ArrowRight,
   variation,
   topLabel,
   borderRadius,
   justifyContent = 'center',
+  color = 'primary',
+  py = 1,
+  m = 0,
   ...props
 }: ChipContentProps): React.ReactElement {
   return (
@@ -85,6 +88,9 @@ export function ChipContent({
       size={size}
       variation={variation}
       justifyContent={justifyContent}
+      color={color}
+      py={py}
+      m={m}
       {...props}
     >
       {children}
@@ -121,14 +127,6 @@ export function ChipContent({
       </Flex>
     </ChipContentWrapper>
   )
-}
-
-ChipContent.defaultProps = {
-  BridgeIcon: ArrowRight,
-  size: 'sm',
-  color: 'primary',
-  py: 1,
-  m: 0,
 }
 
 ChipContent.displayName = 'Chip'

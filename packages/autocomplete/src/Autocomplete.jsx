@@ -28,7 +28,13 @@ Label.isLabel = true
 export const Input = withAutocomplete(PclnInput, ({ getInputProps }) => getInputProps())
 Input.isField = true
 
-const MenuCard = styled(Card)`
+const MenuCard = styled(Card).attrs({
+  height: '256px',
+  borderWidth: 0,
+  boxShadowSize: 'lg',
+  mt: 1,
+  borderRadius: 'xl',
+})`
   background-color: ${getPaletteColor('background.lightest')};
   position: absolute;
   top: 100%;
@@ -37,15 +43,6 @@ const MenuCard = styled(Card)`
   max-height: ${(props) => props.height};
   overflow-y: auto;
 `
-
-MenuCard.defaultProps = {
-  height: '256px',
-  borderWidth: 0,
-  boxShadowSize: 'lg',
-  mt: 1,
-  borderRadius: 'xl',
-}
-
 MenuCard.propTypes = {
   bg: deprecatedColorValue(),
 }
@@ -75,7 +72,9 @@ export const Menu = ({ children, ...props }) => (
   />
 )
 
-const ItemRoot = styled(Flex)`
+const ItemRoot = styled(Flex).attrs({
+  alignItems: 'center',
+})`
   cursor: pointer;
   &[aria-selected='true'] {
     background-color: ${getPaletteColor('primary.light')};
@@ -88,11 +87,6 @@ const ItemRoot = styled(Flex)`
     }
   }
 `
-
-ItemRoot.defaultProps = {
-  alignItems: 'center',
-}
-
 export const Item = (props) => (
   <AutocompleteContext.Consumer
     children={({ item, getItemProps, highlightedIndex }) => (

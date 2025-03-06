@@ -23,7 +23,7 @@ export type ProgressBarProps = {
 /**
  * @public
  */
-export function ProgressBar({ steps, currentStep, stepHeight, className }: ProgressBarProps) {
+export function ProgressBar({ steps, currentStep, stepHeight = '4px', className }: ProgressBarProps) {
   return (
     <Flex className={className}>
       {steps.map((step, index) => {
@@ -41,8 +41,4 @@ export function ProgressBar({ steps, currentStep, stepHeight, className }: Progr
       })}
     </Flex>
   )
-}
-
-ProgressBar.defaultProps = {
-  stepHeight: '4px',
 }

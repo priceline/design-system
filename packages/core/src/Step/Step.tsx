@@ -33,9 +33,9 @@ export type StepProps = {
  * @public
  */
 export function Step({
-  className,
-  active,
-  completed,
+  className = '',
+  active = false,
+  completed = false,
   children,
   onClick,
   ...props
@@ -55,9 +55,3 @@ export function Step({
 }
 
 Step.displayName = 'Step'
-
-Step.defaultProps = {
-  className: '',
-  active: false,
-  completed: false,
-}

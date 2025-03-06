@@ -107,7 +107,12 @@ export type DotLoaderProps = {
 /**
  * @public
  */
-export function DotLoader({ color, size, speed, ...props }: DotLoaderProps) {
+export function DotLoader({
+  color = 'primary',
+  size = 'medium',
+  speed = 'medium',
+  ...props
+}: DotLoaderProps) {
   const duration = dotLoaderSpeeds[speed]
 
   return (
@@ -117,10 +122,4 @@ export function DotLoader({ color, size, speed, ...props }: DotLoaderProps) {
       <Dot color={color} duration={duration} pos={2} />
     </Container>
   )
-}
-
-DotLoader.defaultProps = {
-  color: 'primary',
-  size: 'medium',
-  speed: 'medium',
 }

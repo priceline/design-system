@@ -68,10 +68,14 @@ export type LabelProps = SpaceProps &
 /**
  * @public
  */
-export const Label: React.FC<LabelProps> & { isLabel?: boolean } = styled.label.attrs((props) => ({
-  ...typographyAttrs(props),
-  ...props,
-}))`
+export const Label: React.FC<LabelProps> & { isLabel?: boolean } = styled.label.attrs(
+  ({ color = 'text.light', textStyle = 'label', ...props }) => ({
+    ...typographyAttrs({ textStyle, ...props }),
+    ...props,
+    color,
+    textStyle,
+  })
+)`
   display: block;
   width: 100%;
   margin: 0;
@@ -88,11 +92,5 @@ export const Label: React.FC<LabelProps> & { isLabel?: boolean } = styled.label.
 
   ${(props) => compose(fontSize, fontWeight, lineHeight, letterSpacing, space, textStyle, width)(props)}
 `
-
-Label.defaultProps = {
-  color: 'text.light',
-  textStyle: 'label',
-}
-
 Label.displayName = 'Label'
 Label.isLabel = true

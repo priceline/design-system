@@ -37,7 +37,7 @@ const MenuButton = styled(Button).attrs(borderRadiusAttrs)`
 `
 
 const MenuItem = React.forwardRef(function MenuItem(
-  { id, color, icon, selected, children, handleClose, onClick, ...props },
+  { id, color = 'primary', icon, selected, children, handleClose, onClick, ...props },
   ref
 ) {
   const handleClick = useCallback(() => {
@@ -76,10 +76,6 @@ MenuItem.propTypes = {
   children: PropTypes.node,
   handleClose: PropTypes.func,
   onClick: PropTypes.func,
-}
-
-MenuItem.defaultProps = {
-  color: 'primary',
 }
 
 export default memo(MenuItem)
