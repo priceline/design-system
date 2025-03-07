@@ -1,7 +1,7 @@
+import { ArgTypes } from '@storybook/addon-docs'
 import { linkTo } from '@storybook/addon-links'
 import type { Meta, StoryObj } from '@storybook/react'
 import { Calendar, Check, ChevronDown, ChevronLeft, ChevronRight, Guests, Search, User } from 'pcln-icons'
-import { ArgTypes } from '@storybook/addon-docs'
 import React from 'react'
 import { Box } from '../Box/Box'
 import { ButtonChip } from '../Chip/ButtonChip/ButtonChip'
@@ -39,17 +39,17 @@ export const Playground: ButtonStory = {
     color: {
       control: 'select',
       options: colors,
-      defaultValue: Button.defaultProps.color,
+      defaultValue: 'primary',
     },
     size: {
       control: 'select',
       options: sizeOptions,
-      defaultValue: Button.defaultProps.size,
+      defaultValue: 'medium',
     },
     variation: {
       control: 'select',
       options: ['fill', 'input', 'lightFill', 'link', 'outline', 'plain', 'subtle', 'white'],
-      defaultValue: Button.defaultProps.variation,
+      defaultValue: 'fill',
     },
     disabled: {
       defaultValue: false,

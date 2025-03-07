@@ -1,8 +1,11 @@
+import { getPaletteColor } from 'pcln-design-system'
 import styled from 'styled-components'
 import { space } from 'styled-system'
-import { getPaletteColor } from 'pcln-design-system'
 
-const styleSlider = (component) => styled(component)`
+const styleSlider = (component) => styled(component).attrs(({ color = 'primary', ...props }) => ({
+  color,
+  ...props,
+}))`
   position: relative;
   height: 32px;
   padding-top: 12px;

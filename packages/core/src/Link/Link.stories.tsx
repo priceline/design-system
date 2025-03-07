@@ -32,12 +32,12 @@ export const Playground: ButtonStory = {
     color: {
       control: 'select',
       options: colors,
-      defaultValue: Button.defaultProps.color,
+      defaultValue: 'primary',
     },
     size: {
       control: 'select',
       options: sizeOptions,
-      defaultValue: Button.defaultProps.size,
+      defaultValue: 'primary',
     },
     disabled: {
       defaultValue: false,

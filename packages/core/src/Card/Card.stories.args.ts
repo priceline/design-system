@@ -1,5 +1,4 @@
 import { borderStyles, colors, inputArgs, shadows } from '../storybook/args'
-import { Card } from './Card'
 
 export const argTypes: unknown = {
   as: {
@@ -15,21 +14,21 @@ export const argTypes: unknown = {
   borderColor: {
     control: 'select',
     options: colors,
-    defaultValue: Card.defaultProps.borderColor,
+    defaultValue: 'border',
   },
   borderRadius: {
     control: 'select',
     options: inputArgs,
-    defaultValue: Card.defaultProps.borderRadius,
+    defaultValue: 'xsm',
   },
   borderStyle: {
     control: 'select',
     options: borderStyles,
-    defaultValue: Card.defaultProps.borderStyle,
+    defaultValue: 'solid',
   },
   borderWidth: {
     control: { type: 'number', min: 0, max: 5, step: 1 },
-    defaultValue: Card.defaultProps.borderWidth,
+    defaultValue: 1,
   },
   boxShadowSize: {
     control: 'select',

@@ -99,6 +99,7 @@ export const Link: React.FC<LinkProps> = styled.a.attrs(
     color = 'primary',
     disabled,
     href,
+    rel,
     target,
     onClick,
     variation = 'link',
