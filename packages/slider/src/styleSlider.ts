@@ -1,6 +1,6 @@
+import { getPaletteColor } from 'pcln-design-system'
 import styled from 'styled-components'
 import { space } from 'styled-system'
-import { getPaletteColor } from 'pcln-design-system'
 
 const styleSlider = (component) => styled(component)`
   position: relative;

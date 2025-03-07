@@ -43,7 +43,7 @@ function moveFocus(currentFocus, traversalFunction) {
   nextFocus?.focus()
 }
 
-function MenuList({ id, children, color, size, height, handleClose }) {
+function MenuList({ id, children, color, size = 'singleColumn', height, handleClose }) {
   const listRef = useRef(null)
   const currentItemRef = useRef(null)
   const [currentItemId, setCurrentItemId] = useState(null)
@@ -103,10 +103,6 @@ MenuList.propTypes = {
   size: PropTypes.string,
   height: PropTypes.number,
   handleClose: PropTypes.func,
-}
-
-MenuList.defaultProps = {
-  size: 'singleColumn',
 }
 
 export default MenuList

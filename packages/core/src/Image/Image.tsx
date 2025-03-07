@@ -51,10 +51,7 @@ export type ImageProps = BorderRadiusProps &
     objectPosition?: ObjectPosition
   }
 
-/**
- * @public
- */
-export const Image: React.FC<ImageProps> = styled.img.attrs((props) => ({
+const _Image: React.FC<ImageProps> = styled.img.attrs((props) => ({
   ...borderRadiusAttrs(props),
   ...boxShadowAttrs(props),
 }))`
@@ -66,9 +63,11 @@ export const Image: React.FC<ImageProps> = styled.img.attrs((props) => ({
     compose(width, height, maxHeight, maxWidth, minHeight, minWidth, space, borderRadius, boxShadow)(props)}
 `
 
-Image.displayName = 'Image'
+/**
+ * @public
+ */
+export const Image: React.FC<ImageProps> = ({ boxShadowColor = 'border', maxWidth = '100%', ...props }) => (
+  <_Image boxShadowColor={boxShadowColor} maxWidth={maxWidth} {...props} />
+)
 
-Image.defaultProps = {
-  boxShadowColor: 'border',
-  maxWidth: '100%',
-}
+Image.displayName = 'Image'

@@ -134,14 +134,20 @@ export type SpinnerProps = GradientRingProps & {
 /**
  * @public
  */
-export function Spinner({ children, color, useGradient = false, ...props }: SpinnerProps) {
+export function Spinner({
+  children,
+  color = 'primary',
+  size = 'medium',
+  useGradient = false,
+  ...props
+}: SpinnerProps) {
   if (children) {
     React.Children.only(children)
   }
   const theme = useTheme()
 
   return (
-    <RelativeFlex justifyContent='center' alignItems='center' {...props}>
+    <RelativeFlex justifyContent='center' alignItems='center' size={size} {...props}>
       {useGradient ? <GradientRing color={color} theme={theme} {...props} /> : <Ring color={color} />}
       {children &&
         React.isValidElement(children) &&
@@ -150,9 +156,4 @@ export function Spinner({ children, color, useGradient = false, ...props }: Spin
         })}
     </RelativeFlex>
   )
-}
-
-Spinner.defaultProps = {
-  color: 'primary',
-  size: 'medium',
 }

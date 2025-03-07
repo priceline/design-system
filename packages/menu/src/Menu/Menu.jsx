@@ -11,14 +11,14 @@ function Menu({
   buttonProps,
   buttonText,
   color,
-  width,
+  width = '650px',
   height,
-  size,
-  trapFocus,
+  size = 'singleColumn',
+  trapFocus = true,
   placement,
   children,
   querySelectorPortal,
-  zIndex,
+  zIndex = 1600,
   ...props
 }) {
   const MenuContent = ({ handleClose }) => (
@@ -75,7 +75,11 @@ function Menu({
         <ClickableNode />
       </Popover>
       {querySelectorPortal && (
-        <div style={{ width: 0, display: 'inline-block' }} className={querySelectorPortal} data-testid={querySelectorPortal} />
+        <div
+          style={{ width: 0, display: 'inline-block' }}
+          className={querySelectorPortal}
+          data-testid={querySelectorPortal}
+        />
       )}
     </>
   )
@@ -97,13 +101,6 @@ Menu.propTypes = {
   children: PropTypes.node,
   querySelectorPortal: PropTypes.string,
   zIndex: PropTypes.number,
-}
-
-Menu.defaultProps = {
-  size: 'singleColumn',
-  trapFocus: true,
-  width: '650px',
-  zIndex: 1600,
 }
 
 export default Menu

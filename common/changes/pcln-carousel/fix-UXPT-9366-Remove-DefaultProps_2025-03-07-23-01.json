@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "Removes defaultProps",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}

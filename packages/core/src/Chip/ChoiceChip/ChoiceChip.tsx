@@ -35,18 +35,19 @@ export type ChoiceChipProps = SpaceProps &
 export function ChoiceChip({
   id,
   name,
+  color = 'primary',
   disabled,
   selected,
   children,
   onClick,
   label,
-  variation,
+  variation = 'outline',
   width = 'auto',
   value,
   ...props
 }: ChoiceChipProps): React.ReactElement {
   return (
-    <ChipLabel htmlFor={id} width={width} {...props}>
+    <ChipLabel htmlFor={id} width={width} color={color} {...props}>
       <ChipInput
         data-testid={id}
         name={name}
@@ -58,7 +59,14 @@ export function ChoiceChip({
         checked={selected}
         onChange={onClick}
       />
-      <ChipContent label={label} disabled={disabled} selected={selected} variation={variation} {...props}>
+      <ChipContent
+        label={label}
+        disabled={disabled}
+        selected={selected}
+        variation={variation}
+        color={color}
+        {...props}
+      >
         {children}
       </ChipContent>
     </ChipLabel>
@@ -66,8 +74,3 @@ export function ChoiceChip({
 }
 
 ChoiceChip.displayName = 'Chip'
-
-ChoiceChip.defaultProps = {
-  color: 'primary',
-  variation: 'outline',
-}

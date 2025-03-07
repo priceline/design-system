@@ -81,40 +81,39 @@ export type BannerProps = BoxProps & {
 /**
  * @public
  */
-export function Banner(props: BannerProps): React.ReactElement {
-  const bannerColor = bannerColors[!props.bg && props.color === 'green' ? props.color : props.bg] || {}
-  const Icon = props.icon || bannerColor.icon
-  const color = !bannerColor.color ? props.color : bannerColor.color
+export function Banner({
+  bg,
+  color = 'green',
+  children,
+  header,
+  icon,
+  onClose,
+  showIcon = true,
+  text,
+  textAlign = 'left',
+  ...props
+}: BannerProps): React.ReactElement {
+  const bannerColor = bannerColors[!bg && color === 'green' ? color : bg] || {}
+  const Icon = icon || bannerColor.icon
+  const finalColor = !bannerColor.color ? color : bannerColor.color
 
-  let header = null
+  let finalHeader = null
 
-  if (props.header) {
-    header = React.isValidElement(props.header) ? (
-      props.header
-    ) : (
-      <Text textStyle='display2'>{props.header}</Text>
-    )
+  if (header) {
+    finalHeader = React.isValidElement(header) ? header : <Text textStyle='display2'>{header}</Text>
   }
 
   return (
-    <StyledBox {...props} bg={bannerColor.backgroundColor || props.bg} color={color}>
+    <StyledBox {...props} textAlign={textAlign} bg={bannerColor.backgroundColor || bg} color={finalColor}>
       <Flex justifyContent='space-between' alignItems='flex-start'>
-        {!!Icon && !!props.showIcon && React.cloneElement(Icon, { mr: 2, size: 24, mt: '-2px' })}
-        <Box textAlign={props.textAlign} width={1}>
-          {header}
-          <Text.span fontSize={1}>{props.text}</Text.span>
-          {props.children}
+        {!!Icon && !!showIcon && React.cloneElement(Icon, { mr: 2, size: 24, mt: '-2px' })}
+        <Box textAlign={textAlign} width={1}>
+          {finalHeader}
+          <Text.span fontSize={1}>{text}</Text.span>
+          {children}
         </Box>
-        {!!props.onClose && <CloseButton onClick={props.onClose} ml={2} size={24} title='close' mt='-2px' />}
+        {!!onClose && <CloseButton onClick={onClose} ml={2} size={24} title='close' mt='-2px' />}
       </Flex>
     </StyledBox>
   )
-}
-
-Banner.displayName = 'Banner'
-
-Banner.defaultProps = {
-  textAlign: 'left',
-  showIcon: true,
-  color: 'green',
 }

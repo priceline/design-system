@@ -114,47 +114,60 @@ export type CheckboxProps = ComponentPropsWithRef<'input'> & {
 /**
  * @public
  */
-export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>((props, ref) => {
-  const { disabled, size, indeterminate, unselectedColor, onChange, defaultChecked } = props
+export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
+  (
+    {
+      checked,
+      color = 'primary',
+      disabled,
+      size = 20,
+      indeterminate = false,
+      unselectedColor = 'text.light',
+      onChange,
+      defaultChecked,
+      ...props
+    },
+    ref
+  ) => {
+    const [showIndeterminate, setShowIndeterminate] = useState(indeterminate && !defaultChecked)
 
-  const [showIndeterminate, setShowIndeterminate] = useState(indeterminate && !defaultChecked)
-
-  function handleChange(e) {
-    setShowIndeterminate(false)
-    if (typeof onChange === 'function') {
-      onChange(e)
+    function handleChange(e) {
+      setShowIndeterminate(false)
+      if (typeof onChange === 'function') {
+        onChange(e)
+      }
     }
+
+    useEffect(() => {
+      setShowIndeterminate(indeterminate)
+    }, [indeterminate])
+
+    // Add 4px to Icon's height and width to account for size reduction caused by adding padding to SVG element
+    const borderAdjustedSize = size + 4
+    return (
+      <CheckBoxWrapper color={color} disabled={disabled} unselectedColor={unselectedColor}>
+        <StyledInput
+          type='checkbox'
+          checked={checked}
+          color={color}
+          disabled={disabled}
+          size={size}
+          indeterminate={indeterminate}
+          unselectedColor={unselectedColor}
+          defaultChecked={defaultChecked}
+          {...props}
+          onChange={handleChange}
+          role='checkbox'
+          aria-checked={showIndeterminate ? 'mixed' : checked}
+          data-indeterminate={showIndeterminate}
+          ref={ref}
+        />
+        <BoxChecked size={borderAdjustedSize} data-name='checked' />
+        <BoxMinus size={borderAdjustedSize} data-name='indeterminate' />
+        <BoxEmpty size={borderAdjustedSize} data-name='empty' />
+      </CheckBoxWrapper>
+    )
   }
-
-  useEffect(() => {
-    setShowIndeterminate(indeterminate)
-  }, [indeterminate])
-
-  // Add 4px to Icon's height and width to account for size reduction caused by adding padding to SVG element
-  const borderAdjustedSize = size + 4
-  return (
-    <CheckBoxWrapper color={props.color} disabled={disabled} unselectedColor={unselectedColor}>
-      <StyledInput
-        type='checkbox'
-        {...props}
-        onChange={handleChange}
-        role='checkbox'
-        aria-checked={showIndeterminate ? 'mixed' : props.checked}
-        data-indeterminate={showIndeterminate}
-        ref={ref}
-      />
-      <BoxChecked size={borderAdjustedSize} data-name='checked' />
-      <BoxMinus size={borderAdjustedSize} data-name='indeterminate' />
-      <BoxEmpty size={borderAdjustedSize} data-name='empty' />
-    </CheckBoxWrapper>
-  )
-})
+)
 
 Checkbox.displayName = 'Checkbox'
-
-Checkbox.defaultProps = {
-  size: 20,
-  indeterminate: false,
-  color: 'primary',
-  unselectedColor: 'text.light',
-}

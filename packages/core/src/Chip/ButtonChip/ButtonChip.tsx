@@ -47,7 +47,7 @@ export type ButtonChipProps = Omit<ChipContentProps, 'action' | 'ref'> & {
 export const ButtonChip: React.FC<ButtonChipProps> = React.forwardRef<HTMLButtonElement, ButtonChipProps>(
   (
     {
-      color,
+      color = 'primary',
       width,
       id,
       m,
@@ -57,7 +57,7 @@ export const ButtonChip: React.FC<ButtonChipProps> = React.forwardRef<HTMLButton
       onClick,
       label,
       showActionIcon,
-      variation,
+      variation = 'outline',
       ...props
     },
     ref
@@ -93,8 +93,3 @@ export const ButtonChip: React.FC<ButtonChipProps> = React.forwardRef<HTMLButton
 )
 
 ButtonChip.displayName = 'ButtonChip'
-
-ButtonChip.defaultProps = {
-  color: 'primary',
-  variation: 'outline',
-}
