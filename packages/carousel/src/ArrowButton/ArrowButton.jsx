@@ -22,6 +22,7 @@ const ArrowButton = ({
       buttonColor={buttonColor}
       buttonHoverBackground={buttonHoverBackground}
       buttonHoverColor={buttonHoverColor}
+      buttonSize='60px'
       type={type}
       position={position}
       {...props}
