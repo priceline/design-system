@@ -26,7 +26,7 @@ export type CardProps = BoxProps &
  * @public
  */
 export const Card: React.FC<CardProps> = styled(Box).attrs(
-  ({ borderColor = 'border', borderRadius = 'xsm', borderStyle = 'solid', borderWidth = 1, ...props }) => ({
+  ({ borderColor = 'border', borderRadius = '2px', borderStyle = 'solid', borderWidth = 1, ...props }) => ({
     borderColor,
     borderRadius,
     borderStyle,
