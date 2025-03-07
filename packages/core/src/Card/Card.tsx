@@ -22,18 +22,7 @@ export type CardProps = BoxProps &
     borderColor?: string
   }
 
-/**
- * @public
- */
-export const Card: React.FC<CardProps> = styled(Box).attrs(
-  ({ borderColor = 'border', borderRadius = '2px', borderStyle = 'solid', borderWidth = 1, ...props }) => ({
-    borderColor,
-    borderRadius,
-    borderStyle,
-    borderWidth,
-    ...props,
-  })
-)`
+const _Card: React.FC<CardProps> = styled(Box)`
   ${applyVariations('Card')}
   ${styleAsButton}
 
@@ -41,5 +30,24 @@ export const Card: React.FC<CardProps> = styled(Box).attrs(
     props.borderWidth === 0 ? '0' : getPaletteColor(props.borderColor, 'base')(props)};
   ${border};
 `
+
+/**
+ * @public
+ */
+export const Card: React.FC<CardProps> = ({
+  borderColor = 'border',
+  borderRadius = '2px',
+  borderStyle = 'solid',
+  borderWidth = 1,
+  ...props
+}) => (
+  <_Card
+    borderColor={borderColor}
+    borderRadius={borderRadius}
+    borderStyle={borderStyle}
+    borderWidth={borderWidth}
+    {...props}
+  />
+)
 
 Card.displayName = 'Card'

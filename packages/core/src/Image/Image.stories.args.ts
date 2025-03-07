@@ -1,6 +1,5 @@
 import { ArgTypes } from '@storybook/react/*'
 import { borderRadii, colors, objectFits, objectPositions, rounded, shadows } from '../storybook/args'
-import { Image } from './Image'
 
 export const argTypes: ArgTypes = {
   borderRadius: {
@@ -19,7 +18,7 @@ export const argTypes: ArgTypes = {
   boxShadowColor: {
     control: 'select',
     options: colors,
-    defaultValue: Image.defaultProps.boxShadowColor,
+    defaultValue: 'border',
     description: 'Palette family for box shadows',
     table: {
       type: {

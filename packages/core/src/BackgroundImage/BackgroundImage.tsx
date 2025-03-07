@@ -41,10 +41,7 @@ export type BackgroundImageProps = WidthProps &
     backgroundPosition?: (typeof backgroundPositionList)[number]
   }
 
-/**
- * @public
- */
-export const BackgroundImage: React.FC<BackgroundImageProps> = styled.div.attrs(borderRadiusAttrs)`
+const _BackgroundImage: React.FC<BackgroundImageProps> = styled.div.attrs(borderRadiusAttrs)`
   background-position: ${(props) => props.backgroundPosition};
   background-size: cover;
   background-repeat: no-repeat;
@@ -54,10 +51,13 @@ export const BackgroundImage: React.FC<BackgroundImageProps> = styled.div.attrs(
 
   ${(props) => compose(height, width, borderRadius)(props)}
 `
-
-BackgroundImage.defaultProps = {
-  variation: 'static',
-  backgroundPosition: 'center',
-}
+/**
+ * @public
+ */
+export const BackgroundImage: React.FC<BackgroundImageProps> = ({
+  variation = 'static',
+  backgroundPosition = 'center',
+  ...props
+}) => <_BackgroundImage variation={variation} backgroundPosition={backgroundPosition} {...props} />
 
 BackgroundImage.displayName = 'BackgroundImage'

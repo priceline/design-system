@@ -86,7 +86,7 @@ export type SelectProps = SpaceProps &
     variation?: SelectVariations
   }
 
-const SelectBase: React.FC<SelectProps> = styled.select.attrs(borderRadiusAttrs)`
+const _SelectBase: React.FC<SelectProps> = styled.select.attrs(borderRadiusAttrs)`
   appearance: none;
   background-color: transparent;
   border-style: solid;
@@ -125,11 +125,9 @@ const SelectBase: React.FC<SelectProps> = styled.select.attrs(borderRadiusAttrs)
   ${(props) => compose(space, fontSize, borderRadius)(props)}
 `
 
-SelectBase.defaultProps = {
-  fontSize: [2, null, 1],
-  m: 0,
-  size: 'lg',
-}
+const SelectBase: React.FC<SelectProps> = ({ fontSize = [2, null, 1], m = 0, size = 'lg', ...props }) => (
+  <_SelectBase fontSize={fontSize} m={m} size={size} {...props} />
+)
 
 /**
  * @public

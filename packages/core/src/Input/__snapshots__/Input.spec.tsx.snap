@@ -16,8 +16,8 @@ exports[`Input it renders 1`] = `
   margin: 0;
   padding: 14px 12px 14px 12px;
   border-color: #c0cad5;
-  font-size: 16px;
   border-radius: 12px;
+  font-size: 16px;
 }
 
 .c0::-webkit-input-placeholder {
@@ -92,10 +92,10 @@ exports[`Input it renders an input element with a really large padding and margi
   margin: 0;
   padding: 14px 12px 14px 12px;
   border-color: #c0cad5;
+  border-radius: 12px;
+  font-size: 16px;
   padding: 32px;
   margin: 32px;
-  font-size: 16px;
-  border-radius: 12px;
 }
 
 .c0::-webkit-input-placeholder {
@@ -170,8 +170,8 @@ exports[`Input it renders an input element with a red border with a color prop i
   margin: 0;
   padding: 14px 12px 14px 12px;
   border-color: #c00;
-  font-size: 16px;
   border-radius: 12px;
+  font-size: 16px;
 }
 
 .c0::-webkit-input-placeholder {
@@ -247,8 +247,8 @@ exports[`Input it renders an input element with large text 1`] = `
   margin: 0;
   padding: 14px 12px 14px 12px;
   border-color: #c0cad5;
-  font-size: 24px;
   border-radius: 12px;
+  font-size: 24px;
 }
 
 .c0::-webkit-input-placeholder {

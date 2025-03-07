@@ -28,16 +28,7 @@ Label.isLabel = true
 export const Input = withAutocomplete(PclnInput, ({ getInputProps }) => getInputProps())
 Input.isField = true
 
-const MenuCard = styled(Card).attrs(
-  ({ height = '256px', borderWidth = 0, boxShadowSize = 'lg', mt = 1, borderRadius = 'xl', ...props }) => ({
-    height,
-    borderWidth,
-    boxShadowSize,
-    mt,
-    borderRadius,
-    ...props,
-  })
-)`
+const _MenuCard = styled(Card)`
   background-color: ${getPaletteColor('background.lightest')};
   position: absolute;
   top: 100%;
@@ -46,6 +37,25 @@ const MenuCard = styled(Card).attrs(
   max-height: ${(props) => props.height};
   overflow-y: auto;
 `
+
+const MenuCard = ({
+  height = '256px',
+  borderWidth = 0,
+  boxShadowSize = 'lg',
+  mt = 1,
+  borderRadius = 'xl',
+  ...props
+}) => (
+  <_MenuCard
+    height={height}
+    borderWidth={borderWidth}
+    boxShadowSize={boxShadowSize}
+    mt={mt}
+    borderRadius={borderRadius}
+    {...props}
+  />
+)
+
 MenuCard.propTypes = {
   bg: deprecatedColorValue(),
 }
@@ -75,10 +85,7 @@ export const Menu = ({ children, ...props }) => (
   />
 )
 
-const ItemRoot = styled(Flex).attrs(({ alignItems = 'center', ...props }) => ({
-  alignItems,
-  ...props,
-}))`
+const _ItemRoot = styled(Flex)`
   cursor: pointer;
   &[aria-selected='true'] {
     background-color: ${getPaletteColor('primary.light')};
@@ -91,6 +98,9 @@ const ItemRoot = styled(Flex).attrs(({ alignItems = 'center', ...props }) => ({
     }
   }
 `
+
+const ItemRoot = ({ alignItems = 'center', ...props }) => <_ItemRoot alignItems={alignItems} {...props} />
+
 export const Item = (props) => (
   <AutocompleteContext.Consumer
     children={({ item, getItemProps, highlightedIndex }) => (
