@@ -31,7 +31,7 @@ const _Divider: React.FC<DividerProps> = styled.hr.attrs(({ mx, ml, mr }) => ({
  * @public
  */
 export const Divider: React.FC<DividerProps> = ({ color = 'border', ml = 0, mr = 0, ...props }) => (
-  <_Divider color='border' ml={ml} mr={mr} {...props} />
+  <_Divider color={color} ml={ml} mr={mr} {...props} />
 )
 
 Divider.displayName = 'Divider'
