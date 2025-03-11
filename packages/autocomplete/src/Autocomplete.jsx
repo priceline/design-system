@@ -28,7 +28,7 @@ Label.isLabel = true
 export const Input = withAutocomplete(PclnInput, ({ getInputProps }) => getInputProps())
 Input.isField = true
 
-const _MenuCard = styled(Card)`
+const MenuCard = styled(Card)`
   background-color: ${getPaletteColor('background.lightest')};
   position: absolute;
   top: 100%;
@@ -38,23 +38,13 @@ const _MenuCard = styled(Card)`
   overflow-y: auto;
 `
 
-const MenuCard = ({
-  height = '256px',
-  borderWidth = 0,
-  boxShadowSize = 'lg',
-  mt = 1,
-  borderRadius = 'xl',
-  ...props
-}) => (
-  <_MenuCard
-    height={height}
-    borderWidth={borderWidth}
-    boxShadowSize={boxShadowSize}
-    mt={mt}
-    borderRadius={borderRadius}
-    {...props}
-  />
-)
+MenuCard.defaultProps = {
+  height: '256px',
+  borderWidth: 0,
+  boxShadowSize: 'lg',
+  mt: 1,
+  borderRadius: 'xl',
+}
 
 MenuCard.propTypes = {
   bg: deprecatedColorValue(),
@@ -85,7 +75,7 @@ export const Menu = ({ children, ...props }) => (
   />
 )
 
-const _ItemRoot = styled(Flex)`
+const ItemRoot = styled(Flex)`
   cursor: pointer;
   &[aria-selected='true'] {
     background-color: ${getPaletteColor('primary.light')};
@@ -99,7 +89,9 @@ const _ItemRoot = styled(Flex)`
   }
 `
 
-const ItemRoot = ({ alignItems = 'center', ...props }) => <_ItemRoot alignItems={alignItems} {...props} />
+ItemRoot.defaultProps = {
+  alignItems: 'center',
+}
 
 export const Item = (props) => (
   <AutocompleteContext.Consumer
@@ -117,17 +109,21 @@ export const Item = (props) => (
   />
 )
 
-export const Autocomplete = ({ children, match = () => true, style, ...props }) => {
+export const Autocomplete = ({ children, style, ...props }) => {
   return (
     <Downshift
       {...props}
       children={(state) => (
         <div style={{ position: 'relative', ...style }}>
-          <AutocompleteContext.Provider value={{ match, ...props, ...state }} children={children} />
+          <AutocompleteContext.Provider value={{ ...props, ...state }} children={children} />
         </div>
       )}
     />
   )
+}
+
+Autocomplete.defaultProps = {
+  match: () => true,
 }
 
 Autocomplete.Label = Label

@@ -13,7 +13,10 @@ export type DividerProps = SpaceProps &
     color?: ColorName | PaletteFamilyName | PaletteColor
   }
 
-const _Divider: React.FC<DividerProps> = styled.hr.attrs(({ mx, ml, mr }) => ({
+/**
+ * @public
+ */
+export const Divider: React.FC<DividerProps> = styled.hr.attrs(({ mx, ml, mr }) => ({
   ml: mx ? null : ml,
   mr: mx ? null : mr,
 }))`
@@ -27,11 +30,10 @@ const _Divider: React.FC<DividerProps> = styled.hr.attrs(({ mx, ml, mr }) => ({
   ${(props) => compose(space, width)(props)}
 `
 
-/**
- * @public
- */
-export const Divider: React.FC<DividerProps> = ({ color = 'border', ml = 0, mr = 0, ...props }) => (
-  <_Divider color={color} ml={ml} mr={mr} {...props} />
-)
-
 Divider.displayName = 'Divider'
+
+Divider.defaultProps = {
+  color: 'border',
+  ml: 0,
+  mr: 0,
+}
