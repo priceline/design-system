@@ -4,9 +4,25 @@ import { ButtonBack, ButtonNext } from 'pure-react-carousel'
 import { ChevronRight, ChevronLeft } from 'pcln-icons'
 import { Wrapper } from './ArrowButton.styles'
 
-const ArrowButton = ({ type, position, setPosition, showArrowsOnHover, ...props }) =>
+const ArrowButton = ({
+  buttonBackground = 'background.lightest',
+  buttonColor = 'primary.base',
+  buttonHoverBackground = 'background.base',
+  buttonHoverColor = 'primary.dark',
+  buttonSize = '60px',
+  type,
+  position,
+  setPosition,
+  showArrowsOnHover,
+  ...props
+}) =>
   setPosition === position ? (
     <Wrapper
+      buttonBackground={buttonBackground}
+      buttonColor={buttonColor}
+      buttonHoverBackground={buttonHoverBackground}
+      buttonHoverColor={buttonHoverColor}
+      buttonSize={buttonSize}
       type={type}
       position={position}
       {...props}
@@ -24,14 +40,6 @@ const ArrowButton = ({ type, position, setPosition, showArrowsOnHover, ...props 
       )}
     </Wrapper>
   ) : null
-
-ArrowButton.defaultProps = {
-  buttonBackground: 'background.lightest',
-  buttonColor: 'primary.base',
-  buttonHoverBackground: 'background.base',
-  buttonHoverColor: 'primary.dark',
-  buttonSize: '60px',
-}
 
 ArrowButton.propTypes = {
   type: PropTypes.oneOf(['prev', 'next']),

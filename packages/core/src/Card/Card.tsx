@@ -22,10 +22,7 @@ export type CardProps = BoxProps &
     borderColor?: string
   }
 
-/**
- * @public
- */
-export const Card: React.FC<CardProps> = styled(Box)`
+const _Card: React.FC<CardProps> = styled(Box)`
   ${applyVariations('Card')}
   ${styleAsButton}
 
@@ -34,11 +31,23 @@ export const Card: React.FC<CardProps> = styled(Box)`
   ${border};
 `
 
-Card.defaultProps = {
-  borderColor: 'border',
-  borderRadius: 'xsm',
-  borderStyle: 'solid',
-  borderWidth: 1,
-}
+/**
+ * @public
+ */
+export const Card: React.FC<CardProps> = ({
+  borderColor = 'border',
+  borderRadius = 'xsm',
+  borderStyle = 'solid',
+  borderWidth = 1,
+  ...props
+}) => (
+  <_Card
+    borderColor={borderColor}
+    borderRadius={borderRadius}
+    borderStyle={borderStyle}
+    borderWidth={borderWidth}
+    {...props}
+  />
+)
 
 Card.displayName = 'Card'

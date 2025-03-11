@@ -16,9 +16,9 @@ import {
   width,
 } from 'styled-system'
 import { Flex, type FlexProps } from '../Flex/Flex'
+import { type BorderRadius, type BoxShadowSize } from '../theme'
 import { boxShadowAttrs } from '../utils/attrs/boxShadowAttrs'
 import { applySizes, applyVariations, borders, getPaletteColor, getTextColorOn } from '../utils/utils'
-import { type BorderRadius, type BoxShadowSize } from '../theme'
 
 /**
  * @public
@@ -355,28 +355,44 @@ const ButtonIcon = ({ Component, ...props }) => {
 /**
  * @public
  */
-export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
-  const { children, ...restProps } = props
-  const { IconLeft, IconRight, size = 'medium', flexProps = {} } = props
-  const hasChildren = React.Children.toArray(children).length > 0
-  const sizeIndex = Array.isArray(size) ? size[0] : size
-  const iconSize = iconButtonSizes?.[sizeIndex] ?? 24
+export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+  (
+    {
+      color = 'primary',
+      children,
+      IconLeft,
+      IconRight,
+      size = 'medium',
+      flexProps = {},
+      variation = 'fill',
+      ...restProps
+    },
+    ref
+  ) => {
+    const hasChildren = React.Children.toArray(children).length > 0
+    const sizeIndex = Array.isArray(size) ? size[0] : size
+    const iconSize = iconButtonSizes?.[sizeIndex] ?? 24
 
-  return (
-    <StyledButton {...restProps} hasChildren={hasChildren} ref={ref}>
-      <Flex alignItems='center' justifyContent='center' {...flexProps}>
-        <ButtonIcon Component={IconLeft} size={iconSize} mr={children ? 2 : 0} />
-        {children}
-        <ButtonIcon Component={IconRight} size={iconSize} ml={children ? 2 : 0} />
-      </Flex>
-    </StyledButton>
-  )
-})
-
-Button.defaultProps = {
-  color: 'primary',
-  size: 'medium',
-  variation: 'fill',
-}
+    return (
+      <StyledButton
+        {...restProps}
+        color={color}
+        variation={variation}
+        hasChildren={hasChildren}
+        IconLeft={IconLeft}
+        IconRight={IconRight}
+        ref={ref}
+        flexProps={flexProps}
+        size={size}
+      >
+        <Flex alignItems='center' justifyContent='center' {...flexProps}>
+          <ButtonIcon Component={IconLeft} size={iconSize} mr={children ? 2 : 0} />
+          {children}
+          <ButtonIcon Component={IconRight} size={iconSize} ml={children ? 2 : 0} />
+        </Flex>
+      </StyledButton>
+    )
+  }
+)
 
 Button.displayName = 'Button'

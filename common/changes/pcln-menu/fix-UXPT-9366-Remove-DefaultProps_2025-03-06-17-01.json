@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-menu",
+      "comment": "remove defaultProps",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-menu"
+}

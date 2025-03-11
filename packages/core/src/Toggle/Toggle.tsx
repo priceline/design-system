@@ -74,11 +74,11 @@ export type ToggleProps = {
  * @public
  */
 export function Toggle({
-  isOn,
+  isOn = false,
   label,
   onToggle,
   disabled,
-  height,
+  height = 24,
   icon,
   name,
 }: ToggleProps): React.ReactElement {
@@ -129,8 +129,3 @@ export function Toggle({
 }
 
 Toggle.displayName = 'Toggle'
-
-Toggle.defaultProps = {
-  isOn: false,
-  height: 24,
-}

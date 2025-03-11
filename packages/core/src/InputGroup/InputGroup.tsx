@@ -14,10 +14,7 @@ export type InputGroupProps = SpaceProps & {
   children?: React.ReactNode
 }
 
-/**
- * @public
- */
-export const InputGroup: React.FC<InputGroupProps> = styled.div`
+const _InputGroup: React.FC<InputGroupProps> = styled.div`
   display: flex;
   align-items: center;
   border-radius: ${themeGet('borderRadii.xl')};
@@ -38,6 +35,9 @@ export const InputGroup: React.FC<InputGroupProps> = styled.div`
   ${space}
 `
 
-InputGroup.defaultProps = {
-  borderColor: 'border',
-}
+/**
+ * @public
+ */
+export const InputGroup: React.FC<InputGroupProps> = ({ borderColor = 'border', ...props }) => (
+  <_InputGroup borderColor={borderColor} {...props} />
+)

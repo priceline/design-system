@@ -22,8 +22,16 @@ const StyledCloseButton = styled(CloseButton)`
   }
 `
 
-const ModalHeader = ({ bg, color, onClose, textStyle, title, ...props }) => (
-  <Flex align='center' alignItems='center' color={color} bg={bg} height='40px' {...props}>
+const ModalHeader = ({
+  bg = 'primary.base',
+  color = 'text.lightest',
+  px = 3,
+  onClose,
+  textStyle = 'heading6',
+  title,
+  ...props
+}) => (
+  <Flex align='center' alignItems='center' color={color} bg={bg} height='40px' px={px} {...props}>
     {title && <Title textStyle={textStyle}>{title}</Title>}
     {onClose && (
       <Relative ml='auto'>
@@ -42,13 +50,6 @@ ModalHeader.propTypes = {
   onClose: PropTypes.func,
   textStyle: PropTypes.string,
   title: PropTypes.string,
-}
-
-ModalHeader.defaultProps = {
-  bg: 'primary.base',
-  color: 'text.lightest',
-  px: 3,
-  textStyle: 'heading6',
 }
 
 export default ModalHeader

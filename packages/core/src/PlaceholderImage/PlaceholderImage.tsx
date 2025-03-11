@@ -38,9 +38,15 @@ export type PlaceholderImageProps = ComponentPropsWithoutRef<'img'> & {
 /**
  * @public
  */
-export function PlaceholderImage(props: PlaceholderImageProps) {
-  const { alt, ariaHidden, blur, chooseSrc, className, height, width } = props
-
+export function PlaceholderImage({
+  alt,
+  ariaHidden = true,
+  blur = false,
+  chooseSrc,
+  className,
+  height = '500',
+  width = '500',
+}: PlaceholderImageProps) {
   return (
     <RandomImage
       alt={alt || 'Random image used for placeholder content'}
@@ -55,10 +61,3 @@ export function PlaceholderImage(props: PlaceholderImageProps) {
 }
 
 PlaceholderImage.displayName = 'PlaceholderImage'
-
-PlaceholderImage.defaultProps = {
-  ariaHidden: true,
-  blur: false,
-  height: '500',
-  width: '500',
-}

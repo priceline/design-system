@@ -138,22 +138,22 @@ const DialogInnerWrapper = styled(Flex)`
 const Modal = ({
   ariaLabel,
   ariaLabelledBy,
-  bg,
-  borderRadius,
+  bg = 'white',
+  borderRadius = 'xl',
   children,
   className,
-  dialogAnimation,
-  disableCloseButton,
-  enableOverflow,
+  dialogAnimation = null,
+  disableCloseButton = false,
+  enableOverflow = false,
   fullScreen,
-  header,
-  height,
+  header = null,
+  height = 420,
   imgMode,
-  isOpen,
+  isOpen = false,
   onClose,
-  overlayAnimation,
-  timeout,
-  verticalAlignment,
+  overlayAnimation = null,
+  timeout = 500,
+  verticalAlignment = 'middle',
   width,
   zIndex,
 }) => {
@@ -214,20 +214,6 @@ const Modal = ({
       )}
     </Transition>
   )
-}
-
-Modal.defaultProps = {
-  bg: 'white',
-  borderRadius: 'xl',
-  dialogAnimation: null,
-  disableCloseButton: false,
-  enableOverflow: false,
-  header: null,
-  height: 420,
-  isOpen: false,
-  overlayAnimation: null,
-  timeout: 500,
-  verticalAlignment: 'middle',
 }
 
 const validateAriaProps = (props, propName, componentName) => {

@@ -20,9 +20,11 @@ export type HugProps = CardProps & {
  */
 export function Hug({
   bg,
+  borderRadius = 'xl',
+  borderWidth = 1,
   color = 'text.lightest',
-  p,
-  fontSize,
+  p = 2,
+  fontSize = 1,
   icon,
   iconDisplay,
   colorScheme,
@@ -51,6 +53,8 @@ export function Hug({
     <HugCard
       {...props}
       borderColor={colorScheme ? null : bg || color}
+      borderRadius={borderRadius}
+      borderWidth={borderWidth}
       color={color}
       colorScheme={colorScheme}
     >
@@ -69,12 +73,4 @@ export function Hug({
       <BorderConcealer>{props.children}</BorderConcealer>
     </HugCard>
   )
-}
-
-Hug.defaultProps = {
-  borderRadius: 'xl',
-  borderWidth: 1,
-  color: 'text.lightest',
-  fontSize: 1,
-  p: 2,
 }

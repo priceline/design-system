@@ -19,14 +19,10 @@ export type MotionProps = {
 /**
  * @public
  */
-export function Motion({ children, isAnimatedState, variation }: MotionProps) {
+export function Motion({ children, isAnimatedState, variation = 'growCenter' }: MotionProps) {
   return (
     <Wrapper isAnimatedState={isAnimatedState} variation={variation} data-testid='motion-wrapper'>
       {children}
     </Wrapper>
   )
-}
-
-Motion.defaultProps = {
-  variation: 'growCenter',
 }
