@@ -36,7 +36,7 @@ const _Card: React.FC<CardProps> = styled(Box)`
  */
 export const Card: React.FC<CardProps> = ({
   borderColor = 'border',
-  borderRadius = '2px',
+  borderRadius = 'xsm',
   borderStyle = 'solid',
   borderWidth = 1,
   ...props
