@@ -7,10 +7,10 @@ exports[`Card renders border 0 without warning 1`] = `
 
 .c1 {
   border-color: 0;
+  border-width: 0;
   border-color: #c0cad5;
   border-radius: 2px;
   border-style: solid;
-  border-width: 0;
 }
 
 <div
@@ -64,8 +64,8 @@ exports[`Card renders medium box shadow with specified borderRadius 1`] = `
 
 .c1 {
   border-color: #c0cad5;
-  border-color: #c0cad5;
   border-radius: 0;
+  border-color: #c0cad5;
   border-style: solid;
   border-width: 1px;
 }
@@ -83,10 +83,10 @@ exports[`Card renders medium box shadow with specified borderWidth 1`] = `
 
 .c1 {
   border-color: #c0cad5;
+  border-width: 2px;
   border-color: #c0cad5;
   border-radius: 2px;
   border-style: solid;
-  border-width: 2px;
 }
 
 <div
