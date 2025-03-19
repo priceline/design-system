@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "6.10.0",
+      "tag": "pcln-icons_v6.10.0",
+      "date": "Wed, 19 Mar 2025 14:31:27 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "remove defaultProps",
+            "author": "Remy Gratwohl <135156184+Remy-Gratwohl@users.noreply.github.com>",
+            "commit": "72afa6422d93d457e3741fadcbd9a279f9b6e5ef"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.9.0",
       "tag": "pcln-icons_v6.9.0",
       "date": "Tue, 04 Feb 2025 16:10:35 GMT",

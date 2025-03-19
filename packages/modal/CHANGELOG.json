@@ -2,6 +2,31 @@
   "name": "pcln-modal",
   "entries": [
     {
+      "version": "6.2.0",
+      "tag": "pcln-modal_v6.2.0",
+      "date": "Wed, 19 Mar 2025 14:31:27 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "remove defaultProps",
+            "author": "Remy Gratwohl <135156184+Remy-Gratwohl@users.noreply.github.com>",
+            "commit": "72afa6422d93d457e3741fadcbd9a279f9b6e5ef"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.27.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-menu\" to `6.2.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^6.26.2` to `6.27.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.1.1",
       "tag": "pcln-modal_v6.1.1",
       "date": "Mon, 24 Feb 2025 19:52:35 GMT",

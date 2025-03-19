@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.27.0",
+      "tag": "pcln-design-system_v6.27.0",
+      "date": "Wed, 19 Mar 2025 14:31:27 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "remove defaultProps",
+            "author": "Remy Gratwohl <135156184+Remy-Gratwohl@users.noreply.github.com>",
+            "commit": "72afa6422d93d457e3741fadcbd9a279f9b6e5ef"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.26.2",
       "tag": "pcln-design-system_v6.26.2",
       "date": "Mon, 24 Feb 2025 19:52:35 GMT",
