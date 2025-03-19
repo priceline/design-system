@@ -1,7 +1,7 @@
 import * as Dialog from '@radix-ui/react-dialog'
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden'
 import themeGet from '@styled-system/theme-get'
-import { Transition, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import React, { ReactElement } from 'react'
 import styled from 'styled-components'
 import { overflowX, overflowY, zIndex } from 'styled-system'
@@ -33,25 +33,25 @@ const scrimStyles = {
   light: 'rgba(0, 24, 51, 0.25)',
 } as const
 
-const enterTransition: Transition = { duration: 0.25, ease: 'easeOut' }
-const exitTransition: Transition = { duration: 0.15, ease: 'easeIn' }
-const animationStyles = {
-  default: {
-    initial: { opacity: 0, scale: 0.9, translateY: 64 },
-    animate: { opacity: 1, scale: 1, translateY: 0, transition: enterTransition },
-    exit: { opacity: 0, scale: 0.9, translateY: 32, transition: exitTransition },
-  },
-  sheet: {
-    initial: { opacity: 0, translateY: '40%' },
-    animate: { opacity: 1, translateY: 0, transition: enterTransition },
-    exit: { opacity: 0, translateY: '60%', transition: exitTransition },
-  },
-  overlay: {
-    initial: { opacity: 0, overflow: 'hidden' },
-    animate: { opacity: 1, transitionEnd: { overflow: 'auto' }, transition: enterTransition },
-    exit: { opacity: 0, overflow: 'hidden', transition: exitTransition },
-  },
-} as const
+// const enterTransition: Transition = { duration: 0.25, ease: 'easeOut' }
+// const exitTransition: Transition = { duration: 0.15, ease: 'easeIn' }
+// const animationStyles = {
+//   default: {
+//     initial: { opacity: 0, scale: 0.9, translateY: 64 },
+//     animate: { opacity: 1, scale: 1, translateY: 0, transition: enterTransition },
+//     exit: { opacity: 0, scale: 0.9, translateY: 32, transition: exitTransition },
+//   },
+//   sheet: {
+//     initial: { opacity: 0, translateY: '40%' },
+//     animate: { opacity: 1, translateY: 0, transition: enterTransition },
+//     exit: { opacity: 0, translateY: '60%', transition: exitTransition },
+//   },
+//   overlay: {
+//     initial: { opacity: 0, overflow: 'hidden' },
+//     animate: { opacity: 1, transitionEnd: { overflow: 'auto' }, transition: enterTransition },
+//     exit: { opacity: 0, overflow: 'hidden', transition: exitTransition },
+//   },
+// } as const
 
 const FloatingCloseButton: (
   props: { dialogSize: DialogSize } & Partial<CloseButtonProps> & Partial<DialogProps>
@@ -205,7 +205,7 @@ export const DialogContent = ({
         borderRadius={borderRadius}
         zIndex={zIndex}
         hasFooterContent={footerContent}
-        {...(sheet ? animationStyles.sheet : animationStyles.default)}
+        // {...(sheet ? animationStyles.sheet : animationStyles.default)}
         {...(typeof shouldDisableTabIndex === 'boolean' && shouldDisableTabIndex && { tabIndex: undefined })}
       >
         {showCloseButton && (
