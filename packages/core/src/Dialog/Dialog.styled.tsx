@@ -136,7 +136,7 @@ export const DialogOverlay = ({ scrimColor, sheet, children, zIndex }: Partial<D
             scrimColor={scrimColor}
             sheet={sheet}
             zIndex={zIndex}
-            {...animationStyles.overlay}
+            // {...animationStyles.overlay}
           >
             {children}
           </DialogOverlayWrapper>
