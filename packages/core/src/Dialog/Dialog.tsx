@@ -1,5 +1,4 @@
 import * as Dialog from '@radix-ui/react-dialog'
-import { AnimatePresence } from 'framer-motion'
 import React, { useEffect } from 'react'
 import { OverflowProps } from 'styled-system'
 import type { BorderRadius, ColorSchemes, PaletteColor, ZIndex } from '../theme/theme'
@@ -82,7 +81,6 @@ const PclnDialog = ({
   return (
     <Dialog.Root open={_open} onOpenChange={handleOpenChange} defaultOpen={defaultOpen}>
       <Dialog.Trigger asChild>{triggerNode}</Dialog.Trigger>
-      <AnimatePresence>
         {_open && (
           <DialogOverlay scrimDismiss={scrimDismiss} scrimColor={scrimColor} sheet={sheet} zIndex={zIndex}>
             <DialogContent
@@ -112,7 +110,6 @@ const PclnDialog = ({
             </DialogContent>
           </DialogOverlay>
         )}
-      </AnimatePresence>
     </Dialog.Root>
   )
 }
