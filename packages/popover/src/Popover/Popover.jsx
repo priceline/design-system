@@ -6,10 +6,11 @@ import PopoverContent from '../PopoverContent'
 import usePopover from '../usePopover'
 
 function Popover({
-  ariaLabel,
+  ariaLabel = 'Click to open popover with more information',
   borderRadius = 'xl',
   children,
-  disableFloating,
+  disableFloating = false,
+  display = 'inline-block',
   hideOverlay,
   isOpen,
   openOnFocus,
@@ -20,7 +21,8 @@ function Popover({
   onClose,
   onBeforeOpen,
   onBeforeClose,
-  toggleIsOpenOnClick,
+  stopPropagation = true,
+  toggleIsOpenOnClick = true,
   ...props
 }) {
   const {
@@ -54,7 +56,7 @@ function Popover({
             'aria-label': ariaLabel,
             type: 'button',
             ref: reference,
-            onClick: !openOnHover && (toggleIsOpenOnClick ? handleToggle : () => {}),
+            onClick: !openOnHover && toggleIsOpenOnClick ? handleToggle : undefined,
           }),
         })}
       {(isPopoverOpen || isOpen) && (
@@ -63,9 +65,11 @@ function Popover({
             ...props,
             arrowRef,
             borderRadius,
+            display,
             hideOverlay: hideOverlay || openOnHover,
             placement: actualPlacement,
             popoverRef: floating,
+            stopPropagation,
             styles,
             onCloseRequest: handleClose,
           })}
@@ -104,14 +108,6 @@ Popover.propTypes = {
   onBeforeOpen: PropTypes.func,
   onBeforeClose: PropTypes.func,
   disableFloating: PropTypes.bool,
-}
-
-Popover.defaultProps = {
-  ariaLabel: 'Click to open popover with more information',
-  toggleIsOpenOnClick: true,
-  display: 'inline-block',
-  stopPropagation: true,
-  disableFloating: false,
 }
 
 export default Popover

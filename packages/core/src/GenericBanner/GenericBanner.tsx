@@ -74,19 +74,20 @@ export type GenericBannerProps = AlignItemsProps &
  * @public
  */
 export function GenericBanner({
-  alignItems,
+  alignItems = 'center',
+  borderRadius = '6px',
   buttonClick,
   buttonSize,
-  buttonVariation,
+  buttonVariation = 'link',
   ctaText,
-  fontSize,
+  fontSize = [0, null, null, 1],
   heading,
   iconLeft,
   iconRight,
   imageLeft,
-  justifyContent,
-  linkVariation,
-  linkColor,
+  justifyContent = 'center',
+  linkVariation = 'link',
+  linkColor = 'primary',
   text,
   /* eslint-disable @typescript-eslint/naming-convention */
   URLProps,
@@ -106,6 +107,7 @@ export function GenericBanner({
         iconUsesColorScheme
         // we need to unset Banner's color prop if colorScheme is provided so it doesn't render its own icon
         color={!props.colorScheme ? props.color : null}
+        borderRadius={borderRadius}
       >
         <Flex alignItems={alignItems} justifyContent={justifyContent}>
           {!!iconLeft && iconLeft}
@@ -156,14 +158,4 @@ export function GenericBanner({
       </BannerWithRadius>
     </Relative>
   )
-}
-
-GenericBanner.defaultProps = {
-  alignItems: 'center',
-  buttonVariation: 'link',
-  fontSize: [0, null, null, 1],
-  justifyContent: 'center',
-  linkColor: 'primary',
-  linkVariation: 'link',
-  borderRadius: '6px',
 }

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-slider",
+      "comment": "remove defaultProps",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-slider"
+}

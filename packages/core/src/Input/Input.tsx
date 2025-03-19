@@ -96,10 +96,7 @@ export type InputWithRef = ForwardRefExoticComponent<Omit<InputProps, 'ref'> & R
   HelperText: React.FC<InputHelperTextProps>
 }
 
-/**
- * @public
- */
-export const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
+const _Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
   const { helperText, color, ...restProps } = props
   return (
     <>
@@ -112,6 +109,15 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref)
   )
 }) as InputWithRef
 
+/**
+ * @public
+ */
+export const Input = React.forwardRef<HTMLInputElement, InputProps>(
+  ({ fontSize = [2, null, 1], borderRadius = 'lg', size = 'lg', ...props }, ref) => (
+    <_Input borderRadius={borderRadius} fontSize={fontSize} size={size} ref={ref} {...props} />
+  )
+) as InputWithRef
+
 const HelperText: React.FC<InputHelperTextProps> = styled(Text).attrs(() => ({
   mt: 2,
   fontSize: 1,
@@ -123,8 +129,3 @@ Input.HelperText.displayName = INPUT_ERROR_TEXT
 
 Input.displayName = 'Input'
 Input.isField = true
-Input.defaultProps = {
-  fontSize: [2, null, 1],
-  borderRadius: 'lg',
-  size: 'lg',
-}

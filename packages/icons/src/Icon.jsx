@@ -4,7 +4,7 @@ import upperFirst from 'lodash.upperfirst'
 import PropTypes from 'prop-types'
 import * as icons from './index'
 
-const BaseIcon = ({ name, title, desc, titleId, descId, ...props }) => {
+const BaseIcon = ({ name, title, desc, titleId, descId, size = 24, ...props }) => {
   const isDev = process.env.NODE_ENV !== 'production'
 
   if (isDev) {
@@ -35,6 +35,7 @@ const BaseIcon = ({ name, title, desc, titleId, descId, ...props }) => {
         aria-labelledby={ariaLabelledBy}
         tabIndex={-1}
         focusable={false}
+        size={size}
         {...props}
       />
     )
@@ -48,10 +49,6 @@ const Icon = styled(BaseIcon)`
 
 Icon.isIcon = true
 Icon.displayName = 'Icon'
-
-BaseIcon.defaultProps = {
-  size: 24,
-}
 
 BaseIcon.propTypes = {
   name: (props, key, componentName) => {

@@ -80,7 +80,16 @@ export type FlagProps = SpaceProps &
 /**
  * @public
  */
-export const Flag: React.FC<FlagProps> = ({ color, bg, children, pl, pr, py, width, ...props }) => (
+export const Flag: React.FC<FlagProps> = ({
+  color = 'white',
+  bg = 'green',
+  children,
+  pl = [1, 3],
+  pr = null,
+  py = [1, 2],
+  width,
+  ...props
+}) => (
   <StyledFlex width={width} {...props} ml={[0, -2]}>
     <RelativeHide xs>
       <FlagShadow width='4px' mr={-2} mb={-2} color={hasPaletteColor({ color, ...props }) ? color : bg} />
@@ -98,13 +107,5 @@ export const Flag: React.FC<FlagProps> = ({ color, bg, children, pl, pr, py, wid
     <FlagRight width='18px' color={hasPaletteColor({ color, ...props }) ? color : bg} ml={-2} />
   </StyledFlex>
 )
-
-Flag.defaultProps = {
-  color: 'white',
-  bg: 'green',
-  pl: [1, 3],
-  pr: null,
-  py: [1, 2],
-}
 
 Flag.displayName = 'Flag'

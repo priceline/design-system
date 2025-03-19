@@ -44,9 +44,20 @@ export function PasswordInput({
   id,
   isValid,
   label,
-  hasProgressBar,
-  progressBarSteps,
-  regexChecks,
+  hasProgressBar = false,
+  progressBarSteps = [
+    { color: 'warning', text: 'WEAK' },
+    { color: 'caution', text: 'FAIR' },
+    { color: 'primary', text: 'GOOD' },
+    { color: 'success', text: 'STRONG' },
+  ],
+  regexChecks = [
+    { label: '1 Uppercase Letter', regex: /(?=.*[A-Z])/ },
+    { label: '1 Lowercase Letter', regex: /(?=.*[a-z])/ },
+    { label: '1 Number', regex: /(?=.*[0-9])/ },
+    { label: '1 Special Character', regex: /(?=.*[!@#$%^&*()])/ },
+    { label: 'at least 12 Characters', regex: /.{12,}/ },
+  ],
   value,
   onChange,
   autoComplete,
@@ -149,22 +160,4 @@ export function PasswordInput({
       )}
     </Flex>
   )
-}
-
-PasswordInput.defaultProps = {
-  hasProgressBar: false,
-  progressBarSteps: [
-    { color: 'warning', text: 'WEAK' },
-    { color: 'caution', text: 'FAIR' },
-    { color: 'primary', text: 'GOOD' },
-    { color: 'success', text: 'STRONG' },
-  ],
-  progressBarDefaultStep: 1,
-  regexChecks: [
-    { label: '1 Uppercase Letter', regex: /(?=.*[A-Z])/ },
-    { label: '1 Lowercase Letter', regex: /(?=.*[a-z])/ },
-    { label: '1 Number', regex: /(?=.*[0-9])/ },
-    { label: '1 Special Character', regex: /(?=.*[!@#$%^&*()])/ },
-    { label: 'at least 12 Characters', regex: /.{12,}/ },
-  ],
 }

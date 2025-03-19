@@ -15,7 +15,7 @@ const StyledOverlay = styled(Box)`
   cursor: pointer;
 `
 
-const Overlay = ({ className, popoverOpen, handleClick, overlayOpacity, zIndex }) => {
+const Overlay = ({ className, popoverOpen = true, handleClick, overlayOpacity = 0, zIndex = 101 }) => {
   return (
     <StyledOverlay
       className={className}
@@ -37,12 +37,6 @@ Overlay.propTypes = {
   handleClick: PropTypes.func,
   overlayOpacity: PropTypes.number,
   zIndex: PropTypes.number,
-}
-
-Overlay.defaultProps = {
-  popoverOpen: true,
-  overlayOpacity: 0,
-  zIndex: 101,
 }
 
 export default Overlay

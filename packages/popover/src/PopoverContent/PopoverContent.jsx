@@ -35,16 +35,17 @@ function PopoverContent({
   idx,
   onCloseRequest,
   overlayOpacity,
-  placement,
+  p = 2,
+  placement = 'top',
   renderContent,
   trapFocus,
   hideArrow,
   hideOverlay,
   popoverRef,
   styles,
-  width,
-  zIndex,
-  querySelectorPortal,
+  width = 400,
+  zIndex = 102,
+  querySelectorPortal = 'body',
   ...props
 }) {
   const handleKeyUp = useCallback(
@@ -118,6 +119,7 @@ function PopoverContent({
         ref={popoverRef}
         role='dialog'
         style={styles?.popover}
+        p={p}
         {...styleProps}
         {...props}
       >
@@ -177,14 +179,6 @@ PopoverContent.propTypes = {
   hideArrow: PropTypes.bool,
   hideOverlay: PropTypes.bool,
   querySelectorPortal: PropTypes.string,
-}
-
-PopoverContent.defaultProps = {
-  p: 2,
-  placement: 'top',
-  zIndex: 102,
-  width: 400,
-  querySelectorPortal: 'body',
 }
 
 export default PopoverContent
