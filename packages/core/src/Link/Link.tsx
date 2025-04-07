@@ -91,15 +91,20 @@ export type LinkProps = WidthProps &
     variation?: ButtonVariations
   }
 
-const _Link: React.FC<LinkProps> = styled.a.attrs(({ color, disabled, href, target, onClick, ...props }) => ({
-  color: disabled ? 'text.light' : color,
-  disabled,
-  href: !disabled ? href : undefined,
-  rel: target === '_blank' ? 'noopener' : null,
-  target,
-  onClick: !disabled ? onClick : () => {},
-  ...props,
-}))`
+/**
+ * @public
+ */
+export const Link: React.FC<LinkProps> = styled.a.attrs(
+  ({ color, disabled, href, target, onClick, ...props }) => ({
+    color: disabled ? 'text.light' : color,
+    disabled,
+    href: !disabled ? href : undefined,
+    rel: target === '_blank' ? 'noopener' : null,
+    target,
+    onClick: !disabled ? onClick : () => {},
+    ...props,
+  })
+)`
   ${applyVariations('Link', variations)}
 
   ${(props) =>
@@ -115,14 +120,10 @@ const _Link: React.FC<LinkProps> = styled.a.attrs(({ color, disabled, href, targ
   ${(props) => compose(space, width)(props)}
 `
 
-/**
- * @public
- */
-export const Link: React.FC<LinkProps> = ({
-  color = 'primary',
-  variation = 'link',
-  size = 'medium',
-  ...props
-}) => <_Link color={color} variation={variation} size={size} {...props} />
-
 Link.displayName = 'Link'
+
+Link.defaultProps = {
+  color: 'primary',
+  variation: 'link',
+  size: 'medium',
+}

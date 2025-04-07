@@ -4,6 +4,14 @@ import { borderRadius, compose, fontWeight } from 'styled-system'
 import { Box, type BoxProps } from '../Box/Box'
 import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
 
+const defaultProps = {
+  fontWeight: 'bold',
+  px: 2,
+  color: 'alert',
+  borderRadius: 'md',
+  bg: 'alert',
+}
+
 /**
  * @public
  */
@@ -32,7 +40,10 @@ function getBgAndColorProps({ color, bg }) {
   }
 }
 
-const _RatingBadge: React.FC<RatingBadgeProps> = styled(Box).attrs((props) => ({
+/**
+ * @public
+ */
+export const RatingBadge: React.FC<RatingBadgeProps> = styled(Box).attrs((props) => ({
   ...getBgAndColorProps(props),
   ...borderRadiusAttrs(props),
 }))`
@@ -41,25 +52,4 @@ const _RatingBadge: React.FC<RatingBadgeProps> = styled(Box).attrs((props) => ({
   ${(props) => compose(fontWeight, borderRadius)(props)}
 `
 
-/**
- * @public
- */
-export const RatingBadge: React.FC<RatingBadgeProps> = ({
-  fontWeight = 'bold',
-  px = 2,
-  color = 'alert',
-  borderRadius = 'md',
-  bg = 'alert',
-  ...props
-}) => {
-  return (
-    <_RatingBadge
-      fontWeight={fontWeight}
-      px={px}
-      color={color}
-      borderRadius={borderRadius}
-      bg={bg}
-      {...props}
-    />
-  )
-}
+RatingBadge.defaultProps = defaultProps

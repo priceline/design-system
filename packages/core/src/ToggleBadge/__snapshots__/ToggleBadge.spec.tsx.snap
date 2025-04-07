@@ -11,15 +11,15 @@ exports[`ToggleBadge selected ToggleBadge renders with default props 1`] = `
   background-color: #e8f2ff;
   color: #0068ef;
   border-radius: 9999px;
-  font-size: 12px;
-  margin-left: 4px;
-  margin-right: 4px;
-  margin-top: 4px;
-  margin-bottom: 4px;
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 12px;
 }
 
 .c0:hover {
@@ -44,16 +44,16 @@ exports[`ToggleBadge selected one with background-color and text color passed as
   cursor: pointer;
   background-color: #ecf7ec;
   color: #c00;
-  border-radius: 9999px;
   font-size: 14px;
-  margin-left: 4px;
-  margin-right: 4px;
-  margin-top: 4px;
-  margin-bottom: 4px;
+  border-radius: 9999px;
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .c0:hover {
@@ -79,15 +79,15 @@ exports[`ToggleBadge unselected ToggleBadge renders with default props 1`] = `
   background-color: transparent;
   color: #0068ef;
   border-radius: 9999px;
-  font-size: 12px;
-  margin-left: 4px;
-  margin-right: 4px;
-  margin-top: 4px;
-  margin-bottom: 4px;
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 4px;
   padding-bottom: 4px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 12px;
 }
 
 .c0:hover {
