@@ -31,8 +31,8 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
   margin: 0;
   padding: 14px 12px 14px 12px;
   border-color: #c0cad5;
-  border-radius: 12px;
   font-size: 16px;
+  border-radius: 12px;
   padding-left: 40px;
 }
 
@@ -303,9 +303,9 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   width: 100%;
   padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
+  padding-left: 40px;
   font-size: 16px;
   margin: 0px;
-  padding-left: 40px;
 }
 
 .c10::-ms-expand {
@@ -460,8 +460,8 @@ exports[`FormField renders 1`] = `
   margin: 0;
   padding: 14px 12px 14px 12px;
   border-color: #c0cad5;
-  border-radius: 12px;
   font-size: 16px;
+  border-radius: 12px;
 }
 
 .c3::-webkit-input-placeholder {
@@ -624,8 +624,8 @@ exports[`FormField renders with Icon 1`] = `
   margin: 0;
   padding: 14px 12px 14px 12px;
   border-color: #c0cad5;
-  border-radius: 12px;
   font-size: 16px;
+  border-radius: 12px;
   padding-left: 40px;
 }
 
@@ -821,8 +821,8 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   margin: 0;
   padding: 14px 12px 14px 12px;
   border-color: #c0cad5;
-  border-radius: 12px;
   font-size: 16px;
+  border-radius: 12px;
   padding-left: 40px;
 }
 
@@ -1271,9 +1271,9 @@ exports[`FormField renders with Select and Icon 1`] = `
   width: 100%;
   padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
+  padding-left: 40px;
   font-size: 16px;
   margin: 0px;
-  padding-left: 40px;
 }
 
 .c8::-ms-expand {

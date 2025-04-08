@@ -17,7 +17,10 @@ export type ToggleBadgeProps = {
   FontSizeProps &
   ComponentPropsWithRef<'button'>
 
-const _ToggleBadge: React.FC<ToggleBadgeProps> = styled.button.attrs(borderRadiusAttrs)`
+/**
+ * @public
+ */
+export const ToggleBadge: React.FC<ToggleBadgeProps> = styled.button.attrs(borderRadiusAttrs)`
   border-radius: ${(props) => props.theme.radius};
   border: 0;
   display: inline-block;
@@ -35,35 +38,16 @@ const _ToggleBadge: React.FC<ToggleBadgeProps> = styled.button.attrs(borderRadiu
   ${(props) => compose(space, fontSize, borderRadius)(props)}
 `
 
-/**
- * @public
- */
-export const ToggleBadge: React.FC<ToggleBadgeProps> = ({
-  borderRadius = 'full',
-  color = 'primary',
-  fontSize = 0,
-  mx = 1,
-  my = 1,
-  px = 2,
-  py = 1,
-  selected = false,
-  unSelectedBg = 'transparent',
-  ...props
-}) => {
-  return (
-    <_ToggleBadge
-      borderRadius={borderRadius}
-      color={color}
-      fontSize={fontSize}
-      mx={mx}
-      my={my}
-      px={px}
-      py={py}
-      selected={selected}
-      unSelectedBg={unSelectedBg}
-      {...props}
-    />
-  )
-}
-
 ToggleBadge.displayName = 'ToggleBadge'
+
+ToggleBadge.defaultProps = {
+  borderRadius: 'full',
+  selected: false,
+  px: 2,
+  py: 1,
+  mx: 1,
+  my: 1,
+  fontSize: 0,
+  color: 'primary',
+  unSelectedBg: 'transparent',
+}

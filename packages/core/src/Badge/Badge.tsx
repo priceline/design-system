@@ -86,28 +86,27 @@ export type BadgeProps = SpaceProps &
     textTransform?: string
   }
 
-const _Badge: React.FC<BadgeProps> = styled.div.attrs(borderRadiusAttrs)`
+/**
+ * @public
+ */
+export const Badge: React.FC<BadgeProps> = styled.div.attrs(borderRadiusAttrs)`
   display: inline-block;
   ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
   ${applyVariations('Badge')};
   ${type}
   ${color}
-${colorScheme}
-${textTransform}
-${letterSpacing}
+  ${colorScheme}
+  ${textTransform}
+  ${letterSpacing}
 
-${(props) => compose(space, borderRadius)(props)}
+  ${(props) => compose(space, borderRadius)(props)}
 `
 
-/**
- * @public
- */
-export const Badge: React.FC<BadgeProps> = ({
-  borderRadius = 'full',
-  px = 2,
-  size = 'medium',
-  textTransform = 'uppercase',
-  ...props
-}) => <_Badge borderRadius={borderRadius} px={px} size={size} textTransform={textTransform} {...props} />
+Badge.defaultProps = {
+  size: 'medium',
+  px: 2,
+  borderRadius: 'full',
+  textTransform: 'uppercase',
+}
 
 Badge.displayName = 'Badge'

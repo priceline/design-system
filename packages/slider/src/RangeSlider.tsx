@@ -7,8 +7,14 @@ import styleSlider from './styleSlider'
 
 const _RangeSlider = styleSlider(Range)
 
-const RangeSlider = ({ allowCross = false, color = 'primary', range = true, ...props }) => {
-  return <_RangeSlider allowCross={allowCross} color={color} range={range} {...props} />
+const RangeSlider = (props) => {
+  return <_RangeSlider {...props} />
+}
+
+RangeSlider.defaultProps = {
+  allowCross: false,
+  color: 'primary',
+  range: true,
 }
 
 RangeSlider.propTypes = {

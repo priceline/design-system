@@ -9,8 +9,8 @@ import {
   height,
   width,
 } from 'styled-system'
+import { applyVariations, getPaletteColor } from '../utils'
 import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
-import { applyVariations, getPaletteColor } from '../utils/utils'
 
 const variations = {
   parallax: css`
@@ -41,23 +41,22 @@ export type BackgroundImageProps = WidthProps &
     backgroundPosition?: (typeof backgroundPositionList)[number]
   }
 
-const _BackgroundImage: React.FC<BackgroundImageProps> = styled.div.attrs(borderRadiusAttrs)`
+/**
+ * @public
+ */
+export const BackgroundImage: React.FC<BackgroundImageProps> = styled.div.attrs(borderRadiusAttrs)`
   background-position: ${(props) => props.backgroundPosition};
   background-size: cover;
   background-repeat: no-repeat;
   background-color: ${getPaletteColor('border.light')};
   ${applyVariations('BackgroundImage', variations)}
   ${image} 
-
   ${(props) => compose(height, width, borderRadius)(props)}
 `
-/**
- * @public
- */
-export const BackgroundImage: React.FC<BackgroundImageProps> = ({
-  variation = 'static',
-  backgroundPosition = 'center',
-  ...props
-}) => <_BackgroundImage variation={variation} backgroundPosition={backgroundPosition} {...props} />
+
+BackgroundImage.defaultProps = {
+  variation: 'static',
+  backgroundPosition: 'center',
+}
 
 BackgroundImage.displayName = 'BackgroundImage'

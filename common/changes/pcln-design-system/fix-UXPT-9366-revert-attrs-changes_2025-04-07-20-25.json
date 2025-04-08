@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "revert removal of defaultProps due to bad interaction with attrs",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
