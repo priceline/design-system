@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.27.1",
+      "tag": "pcln-design-system_v6.27.1",
+      "date": "Tue, 08 Apr 2025 18:28:05 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "revert removal of defaultProps due to bad interaction with attrs",
+            "author": "Remy Gratwohl <135156184+Remy-Gratwohl@users.noreply.github.com>",
+            "commit": "443f227423c0b70b28fe61f8ebb4291fbfd372be"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.27.0",
       "tag": "pcln-design-system_v6.27.0",
       "date": "Wed, 19 Mar 2025 14:31:27 GMT",

@@ -1,6 +1,13 @@
 # Change Log - pcln-slider
 
-This log was last generated on Wed, 19 Mar 2025 14:31:27 GMT and should not be manually modified.
+This log was last generated on Tue, 08 Apr 2025 18:28:05 GMT and should not be manually modified.
+
+## 6.2.1
+Tue, 08 Apr 2025 18:28:05 GMT
+
+### Patches
+
+- revert removal of defaultProps due to bad interaction with attrs
 
 ## 6.2.0
 Wed, 19 Mar 2025 14:31:27 GMT
