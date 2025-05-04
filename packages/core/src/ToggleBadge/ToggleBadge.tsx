@@ -28,7 +28,7 @@ export const ToggleBadge: React.FC<ToggleBadgeProps> = styled.button.attrs(borde
   font-family: inherit;
   cursor: pointer;
   background-color: ${(props) =>
-    props.selected ? getPaletteColor(props.bg || props.color, 'light')(props) : props.unSelectedBg};
+    props.selected ? getPaletteColor(props.bg || props.color, 'light')(props) : getPaletteColor(props.unSelectedBg)(props)};
   color: ${getPaletteColor('base')};
   &:hover {
     background-color: ${(props) => getPaletteColor(props.bg || props.color, 'light')(props)};
