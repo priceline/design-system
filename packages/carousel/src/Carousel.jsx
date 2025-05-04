@@ -15,22 +15,23 @@ import {
 import { RenderInView } from './RenderInView'
 import { CAROUSEL_BREAKPOINT_1, ARROW_MARGIN, ARROW_JUSTIFY_CONTENT } from './constants'
 
-const ChangeDetector = ({ onSlideChange }) => {
+const ChangeDetector = ({ onSlideChange, numVisibleSlides }) => {
   const carouselContext = useContext(CarouselContext)
   // eslint-disable-next-line no-unused-vars
   const [_currentSlide, setCurrentSlide] = useState(carouselContext.state.currentSlide)
 
   useEffect(() => {
     function onChange() {
-      setCurrentSlide(carouselContext.state.currentSlide)
+      const slideNum = Math.floor(carouselContext.state.currentSlide + numVisibleSlides - 1)
+      setCurrentSlide(slideNum)
 
       if (typeof onSlideChange === 'function') {
-        onSlideChange(carouselContext.state.currentSlide)
+        onSlideChange(slideNum)
       }
     }
     carouselContext.subscribe(onChange)
     return () => carouselContext.unsubscribe(onChange)
-  }, [carouselContext, onSlideChange])
+  }, [carouselContext, onSlideChange, numVisibleSlides])
 
   return null
 }
@@ -119,7 +120,10 @@ export const Carousel = ({
         infinite={infinite}
         currentSlide={currentSlide}
       >
-        <ChangeDetector onSlideChange={onSlideChange} />
+        <ChangeDetector
+          onSlideChange={onSlideChange}
+          numVisibleSlides={layoutSize || responsiveVisibleSlides}
+        />
         {arrowsPosition === 'top' ? (
           <Flex justifyContent='flex-end' alignItems='center' mb={2} mr={slideSpacing}>
             {nodeBesideArrowsLeft ? (
