@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { Transition } from 'react-transition-group'
@@ -157,6 +157,8 @@ const Modal = ({
   width,
   zIndex,
 }) => {
+  const overlayRef = useRef(null)
+
   let dialogHeight = height
 
   if (enableOverflow) {
@@ -166,9 +168,10 @@ const Modal = ({
   }
 
   return (
-    <Transition in={isOpen} unmountOnExit timeout={timeout}>
+    <Transition nodeRef={overlayRef} in={isOpen} unmountOnExit timeout={timeout}>
       {(state) => (
         <Overlay
+          ref={overlayRef}
           onDismiss={onClose}
           zindex={zIndex}
           transitionstate={state}
