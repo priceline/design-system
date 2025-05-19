@@ -29,7 +29,7 @@ const bannerColors: Record<string, BannerColor> = {
   },
   lightGreen: {
     backgroundColor: 'secondary.light',
-    color: 'secondary.dark',
+    color: 'text.base',
     icon: <SuccessIcon />,
   },
   red: {

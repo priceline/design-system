@@ -75,7 +75,7 @@ describe('Banner', () => {
     const json = rendererCreateWithTheme(<Banner bg='lightGreen' />).toJSON()
     expect(json).toMatchSnapshot()
     expect(json).toHaveStyleRule('background-color', theme.colors.lightGreen)
-    expect(json).toHaveStyleRule('color', theme.colors.darkGreen)
+    expect(json).toHaveStyleRule('color', theme.colors.text)
   })
 
   test('renders with lightRed bg', () => {

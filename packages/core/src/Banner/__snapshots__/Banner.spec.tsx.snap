@@ -584,7 +584,7 @@ exports[`Banner renders with lightGreen bg 1`] = `
 
 .c0 {
   background-color: #ecf7ec;
-  color: #060;
+  color: #001833;
   text-align: left;
 }
 
@@ -614,7 +614,7 @@ exports[`Banner renders with lightGreen bg 1`] = `
 
 <div
   className="c0 "
-  color="secondary.dark"
+  color="text.base"
 >
   <div
     className="c1"
