@@ -2,6 +2,20 @@
   "name": "pcln-modal",
   "entries": [
     {
+      "version": "6.2.2",
+      "tag": "pcln-modal_v6.2.2",
+      "date": "Tue, 20 May 2025 14:04:27 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "pass a ref to the Transition component in @pcln/modal",
+            "author": "Remy Gratwohl <135156184+Remy-Gratwohl@users.noreply.github.com>",
+            "commit": "d345f97bf4ee4ea265983cd3bde720b873cb6b07"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.2.1",
       "tag": "pcln-modal_v6.2.1",
       "date": "Tue, 08 Apr 2025 18:28:05 GMT",

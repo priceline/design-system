@@ -1,6 +1,13 @@
 # Change Log - pcln-modal
 
-This log was last generated on Tue, 08 Apr 2025 18:28:05 GMT and should not be manually modified.
+This log was last generated on Tue, 20 May 2025 14:04:27 GMT and should not be manually modified.
+
+## 6.2.2
+Tue, 20 May 2025 14:04:27 GMT
+
+### Patches
+
+- pass a ref to the Transition component in @pcln/modal
 
 ## 6.2.1
 Tue, 08 Apr 2025 18:28:05 GMT
