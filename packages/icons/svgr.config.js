@@ -20,6 +20,7 @@ const BaseComponent = ({
   tabIndex = -1,
   focusable = false,
   role = 'img',
+  'aria-hidden': ariaHidden = true,
   ...props
 }) => {
   let ariaLabelledBy = titleId ? titleId : ''
@@ -56,7 +57,7 @@ module.exports = {
     desc: '{desc}',
     descId: '{descId}',
     'aria-labelledby': '{ariaLabelledBy}',
-    'aria-hidden': '{!ariaLabelledBy}',
+    'aria-hidden': '{ariaHidden}',
     fill: 'currentcolor',
     role: '{role}',
     tabIndex: '{tabIndex}',
