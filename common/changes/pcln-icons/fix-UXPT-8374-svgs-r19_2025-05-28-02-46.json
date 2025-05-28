@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "replace defaultProps usage in svgr template file",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-icons"
+}

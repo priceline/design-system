@@ -1,4 +1,3 @@
-/* eslint-disable no-irregular-whitespace */
 const dynamicTitlePlugin = require('./plugins/svg-dynamic-title-plugin')
 
 const replaceSvgPlugin = require('./plugins/svg-replace-plugin')
@@ -10,14 +9,18 @@ const template = (
   { imports, componentName, props, jsx, exports }
 ) => template.ast`import React from 'react'
 import Svg from './Svg'
-import styled from 'styled-components'
+import styled from 'styled-components'
 
-const BaseComponent = ({
-  size,
+const BaseComponent = ({
+  size = 24,
   title,
   desc,
   titleId,
   descId,
+  tabIndex = -1,
+  focusable = false,
+  'aria-hidden': ariaHidden = true,
+  role = 'img',
   ...props
 }) => {
   let ariaLabelledBy = titleId ? titleId : ''
@@ -34,14 +37,6 @@ const ${componentName} = styled(BaseComponent)\`
 \`
 
 ${componentName}.isIcon = true
-
-${componentName}.defaultProps = {
-  size: 24,
-  tabIndex: -1,
-  focusable: false,
-  'aria-hidden': true,
-  role: 'img'
-}
 
 export default ${componentName}`
 
