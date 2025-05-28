@@ -19,7 +19,6 @@ const BaseComponent = ({
   descId,
   tabIndex = -1,
   focusable = false,
-  'aria-hidden': ariaHidden = true,
   role = 'img',
   ...props
 }) => {
@@ -59,6 +58,9 @@ module.exports = {
     'aria-labelledby': '{ariaLabelledBy}',
     'aria-hidden': '{!ariaLabelledBy}',
     fill: 'currentcolor',
+    role: '{role}',
+    tabIndex: '{tabIndex}',
+    focusable: '{focusable}',
   },
   svgoConfig: {
     plugins: {
