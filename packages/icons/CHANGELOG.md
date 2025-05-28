@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Wed, 19 Mar 2025 14:31:27 GMT and should not be manually modified.
+This log was last generated on Wed, 28 May 2025 16:06:20 GMT and should not be manually modified.
+
+## 6.10.1
+Wed, 28 May 2025 16:06:20 GMT
+
+### Patches
+
+- replace defaultProps usage in svgr template file
 
 ## 6.10.0
 Wed, 19 Mar 2025 14:31:27 GMT

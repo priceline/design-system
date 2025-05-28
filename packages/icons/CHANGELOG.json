@@ -2,6 +2,20 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "6.10.1",
+      "tag": "pcln-icons_v6.10.1",
+      "date": "Wed, 28 May 2025 16:06:20 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "replace defaultProps usage in svgr template file",
+            "author": "Remy Gratwohl <135156184+Remy-Gratwohl@users.noreply.github.com>",
+            "commit": "87b8c900006d0e975b6448b8328f42abab53b2c4"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.10.0",
       "tag": "pcln-icons_v6.10.0",
       "date": "Wed, 19 Mar 2025 14:31:27 GMT",
