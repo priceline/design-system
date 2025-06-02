@@ -117,18 +117,27 @@ export type CheckboxProps = ComponentPropsWithRef<'input'> & {
 export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
   (
     {
-      checked,
-      color = 'primary',
-      disabled,
       size = 20,
       indeterminate = false,
+      color = 'primary',
       unselectedColor = 'text.light',
+      disabled,
       onChange,
       defaultChecked,
       ...props
     },
     ref
   ) => {
+    const spreadProps = {
+      size,
+      indeterminate,
+      color,
+      unselectedColor,
+      disabled,
+      onChange,
+      defaultChecked,
+      ...props,
+    }
     const [showIndeterminate, setShowIndeterminate] = useState(indeterminate && !defaultChecked)
 
     function handleChange(e) {
@@ -145,20 +154,12 @@ export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
     // Add 4px to Icon's height and width to account for size reduction caused by adding padding to SVG element
     const borderAdjustedSize = size + 4
     return (
-      <CheckBoxWrapper color={color} disabled={disabled} unselectedColor={unselectedColor}>
+      <CheckBoxWrapper {...spreadProps}>
         <StyledInput
           type='checkbox'
-          checked={checked}
-          color={color}
-          disabled={disabled}
-          size={size}
-          indeterminate={indeterminate}
-          unselectedColor={unselectedColor}
-          defaultChecked={defaultChecked}
-          {...props}
+          {...spreadProps}
           onChange={handleChange}
-          role='checkbox'
-          aria-checked={showIndeterminate ? 'mixed' : checked}
+          aria-checked={showIndeterminate ? 'mixed' : props.checked}
           data-indeterminate={showIndeterminate}
           ref={ref}
         />

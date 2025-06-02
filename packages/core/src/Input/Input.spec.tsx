@@ -1,6 +1,5 @@
-import React from 'react'
-import { Button } from '../Button/Button'
 import { fireEvent, render, screen } from '../__test__/testing-library'
+import { Button } from '../Button/Button'
 import ForwardRefDemo from '../storybook/utils/ForwardRefsDemo'
 import { theme } from '../theme/theme'
 import { createTheme } from '../utils/createTheme'
@@ -11,20 +10,20 @@ const id = 'fake-test-id'
 
 describe('Input', () => {
   test('it renders', () => {
-    const json = rendererCreateWithTheme(<Input id={id} />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Input id={id} />)
+    expect(asFragment()).toMatchSnapshot()
   })
   test('it renders an input element with a red border with a color prop is passed', () => {
-    const json = rendererCreateWithTheme(<Input id={id} color='red' />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Input id={id} color='red' />)
+    expect(asFragment()).toMatchSnapshot()
   })
   test('it renders an input element with a really large padding and margin', () => {
-    const json = rendererCreateWithTheme(<Input id={id} p={4} m={4} />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Input id={id} p={4} m={4} />)
+    expect(asFragment()).toMatchSnapshot()
   })
   test('it renders an input element with large text', () => {
-    const json = rendererCreateWithTheme(<Input id={id} fontSize={4} />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Input id={id} fontSize={4} />)
+    expect(asFragment()).toMatchSnapshot()
   })
   test('forwards ref to the input', () => {
     const target = 'TARGET'

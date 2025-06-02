@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "React 19 ecosystem upgrade",
+      "type": "major",
+      "packageName": "pcln-icons"
+    }
+  ],
+  "packageName": "pcln-icons",
+  "email": "steven.dalonzo@priceline.com"
+}

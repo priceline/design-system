@@ -171,11 +171,4 @@ const DsPopover = ({
   )
 }
 
-// Old Popover props todo:
-// onBeforeOpen: PropTypes.func,
-// onBeforeClose: PropTypes.func,
-
-// Currently broken in plcn-popover:
-// borderColor: PropTypes.string,
-
 export { DsPopover as Popover }

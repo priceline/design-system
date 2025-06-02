@@ -14,16 +14,16 @@
     "dist"
   ],
   "scripts": {
-    "build": "heft test --clean --production",
-    "start": "heft build-watch",
     "_phase:build": "heft run --only build -- --clean --production",
     "_phase:test": "heft run --only test",
+    "build": "heft test --clean --production",
     "build-only": "heft build --clean",
     "debug": "heft --debug test --clean",
+    "lint:fix": "eslint src --fix",
+    "start": "heft build-watch",
     "test": "heft run --only test",
     "test:snapshots": "heft run --only test -- --update-snapshots",
-    "test:watch": "heft test --watch",
-    "lint:fix": "eslint src --fix"
+    "test:watch": "heft test --watch"
   },
   "dependencies": {
     "classnames": "^2.3.2",
@@ -49,15 +49,14 @@
     "@testing-library/react": "^14.1.2",
     "@types/jest": "^29.5.11",
     "@types/node": "^20.12.7",
-    "@types/react": "^18.3.5",
-    "@types/react-test-renderer": "^18.0.7",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
     "eslint": "^8.55.0",
     "jest-styled-components": "^7.2.0",
     "pcln-design-system": "workspace:*",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-is": "^18.3.1",
-    "react-test-renderer": "^18.3.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-is": "^19.1.0",
     "require-from-string": "2.0.2",
     "styled-components": "^5.3.11",
     "typescript": "^5.3.3"

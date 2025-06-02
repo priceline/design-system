@@ -72,7 +72,7 @@ export type StampProps = SpaceProps &
 /**
  * @public
  */
-export const Stamp: React.FC<StampProps> = styled.div.attrs(borderRadiusAttrs)`
+export const StyledDivStamp: React.FC<StampProps> = styled.div.attrs(borderRadiusAttrs)`
   display: inline-flex;
   align-items: center;
   vertical-align: top;
@@ -91,15 +91,33 @@ export const Stamp: React.FC<StampProps> = styled.div.attrs(borderRadiusAttrs)`
   ${(props) => compose(space, fontSize, borderRadius)(props)}
 `
 
-Stamp.displayName = 'Stamp'
-
-Stamp.defaultProps = {
-  px: 1,
-  py: 0,
-  color: 'border.light',
-  bg: 'background.light',
-  borderColor: 'border.base',
-  borderRadius: 'md',
-  size: 'medium',
-  variation: 'outline',
+/**
+ * @public
+ */
+export function Stamp({
+  px = 1,
+  py = 0,
+  color = 'border.light',
+  bg = 'background.light',
+  borderColor = 'border.base',
+  borderRadius = 'md',
+  size = 'medium',
+  variation = 'outline',
+  ...props
+}: StampProps) {
+  return (
+    <StyledDivStamp
+      px={px}
+      py={py}
+      color={color}
+      bg={bg}
+      borderColor={borderColor}
+      borderRadius={borderRadius}
+      size={size}
+      variation={variation}
+      {...props}
+    />
+  )
 }
+
+Stamp.displayName = 'Stamp'

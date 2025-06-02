@@ -1,4 +1,4 @@
-import React, { type ComponentPropsWithoutRef } from 'react'
+import { type ComponentPropsWithoutRef } from 'react'
 import styled from 'styled-components'
 import { Image } from '../Image/Image'
 

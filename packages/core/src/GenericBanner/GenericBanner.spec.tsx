@@ -1,8 +1,7 @@
 import { Emoticon, Warning } from 'pcln-icons'
-import React from 'react'
+import { fireEvent, render } from '../__test__/testing-library'
 import { Image } from '../Image/Image'
 import { Text } from '../Text/Text'
-import { fireEvent, render } from '../__test__/testing-library'
 import { GenericBanner } from './GenericBanner'
 
 const props = {
@@ -39,8 +38,8 @@ const propsUpdatedHeading = {
 
 describe('GenericBanner', () => {
   test('renders', () => {
-    const json = rendererCreateWithTheme(<GenericBanner />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<GenericBanner />)
+    expect(asFragment()).toMatchSnapshot()
   })
   test('Renders as expected-onclick', () => {
     const buttonClick = jest.fn()

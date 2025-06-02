@@ -37,15 +37,15 @@ export type FilterChipProps = SpaceProps &
 export function FilterChip({
   id,
   name,
-  color = 'primary',
   disabled,
   selected,
   children,
   onClick,
   label,
   showActionIcon,
-  actionTitle = 'Close',
   value,
+  color = 'primary',
+  actionTitle = 'Close',
   variation = 'outline',
   ...props
 }: FilterChipProps): React.ReactElement {
@@ -53,7 +53,6 @@ export function FilterChip({
     <ChipLabel htmlFor={id} width='auto' color={color} {...props}>
       <ChipInput
         type='checkbox'
-        role='checkbox'
         id={id}
         name={name}
         data-testid={id}

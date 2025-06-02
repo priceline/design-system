@@ -46,10 +46,6 @@ const RouterLink = ({ href, ...props }) => {
 }
 RouterLink.propTypes = { href: PropTypes.string }
 
-RouterLink.defaultProps = {
-  color: 'blue',
-}
-
 // eslint-disable-next-line react/display-name
 const heading = (type) => (props) => {
   const Comp = Heading[type]
@@ -102,9 +98,6 @@ const Table = styled((props) => (
     border-bottom-color: ${theme.colors.borderGray};
   }
 `
-Table.defaultProps = {
-  my: 3,
-}
 
 export const PageTitle = (props) => <Heading.h1 fontSize={[5, 6]} bold mt={[2, 5]} mb={3} {...props} />
 
@@ -115,11 +108,6 @@ export const Code = styled.code`
   color: ${(props) => getPaletteColor(props.color, 'light')(props)};
   ${fontSize};
 `
-
-Code.defaultProps = {
-  fontSize: 2,
-  color: 'blue',
-}
 
 export const ButtonLink = ({ children, ...props }) => (
   <Button as='a' {...props}>
@@ -183,41 +171,6 @@ const components = {
   ShadeDemo,
   ShadeOtherDemo,
   TextDemo,
-}
-
-components.h1.defaultProps = {
-  fontSize: [5, 6],
-  mt: 5,
-  mb: 3,
-}
-components.h2.defaultProps = {
-  fontSize: 5,
-  mt: 5,
-  mb: 3,
-}
-
-components.h3.defaultProps = {
-  fontSize: 4,
-  mt: 4,
-  mb: 3,
-  style: {
-    fontWeight: '700',
-  },
-}
-
-components.h4.defaultProps = {
-  fontSize: 3,
-  mt: 4,
-  mb: 3,
-}
-
-components.p.defaultProps = {
-  fontSize: 2,
-  mt: 0,
-  mb: 3,
-  style: {
-    lineHeight: 1.6,
-  },
 }
 
 export default components

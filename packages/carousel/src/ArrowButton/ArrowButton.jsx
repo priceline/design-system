@@ -1,7 +1,7 @@
-import React from 'react'
+import { ChevronLeft, ChevronRight } from 'pcln-icons'
 import PropTypes from 'prop-types'
 import { ButtonBack, ButtonNext } from 'pure-react-carousel'
-import { ChevronRight, ChevronLeft } from 'pcln-icons'
+import React from 'react'
 import { Wrapper } from './ArrowButton.styles'
 
 const ArrowButton = ({

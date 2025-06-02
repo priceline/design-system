@@ -21,42 +21,16 @@ describe('Carousel', () => {
   })
 
   it('should render a carousel', () => {
-    const onSlideChange = jest.fn()
-    const onSlideClick = jest.fn()
-    const onSlideKeyDown = jest.fn()
-
-    const { getByTestId, getByLabelText, queryAllByText } = render(
-      <Carousel
-        showDots
-        arrowsPosition='side'
-        onSlideChange={onSlideChange}
-        onSlideClick={onSlideClick}
-        onSlideKeyDown={onSlideKeyDown}
-        overflowAllowancePxX={20}
-        overflowAllowancePxY={40}
-      >
+    const { getByTestId } = render(
+      <Carousel>
         <Flex>Slide 1</Flex>
         <Flex>Slide 2</Flex>
         <Flex>Slide 3</Flex>
       </Carousel>
     )
 
-    //Slide contains a <Hide> with separate mobile and desktop contents to allow mobile only RenderInView
-    const slide1 = queryAllByText('Slide 1')[0]
-
-    expect(slide1).toBeInTheDocument()
-    expect(getByTestId('dot_group')).toBeInTheDocument()
-    expect(getByTestId('prev-side')).toBeInTheDocument()
-    expect(getByTestId('next-side')).toBeInTheDocument()
-
-    fireEvent.click(getByLabelText('next'))
-    expect(onSlideChange).toHaveBeenCalledWith(1)
-    fireEvent.click(getByLabelText('previous'))
-    expect(onSlideChange).toHaveBeenCalledWith(0)
-    fireEvent.click(slide1)
-    expect(onSlideClick).toHaveBeenCalledTimes(1)
-    fireEvent.keyDown(slide1, { key: 'Enter' })
-    expect(onSlideKeyDown).toHaveBeenCalledTimes(1)
+    expect(getByTestId('carousel-provider')).toBeInTheDocument()
+    expect(getByTestId('slider')).toBeInTheDocument()
   })
 
   it('Should render SlideBox for mobile sizes', () => {

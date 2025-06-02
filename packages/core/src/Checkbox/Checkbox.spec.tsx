@@ -11,8 +11,8 @@ describe('Checkbox', () => {
   })
 
   test('renders checked when defaultChecked prop is passed as true', () => {
-    const { getByRole } = render(<Checkbox id='check-box' defaultChecked onChange={onChange} />)
-    const checkbox = getByRole('checkbox') as HTMLInputElement
+    const { container } = render(<Checkbox id='check-box' defaultChecked onChange={onChange} />)
+    const checkbox = container.querySelector('[type=checkbox]') as HTMLInputElement
     expect(checkbox.checked).toBe(true)
   })
 
@@ -30,24 +30,22 @@ describe('Checkbox', () => {
 
   test('calls onChange when clicked', () => {
     const { container } = render(<Checkbox id='check-box' onChange={onChange} />)
-    const checkbox = container.querySelector('[type=checkbox]')
+    const checkbox = container.querySelector('[type=checkbox]') as HTMLInputElement
     fireEvent.click(checkbox)
     expect(onChange).toHaveBeenCalled()
   })
 
   it('renders an indeterminate checkbox that can be clicked to set checked to true', () => {
-    const { getByRole } = render(<Checkbox id='check-box' indeterminate onChange={onChange} />)
-    const checkbox = getByRole('checkbox') as HTMLInputElement
+    const { container } = render(<Checkbox id='check-box' indeterminate onChange={onChange} />)
+    const checkbox = container.querySelector('[type=checkbox]') as HTMLInputElement
 
     expect(checkbox.checked).toBe(false)
-    // expect(checkbox.indeterminate).toBe(true)
     fireEvent.click(checkbox)
     expect(checkbox.checked).toBe(true)
-    // expect(checkbox.indeterminate).toBe(false)
   })
   it('renders an indeterminate checkbox that can be clicked to set checked to false', () => {
-    const { getByRole } = render(<Checkbox id='check-box' indeterminate defaultChecked onChange={onChange} />)
-    const checkbox = getByRole('checkbox') as HTMLInputElement
+    const { container } = render(<Checkbox id='check-box' indeterminate defaultChecked onChange={onChange} />)
+    const checkbox = container.querySelector('[type=checkbox]') as HTMLInputElement
 
     expect(checkbox.checked).toBe(true)
     // expect(checkbox.indeterminate).toBe(true)

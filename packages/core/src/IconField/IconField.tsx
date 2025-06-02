@@ -1,6 +1,16 @@
 import React from 'react'
 import { Flex } from '../Flex/Flex'
 
+type SpacingProps = {
+  ml?: number
+  mr?: number
+}
+
+type PaddingProps = {
+  pl?: number
+  pr?: number
+}
+
 /**
  * @public
  */
@@ -41,15 +51,25 @@ export function IconField(props: IconFieldProps) {
       {prefixIcons.length > 0 && (
         <Flex mr={marginRight} data-testid='icon-field-prefix-icons'>
           {prefixIcons.map((icon, index) =>
-            React.cloneElement(icon as React.ReactElement, { ml: index === 0 ? 2 : 0, mr: 2 })
+            React.cloneElement(
+              icon as React.ReactElement,
+              { ml: index === 0 ? 2 : 0, mr: 2 } as Partial<SpacingProps>
+            )
           )}
         </Flex>
       )}
-      {input && React.cloneElement(input as React.ReactElement, { pl: paddingLeft, pr: paddingRight })}
+      {input &&
+        React.cloneElement(
+          input as React.ReactElement,
+          { pl: paddingLeft, pr: paddingRight } as Partial<PaddingProps>
+        )}
       {suffixIcons.length > 0 && (
         <Flex ml={marginLeft} data-testid='icon-field-suffix-icons'>
           {suffixIcons.map((icon, index) =>
-            React.cloneElement(icon as React.ReactElement, { ml: 2, mr: index === 0 ? 2 : 0 })
+            React.cloneElement(
+              icon as React.ReactElement,
+              { ml: 2, mr: index === 0 ? 2 : 0 } as Partial<SpacingProps>
+            )
           )}
         </Flex>
       )}

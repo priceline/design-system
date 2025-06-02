@@ -8,7 +8,7 @@ export type BottomArrowsProps = {
   arrowProps: ArrowProps
 }
 
-export function BottomArrows({ arrowPosition, arrowProps }: BottomArrowsProps): JSX.Element {
+export function BottomArrows({ arrowPosition, arrowProps }: BottomArrowsProps): React.JSX.Element {
   const isSide = arrowPosition === 'side'
   const Wrapper = isSide ? AbsoluteTransformRight : Flex
   return ['bottom', 'side'].includes(arrowPosition) ? (

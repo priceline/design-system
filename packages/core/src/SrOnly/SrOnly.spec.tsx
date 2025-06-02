@@ -1,9 +1,9 @@
-import React from 'react'
+import { render } from '../__test__/testing-library'
 import { SrOnly } from './SrOnly'
 
-describe('Absolute', () => {
+describe('SrOnly', () => {
   test('renders with approprite styles to display offscreen', () => {
-    const json = rendererCreateWithTheme(<SrOnly />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<SrOnly />)
+    expect(asFragment()).toMatchSnapshot()
   })
 })

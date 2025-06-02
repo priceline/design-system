@@ -1,4 +1,3 @@
-import React from 'react'
 import { render, screen } from '../__test__/testing-library'
 import { theme } from '../theme/theme'
 import { createTheme } from '../utils/createTheme'
@@ -7,8 +6,8 @@ import { Select } from './Select'
 
 describe('Select', () => {
   it('renders', () => {
-    const json = rendererCreateWithTheme(<Select />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Select />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
   it('renders disabled', () => {

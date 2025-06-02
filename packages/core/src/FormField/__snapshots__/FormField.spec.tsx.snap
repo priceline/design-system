@@ -16,6 +16,16 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
   outline: none;
 }
 
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
 .c9 {
   position: relative;
   -webkit-appearance: none;
@@ -115,16 +125,6 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
   display: flex;
 }
 
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
 .c2 {
   background-color: #edf0f3;
 }
@@ -178,6 +178,7 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
             focusable="false"
             height="24"
             role="img"
+            size="24"
             tabindex="-1"
             viewBox="0 0 24 24"
             width="24"
@@ -231,6 +232,16 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
 
 .c8 {
   outline: none;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 .c3 {
@@ -303,9 +314,9 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   width: 100%;
   padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
-  padding-left: 40px;
   font-size: 16px;
   margin: 0px;
+  padding-left: 40px;
 }
 
 .c10::-ms-expand {
@@ -331,16 +342,6 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
-}
-
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.c0 * {
-  box-sizing: border-box;
 }
 
 .c2 {
@@ -394,6 +395,7 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
             focusable="false"
             height="24"
             role="img"
+            size="24"
             tabindex="-1"
             viewBox="0 0 24 24"
             width="24"
@@ -428,6 +430,7 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
             focusable="false"
             height="24"
             role="img"
+            size="24"
             tabindex="-1"
             viewBox="0 0 24 24"
             width="24"
@@ -445,7 +448,18 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
 `;
 
 exports[`FormField renders 1`] = `
-.c3 {
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c4 {
   position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -464,631 +478,72 @@ exports[`FormField renders 1`] = `
   border-radius: 12px;
 }
 
-.c3::-webkit-input-placeholder {
+.c4::-webkit-input-placeholder {
   color: #4f6f8f;
 }
 
-.c3::-moz-placeholder {
+.c4::-moz-placeholder {
   color: #4f6f8f;
 }
 
-.c3:-ms-input-placeholder {
+.c4:-ms-input-placeholder {
   color: #4f6f8f;
 }
 
-.c3::placeholder {
+.c4::placeholder {
   color: #4f6f8f;
 }
 
-.c3::-ms-clear {
+.c4::-ms-clear {
   display: none;
-}
-
-.c3:disabled {
-  background-color: #f4f6f8;
-  color: #4f6f8f;
-  cursor: not-allowed;
-}
-
-.c3:focus {
-  outline: 0;
-  border-color: #0068ef;
-  box-shadow: 0 0 0 2px #0068ef;
-}
-
-.c1 {
-  display: block;
-  width: 100%;
-  margin: 0;
-  z-index: 1;
-  color: #4f6f8f;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 10px;
-  margin-left: 12px;
-  padding-top: 6px;
-  margin-bottom: -20px;
-  font-weight: 700;
-  line-height: 1.4;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-}
-
-.c0 {
-  border-radius: 12px;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-@media screen and (min-width:32em) {
-
-}
-
-@media screen and (min-width:40em) {
-  .c3 {
-    font-size: 14px;
-  }
-}
-
-<div
-  className="c0 "
->
-  <label
-    className="c1"
-    color="text.light"
-    fontSize={10}
-    fontWeight={700}
-    htmlFor="email"
-    letterSpacing="0.2px"
-    style={
-      Object {
-        "height": 20,
-        "opacity": 1,
-        "pointerEvents": "none",
-        "position": "relative",
-        "transitionDuration": ".1s",
-        "transitionProperty": "opacity",
-        "width": "calc(100% - 12px)",
-      }
-    }
-  >
-    Email Address
-  </label>
-  <div
-    className="c2"
-  >
-    <input
-      className="c3"
-      fontSize={
-        Array [
-          2,
-          null,
-          1,
-        ]
-      }
-      id="email"
-      name="email"
-      size="lg"
-      style={
-        Object {
-          "paddingBottom": "8px",
-          "paddingTop": "20px",
-          "transitionDuration": ".1s",
-          "transitionProperty": "padding-top, padding-bottom",
-        }
-      }
-    />
-  </div>
-</div>
-`;
-
-exports[`FormField renders with Icon 1`] = `
-.c5 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  margin-left: 8px;
-  margin-right: 8px;
-  width: 24px;
-}
-
-.c6 {
-  outline: none;
-}
-
-.c7 {
-  position: relative;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  display: block;
-  width: 100%;
-  font-family: inherit;
-  color: #001833;
-  background-color: transparent;
-  border-width: 1px;
-  border-style: solid;
-  margin: 0;
-  padding: 14px 12px 14px 12px;
-  border-color: #c0cad5;
-  font-size: 16px;
-  border-radius: 12px;
-  padding-left: 40px;
-}
-
-.c7::-webkit-input-placeholder {
-  color: #4f6f8f;
-}
-
-.c7::-moz-placeholder {
-  color: #4f6f8f;
-}
-
-.c7:-ms-input-placeholder {
-  color: #4f6f8f;
-}
-
-.c7::placeholder {
-  color: #4f6f8f;
-}
-
-.c7::-ms-clear {
-  display: none;
-}
-
-.c7:disabled {
-  background-color: #f4f6f8;
-  color: #4f6f8f;
-  cursor: not-allowed;
-}
-
-.c7:focus {
-  outline: 0;
-  border-color: #0068ef;
-  box-shadow: 0 0 0 2px #0068ef;
-}
-
-.c1 {
-  display: block;
-  width: 100%;
-  margin: 0;
-  z-index: 1;
-  color: #4f6f8f;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 10px;
-  margin-left: 40px;
-  padding-top: 6px;
-  margin-bottom: -20px;
-  font-weight: 700;
-  line-height: 1.4;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-}
-
-.c0 {
-  border-radius: 12px;
-}
-
-.c3 {
-  margin-right: -40px;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media screen and (min-width:32em) {
-
-}
-
-@media screen and (min-width:40em) {
-  .c7 {
-    font-size: 14px;
-  }
-}
-
-<div
-  className="c0 "
->
-  <label
-    className="c1"
-    color="text.light"
-    fontSize={10}
-    fontWeight={700}
-    htmlFor="email"
-    letterSpacing="0.2px"
-    style={
-      Object {
-        "height": 20,
-        "opacity": 1,
-        "pointerEvents": "none",
-        "position": "relative",
-        "transitionDuration": ".1s",
-        "transitionProperty": "opacity",
-        "width": "calc(100% - 40px)",
-      }
-    }
-  >
-    Email Address
-  </label>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3 c4"
-      data-testid="icon-field-prefix-icons"
-    >
-      <svg
-        aria-hidden={true}
-        className="c5 c6"
-        fill="currentcolor"
-        focusable={false}
-        height={24}
-        role="img"
-        tabIndex={-1}
-        viewBox="0 0 24 24"
-        width={24}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-        />
-      </svg>
-    </div>
-    <input
-      className="c7"
-      fontSize={
-        Array [
-          2,
-          null,
-          1,
-        ]
-      }
-      id="email"
-      name="email"
-      size="lg"
-      style={
-        Object {
-          "paddingBottom": "8px",
-          "paddingTop": "20px",
-          "transitionDuration": ".1s",
-          "transitionProperty": "padding-top, padding-bottom",
-        }
-      }
-    />
-  </div>
-</div>
-`;
-
-exports[`FormField renders with Label autoHide prop 1`] = `
-.c5 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  margin-left: 8px;
-  margin-right: 8px;
-  width: 24px;
-}
-
-.c6 {
-  outline: none;
-}
-
-.c7 {
-  position: relative;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  display: block;
-  width: 100%;
-  font-family: inherit;
-  color: #001833;
-  background-color: transparent;
-  border-width: 1px;
-  border-style: solid;
-  margin: 0;
-  padding: 14px 12px 14px 12px;
-  border-color: #c0cad5;
-  font-size: 16px;
-  border-radius: 12px;
-  padding-left: 40px;
-}
-
-.c7::-webkit-input-placeholder {
-  color: #4f6f8f;
-}
-
-.c7::-moz-placeholder {
-  color: #4f6f8f;
-}
-
-.c7:-ms-input-placeholder {
-  color: #4f6f8f;
-}
-
-.c7::placeholder {
-  color: #4f6f8f;
-}
-
-.c7::-ms-clear {
-  display: none;
-}
-
-.c7:disabled {
-  background-color: #f4f6f8;
-  color: #4f6f8f;
-  cursor: not-allowed;
-}
-
-.c7:focus {
-  outline: 0;
-  border-color: #0068ef;
-  box-shadow: 0 0 0 2px #0068ef;
-}
-
-.c1 {
-  display: block;
-  width: 100%;
-  margin: 0;
-  z-index: 1;
-  color: #4f6f8f;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 10px;
-  margin-left: 40px;
-  padding-top: 6px;
-  margin-bottom: -20px;
-  font-weight: 700;
-  line-height: 1.4;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-}
-
-.c0 {
-  border-radius: 12px;
-}
-
-.c3 {
-  margin-right: -40px;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media screen and (min-width:32em) {
-
-}
-
-@media screen and (min-width:40em) {
-  .c7 {
-    font-size: 14px;
-  }
-}
-
-<div
-  className="c0 "
->
-  <label
-    className="c1"
-    color="text.light"
-    fontSize={10}
-    fontWeight={700}
-    htmlFor="email"
-    letterSpacing="0.2px"
-    style={
-      Object {
-        "height": 20,
-        "opacity": 0,
-        "pointerEvents": "none",
-        "position": "relative",
-        "transitionDuration": ".1s",
-        "transitionProperty": "opacity",
-        "width": "calc(100% - 40px)",
-      }
-    }
-  >
-    Email
-  </label>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3 c4"
-      data-testid="icon-field-prefix-icons"
-    >
-      <svg
-        aria-hidden={true}
-        className="c5 c6"
-        fill="currentcolor"
-        focusable={false}
-        height={24}
-        role="img"
-        tabIndex={-1}
-        viewBox="0 0 24 24"
-        width={24}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-        />
-      </svg>
-    </div>
-    <input
-      className="c7"
-      fontSize={
-        Array [
-          2,
-          null,
-          1,
-        ]
-      }
-      id="email"
-      name="email"
-      size="lg"
-      style={
-        Object {
-          "paddingBottom": undefined,
-          "paddingTop": undefined,
-          "transitionDuration": ".1s",
-          "transitionProperty": "padding-top, padding-bottom",
-        }
-      }
-    />
-  </div>
-</div>
-`;
-
-exports[`FormField renders with Select  1`] = `
-.c5 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
-  color: #4f6f8f;
-  margin-left: -32px;
-  width: 24px;
-}
-
-.c6 {
-  outline: none;
-}
-
-.c1 {
-  display: block;
-  width: 100%;
-  margin: 0;
-  z-index: 1;
-  color: #4f6f8f;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 10px;
-  margin-left: 12px;
-  padding-top: 6px;
-  margin-bottom: -20px;
-  font-weight: 700;
-  line-height: 1.4;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-}
-
-.c0 {
-  border-radius: 12px;
-}
-
-.c3 {
-  width: 100%;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c7 {
-  pointer-events: none;
-}
-
-.c4 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 12px;
-  color: inherit;
-  display: block;
-  font-family: inherit;
-  text-overflow: ellipsis;
-  width: 100%;
-  padding: 14px 32px 14px 12px;
-  border-color: #c0cad5;
-  font-size: 16px;
-  margin: 0px;
-}
-
-.c4::-ms-expand {
-  display: none;
-}
-
-.c4:hover {
-  cursor: pointer;
 }
 
 .c4:disabled {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
-  opacity: 1;
-}
-
-.c4:disabled ~ svg {
-  color: #4f6f8f;
 }
 
 .c4:focus {
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
+}
+
+.c2 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+  color: #4f6f8f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 10px;
+  margin-left: 12px;
+  padding-top: 6px;
+  margin-bottom: -20px;
+  font-weight: 700;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+}
+
+.c1 {
+  border-radius: 12px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media screen and (min-width:32em) {
@@ -1102,78 +557,41 @@ exports[`FormField renders with Select  1`] = `
 }
 
 <div
-  className="c0 "
->
-  <label
-    className="c1"
-    color="text.light"
-    fontSize={10}
-    fontWeight={700}
-    letterSpacing="0.2px"
-    style={
-      Object {
-        "height": 20,
-        "opacity": 1,
-        "pointerEvents": "none",
-        "position": "relative",
-        "transitionDuration": ".1s",
-        "transitionProperty": "opacity",
-        "width": "calc(100% - 12px)",
-      }
-    }
-  >
-    Pick Option
-  </label>
-  <div
-    className="c2"
+    class="c0"
   >
     <div
-      className="c3 c2"
-      width={1}
+      class="c1 "
     >
-      <select
-        className="c4"
-        fontSize={
-          Array [
-            2,
-            null,
-            1,
-          ]
-        }
-        size="lg"
-        style={
-          Object {
-            "paddingBottom": "8px",
-            "paddingTop": "20px",
-            "transitionDuration": ".1s",
-            "transitionProperty": "padding-top, padding-bottom",
-          }
-        }
-      />
-      <svg
-        aria-hidden={true}
-        className="c5 c6 c7"
+      <label
+        class="c2"
         color="text.light"
-        fill="currentcolor"
-        focusable={false}
-        height={24}
-        role="img"
-        tabIndex={-1}
-        viewBox="0 0 24 24"
-        width={24}
-        xmlns="http://www.w3.org/2000/svg"
+        font-size="10"
+        font-weight="700"
+        for="email"
+        letter-spacing="0.2px"
+        style="height: 20px; transition-property: opacity; transition-duration: .1s; opacity: 1; pointer-events: none; position: relative; width: calc(100% - 12px);"
       >
-        <path
-          d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+        Email Address
+      </label>
+      <div
+        class="c3"
+      >
+        <input
+          class="c4"
+          font-size="2,,1"
+          id="email"
+          name="email"
+          style="transition-property: padding-top, padding-bottom; transition-duration: .1s; padding-top: 20px; padding-bottom: 8px;"
         />
-      </svg>
+      </div>
     </div>
   </div>
-</div>
+</DocumentFragment>
 `;
 
-exports[`FormField renders with Select and Icon 1`] = `
-.c5 {
+exports[`FormField renders with Icon 1`] = `
+<DocumentFragment>
+  .c6 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -1183,25 +601,73 @@ exports[`FormField renders with Select and Icon 1`] = `
   width: 24px;
 }
 
-.c9 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  line-height: 1;
+.c7 {
+  outline: none;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c8 {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  color: #001833;
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  margin: 0;
+  padding: 14px 12px 14px 12px;
+  border-color: #c0cad5;
+  font-size: 16px;
+  border-radius: 12px;
+  padding-left: 40px;
+}
+
+.c8::-webkit-input-placeholder {
   color: #4f6f8f;
-  margin-left: -32px;
-  width: 24px;
 }
 
-.c10 {
-  outline: none;
+.c8::-moz-placeholder {
+  color: #4f6f8f;
 }
 
-.c6 {
-  outline: none;
+.c8:-ms-input-placeholder {
+  color: #4f6f8f;
 }
 
-.c1 {
+.c8::placeholder {
+  color: #4f6f8f;
+}
+
+.c8::-ms-clear {
+  display: none;
+}
+
+.c8:disabled {
+  background-color: #f4f6f8;
+  color: #4f6f8f;
+  cursor: not-allowed;
+}
+
+.c8:focus {
+  outline: 0;
+  border-color: #0068ef;
+  box-shadow: 0 0 0 2px #0068ef;
+}
+
+.c2 {
   display: block;
   width: 100%;
   margin: 0;
@@ -1222,19 +688,15 @@ exports[`FormField renders with Select and Icon 1`] = `
   letter-spacing: 0.2px;
 }
 
-.c0 {
+.c1 {
   border-radius: 12px;
 }
 
-.c3 {
+.c4 {
   margin-right: -40px;
 }
 
-.c7 {
-  width: 100%;
-}
-
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1245,18 +707,339 @@ exports[`FormField renders with Select and Icon 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c11 {
-  pointer-events: none;
+@media screen and (min-width:32em) {
+
+}
+
+@media screen and (min-width:40em) {
+  .c8 {
+    font-size: 14px;
+  }
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1 "
+    >
+      <label
+        class="c2"
+        color="text.light"
+        font-size="10"
+        font-weight="700"
+        for="email"
+        letter-spacing="0.2px"
+        style="height: 20px; transition-property: opacity; transition-duration: .1s; opacity: 1; pointer-events: none; position: relative; width: calc(100% - 40px);"
+      >
+        Email Address
+      </label>
+      <div
+        class="c3"
+      >
+        <div
+          class="c4 c5"
+          data-testid="icon-field-prefix-icons"
+        >
+          <svg
+            aria-hidden="true"
+            class="c6 c7"
+            fill="currentcolor"
+            focusable="false"
+            height="24"
+            role="img"
+            size="24"
+            tabindex="-1"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+            />
+          </svg>
+        </div>
+        <input
+          class="c8"
+          font-size="2,,1"
+          id="email"
+          name="email"
+          style="transition-property: padding-top, padding-bottom; transition-duration: .1s; padding-top: 20px; padding-bottom: 8px;"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FormField renders with Label autoHide prop 1`] = `
+<DocumentFragment>
+  .c6 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c7 {
+  outline: none;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 .c8 {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  color: #001833;
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  margin: 0;
+  padding: 14px 12px 14px 12px;
+  border-color: #c0cad5;
+  font-size: 16px;
+  border-radius: 12px;
+  padding-left: 40px;
+}
+
+.c8::-webkit-input-placeholder {
+  color: #4f6f8f;
+}
+
+.c8::-moz-placeholder {
+  color: #4f6f8f;
+}
+
+.c8:-ms-input-placeholder {
+  color: #4f6f8f;
+}
+
+.c8::placeholder {
+  color: #4f6f8f;
+}
+
+.c8::-ms-clear {
+  display: none;
+}
+
+.c8:disabled {
+  background-color: #f4f6f8;
+  color: #4f6f8f;
+  cursor: not-allowed;
+}
+
+.c8:focus {
+  outline: 0;
+  border-color: #0068ef;
+  box-shadow: 0 0 0 2px #0068ef;
+}
+
+.c2 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+  color: #4f6f8f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 10px;
+  margin-left: 40px;
+  padding-top: 6px;
+  margin-bottom: -20px;
+  font-weight: 700;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+}
+
+.c1 {
+  border-radius: 12px;
+}
+
+.c4 {
+  margin-right: -40px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width:32em) {
+
+}
+
+@media screen and (min-width:40em) {
+  .c8 {
+    font-size: 14px;
+  }
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1 "
+    >
+      <label
+        class="c2"
+        color="text.light"
+        font-size="10"
+        font-weight="700"
+        for="email"
+        letter-spacing="0.2px"
+        style="height: 20px; transition-property: opacity; transition-duration: .1s; opacity: 0; pointer-events: none; position: relative; width: calc(100% - 40px);"
+      >
+        Email
+      </label>
+      <div
+        class="c3"
+      >
+        <div
+          class="c4 c5"
+          data-testid="icon-field-prefix-icons"
+        >
+          <svg
+            aria-hidden="true"
+            class="c6 c7"
+            fill="currentcolor"
+            focusable="false"
+            height="24"
+            role="img"
+            size="24"
+            tabindex="-1"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+            />
+          </svg>
+        </div>
+        <input
+          class="c8"
+          font-size="2,,1"
+          id="email"
+          name="email"
+          style="transition-property: padding-top, padding-bottom; transition-duration: .1s;"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FormField renders with Select  1`] = `
+<DocumentFragment>
+  .c6 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  color: #4f6f8f;
+  margin-left: -32px;
+  width: 24px;
+}
+
+.c7 {
+  outline: none;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c2 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+  color: #4f6f8f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 10px;
+  margin-left: 12px;
+  padding-top: 6px;
+  margin-bottom: -20px;
+  font-weight: 700;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+}
+
+.c1 {
+  border-radius: 12px;
+}
+
+.c4 {
+  width: 100%;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  pointer-events: none;
+}
+
+.c5 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1271,31 +1054,30 @@ exports[`FormField renders with Select and Icon 1`] = `
   width: 100%;
   padding: 14px 32px 14px 12px;
   border-color: #c0cad5;
-  padding-left: 40px;
   font-size: 16px;
   margin: 0px;
 }
 
-.c8::-ms-expand {
+.c5::-ms-expand {
   display: none;
 }
 
-.c8:hover {
+.c5:hover {
   cursor: pointer;
 }
 
-.c8:disabled {
+.c5:disabled {
   background-color: #f4f6f8;
   color: #4f6f8f;
   cursor: not-allowed;
   opacity: 1;
 }
 
-.c8:disabled ~ svg {
+.c5:disabled ~ svg {
   color: #4f6f8f;
 }
 
-.c8:focus {
+.c5:focus {
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
@@ -1306,99 +1088,285 @@ exports[`FormField renders with Select and Icon 1`] = `
 }
 
 @media screen and (min-width:40em) {
-  .c8 {
+  .c5 {
     font-size: 14px;
   }
 }
 
 <div
-  className="c0 "
->
-  <label
-    className="c1"
-    color="text.light"
-    fontSize={10}
-    fontWeight={700}
-    letterSpacing="0.2px"
-    style={
-      Object {
-        "height": 20,
-        "opacity": 1,
-        "pointerEvents": "none",
-        "position": "relative",
-        "transitionDuration": ".1s",
-        "transitionProperty": "opacity",
-        "width": "calc(100% - 40px)",
-      }
-    }
-  >
-    Pick Email Address
-  </label>
-  <div
-    className="c2"
+    class="c0"
   >
     <div
-      className="c3 c4"
-      data-testid="icon-field-prefix-icons"
+      class="c1 "
     >
-      <svg
-        aria-hidden={true}
-        className="c5 c6"
-        fill="currentcolor"
-        focusable={false}
-        height={24}
-        role="img"
-        tabIndex={-1}
-        viewBox="0 0 24 24"
-        width={24}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-        />
-      </svg>
-    </div>
-    <div
-      className="c7 c2"
-      width={1}
-    >
-      <select
-        className="c8"
-        fontSize={
-          Array [
-            2,
-            null,
-            1,
-          ]
-        }
-        size="lg"
-        style={
-          Object {
-            "paddingBottom": "8px",
-            "paddingTop": "20px",
-            "transitionDuration": ".1s",
-            "transitionProperty": "padding-top, padding-bottom",
-          }
-        }
-      />
-      <svg
-        aria-hidden={true}
-        className="c9 c10 c11"
+      <label
+        class="c2"
         color="text.light"
-        fill="currentcolor"
-        focusable={false}
-        height={24}
-        role="img"
-        tabIndex={-1}
-        viewBox="0 0 24 24"
-        width={24}
-        xmlns="http://www.w3.org/2000/svg"
+        font-size="10"
+        font-weight="700"
+        letter-spacing="0.2px"
+        style="height: 20px; transition-property: opacity; transition-duration: .1s; opacity: 1; pointer-events: none; position: relative; width: calc(100% - 12px);"
       >
-        <path
-          d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
-        />
-      </svg>
+        Pick Option
+      </label>
+      <div
+        class="c3"
+      >
+        <div
+          class="c4 c3"
+          width="1"
+        >
+          <select
+            class="c5"
+            font-size="2,,1"
+            style="transition-property: padding-top, padding-bottom; transition-duration: .1s; padding-top: 20px; padding-bottom: 8px;"
+          />
+          <svg
+            aria-hidden="true"
+            class="c6 c7 c8"
+            color="text.light"
+            fill="currentcolor"
+            focusable="false"
+            height="24"
+            role="img"
+            size="24"
+            tabindex="-1"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+            />
+          </svg>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+</DocumentFragment>
+`;
+
+exports[`FormField renders with Select and Icon 1`] = `
+<DocumentFragment>
+  .c6 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.c10 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  color: #4f6f8f;
+  margin-left: -32px;
+  width: 24px;
+}
+
+.c11 {
+  outline: none;
+}
+
+.c7 {
+  outline: none;
+}
+
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c2 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+  color: #4f6f8f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 10px;
+  margin-left: 40px;
+  padding-top: 6px;
+  margin-bottom: -20px;
+  font-weight: 700;
+  line-height: 1.4;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+}
+
+.c1 {
+  border-radius: 12px;
+}
+
+.c4 {
+  margin-right: -40px;
+}
+
+.c8 {
+  width: 100%;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c12 {
+  pointer-events: none;
+}
+
+.c9 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  color: inherit;
+  display: block;
+  font-family: inherit;
+  text-overflow: ellipsis;
+  width: 100%;
+  padding: 14px 32px 14px 12px;
+  border-color: #c0cad5;
+  font-size: 16px;
+  margin: 0px;
+  padding-left: 40px;
+}
+
+.c9::-ms-expand {
+  display: none;
+}
+
+.c9:hover {
+  cursor: pointer;
+}
+
+.c9:disabled {
+  background-color: #f4f6f8;
+  color: #4f6f8f;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.c9:disabled ~ svg {
+  color: #4f6f8f;
+}
+
+.c9:focus {
+  outline: 0;
+  border-color: #0068ef;
+  box-shadow: 0 0 0 2px #0068ef;
+}
+
+@media screen and (min-width:32em) {
+
+}
+
+@media screen and (min-width:40em) {
+  .c9 {
+    font-size: 14px;
+  }
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1 "
+    >
+      <label
+        class="c2"
+        color="text.light"
+        font-size="10"
+        font-weight="700"
+        letter-spacing="0.2px"
+        style="height: 20px; transition-property: opacity; transition-duration: .1s; opacity: 1; pointer-events: none; position: relative; width: calc(100% - 40px);"
+      >
+        Pick Email Address
+      </label>
+      <div
+        class="c3"
+      >
+        <div
+          class="c4 c5"
+          data-testid="icon-field-prefix-icons"
+        >
+          <svg
+            aria-hidden="true"
+            class="c6 c7"
+            fill="currentcolor"
+            focusable="false"
+            height="24"
+            role="img"
+            size="24"
+            tabindex="-1"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="c8 c3"
+          width="1"
+        >
+          <select
+            class="c9"
+            font-size="2,,1"
+            style="transition-property: padding-top, padding-bottom; transition-duration: .1s; padding-top: 20px; padding-bottom: 8px;"
+          />
+          <svg
+            aria-hidden="true"
+            class="c10 c11 c12"
+            color="text.light"
+            fill="currentcolor"
+            focusable="false"
+            height="24"
+            role="img"
+            size="24"
+            tabindex="-1"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
 `;

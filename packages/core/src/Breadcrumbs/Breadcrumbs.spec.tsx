@@ -1,21 +1,21 @@
 import { Flights, Home, Seat } from 'pcln-icons'
-import React from 'react'
+import { render } from '../__test__/testing-library'
 import { Breadcrumbs } from './Breadcrumbs'
 
 describe('Breadcrumbs', () => {
   test('renders basic', () => {
-    const json = rendererCreateWithTheme(
+    const { asFragment } = render(
       <Breadcrumbs>
         <Breadcrumbs.Link href='https://www.priceline.com' label='Home' />
         <Breadcrumbs.Link href='https://www.priceline.com/flights/' label='Flights' />
         <Breadcrumbs.Link href='https://www.priceline.com/flights/' label='Seat Selection' />
       </Breadcrumbs>
     )
-    expect(json).toMatchSnapshot()
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('renders with icons', () => {
-    const json = rendererCreateWithTheme(
+    const { asFragment } = render(
       <Breadcrumbs>
         <Breadcrumbs.Link
           href='https://www.priceline.com'
@@ -34,6 +34,6 @@ describe('Breadcrumbs', () => {
         />
       </Breadcrumbs>
     )
-    expect(json).toMatchSnapshot()
+    expect(asFragment()).toMatchSnapshot()
   })
 })

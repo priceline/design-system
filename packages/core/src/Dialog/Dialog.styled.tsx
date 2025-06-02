@@ -55,7 +55,7 @@ const animationStyles = {
 
 const FloatingCloseButton: (
   props: { dialogSize: DialogSize } & Partial<CloseButtonProps> & Partial<DialogProps>
-) => JSX.Element = styled(CloseButton)`
+) => React.JSX.Element = styled(CloseButton)`
   position: absolute;
   top: ${(props) => (props.dialogSize === 'full' || props.fullWidth ? 8 : -12)}px;
   right: ${(props) => (props.dialogSize === 'full' || props.fullWidth ? 8 : -12)}px;
@@ -126,6 +126,10 @@ const DialogInnerContentWrapper = styled.div`
   border-top: ${(props: DialogProps) =>
     props.hugColor && `4px solid ${themeGet('palette.' + props.hugColor)(props)}`};
 `
+
+type ScrollHandlerProps = {
+  onScroll?: (event: React.UIEvent<HTMLElement>) => void
+}
 
 export const DialogOverlay = ({ scrimColor, sheet, children, zIndex }: Partial<DialogProps>) => {
   return (
@@ -256,9 +260,12 @@ export const DialogContent = ({
               onScroll={onScrollHandler}
             >
               {React.Children.map(children, (child) =>
-                React.cloneElement(child as ReactElement, {
-                  onScroll: onScrollHandler,
-                })
+                React.cloneElement(
+                  child as ReactElement,
+                  {
+                    onScroll: onScrollHandler,
+                  } as Partial<ScrollHandlerProps>
+                )
               )}
             </SmoothTransitionBox>
           ) : (

@@ -35,15 +35,15 @@ export type ChoiceChipProps = SpaceProps &
 export function ChoiceChip({
   id,
   name,
-  color = 'primary',
   disabled,
   selected,
   children,
   onClick,
   label,
-  variation = 'outline',
   width = 'auto',
   value,
+  color = 'primary',
+  variation = 'outline',
   ...props
 }: ChoiceChipProps): React.ReactElement {
   return (
@@ -53,7 +53,6 @@ export function ChoiceChip({
         name={name}
         value={value}
         type='radio'
-        role='radio'
         id={id}
         disabled={disabled}
         checked={selected}

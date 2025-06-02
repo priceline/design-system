@@ -1,16 +1,75 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Relative renders with flag and Child 1`] = `[Function]`;
+exports[`Relative renders with flag and Child 1`] = `
+<DocumentFragment>
+  .c3 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  line-height: 1;
+  width: 24px;
+}
 
-exports[`Relative renders with top, left and zIndex props 1`] = `
+.c4 {
+  outline: none;
+}
+
 .c0 {
-  position: relative;
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c2 {
+  position: absolute;
   top: 10px;
-  left: 0px;
+  right: 0px;
   z-index: 2;
 }
 
+.c1 {
+  position: relative;
+  top: 10px;
+  left: 0px;
+}
+
 <div
-  className="c0"
-/>
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <svg
+          aria-hidden="true"
+          class="c3 c4"
+          fill="currentcolor"
+          focusable="false"
+          height="24"
+          role="img"
+          size="24"
+          tabindex="-1"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M21.4 11.6l-9-9c-.3-.4-.8-.6-1.4-.6H4c-1.1 0-2 .9-2 2v7c0 .6.2 1.1.6 1.4l9 9c.4.4.9.6 1.4.6s1.1-.2 1.4-.6l7-7c.4-.4.6-.9.6-1.4s-.2-1.1-.6-1.4zM5.5 7C4.7 7 4 6.3 4 5.5S4.7 4 5.5 4 7 4.7 7 5.5 6.3 7 5.5 7z"
+          />
+        </svg>
+        <span
+          class=""
+        >
+          EXCLUSIVE
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
 `;

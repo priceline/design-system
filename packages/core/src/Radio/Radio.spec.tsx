@@ -1,19 +1,19 @@
-import React from 'react'
+import { render } from '../__test__/testing-library'
 import { Radio } from './Radio'
 
 describe('Radio', () => {
   test('Selected, rendering', () => {
-    const json = rendererCreateWithTheme(<Radio checked />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Radio checked />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('Not Selected, rendering', () => {
-    const json = rendererCreateWithTheme(<Radio />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Radio />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('Disabled, rendering', () => {
-    const json = rendererCreateWithTheme(<Radio disabled />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Radio disabled />)
+    expect(asFragment()).toMatchSnapshot()
   })
 })

@@ -1,4 +1,4 @@
-import React from 'react'
+import { render, screen } from '../__test__/testing-library'
 import { theme } from '../theme/theme'
 import { Flag } from './Flag'
 
@@ -11,19 +11,20 @@ describe('Flag', () => {
   afterEach(() => (console.error = consoleError))
 
   test('renders', () => {
-    const json = rendererCreateWithTheme(<Flag />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Flag />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('renders with width prop', () => {
-    const json = rendererCreateWithTheme(<Flag width={256} />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('width', '256px')
+    render(<Flag width={256} data-testid='flag' />)
+    const element = screen.getByTestId('flag')
+    expect(element).toHaveStyleRule('width', '256px')
   })
 
   test('renders with theme color as bg color', () => {
-    const json = rendererCreateWithTheme(<Flag width={256} bg='purple' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json.children[1]).toHaveStyleRule('background-color', theme.colors.purple)
+    render(<Flag width={256} bg='purple' data-testid='flag' />)
+    const element = screen.getByTestId('flag')
+    const bgElement = element.children[1] as HTMLElement
+    expect(bgElement).toHaveStyleRule('background-color', theme.colors.purple)
   })
 })

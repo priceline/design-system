@@ -24,9 +24,6 @@ describe('FilterChip', () => {
     //type
     expect(filterChip).toHaveAttribute('type', 'checkbox')
 
-    //role
-    expect(filterChip).toHaveAttribute('role', 'checkbox')
-
     //onClick
     fireEvent.click(filterChip)
     expect(props.onClick).toHaveBeenCalled()

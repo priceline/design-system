@@ -78,6 +78,7 @@ exports[`Avatar renders default 1`] = `
           focusable="false"
           height="24"
           role="img"
+          size="24"
           tabindex="-1"
           viewBox="0 0 24 24"
           width="24"

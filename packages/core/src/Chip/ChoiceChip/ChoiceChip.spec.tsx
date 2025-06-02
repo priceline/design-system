@@ -24,9 +24,6 @@ describe('ChoiceChip', () => {
     //type
     expect(choiceChip).toHaveAttribute('type', 'radio')
 
-    //role
-    expect(choiceChip).toHaveAttribute('role', 'radio')
-
     //onClick
     fireEvent.click(choiceChip)
     expect(props.onClick).toHaveBeenCalled()

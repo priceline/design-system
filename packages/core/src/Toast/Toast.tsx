@@ -6,6 +6,10 @@ import { Relative } from '../Relative/Relative'
 import { Text } from '../Text/Text'
 import { LeftBorderFlex, RoundIconButton } from './Toast.styled'
 
+type IconProps = {
+  color?: string
+}
+
 /**
  * @public
  */
@@ -58,9 +62,13 @@ export function Toast({
         justifyContent='space-between'
         variation={variation}
         p={3}
-        iconUsesColorScheme={!icon?.props.color}
+        iconUsesColorScheme={!(icon?.props as IconProps)?.color}
       >
-        {icon && <Flex mr={3}>{React.cloneElement(icon, { color: variation === 'border' && color })}</Flex>}
+        {icon && (
+          <Flex mr={3}>
+            {React.cloneElement(icon, { color: variation === 'border' && color } as Partial<IconProps>)}
+          </Flex>
+        )}
         <Flex width='100%'>
           {typeof children === 'string' ? <Text textStyle='paragraph'>{children}</Text> : children}
         </Flex>

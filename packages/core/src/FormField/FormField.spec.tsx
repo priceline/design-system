@@ -1,57 +1,56 @@
 import { Email as EmailIcon } from 'pcln-icons'
-import React from 'react'
+import { render, screen } from '../__test__/testing-library'
 import { Input } from '../Input/Input'
 import { Label } from '../Label/Label'
 import { Select } from '../Select/Select'
-import { render, screen } from '../__test__/testing-library'
 import { FormField } from './FormField'
 
-afterEach(() => {
-  // bust cache for propTypes
-  FormField.displayName = 'FormField' + Math.random()
-})
+// afterEach(() => {
+//   // bust cache for propTypes
+//   FormField.displayName = 'FormField' + Math.random()
+// })
 
 describe('FormField', () => {
   test('renders', () => {
-    const json = rendererCreateWithTheme(
+    const { asFragment } = render(
       <FormField>
         <Label>Email Address</Label>
         <Input id='email' name='email' />
       </FormField>
-    ).toJSON()
-    expect(json).toMatchSnapshot()
+    )
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('renders with Icon', () => {
-    const json = rendererCreateWithTheme(
+    const { asFragment } = render(
       <FormField>
         <Label>Email Address</Label>
         <EmailIcon />
         <Input id='email' name='email' />
       </FormField>
-    ).toJSON()
-    expect(json).toMatchSnapshot()
+    )
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('renders with Select ', () => {
-    const json = rendererCreateWithTheme(
+    const { asFragment } = render(
       <FormField>
         <Label>Pick Option</Label>
         <Select />
       </FormField>
-    ).toJSON()
-    expect(json).toMatchSnapshot()
+    )
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('renders with Select and Icon', () => {
-    const json = rendererCreateWithTheme(
+    const { asFragment } = render(
       <FormField>
         <Label>Pick Email Address</Label>
         <EmailIcon />
         <Select />
       </FormField>
-    ).toJSON()
-    expect(json).toMatchSnapshot()
+    )
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('renders with Label - forces truncate', () => {
@@ -68,37 +67,38 @@ describe('FormField', () => {
   })
 
   test('renders with Label autoHide prop', () => {
-    const json = rendererCreateWithTheme(
+    const { asFragment } = render(
       <FormField>
         <Label autoHide>Email</Label>
         <EmailIcon />
         <Input id='email' name='email' />
       </FormField>
-    ).toJSON()
-    expect(json).toMatchSnapshot()
+    )
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('shows Label with autoHide prop and field value', () => {
-    const json = rendererCreateWithTheme(
-      <FormField>
+    render(
+      <FormField data-testid='form-field'>
         <Label autoHide>Email</Label>
         <EmailIcon />
         <Input id='email' name='email' value='hello@example.com' />
       </FormField>
-    ).toJSON()
-    const [label] = json.children
-    expect(label.props.style.opacity).toBe(1)
+    )
+    const formField = screen.getByTestId('form-field')
+    const label = formField.children[0] as HTMLElement
+    expect(label).toHaveStyle('opacity: 1')
   })
 
   test('adds htmlFor prop to Label', () => {
-    const json = rendererCreateWithTheme(
+    render(
       <FormField>
-        <Label />
+        <Label data-testid='label' />
         <Input id='hello' name='hello' />
       </FormField>
-    ).toJSON()
-    const [label] = json.children
-    expect(label.props.htmlFor).toBe('hello')
+    )
+    const label = screen.getByTestId('label')
+    expect(label).toHaveAttribute('for', 'hello')
   })
 
   describe('disabled state', () => {

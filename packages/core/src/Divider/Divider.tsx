@@ -16,7 +16,7 @@ export type DividerProps = SpaceProps &
 /**
  * @public
  */
-export const Divider: React.FC<DividerProps> = styled.hr.attrs(({ mx, ml, mr }) => ({
+export const StyledHrDivider: React.FC<DividerProps> = styled.hr.attrs(({ mx, ml, mr }) => ({
   ml: mx ? null : ml,
   mr: mx ? null : mr,
 }))`
@@ -30,10 +30,9 @@ export const Divider: React.FC<DividerProps> = styled.hr.attrs(({ mx, ml, mr }) 
   ${(props) => compose(space, width)(props)}
 `
 
-Divider.displayName = 'Divider'
-
-Divider.defaultProps = {
-  color: 'border',
-  ml: 0,
-  mr: 0,
+/**
+ * @public
+ */
+export function Divider({ color = 'border', ml = 0, mr = 0, ...props }: DividerProps) {
+  return <StyledHrDivider color={color} ml={ml} mr={mr} {...props} />
 }

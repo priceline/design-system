@@ -1,7 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Absolute renders with approprite styles to display offscreen 1`] = `
-.c0 {
+exports[`SrOnly renders with approprite styles to display offscreen 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   position: absolute;
   overflow: hidden;
   -webkit-clip: rect(0 0 0 0);
@@ -13,7 +24,12 @@ exports[`Absolute renders with approprite styles to display offscreen 1`] = `
   border: 0;
 }
 
-<span
-  className="c0"
-/>
+<div
+    class="c0"
+  >
+    <span
+      class="c1"
+    />
+  </div>
+</DocumentFragment>
 `;

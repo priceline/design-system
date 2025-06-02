@@ -43,7 +43,7 @@ export function Avatar({
   src,
   size = 40,
   title,
-}: AvatarProps): JSX.Element {
+}: AvatarProps): React.JSX.Element {
   return (
     <Flex className={className}>
       <StyledImage

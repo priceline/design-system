@@ -75,9 +75,8 @@ export type GenericBannerProps = AlignItemsProps &
  */
 export function GenericBanner({
   alignItems = 'center',
-  borderRadius = '6px',
   buttonClick,
-  buttonSize,
+  buttonSize = 'small',
   buttonVariation = 'link',
   ctaText,
   fontSize = [0, null, null, 1],
@@ -91,6 +90,7 @@ export function GenericBanner({
   text,
   /* eslint-disable @typescript-eslint/naming-convention */
   URLProps,
+  borderRadius = '6px',
   ...props
 }: GenericBannerProps) {
   function onClick(e) {
@@ -103,11 +103,11 @@ export function GenericBanner({
       {URLProps && <WrapperLink tabIndex={-1} aria-hidden='true' {...URLProps} />}
       <BannerWithRadius
         {...props}
+        borderRadius={borderRadius}
         onClick={URLProps ? null : buttonClick}
         iconUsesColorScheme
         // we need to unset Banner's color prop if colorScheme is provided so it doesn't render its own icon
         color={!props.colorScheme ? props.color : null}
-        borderRadius={borderRadius}
       >
         <Flex alignItems={alignItems} justifyContent={justifyContent}>
           {!!iconLeft && iconLeft}

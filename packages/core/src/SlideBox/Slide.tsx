@@ -26,15 +26,15 @@ export function Slide({
   numSlides,
   slideBoxRef,
   overflowAllowancePxX,
-}: SlideProps): JSX.Element {
-  const ref = useRef()
+}: SlideProps): React.JSX.Element {
+  const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     /* c8 ignore next */
     if (isCurrentSlide === true && typeof slideBoxRef?.current?.scroll === 'function' && ref?.current) {
       /* c8 ignore next */
       const { offsetLeft, offsetParent, offsetWidth } = ref.current
-      const { offsetWidth: parentOffset } = offsetParent || {}
+      const { offsetWidth: parentOffset } = (offsetParent as HTMLElement) || {}
       slideBoxRef?.current?.scroll({ left: offsetLeft - parentOffset + offsetWidth + overflowAllowancePxX })
     }
   }, [isCurrentSlide, ref])

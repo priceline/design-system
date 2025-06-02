@@ -8,7 +8,7 @@ export type SlideBoxWrapperProps = {
   arrowPosition?: ArrowPosition
   children: React.ReactNode
 }
-export function SlideBoxWrapper({ children, arrowPosition }: SlideBoxWrapperProps): JSX.Element {
+export function SlideBoxWrapper({ children, arrowPosition }: SlideBoxWrapperProps): React.JSX.Element {
   return arrowPosition === 'side' ? (
     <Relative>
       <Flex alignItems='center'>{children}</Flex>

@@ -7,8 +7,8 @@ import { ShadowOverlay } from '../ShadowEffect/ShadowEffect'
  * @public
  */
 export interface PopoutProps {
-  trigger: JSX.Element
-  content?: JSX.Element | undefined
+  trigger: React.JSX.Element
+  content?: React.JSX.Element | undefined
   triggerRef?: RefObject<HTMLElement>
   onOpen?: () => void
   onClose?: () => void

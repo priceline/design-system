@@ -1,17 +1,17 @@
-import React from 'react'
+import { render, screen } from '../__test__/testing-library'
 import { Truncate } from './Truncate'
 
 describe('Truncate', () => {
   test('renders', () => {
-    const json = rendererCreateWithTheme(<Truncate>renders</Truncate>).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Truncate>renders</Truncate>)
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('generates styles', () => {
-    const json = rendererCreateWithTheme(<Truncate>generates styles</Truncate>).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('overflow', 'hidden')
-    expect(json).toHaveStyleRule('white-space', 'nowrap')
-    expect(json).toHaveStyleRule('text-overflow', 'ellipsis')
+    render(<Truncate data-testid='truncate'>generates styles</Truncate>)
+    const element = screen.getByTestId('truncate')
+    expect(element).toHaveStyleRule('overflow', 'hidden')
+    expect(element).toHaveStyleRule('white-space', 'nowrap')
+    expect(element).toHaveStyleRule('text-overflow', 'ellipsis')
   })
 })

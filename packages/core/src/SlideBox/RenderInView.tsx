@@ -13,7 +13,12 @@ export type RenderInViewProps = {
   slideRef?: React.RefObject<HTMLElement>
 }
 
-export function RenderInView({ children, onSlideChange, index, slideRef }: RenderInViewProps): JSX.Element {
+export function RenderInView({
+  children,
+  onSlideChange,
+  index,
+  slideRef,
+}: RenderInViewProps): React.JSX.Element {
   const slideVisible = (inView) => {
     if (inView) {
       const { offsetParent, offsetWidth } = slideRef?.current || {}

@@ -1,4 +1,4 @@
-import React from 'react'
+import type { Meta } from '@storybook/react'
 import { Box } from '../Box/Box'
 import { Card } from '../Card/Card'
 import { Text } from '../Text/Text'
@@ -26,7 +26,7 @@ export default {
       },
     },
   },
-}
+} as Meta
 
 const Template = (args) => <BackgroundImage {...args} />
 

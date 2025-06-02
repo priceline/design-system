@@ -12,10 +12,10 @@
     "@rushstack/eslint-config": "^3.6.2",
     "@rushstack/heft-api-extractor-plugin": "^0.3.4",
     "@rushstack/heft-jest-plugin": "^0.11.4",
-    "@rushstack/heft-web-rig": "^0.20.6",
     "@rushstack/heft-lint-plugin": "^0.3.4",
     "@rushstack/heft-sass-plugin": "^0.13.7",
     "@rushstack/heft-typescript-plugin": "^0.3.4",
+    "@rushstack/heft-web-rig": "^0.20.6",
     "@types/heft-jest": "^1.0.6",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.12.7",
@@ -24,14 +24,15 @@
     "heft-styled-components-plugin": "workspace:*",
     "jest-environment-jsdom": "^29.7.0",
     "jest-standard-reporter": "^2.0.0",
-    "typescript": "^5.3.3",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-is": "^18.3.1"
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-is": "^19.1.0",
+    "typescript": "^5.3.3"
   },
   "devDependencies": {
     "@rushstack/heft": "^0.66.3",
-    "react-test-renderer": "^18.3.1"
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5"
   },
   "peerDependencies": {
     "@rushstack/heft": "^0.66.3"

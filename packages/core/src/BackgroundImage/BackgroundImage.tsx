@@ -1,4 +1,4 @@
-import React, { type ComponentPropsWithoutRef } from 'react'
+import React, { forwardRef, type ComponentPropsWithoutRef } from 'react'
 import styled, { css } from 'styled-components'
 import {
   BorderRadiusProps,
@@ -44,7 +44,7 @@ export type BackgroundImageProps = WidthProps &
 /**
  * @public
  */
-export const BackgroundImage: React.FC<BackgroundImageProps> = styled.div.attrs(borderRadiusAttrs)`
+export const StyledBackgroundImage = styled.div.attrs(borderRadiusAttrs)`
   background-position: ${(props) => props.backgroundPosition};
   background-size: cover;
   background-repeat: no-repeat;
@@ -54,9 +54,23 @@ export const BackgroundImage: React.FC<BackgroundImageProps> = styled.div.attrs(
   ${(props) => compose(height, width, borderRadius)(props)}
 `
 
-BackgroundImage.defaultProps = {
-  variation: 'static',
-  backgroundPosition: 'center',
-}
+/**
+ * @public
+ */
+export const BackgroundImage: React.ForwardRefExoticComponent<
+  BackgroundImageProps & React.RefAttributes<HTMLDivElement>
+> = forwardRef<HTMLDivElement, BackgroundImageProps>(
+  ({ variation = 'static', backgroundPosition = 'center', ...props }, ref) => {
+    console.log('backgroundPosition', backgroundPosition)
+    return (
+      <StyledBackgroundImage
+        ref={ref}
+        variation={variation}
+        backgroundPosition={backgroundPosition}
+        {...props}
+      />
+    )
+  }
+)
 
 BackgroundImage.displayName = 'BackgroundImage'

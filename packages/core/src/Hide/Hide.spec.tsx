@@ -1,44 +1,35 @@
 import React from 'react'
+import { render } from '../__test__/testing-library'
 import { Hide } from './Hide'
 
 describe('Hide', () => {
   test('renders', () => {
-    const json = rendererCreateWithTheme(<Hide />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Hide />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
-  test('renders with xs prop', () => {
-    const json = rendererCreateWithTheme(<Hide xs />).toJSON()
-    expect(json).toMatchSnapshot()
-  })
+  test('renders with breakpoint props', () => {
+    const { rerender, asFragment } = render(<Hide xs />)
+    expect(asFragment()).toMatchSnapshot()
 
-  test('renders with sm prop', () => {
-    const json = rendererCreateWithTheme(<Hide sm />).toJSON()
-    expect(json).toMatchSnapshot()
-  })
+    rerender(<Hide sm />)
+    expect(asFragment()).toMatchSnapshot()
 
-  test('renders with md prop', () => {
-    const json = rendererCreateWithTheme(<Hide md />).toJSON()
-    expect(json).toMatchSnapshot()
-  })
+    rerender(<Hide md />)
+    expect(asFragment()).toMatchSnapshot()
 
-  test('renders with lg prop', () => {
-    const json = rendererCreateWithTheme(<Hide lg />).toJSON()
-    expect(json).toMatchSnapshot()
-  })
+    rerender(<Hide lg />)
+    expect(asFragment()).toMatchSnapshot()
 
-  test('renders with xl prop', () => {
-    const json = rendererCreateWithTheme(<Hide xl />).toJSON()
-    expect(json).toMatchSnapshot()
-  })
+    rerender(<Hide xl />)
+    expect(asFragment()).toMatchSnapshot()
 
-  test('renders with xxl prop', () => {
-    const json = rendererCreateWithTheme(<Hide xxl />).toJSON()
-    expect(json).toMatchSnapshot()
+    rerender(<Hide xxl />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('renders with print prop', () => {
-    const json = rendererCreateWithTheme(<Hide print />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Hide print />)
+    expect(asFragment()).toMatchSnapshot()
   })
 })

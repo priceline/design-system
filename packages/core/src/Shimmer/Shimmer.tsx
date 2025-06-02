@@ -63,7 +63,7 @@ export function Shimmer({
   disable = false,
   variation = ShimmerVariationType.Base,
   ...props
-}: ShimmerProps): JSX.Element {
+}: ShimmerProps): React.JSX.Element {
   return (
     <Wrapper {...props} data-testid='Shimmer__Wrapper' variation={variation}>
       {!disable && (
