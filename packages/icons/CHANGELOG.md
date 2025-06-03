@@ -1,6 +1,13 @@
 # Change Log - pcln-icons
 
-This log was last generated on Wed, 28 May 2025 16:06:20 GMT and should not be manually modified.
+This log was last generated on Tue, 03 Jun 2025 17:09:02 GMT and should not be manually modified.
+
+## 6.11.0
+Tue, 03 Jun 2025 17:09:02 GMT
+
+### Minor changes
+
+- Update to styled-system v5 on pcln-icons, move to dev dependency and peer dependency. Use Node v20 for the build process.
 
 ## 6.10.1
 Wed, 28 May 2025 16:06:20 GMT

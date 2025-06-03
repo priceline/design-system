@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.27.2",
+      "tag": "pcln-design-system_v6.27.2",
+      "date": "Tue, 03 Jun 2025 17:09:02 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update snapshots",
+            "author": "Huzefa Kagdi <huzefa.kagdi@priceline.com>",
+            "commit": "2f43d59c9dadb1ffa262a186d751194dc1a2cff9"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.27.1",
       "tag": "pcln-design-system_v6.27.1",
       "date": "Tue, 08 Apr 2025 18:28:05 GMT",
