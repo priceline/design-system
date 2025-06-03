@@ -21,7 +21,7 @@
    * Specify a SemVer range to ensure developers use a Node.js version that is appropriate
    * for your repo.
    */
-  "nodeSupportedVersionRange": ">=16",
+  "nodeSupportedVersionRange": ">=20",
 
   /**
    * Odd-numbered major versions of Node.js are experimental.  Even-numbered releases
