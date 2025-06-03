@@ -7,9 +7,9 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
   -ms-flex: none;
   flex: none;
   line-height: 1;
+  width: 24px;
   margin-left: 8px;
   margin-right: 8px;
-  width: 24px;
 }
 
 .c8 {
@@ -210,9 +210,9 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   -ms-flex: none;
   flex: none;
   line-height: 1;
+  width: 24px;
   margin-left: 8px;
   margin-right: 8px;
-  width: 24px;
 }
 
 .c11 {
@@ -221,8 +221,8 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
   flex: none;
   line-height: 1;
   color: #4f6f8f;
-  margin-left: -32px;
   width: 24px;
+  margin-left: -32px;
 }
 
 .c12 {
@@ -600,9 +600,9 @@ exports[`FormField renders with Icon 1`] = `
   -ms-flex: none;
   flex: none;
   line-height: 1;
+  width: 24px;
   margin-left: 8px;
   margin-right: 8px;
-  width: 24px;
 }
 
 .c6 {
@@ -797,9 +797,9 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   -ms-flex: none;
   flex: none;
   line-height: 1;
+  width: 24px;
   margin-left: 8px;
   margin-right: 8px;
-  width: 24px;
 }
 
 .c6 {
@@ -995,8 +995,8 @@ exports[`FormField renders with Select  1`] = `
   flex: none;
   line-height: 1;
   color: #4f6f8f;
-  margin-left: -32px;
   width: 24px;
+  margin-left: -32px;
 }
 
 .c6 {
@@ -1178,9 +1178,9 @@ exports[`FormField renders with Select and Icon 1`] = `
   -ms-flex: none;
   flex: none;
   line-height: 1;
+  width: 24px;
   margin-left: 8px;
   margin-right: 8px;
-  width: 24px;
 }
 
 .c9 {
@@ -1189,8 +1189,8 @@ exports[`FormField renders with Select and Icon 1`] = `
   flex: none;
   line-height: 1;
   color: #4f6f8f;
-  margin-left: -32px;
   width: 24px;
+  margin-left: -32px;
 }
 
 .c10 {

@@ -7,8 +7,8 @@ exports[`Select renders 1`] = `
   flex: none;
   line-height: 1;
   color: #4f6f8f;
-  margin-left: -32px;
   width: 24px;
+  margin-left: -32px;
 }
 
 .c4 {
