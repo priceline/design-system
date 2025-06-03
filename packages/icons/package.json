@@ -29,8 +29,7 @@
     "core-js": "^3.37.1",
     "@styled-system/theme-get": "^5.1.2",
     "lodash.upperfirst": "^4.3.1",
-    "prop-types": "^15.8.1",
-    "styled-system": "^4.2.4"
+    "prop-types": "^15.8.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.22.15",
@@ -56,12 +55,14 @@
     "react-is": "^18.3.1",
     "react-test-renderer": "^18.3.1",
     "rimraf": "^3.0.2",
-    "styled-components": "^5.3.11"
+    "styled-components": "^5.3.11",
+    "styled-system": "^5.1.5"
   },
   "peerDependencies": {
     "pcln-design-system": "^6.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "styled-components": ">=5.3.7 <6"
+    "styled-components": ">=5.3.7 <6",
+    "styled-system": "^5.0.0"
   }
 }

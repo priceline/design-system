@@ -7,8 +7,8 @@ exports[`FloatingActionButton it renders 1`] = `
   -ms-flex: none;
   flex: none;
   line-height: 1;
-  margin-right: 0px;
   width: 24px;
+  margin-right: 0px;
 }
 
 .c6 {

@@ -114,8 +114,8 @@ exports[`Breadcrumbs renders with icons 1`] = `
   flex: none;
   line-height: 1;
   color: #4f6f8f;
-  margin-right: 8px;
   width: 16px;
+  margin-right: 8px;
 }
 
 .c7 {
@@ -124,8 +124,8 @@ exports[`Breadcrumbs renders with icons 1`] = `
   flex: none;
   line-height: 1;
   color: #001023;
-  margin-right: 8px;
   width: 16px;
+  margin-right: 8px;
 }
 
 .c6 {
