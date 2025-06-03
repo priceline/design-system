@@ -8,9 +8,6 @@ module.exports = {
     'jest/globals': true,
   },
   extends: [...defaultExtends],
-  globals: {
-    rendererCreateWithTheme: 'writeable',
-  },
   plugins: defaultPlugins,
   parser: '@babel/eslint-parser',
   parserOptions: {

@@ -1,7 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TextArea it renders 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -22,40 +33,56 @@ exports[`TextArea it renders 1`] = `
   border-color: #c0cad5;
 }
 
-.c0::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder {
   color: #4f6f8f;
 }
 
-.c0::-moz-placeholder {
+.c1::-moz-placeholder {
   color: #4f6f8f;
 }
 
-.c0:-ms-input-placeholder {
+.c1:-ms-input-placeholder {
   color: #4f6f8f;
 }
 
-.c0::placeholder {
+.c1::placeholder {
   color: #4f6f8f;
 }
 
-.c0::-ms-clear {
+.c1::-ms-clear {
   display: none;
 }
 
-.c0:focus {
+.c1:focus {
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
 }
 
-<textarea
-  className="c0"
-  id="fake-test-id"
-/>
+<div
+    class="c0"
+  >
+    <textarea
+      class="c1"
+      id="fake-test-id"
+    />
+  </div>
+</DocumentFragment>
 `;
 
 exports[`TextArea it renders an input element with a really large padding and margin 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -78,40 +105,56 @@ exports[`TextArea it renders an input element with a really large padding and ma
   margin: 32px;
 }
 
-.c0::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder {
   color: #4f6f8f;
 }
 
-.c0::-moz-placeholder {
+.c1::-moz-placeholder {
   color: #4f6f8f;
 }
 
-.c0:-ms-input-placeholder {
+.c1:-ms-input-placeholder {
   color: #4f6f8f;
 }
 
-.c0::placeholder {
+.c1::placeholder {
   color: #4f6f8f;
 }
 
-.c0::-ms-clear {
+.c1::-ms-clear {
   display: none;
 }
 
-.c0:focus {
+.c1:focus {
   outline: 0;
   border-color: #0068ef;
   box-shadow: 0 0 0 2px #0068ef;
 }
 
-<textarea
-  className="c0"
-  id="fake-test-id"
-/>
+<div
+    class="c0"
+  >
+    <textarea
+      class="c1"
+      id="fake-test-id"
+    />
+  </div>
+</DocumentFragment>
 `;
 
 exports[`TextArea it renders an input element with a red border with a color prop is passed 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -132,35 +175,40 @@ exports[`TextArea it renders an input element with a red border with a color pro
   border-color: #c00;
 }
 
-.c0::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder {
   color: #4f6f8f;
 }
 
-.c0::-moz-placeholder {
+.c1::-moz-placeholder {
   color: #4f6f8f;
 }
 
-.c0:-ms-input-placeholder {
+.c1:-ms-input-placeholder {
   color: #4f6f8f;
 }
 
-.c0::placeholder {
+.c1::placeholder {
   color: #4f6f8f;
 }
 
-.c0::-ms-clear {
+.c1::-ms-clear {
   display: none;
 }
 
-.c0:focus {
+.c1:focus {
   outline: 0;
   border-color: #c00;
   box-shadow: 0 0 0 2px #c00;
 }
 
-<textarea
-  className="c0"
-  color="error"
-  id="fake-test-id"
-/>
+<div
+    class="c0"
+  >
+    <textarea
+      class="c1"
+      color="error"
+      id="fake-test-id"
+    />
+  </div>
+</DocumentFragment>
 `;

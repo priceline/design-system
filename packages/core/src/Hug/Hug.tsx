@@ -30,6 +30,12 @@ export function Hug({
   colorScheme,
   ...props
 }: HugProps): React.ReactElement {
+  const defaultedProps = {
+    borderRadius,
+    borderWidth,
+    ...props,
+  }
+
   let iconClone
   if (React.isValidElement(icon)) {
     iconClone = React.cloneElement(icon, {
@@ -51,7 +57,7 @@ export function Hug({
 
   return (
     <HugCard
-      {...props}
+      {...defaultedProps}
       borderColor={colorScheme ? null : bg || color}
       borderRadius={borderRadius}
       borderWidth={borderWidth}
@@ -68,9 +74,9 @@ export function Hug({
         iconUsesColorScheme={!iconClone?.props?.color}
       >
         {!!iconClone && iconClone}
-        <Text fontSize={fontSize}>{props.text}</Text>
+        <Text fontSize={fontSize}>{defaultedProps.text}</Text>
       </Header>
-      <BorderConcealer>{props.children}</BorderConcealer>
+      <BorderConcealer>{defaultedProps.children}</BorderConcealer>
     </HugCard>
   )
 }

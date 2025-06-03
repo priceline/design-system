@@ -142,17 +142,18 @@ export function Spinner({
   ...props
 }: SpinnerProps) {
   if (children) {
-    React.Children.only(children)
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const _validatedChild = React.Children.only(children)
   }
   const theme = useTheme()
 
   return (
-    <RelativeFlex justifyContent='center' alignItems='center' size={size} {...props}>
+    <RelativeFlex justifyContent='center' alignItems='center' {...props} size={size}>
       {useGradient ? <GradientRing color={color} theme={theme} {...props} /> : <Ring color={color} />}
       {children &&
         React.isValidElement(children) &&
         React.cloneElement<{ color?: PaletteFamilyName }>(children, {
-          color: children?.props?.color || color,
+          color: (children?.props as { color?: PaletteFamilyName })?.color || color,
         })}
     </RelativeFlex>
   )

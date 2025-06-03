@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`GenericBanner renders 1`] = `
-.c4 {
+<DocumentFragment>
+  .c5 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -11,36 +12,46 @@ exports[`GenericBanner renders 1`] = `
   width: 24px;
 }
 
-.c5 {
+.c6 {
   outline: none;
 }
 
-.c7 {
+.c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c8 {
   font-size: 14px;
 }
 
-.c1 {
+.c2 {
   background-color: #0a0;
   color: #fff;
   border-radius: 6px;
   text-align: left;
 }
 
-.c6 {
+.c7 {
   text-align: left;
   width: 100%;
 }
 
-.c9 {
+.c10 {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.c0 {
+.c1 {
   position: relative;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -55,7 +66,7 @@ exports[`GenericBanner renders 1`] = `
   align-items: flex-start;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -70,53 +81,59 @@ exports[`GenericBanner renders 1`] = `
   justify-content: center;
 }
 
-.c2 {
+.c3 {
   cursor: cursor;
 }
 
 <div
-  className="c0"
->
-  <div
-    className="c1 c2"
-    color="text.lightest"
+    class="c0"
   >
     <div
-      className="c3"
+      class="c1"
     >
-      <svg
-        aria-hidden={true}
-        className="c4 c5"
-        fill="currentcolor"
-        focusable={false}
-        height={24}
-        role="img"
-        tabIndex={-1}
-        viewBox="0 0 24 24"
-        width={24}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.7 14.5L6 12.2 7.2 11l3.1 3.1 6.5-6.5L18 8.8l-7.7 7.7z"
-        />
-      </svg>
       <div
-        className="c6"
-        width={1}
+        class="c2 c3"
+        color="text.lightest"
       >
-        <span
-          className="c7"
-          fontSize={1}
-        />
         <div
-          className="c8"
+          class="c4"
         >
+          <svg
+            aria-hidden="true"
+            class="c5 c6"
+            fill="currentcolor"
+            focusable="false"
+            height="24"
+            role="img"
+            size="24"
+            tabindex="-1"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.7 14.5L6 12.2 7.2 11l3.1 3.1 6.5-6.5L18 8.8l-7.7 7.7z"
+            />
+          </svg>
           <div
-            className="c9"
-          />
+            class="c7"
+            width="1"
+          >
+            <span
+              class="c8"
+              font-size="1"
+            />
+            <div
+              class="c9"
+            >
+              <div
+                class="c10"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</DocumentFragment>
 `;

@@ -1,5 +1,4 @@
 import { StoryObj } from '@storybook/react'
-import React from 'react'
 import styled from 'styled-components'
 import { Box } from '../Box/Box'
 import { Button, type ButtonProps } from '../Button/Button'
@@ -37,7 +36,7 @@ export const Playground: ButtonStory = {
     size: {
       control: 'select',
       options: sizeOptions,
-      defaultValue: 'primary',
+      defaultValue: 'medium',
     },
     disabled: {
       defaultValue: false,

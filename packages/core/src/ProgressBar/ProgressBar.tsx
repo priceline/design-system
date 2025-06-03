@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import { Box } from '../Box/Box'
 import { Flex } from '../Flex/Flex'

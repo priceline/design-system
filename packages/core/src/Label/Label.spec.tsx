@@ -1,11 +1,10 @@
-import React from 'react'
 import { fireEvent, render, screen } from '../__test__/testing-library'
 import { Label } from './Label'
 
 describe('Label', () => {
   test('it renders', () => {
-    const json = rendererCreateWithTheme(<Label />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Label />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('Label hidden renders', () => {

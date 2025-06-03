@@ -1,348 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tooltip bottom center 1`] = `
-.c0 {
-  background-color: #fff;
-  color: #001833;
-  border-radius: 8px;
-  margin-bottom: 16px;
-  margin-top: 8px;
-  padding: 8px;
-  box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16);
+exports[`Tooltip positioning variations 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 .c1 {
-  display: inline;
-  font-size: 12px;
-  position: absolute;
-  box-sizing: border-box;
-  background: #fff;
-  text-align: center;
-  top: 0;
-  left: 50%;
-  width: auto;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.c1::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent #fff #fff;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  -webkit-transform: rotate(-225deg);
-  -ms-transform: rotate(-225deg);
-  transform: rotate(-225deg);
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  -webkit-transform: rotate(-225deg);
-  -ms-transform: rotate(-225deg);
-  transform: rotate(-225deg);
-  top: 0;
-  left: 50%;
-  margin-left: 7px;
-  box-shadow: -1.41px 1.41px 1px 0 rgba(0,0,0,0.01),-3.66px 3.66px 8px 0 rgba(0,0,0,0.04);
-}
-
-<div
-  style={
-    Object {
-      "position": "relative",
-      "zIndex": "auto",
-    }
-  }
->
-  <div
-    className="c0 c1"
-    color="background.lightest"
-  >
-    centered tooltip
-  </div>
-</div>
-`;
-
-exports[`Tooltip bottom left 1`] = `
-.c0 {
-  background-color: #fff;
-  color: #001833;
-  border-radius: 8px;
-  margin-bottom: 16px;
-  margin-top: 8px;
-  padding: 8px;
-  box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16);
-}
-
-.c1 {
-  display: inline;
-  font-size: 12px;
-  position: absolute;
-  box-sizing: border-box;
-  background: #fff;
-  text-align: center;
-  top: 0;
-}
-
-.c1::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent #fff #fff;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  -webkit-transform: rotate(-225deg);
-  -ms-transform: rotate(-225deg);
-  transform: rotate(-225deg);
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  -webkit-transform: rotate(-225deg);
-  -ms-transform: rotate(-225deg);
-  transform: rotate(-225deg);
-  top: 0;
-  left: 16px;
-  margin-left: 15px;
-  box-shadow: -1.41px 1.41px 1px 0 rgba(0,0,0,0.01),-3.66px 3.66px 8px 0 rgba(0,0,0,0.04);
-}
-
-<div
-  style={
-    Object {
-      "position": "relative",
-      "zIndex": "auto",
-    }
-  }
->
-  <div
-    className="c0 c1"
-    color="background.lightest"
-  >
-    left tooltip
-  </div>
-</div>
-`;
-
-exports[`Tooltip bottom right 1`] = `
-.c0 {
-  background-color: #fff;
-  color: #001833;
-  border-radius: 8px;
-  margin-bottom: 16px;
-  margin-top: 8px;
-  padding: 8px;
-  box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16);
-}
-
-.c1 {
-  display: inline;
-  font-size: 12px;
-  position: absolute;
-  box-sizing: border-box;
-  background: #fff;
-  text-align: center;
-  top: 0;
-  right: 0;
-}
-
-.c1::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent #fff #fff;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  -webkit-transform: rotate(-225deg);
-  -ms-transform: rotate(-225deg);
-  transform: rotate(-225deg);
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  -webkit-transform: rotate(-225deg);
-  -ms-transform: rotate(-225deg);
-  transform: rotate(-225deg);
-  top: 0;
-  right: 16px;
-  margin-right: -10px;
-  box-shadow: -1.41px 1.41px 1px 0 rgba(0,0,0,0.01),-3.66px 3.66px 8px 0 rgba(0,0,0,0.04);
-}
-
-<div
-  style={
-    Object {
-      "position": "relative",
-      "zIndex": "auto",
-    }
-  }
->
-  <div
-    className="c0 c1"
-    color="background.lightest"
-  >
-    right tooltip
-  </div>
-</div>
-`;
-
-exports[`Tooltip renders 1`] = `
-.c0 {
-  background-color: #fff;
-  color: #001833;
-  border-radius: 8px;
-  margin-bottom: 16px;
-  margin-top: 8px;
-  padding: 8px;
-  box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16);
-}
-
-.c1 {
-  display: inline;
-  font-size: 12px;
-  position: absolute;
-  box-sizing: border-box;
-  background: #fff;
-  text-align: center;
-  top: 0;
-}
-
-.c1::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent #fff #fff;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  -webkit-transform: rotate(-225deg);
-  -ms-transform: rotate(-225deg);
-  transform: rotate(-225deg);
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  -webkit-transform: rotate(-225deg);
-  -ms-transform: rotate(-225deg);
-  transform: rotate(-225deg);
-  top: 0;
-  right: 16px;
-  margin-right: -10px;
-  box-shadow: -1.41px 1.41px 1px 0 rgba(0,0,0,0.01),-3.66px 3.66px 8px 0 rgba(0,0,0,0.04);
-}
-
-<div
-  style={
-    Object {
-      "position": "relative",
-      "zIndex": "auto",
-    }
-  }
->
-  <div
-    className="c0 c1"
-    color="background.lightest"
-  >
-    A Tooltip
-  </div>
-</div>
-`;
-
-exports[`Tooltip top center 1`] = `
-.c0 {
   background-color: #0068ef;
   color: #fff;
-  border-radius: 8px;
+  padding: 8px;
   margin-bottom: 16px;
   margin-top: 8px;
-  padding: 8px;
+  border-radius: 8px;
   box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16);
 }
 
-.c1 {
-  display: inline;
-  font-size: 12px;
-  position: absolute;
-  box-sizing: border-box;
-  background: #0068ef;
-  text-align: center;
-  bottom: -8px;
-  left: 50%;
-  width: auto;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.c1::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent #0068ef #0068ef;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  bottom: -10px;
-  left: 50%;
-  margin-left: -7px;
-  box-shadow: -9.66px 9.66px 8px 0 rgba(0,0,0,0.04),-4px 4px 4px 0 rgba(0,0,0,0.08);
-}
-
-<div
-  style={
-    Object {
-      "position": "relative",
-      "zIndex": "auto",
-    }
-  }
->
-  <div
-    className="c0 c1"
-    color="primary"
-  >
-    centered tooltip
-  </div>
-</div>
-`;
-
-exports[`Tooltip top left 1`] = `
-.c0 {
-  background-color: #0068ef;
-  color: #fff;
-  border-radius: 8px;
-  margin-bottom: 16px;
-  margin-top: 8px;
-  padding: 8px;
-  box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16);
-}
-
-.c1 {
+.c2 {
   display: inline;
   font-size: 12px;
   position: absolute;
@@ -352,7 +32,7 @@ exports[`Tooltip top left 1`] = `
   bottom: -8px;
 }
 
-.c1::after {
+.c2::after {
   content: '';
   position: absolute;
   width: 0;
@@ -379,34 +59,125 @@ exports[`Tooltip top left 1`] = `
 }
 
 <div
-  style={
-    Object {
-      "position": "relative",
-      "zIndex": "auto",
-    }
-  }
->
-  <div
-    className="c0 c1"
-    color="primary"
+    class="c0"
   >
-    left tooltip
+    <div
+      style="position: relative; z-index: auto;"
+    >
+      <div
+        class="c1 c2"
+        color="primary"
+      >
+        left tooltip
+      </div>
+    </div>
   </div>
-</div>
+</DocumentFragment>
 `;
 
-exports[`Tooltip top right 1`] = `
-.c0 {
-  background-color: #c00;
-  color: #fff;
-  border-radius: 8px;
-  margin-bottom: 16px;
-  margin-top: 8px;
-  padding: 8px;
-  box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16);
+exports[`Tooltip positioning variations 2`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 .c1 {
+  background-color: #0068ef;
+  color: #fff;
+  padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+  border-radius: 8px;
+  box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16);
+}
+
+.c2 {
+  display: inline;
+  font-size: 12px;
+  position: absolute;
+  box-sizing: border-box;
+  background: #0068ef;
+  text-align: center;
+  bottom: -8px;
+  left: 50%;
+  width: auto;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c2::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #0068ef #0068ef;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  bottom: -10px;
+  left: 50%;
+  margin-left: -7px;
+  box-shadow: -9.66px 9.66px 8px 0 rgba(0,0,0,0.04),-4px 4px 4px 0 rgba(0,0,0,0.08);
+}
+
+<div
+    class="c0"
+  >
+    <div
+      style="position: relative; z-index: auto;"
+    >
+      <div
+        class="c1 c2"
+        color="primary"
+      >
+        centered tooltip
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip positioning variations 3`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
+  background-color: #c00;
+  color: #fff;
+  padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+  border-radius: 8px;
+  box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16);
+}
+
+.c2 {
   display: inline;
   font-size: 12px;
   position: absolute;
@@ -417,7 +188,7 @@ exports[`Tooltip top right 1`] = `
   right: 0;
 }
 
-.c1::after {
+.c2::after {
   content: '';
   position: absolute;
   width: 0;
@@ -444,18 +215,324 @@ exports[`Tooltip top right 1`] = `
 }
 
 <div
-  style={
-    Object {
-      "position": "relative",
-      "zIndex": "auto",
-    }
-  }
->
-  <div
-    className="c0 c1"
-    color="error"
+    class="c0"
   >
-    right tooltip
+    <div
+      style="position: relative; z-index: auto;"
+    >
+      <div
+        class="c1 c2"
+        color="error"
+      >
+        right tooltip
+      </div>
+    </div>
   </div>
-</div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip positioning variations 4`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
+  background-color: #fff;
+  color: #001833;
+  padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+  border-radius: 8px;
+  box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16);
+}
+
+.c2 {
+  display: inline;
+  font-size: 12px;
+  position: absolute;
+  box-sizing: border-box;
+  background: #fff;
+  text-align: center;
+  top: 0;
+}
+
+.c2::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #fff #fff;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+  top: 0;
+  left: 16px;
+  margin-left: 15px;
+  box-shadow: -1.41px 1.41px 1px 0 rgba(0,0,0,0.01),-3.66px 3.66px 8px 0 rgba(0,0,0,0.04);
+}
+
+<div
+    class="c0"
+  >
+    <div
+      style="position: relative; z-index: auto;"
+    >
+      <div
+        class="c1 c2"
+        color="background.lightest"
+      >
+        left tooltip
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip positioning variations 5`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
+  background-color: #fff;
+  color: #001833;
+  padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+  border-radius: 8px;
+  box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16);
+}
+
+.c2 {
+  display: inline;
+  font-size: 12px;
+  position: absolute;
+  box-sizing: border-box;
+  background: #fff;
+  text-align: center;
+  top: 0;
+  left: 50%;
+  width: auto;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c2::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #fff #fff;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+  top: 0;
+  left: 50%;
+  margin-left: 7px;
+  box-shadow: -1.41px 1.41px 1px 0 rgba(0,0,0,0.01),-3.66px 3.66px 8px 0 rgba(0,0,0,0.04);
+}
+
+<div
+    class="c0"
+  >
+    <div
+      style="position: relative; z-index: auto;"
+    >
+      <div
+        class="c1 c2"
+        color="background.lightest"
+      >
+        centered tooltip
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip positioning variations 6`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
+  background-color: #fff;
+  color: #001833;
+  padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+  border-radius: 8px;
+  box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16);
+}
+
+.c2 {
+  display: inline;
+  font-size: 12px;
+  position: absolute;
+  box-sizing: border-box;
+  background: #fff;
+  text-align: center;
+  top: 0;
+  right: 0;
+}
+
+.c2::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #fff #fff;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+  top: 0;
+  right: 16px;
+  margin-right: -10px;
+  box-shadow: -1.41px 1.41px 1px 0 rgba(0,0,0,0.01),-3.66px 3.66px 8px 0 rgba(0,0,0,0.04);
+}
+
+<div
+    class="c0"
+  >
+    <div
+      style="position: relative; z-index: auto;"
+    >
+      <div
+        class="c1 c2"
+        color="background.lightest"
+      >
+        right tooltip
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip renders 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
+  background-color: #fff;
+  color: #001833;
+  padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+  border-radius: 8px;
+  box-shadow: 0 -1px 0 0 rgba(0,0,0,0.03),0 0 2px 0 rgba(0,0,0,0.2),0 4px 2px -2px rgba(0,0,0,0.12),0 4px 8px -1px rgba(0,0,0,0.16);
+}
+
+.c2 {
+  display: inline;
+  font-size: 12px;
+  position: absolute;
+  box-sizing: border-box;
+  background: #fff;
+  text-align: center;
+  top: 0;
+}
+
+.c2::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #fff #fff;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+  top: 0;
+  right: 16px;
+  margin-right: -10px;
+  box-shadow: -1.41px 1.41px 1px 0 rgba(0,0,0,0.01),-3.66px 3.66px 8px 0 rgba(0,0,0,0.04);
+}
+
+<div
+    class="c0"
+  >
+    <div
+      style="position: relative; z-index: auto;"
+    >
+      <div
+        class="c1 c2"
+        color="background.lightest"
+      >
+        A Tooltip
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
 `;

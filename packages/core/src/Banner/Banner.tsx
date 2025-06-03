@@ -4,7 +4,7 @@ import {
   Success as SuccessIcon,
   Warning as WarningIcon,
 } from 'pcln-icons'
-import React from 'react'
+import React, { Attributes } from 'react'
 import styled from 'styled-components'
 import { Box, type BoxProps } from '../Box/Box'
 import { CloseButton } from '../CloseButton/CloseButton'
@@ -106,7 +106,9 @@ export function Banner({
   return (
     <StyledBox {...props} textAlign={textAlign} bg={bannerColor.backgroundColor || bg} color={finalColor}>
       <Flex justifyContent='space-between' alignItems='flex-start'>
-        {!!Icon && !!showIcon && React.cloneElement(Icon, { mr: 2, size: 24, mt: '-2px' })}
+        {!!Icon &&
+          !!showIcon &&
+          React.cloneElement(Icon, { mr: 2, size: 24, mt: '-2px' } as unknown as Attributes)}
         <Box textAlign={textAlign} width={1}>
           {finalHeader}
           <Text.span fontSize={1}>{text}</Text.span>

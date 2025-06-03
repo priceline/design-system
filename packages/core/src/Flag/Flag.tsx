@@ -80,32 +80,34 @@ export type FlagProps = SpaceProps &
 /**
  * @public
  */
-export const Flag: React.FC<FlagProps> = ({
+export function Flag({
   color = 'white',
-  bg = 'green',
   children,
+  bg = 'green',
   pl = [1, 3],
   pr = null,
   py = [1, 2],
   width,
   ...props
-}) => (
-  <StyledFlex width={width} {...props} ml={[0, -2]}>
-    <RelativeHide xs>
-      <FlagShadow width='4px' mr={-2} mb={-2} color={hasPaletteColor({ color, ...props }) ? color : bg} />
-    </RelativeHide>
-    <FlagBody
-      flexAuto={!!width}
-      color={color}
-      bg={hasPaletteColor({ color, ...props }) ? false : bg}
-      pl={pl}
-      pr={pr}
-      py={py}
-    >
-      {children}
-    </FlagBody>
-    <FlagRight width='18px' color={hasPaletteColor({ color, ...props }) ? color : bg} ml={-2} />
-  </StyledFlex>
-)
+}: FlagProps) {
+  return (
+    <StyledFlex width={width} {...props} ml={[0, -2]}>
+      <RelativeHide xs>
+        <FlagShadow width='4px' mr={-2} mb={-2} color={hasPaletteColor({ color, ...props }) ? color : bg} />
+      </RelativeHide>
+      <FlagBody
+        flexAuto={!!width}
+        color={color}
+        bg={hasPaletteColor({ color, ...props }) ? false : bg}
+        pl={pl}
+        pr={pr}
+        py={py}
+      >
+        {children}
+      </FlagBody>
+      <FlagRight width='18px' color={hasPaletteColor({ color, ...props }) ? color : bg} ml={-2} />
+    </StyledFlex>
+  )
+}
 
 Flag.displayName = 'Flag'

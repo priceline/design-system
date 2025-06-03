@@ -27,7 +27,7 @@ export function FloatingActionButton({
   isAbsolutePosition = true,
   toolAlignment = 'center',
   ...props
-}: FloatingActionButtonProps): JSX.Element {
+}: FloatingActionButtonProps): React.JSX.Element {
   const [isTooltipOpen, setTooltipOpen] = useState(false)
   const Wrapper = isAbsolutePosition ? Absolute : Box
 

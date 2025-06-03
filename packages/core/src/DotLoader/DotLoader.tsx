@@ -1,5 +1,4 @@
 import themeGet from '@styled-system/theme-get'
-import React from 'react'
 import styled, { css, keyframes } from 'styled-components'
 import { Box } from '../Box/Box'
 import { Flex } from '../Flex/Flex'

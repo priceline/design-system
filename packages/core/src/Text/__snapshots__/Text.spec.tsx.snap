@@ -1,53 +1,331 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Text bold prop sets font-weight 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   font-weight: 700;
 }
 
 <div
-  className="c0"
-/>
+    class="c0"
+  >
+    <div
+      class="c1"
+    />
+  </div>
+</DocumentFragment>
 `;
 
 exports[`Text caps prop sets text-transform 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   text-transform: uppercase;
 }
 
 <div
-  className="c0"
-/>
+    class="c0"
+  >
+    <div
+      class="c1"
+    />
+  </div>
+</DocumentFragment>
 `;
 
 exports[`Text display and overflow 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   display: inline-block;
   overflow: none;
 }
 
 <div
-  className="c0"
-  display="inline-block"
-  overflow="none"
-/>
+    class="c0"
+  >
+    <div
+      class="c1"
+      display="inline-block"
+      overflow="none"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Text fontSize prop sets font-size 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
+  font-size: 12px;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+      font-size="0"
+    >
+      Text
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Text fontSize prop sets font-size 2`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
+  font-size: 14px;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+      font-size="1"
+    >
+      Text
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Text fontSize prop sets font-size 3`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
+  font-size: 16px;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+      font-size="2"
+    >
+      Text
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Text fontSize prop sets font-size 4`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
+  font-size: 20px;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+      font-size="3"
+    >
+      Text
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Text fontSize prop sets font-size 5`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
+  font-size: 24px;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+      font-size="4"
+    >
+      Text
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Text fontSize prop sets font-size 6`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
+  font-size: 32px;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+      font-size="5"
+    >
+      Text
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Text fontSize prop sets font-size 7`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
+  font-size: 40px;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+      font-size="6"
+    >
+      Text
+    </div>
+  </div>
+</DocumentFragment>
 `;
 
 exports[`Text height and width 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   height: 150px;
   width: 200px;
 }
 
 <div
-  className="c0"
-  height={150}
-  width={200}
-/>
+    class="c0"
+  >
+    <div
+      class="c1"
+      height="150"
+      width="200"
+    />
+  </div>
+</DocumentFragment>
 `;
 
 exports[`Text min/max values 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   min-height: 200px;
   max-height: 400px;
   min-width: 200px;
@@ -55,42 +333,111 @@ exports[`Text min/max values 1`] = `
 }
 
 <div
-  className="c0"
-/>
+    class="c0"
+  >
+    <div
+      class="c1"
+    />
+  </div>
+</DocumentFragment>
 `;
 
 exports[`Text mt prop sets margin-top 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   margin-top: 8px;
 }
 
 <div
-  className="c0"
-/>
+    class="c0"
+  >
+    <div
+      class="c1"
+    />
+  </div>
+</DocumentFragment>
 `;
 
 exports[`Text regular prop sets font-weight 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   font-weight: 500;
 }
 
 <div
-  className="c0"
-/>
+    class="c0"
+  >
+    <div
+      class="c1"
+    />
+  </div>
+</DocumentFragment>
 `;
 
 exports[`Text renders 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
 <div
-  className=""
-/>
+    class="c0"
+  >
+    <div
+      class=""
+    />
+  </div>
+</DocumentFragment>
 `;
 
 exports[`Text textAlign prop sets text-align 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   text-align: center;
 }
 
 <div
-  className="c0"
-/>
+    class="c0"
+  >
+    <div
+      class="c1"
+    />
+  </div>
+</DocumentFragment>
 `;

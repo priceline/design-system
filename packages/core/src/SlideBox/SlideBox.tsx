@@ -49,9 +49,9 @@ export function SlideBox({
   overflowAllowancePxX = 0,
   overflowAllowancePxY = 4,
   overflowAllowancePxTop,
-}: SlideBoxProps): JSX.Element {
+}: SlideBoxProps): React.JSX.Element {
   const childArray = React.Children.toArray(children)
-  const ref = useRef()
+  const ref = useRef<HTMLDivElement>(null)
   const { setCurrentSlide, currentSlide, onSlideChangeWrapper, arrowProps } = useSlideBoxNav({
     onSlideChange,
     currentSlideOverride,

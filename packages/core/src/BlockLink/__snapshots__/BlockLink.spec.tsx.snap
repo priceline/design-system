@@ -1,32 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BlockLink renders 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
+  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1 {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #0068ef;
 }
 
-.c0:hover {
+.c1:hover {
   color: #049;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c1 {
+.c2 {
   display: block;
   color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-<a
-  className="c0 c1"
-  color="primary"
-  rel={null}
-  size="medium"
->
-  raw text
-</a>
+<div
+    class="c0"
+  >
+    <a
+      class="c1 c2 sc-iGgWBj c2"
+      color="primary"
+    >
+      raw text
+    </a>
+  </div>
+</DocumentFragment>
 `;

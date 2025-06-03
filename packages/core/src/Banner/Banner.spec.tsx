@@ -3,7 +3,7 @@ import React from 'react'
 import { Banner } from '../Banner/Banner'
 import { Heading } from '../Heading/Heading'
 import { Text } from '../Text/Text'
-import { render } from '../__test__/testing-library'
+import { render, screen } from '../__test__/testing-library'
 import { theme } from '../theme/theme'
 
 describe('Banner', () => {
@@ -15,13 +15,13 @@ describe('Banner', () => {
   afterEach(() => (console.error = consoleError))
 
   test('renders with no props other than theme', () => {
-    const json = rendererCreateWithTheme(<Banner />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Banner />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('renders with an icon', () => {
-    const json = rendererCreateWithTheme(<Banner icon={<Star />} />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Banner icon={<Star />} />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('renders with text string', () => {
@@ -30,59 +30,57 @@ describe('Banner', () => {
   })
 
   test('renders with text node', () => {
-    const json = rendererCreateWithTheme(
-      <Banner header='Header' text={<Text>Text</Text>} icon={<Star />} />
-    ).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Banner header='Header' text={<Text>Text</Text>} icon={<Star />} />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('renders with blue bg', () => {
-    const json = rendererCreateWithTheme(<Banner bg='blue' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.blue)
-    expect(json).toHaveStyleRule('color', theme.colors.white)
+    render(<Banner bg='blue' data-testid='banner' />)
+    const element = screen.getByTestId('banner')
+    expect(element).toHaveStyleRule('background-color', theme.colors.blue)
+    expect(element).toHaveStyleRule('color', theme.colors.white)
   })
 
   test('renders with green bg', () => {
-    const json = rendererCreateWithTheme(<Banner bg='green' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.green)
-    expect(json).toHaveStyleRule('color', theme.colors.white)
+    render(<Banner bg='green' data-testid='banner' />)
+    const element = screen.getByTestId('banner')
+    expect(element).toHaveStyleRule('background-color', theme.colors.green)
+    expect(element).toHaveStyleRule('color', theme.colors.white)
   })
 
   test('renders with orange bg', () => {
-    const json = rendererCreateWithTheme(<Banner bg='orange' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.orange)
-    expect(json).toHaveStyleRule('color', theme.colors.white)
+    render(<Banner bg='orange' data-testid='banner' />)
+    const element = screen.getByTestId('banner')
+    expect(element).toHaveStyleRule('background-color', theme.colors.orange)
+    expect(element).toHaveStyleRule('color', theme.colors.white)
   })
 
   test('renders with red bg', () => {
-    const json = rendererCreateWithTheme(<Banner bg='red' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.red)
-    expect(json).toHaveStyleRule('color', theme.colors.white)
+    render(<Banner bg='red' data-testid='banner' />)
+    const element = screen.getByTestId('banner')
+    expect(element).toHaveStyleRule('background-color', theme.colors.red)
+    expect(element).toHaveStyleRule('color', theme.colors.white)
   })
 
   test('renders with lightBlue bg', () => {
-    const json = rendererCreateWithTheme(<Banner bg='lightBlue' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.lightBlue)
-    expect(json).toHaveStyleRule('color', theme.colors.darkBlue)
+    render(<Banner bg='lightBlue' data-testid='banner' />)
+    const element = screen.getByTestId('banner')
+    expect(element).toHaveStyleRule('background-color', theme.colors.lightBlue)
+    expect(element).toHaveStyleRule('color', theme.colors.darkBlue)
   })
 
   test('renders with lightGreen bg', () => {
-    const json = rendererCreateWithTheme(<Banner bg='lightGreen' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.lightGreen)
-    expect(json).toHaveStyleRule('color', theme.colors.darkGreen)
+    render(<Banner bg='lightGreen' data-testid='banner' />)
+    const element = screen.getByTestId('banner')
+    expect(element).toHaveStyleRule('background-color', theme.colors.lightGreen)
+    expect(element).toHaveStyleRule('color', theme.colors.darkGreen)
   })
 
   test('renders with lightRed bg', () => {
-    const json = rendererCreateWithTheme(<Banner bg='lightRed' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.lightRed)
-    expect(json).toHaveStyleRule('color', theme.colors.darkRed)
+    render(<Banner bg='lightRed' data-testid='banner' />)
+    const element = screen.getByTestId('banner')
+    expect(element).toHaveStyleRule('background-color', theme.colors.lightRed)
+    expect(element).toHaveStyleRule('color', theme.colors.darkRed)
   })
 
   test('renders close button if onClose func is provided', () => {
@@ -106,18 +104,18 @@ describe('Banner', () => {
   })
 
   test('accepts non-preset colors', () => {
-    const json = rendererCreateWithTheme(<Banner bg='gray' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.gray)
+    render(<Banner bg='gray' data-testid='banner' />)
+    const element = screen.getByTestId('banner')
+    expect(element).toHaveStyleRule('background-color', theme.colors.gray)
   })
 
   test('renders content from children props', () => {
-    const json = rendererCreateWithTheme(
+    const { asFragment } = render(
       <Banner>
         <span>123</span>
       </Banner>
-    ).toJSON()
-    expect(json).toMatchSnapshot()
+    )
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('renders with header node', () => {

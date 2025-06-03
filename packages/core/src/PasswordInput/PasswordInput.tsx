@@ -61,6 +61,7 @@ export function PasswordInput({
   value,
   onChange,
   autoComplete,
+  progressBarDefaultStep = 1,
   ...props
 }: PasswordInputProps) {
   const [showPassword, setShowPassword] = useState(false)

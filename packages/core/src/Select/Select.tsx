@@ -84,9 +84,11 @@ export type SelectProps = SpaceProps &
     borderRadius?: BorderRadius
     size?: SelectSizes
     variation?: SelectVariations
+  } & {
+    isField?: boolean
   }
 
-const SelectBase: React.FC<SelectProps> = styled.select.attrs(borderRadiusAttrs)`
+const StyledSelectBase: React.FC<SelectProps> = styled.select.attrs(borderRadiusAttrs)`
   appearance: none;
   background-color: transparent;
   border-style: solid;
@@ -125,11 +127,15 @@ const SelectBase: React.FC<SelectProps> = styled.select.attrs(borderRadiusAttrs)
   ${(props) => compose(space, fontSize, borderRadius)(props)}
 `
 
-SelectBase.defaultProps = {
-  fontSize: [2, null, 1],
-  m: 0,
-  size: 'lg',
-}
+/**
+ * @public
+ */
+export const SelectBase = React.forwardRef<HTMLSelectElement, SelectProps>(
+  ({ fontSize = [2, null, 1], m = 0, size = 'lg', ...props }: SelectProps, ref) => {
+    const defaultedProps = { fontSize, m, size, ...props }
+    return <StyledSelectBase {...defaultedProps} ref={ref} />
+  }
+)
 
 /**
  * @public
@@ -141,9 +147,9 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
       <ClickableIcon ml={-32} color='text.light' />
     </Flex>
   )
-)
+) as React.ForwardRefExoticComponent<Omit<SelectProps, 'ref'> & React.RefAttributes<HTMLSelectElement>> & {
+  isField: boolean
+}
 
 Select.displayName = 'Select'
-
-// @ts-ignore
 Select.isField = true

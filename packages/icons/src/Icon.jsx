@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
 import upperFirst from 'lodash.upperfirst'
 import PropTypes from 'prop-types'
+import React from 'react'
+import styled from 'styled-components'
 import * as icons from './index'
 
 const BaseIcon = ({ name, title, desc, titleId, descId, size = 24, ...props }) => {

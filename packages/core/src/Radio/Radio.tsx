@@ -75,8 +75,11 @@ export type RadioProps = ComponentPropsWithoutRef<'input'> & {
 /**
  * @public
  */
-export const Radio: React.FC<RadioProps> = React.forwardRef<HTMLInputElement, RadioProps>(
-  ({ color = 'primary', checked, disabled, size = 24, ...props }, ref) => {
+export const Radio = React.forwardRef<HTMLInputElement, RadioProps>(
+  ({ color = 'primary', size = 24, ...props }, ref) => {
+    const defaultedProps = { color, size, ...props }
+    const { checked, disabled } = defaultedProps
+
     const borderAdjustedSize = size + 4
 
     const dataNameHelper = (checked, disabled) => {
@@ -96,17 +99,11 @@ export const Radio: React.FC<RadioProps> = React.forwardRef<HTMLInputElement, Ra
         disabled={disabled}
         data-name={dataNameHelper(checked, disabled)}
       >
-        <RadioInput
-          type='radio'
-          color={color}
-          checked={checked}
-          disabled={disabled}
-          size={size}
-          {...props}
-          ref={ref}
-        />
+        <RadioInput type='radio' {...defaultedProps} ref={ref} />
         <RadioIcon checked={checked} size={borderAdjustedSize} />
       </RadioWrap>
     )
   }
 )
+
+Radio.displayName = 'Radio'

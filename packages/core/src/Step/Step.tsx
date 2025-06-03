@@ -39,7 +39,7 @@ export function Step({
   children,
   onClick,
   ...props
-}: StepProps): React.ReactElement {
+}: StepProps) {
   const color = active || completed ? 'primary' : 'text.light'
 
   return (

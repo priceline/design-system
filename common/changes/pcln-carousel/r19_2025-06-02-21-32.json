@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "React 19 ecosystem upgrade",
+      "type": "major",
+      "packageName": "pcln-carousel"
+    }
+  ],
+  "packageName": "pcln-carousel",
+  "email": "steven.dalonzo@priceline.com"
+}

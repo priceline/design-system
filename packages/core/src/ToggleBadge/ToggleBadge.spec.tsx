@@ -1,4 +1,4 @@
-import React from 'react'
+import { render, screen } from '../__test__/testing-library'
 import { ToggleBadge } from '../ToggleBadge/ToggleBadge'
 import { createTheme } from '../utils/createTheme'
 
@@ -13,24 +13,22 @@ describe('ToggleBadge', () => {
   afterEach(() => (console.error = consoleError))
 
   test('selected ToggleBadge renders with default props', () => {
-    const json = rendererCreateWithTheme(<ToggleBadge selected />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.lightBlue)
-    expect(json).toHaveStyleRule('color', theme.colors.blue)
+    render(<ToggleBadge selected data-testid='toggle-badge' />)
+    const element = screen.getByTestId('toggle-badge')
+    expect(element).toHaveStyleRule('background-color', theme.colors.lightBlue)
+    expect(element).toHaveStyleRule('color', theme.colors.blue)
   })
 
   test('unselected ToggleBadge renders with default props', () => {
-    const json = rendererCreateWithTheme(<ToggleBadge />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('color', theme.colors.blue)
+    render(<ToggleBadge data-testid='toggle-badge' />)
+    const element = screen.getByTestId('toggle-badge')
+    expect(element).toHaveStyleRule('color', theme.colors.blue)
   })
 
   test('selected one with background-color and text color passed as props hover state', () => {
-    const json = rendererCreateWithTheme(
-      <ToggleBadge selected bg='secondary' color='error' fontSize={1} />
-    ).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.palette.secondary.light)
-    expect(json).toHaveStyleRule('color', theme.palette.error.base)
+    render(<ToggleBadge selected bg='secondary' color='error' fontSize={1} data-testid='toggle-badge' />)
+    const element = screen.getByTestId('toggle-badge')
+    expect(element).toHaveStyleRule('background-color', theme.palette.secondary.light)
+    expect(element).toHaveStyleRule('color', theme.palette.error.base)
   })
 })

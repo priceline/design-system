@@ -1,30 +1,29 @@
-import React from 'react'
 import { render, screen } from '../__test__/testing-library'
 import { theme } from '../theme/theme'
 import { Divider } from './Divider'
 
 describe('Divider', () => {
   test('renders', () => {
-    const json = rendererCreateWithTheme(<Divider />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Divider />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('width prop sets width', () => {
-    const json = rendererCreateWithTheme(<Divider width={1 / 2} />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('width', '50%')
+    render(<Divider width={1 / 2} data-testid='divider' />)
+    const element = screen.getByTestId('divider')
+    expect(element).toHaveStyleRule('width', '50%')
   })
 
   test('m prop sets margin', () => {
-    const json = rendererCreateWithTheme(<Divider m={2} />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('margin', theme.space[2])
+    render(<Divider m={2} data-testid='divider' />)
+    const element = screen.getByTestId('divider')
+    expect(element).toHaveStyleRule('margin', theme.space[2])
   })
 
   test('borderColor prop sets borderColor', () => {
-    const json = rendererCreateWithTheme(<Divider borderColor='blue' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('border-color', theme.colors.blue)
+    render(<Divider borderColor='blue' data-testid='divider' />)
+    const element = screen.getByTestId('divider')
+    expect(element).toHaveStyleRule('border-color', theme.colors.blue)
   })
 
   test('override default margin left and right', () => {

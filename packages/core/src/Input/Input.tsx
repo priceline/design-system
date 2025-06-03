@@ -99,18 +99,21 @@ export type InputWithRef = ForwardRefExoticComponent<Omit<InputProps, 'ref'> & R
 /**
  * @public
  */
-export const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
-  const { helperText, color, ...restProps } = props
-  return (
-    <>
-      <StyledInput {...restProps} color={color} ref={ref} />
-      {helperText &&
-        React.cloneElement(helperText, {
-          color: helperText.props.color || color,
-        })}
-    </>
-  )
-}) as InputWithRef
+export const Input = React.forwardRef<HTMLInputElement, InputProps>(
+  ({ fontSize = [2, null, 1], borderRadius = 'lg', size = 'lg', ...props }: InputProps, ref) => {
+    const defaultedProps = { fontSize, borderRadius, size, ...props }
+    const { helperText, color, ...restProps } = defaultedProps
+    return (
+      <>
+        <StyledInput {...restProps} color={color} ref={ref} />
+        {helperText &&
+          React.cloneElement(helperText, {
+            color: helperText.props.color || color,
+          })}
+      </>
+    )
+  }
+) as InputWithRef
 
 const HelperText: React.FC<InputHelperTextProps> = styled(Text).attrs(() => ({
   mt: 2,
@@ -123,8 +126,3 @@ Input.HelperText.displayName = INPUT_ERROR_TEXT
 
 Input.displayName = 'Input'
 Input.isField = true
-Input.defaultProps = {
-  fontSize: [2, null, 1],
-  borderRadius: 'lg',
-  size: 'lg',
-}

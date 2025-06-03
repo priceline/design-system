@@ -1,4 +1,4 @@
-import React from 'react'
+import { render, screen } from '../__test__/testing-library'
 import { Stamp } from '../Stamp/Stamp'
 import { theme } from '../theme/theme'
 
@@ -11,76 +11,108 @@ describe('Stamp', () => {
   afterEach(() => (console.error = consoleError))
 
   test('renders', () => {
-    const json = rendererCreateWithTheme(<Stamp />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Stamp />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('renders small size', () => {
-    const json = rendererCreateWithTheme(<Stamp size='small' />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Stamp size='small' />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('renders medium fill', () => {
-    const json = rendererCreateWithTheme(<Stamp variation='fill' />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Stamp variation='fill' />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('renders small fill', () => {
-    const json = rendererCreateWithTheme(<Stamp size='small' variation='fill' />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Stamp size='small' variation='fill' />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('color gray sets text and icon color', () => {
-    const json = rendererCreateWithTheme(<Stamp color='gray' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('color', theme.colors.gray)
+    render(
+      <Stamp color='gray' data-testid='stamp'>
+        Stamp
+      </Stamp>
+    )
+    const element = screen.getByTestId('stamp')
+    expect(element).toHaveStyleRule('color', theme.colors.gray)
   })
 
   test('color blue sets text and icon color', () => {
-    const json = rendererCreateWithTheme(<Stamp color='blue' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('color', theme.colors.blue)
+    render(
+      <Stamp color='blue' data-testid='stamp'>
+        Stamp
+      </Stamp>
+    )
+    const element = screen.getByTestId('stamp')
+    expect(element).toHaveStyleRule('color', theme.colors.blue)
   })
 
   test('color green sets text and icon color', () => {
-    const json = rendererCreateWithTheme(<Stamp color='green' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('color', theme.colors.green)
+    render(
+      <Stamp color='green' data-testid='stamp'>
+        Stamp
+      </Stamp>
+    )
+    const element = screen.getByTestId('stamp')
+    expect(element).toHaveStyleRule('color', theme.colors.green)
   })
 
   test('color red sets text and icon color', () => {
-    const json = rendererCreateWithTheme(<Stamp color='red' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('color', theme.colors.red)
+    render(
+      <Stamp color='red' data-testid='stamp'>
+        Stamp
+      </Stamp>
+    )
+    const element = screen.getByTestId('stamp')
+    expect(element).toHaveStyleRule('color', theme.colors.red)
   })
 
   test('color orange sets text and icon color', () => {
-    const json = rendererCreateWithTheme(<Stamp color='orange' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('color', theme.colors.orange)
+    render(
+      <Stamp color='orange' data-testid='stamp'>
+        Stamp
+      </Stamp>
+    )
+    const element = screen.getByTestId('stamp')
+    expect(element).toHaveStyleRule('color', theme.colors.orange)
   })
 
   test('color purple sets text and icon color', () => {
-    const json = rendererCreateWithTheme(<Stamp color='purple' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('color', theme.colors.purple)
+    render(
+      <Stamp color='purple' data-testid='stamp'>
+        Stamp
+      </Stamp>
+    )
+    const element = screen.getByTestId('stamp')
+    expect(element).toHaveStyleRule('color', theme.colors.purple)
   })
 
   test('bg blue sets background color', () => {
-    const json = rendererCreateWithTheme(<Stamp bg='blue' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('background-color', theme.colors.blue)
+    render(
+      <Stamp bg='blue' data-testid='stamp'>
+        Stamp
+      </Stamp>
+    )
+    const element = screen.getByTestId('stamp')
+    expect(element).toHaveStyleRule('background-color', theme.colors.blue)
   })
 
   test('borderColor green sets border color', () => {
-    const json = rendererCreateWithTheme(<Stamp borderColor='green' />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('border-color', theme.colors.green)
+    render(
+      <Stamp borderColor='green' data-testid='stamp'>
+        Stamp
+      </Stamp>
+    )
+    const element = screen.getByTestId('stamp')
+    expect(element).toHaveStyleRule('border-color', theme.colors.green)
   })
 
   test('has default borderGray border color', () => {
-    const json = rendererCreateWithTheme(<Stamp />).toJSON()
-    expect(json).toMatchSnapshot()
-    expect(json).toHaveStyleRule('border-color', theme.colors.borderGray)
+    render(<Stamp data-testid='stamp'>Stamp</Stamp>)
+    const element = screen.getByTestId('stamp')
+    expect(element).toHaveStyleRule('border-color', theme.colors.borderGray)
   })
 })

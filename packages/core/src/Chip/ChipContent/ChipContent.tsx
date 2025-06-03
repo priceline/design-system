@@ -77,6 +77,12 @@ export function ChipContent({
   m = 0,
   ...props
 }: ChipContentProps): React.ReactElement {
+  const defaultedProps = {
+    color,
+    py,
+    m,
+    ...props,
+  }
   return (
     <ChipContentWrapper
       data-testid='chipContentWrapper'
@@ -88,10 +94,7 @@ export function ChipContent({
       size={size}
       variation={variation}
       justifyContent={justifyContent}
-      color={color}
-      py={py}
-      m={m}
-      {...props}
+      {...defaultedProps}
     >
       {children}
       <Flex alignItems='center' height='100%'>

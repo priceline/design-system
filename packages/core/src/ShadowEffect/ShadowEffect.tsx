@@ -4,6 +4,13 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import { zIndex } from 'styled-system'
 
+export type ChildProps = {
+  onBlur?: () => void
+  onClick?: () => void
+  onFocus?: () => void
+  onKeyDown?: (evt: React.KeyboardEvent) => void
+}
+
 /**
  * @public
  */
@@ -78,22 +85,22 @@ export function ShadowEffect({
         >(child, {
           zIndex: isOpen && (zIndex !== 'overlay' ? zIndex : 'onOverlay'),
           onBlur: () => {
-            const onBlur = child.props.onBlur
+            const onBlur = (child.props as ChildProps).onBlur
             onBlur && onBlur()
             shouldCloseOnBlur && handleClose()
           },
           onClick: () => {
-            const onClick = child.props.onClick
+            const onClick = (child.props as ChildProps).onClick
             onClick && onClick()
             handleOpen()
           },
           onFocus: () => {
-            const onFocus = child.props.onFocus
+            const onFocus = (child.props as ChildProps).onFocus
             onFocus && onFocus()
             shouldOpenOnFocus && handleOpen()
           },
           onKeyDown: (evt) => {
-            const onKeyDown = child.props.onKeyDown
+            const onKeyDown = (child.props as ChildProps).onKeyDown
             onKeyDown && onKeyDown(evt)
             handleKeyDown(evt)
           },

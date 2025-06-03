@@ -1,11 +1,5 @@
-import React from 'react'
-import { ThemeProvider } from 'pcln-design-system'
-
 import '@testing-library/jest-dom'
 import 'jest-styled-components'
-import renderer from 'react-test-renderer'
-
-global.rendererCreateWithTheme = (tree) => renderer.create(<ThemeProvider>{tree}</ThemeProvider>)
 
 global.requestAnimationFrame =
   global.requestAnimationFrame ||

@@ -13,6 +13,6 @@ export type ChatTriggerProps = FloatingActionButtonProps
 /**
  * @public
  */
-export function ChatTrigger(props: FloatingActionButtonProps): JSX.Element {
+export function ChatTrigger(props: FloatingActionButtonProps): React.JSX.Element {
   return <FloatingActionButton bottom={0} icon={Chat} right={0} {...props} />
 }

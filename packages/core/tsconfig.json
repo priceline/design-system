@@ -2,6 +2,8 @@
   "extends": "./node_modules/@priceline/heft-component-rig/profiles/react/tsconfig-base.json",
 
   "compilerOptions": {
-    "target": "ES2022"
+    "target": "ES2022",
+    "jsx": "react-jsx",
+    "skipLibCheck": true
   }
 }

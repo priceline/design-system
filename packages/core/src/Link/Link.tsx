@@ -94,7 +94,7 @@ export type LinkProps = WidthProps &
 /**
  * @public
  */
-export const Link: React.FC<LinkProps> = styled.a.attrs(
+export const StyledA: React.FC<LinkProps> = styled.a.attrs(
   ({ color, disabled, href, target, onClick, ...props }) => ({
     color: disabled ? 'text.light' : color,
     disabled,
@@ -120,10 +120,11 @@ export const Link: React.FC<LinkProps> = styled.a.attrs(
   ${(props) => compose(space, width)(props)}
 `
 
-Link.displayName = 'Link'
-
-Link.defaultProps = {
-  color: 'primary',
-  variation: 'link',
-  size: 'medium',
+/**
+ * @public
+ */
+export function Link({ color = 'primary', variation = 'link', size = 'medium', ...props }: LinkProps) {
+  return <StyledA color={color} variation={variation} size={size} {...props} />
 }
+
+Link.displayName = 'Link'

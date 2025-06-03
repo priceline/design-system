@@ -1,27 +1,27 @@
-import React from 'react'
+import { render, screen } from '../__test__/testing-library'
 import { Flex } from './Flex'
 
 describe('Flex', () => {
   test('renders', () => {
-    const flex = rendererCreateWithTheme(<Flex />).toJSON()
-    expect(flex).toMatchSnapshot()
+    const { asFragment } = render(<Flex />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('alignItems prop', () => {
-    const flex = rendererCreateWithTheme(<Flex alignItems='center' />).toJSON()
-    expect(flex).toMatchSnapshot()
-    expect(flex).toHaveStyleRule('align-items', 'center')
+    render(<Flex alignItems='center' data-testid='flex' />)
+    const element = screen.getByTestId('flex')
+    expect(element).toHaveStyleRule('align-items', 'center')
   })
 
   test('justifyContent prop', () => {
-    const flex = rendererCreateWithTheme(<Flex justifyContent='space-between' />).toJSON()
-    expect(flex).toMatchSnapshot()
-    expect(flex).toHaveStyleRule('justify-content', 'space-between')
+    render(<Flex justifyContent='space-between' data-testid='flex' />)
+    const element = screen.getByTestId('flex')
+    expect(element).toHaveStyleRule('justify-content', 'space-between')
   })
 
   test('flexWrap prop', () => {
-    const flex = rendererCreateWithTheme(<Flex flexWrap='wrap' />).toJSON()
-    expect(flex).toMatchSnapshot()
-    expect(flex).toHaveStyleRule('flex-wrap', 'wrap')
+    render(<Flex flexWrap='wrap' data-testid='flex' />)
+    const element = screen.getByTestId('flex')
+    expect(element).toHaveStyleRule('flex-wrap', 'wrap')
   })
 })

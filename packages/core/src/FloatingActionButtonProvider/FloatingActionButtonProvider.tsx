@@ -21,17 +21,14 @@ export type FloatingActionButtonProviderProps = MarginProps & {
   floatingActionButtons: Array<FloatingActionButtonPropWrapper>
 }
 
-export const FloatingActionButtonProvider: React.FC<FloatingActionButtonProviderProps> = (
-  {
-    animationVariant = 'slideInBottom',
-    position = 'topRight',
-    delayDisplayMs,
-    hideUntilScrollPercent,
-    floatingActionButtons,
-    ...props
-  },
-  ref
-) => {
+export const FloatingActionButtonProvider = ({
+  animationVariant = 'slideInBottom',
+  position = 'topRight',
+  delayDisplayMs,
+  hideUntilScrollPercent,
+  floatingActionButtons,
+  ...props
+}: FloatingActionButtonProviderProps) => {
   const { showFab } = useFloatingActinButton({
     hideUntilScrollPercent,
     delayDisplayMs,

@@ -27,6 +27,11 @@ const BaseComponent = ({
   ariaLabelledBy += desc && descId ? \` \${descId}\` : ''
   ariaLabelledBy = ariaLabelledBy ? ariaLabelledBy : undefined
 
+  props.size = size
+  props.tabIndex = tabIndex
+  props.focusable = focusable
+  props['aria-hidden'] = ariaHidden
+  props.role = role
   props['aria-labelledby'] = ariaLabelledBy
 
   return (${jsx})

@@ -1,5 +1,4 @@
 import { Key as KeyIcon } from 'pcln-icons'
-import React from 'react'
 import { fireEvent, render } from '../__test__/testing-library'
 import { IconButton } from './IconButton'
 
@@ -20,7 +19,7 @@ describe('IconButton', () => {
   })
 
   test('renders without props', () => {
-    const json = rendererCreateWithTheme(<IconButton icon={<KeyIcon />} />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<IconButton icon={<KeyIcon />} />)
+    expect(asFragment()).toMatchSnapshot()
   })
 })

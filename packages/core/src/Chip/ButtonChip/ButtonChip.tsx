@@ -44,7 +44,7 @@ export type ButtonChipProps = Omit<ChipContentProps, 'action' | 'ref'> & {
 /**
  * @public
  */
-export const ButtonChip: React.FC<ButtonChipProps> = React.forwardRef<HTMLButtonElement, ButtonChipProps>(
+export const ButtonChip = React.forwardRef<HTMLButtonElement, ButtonChipProps>(
   (
     {
       color = 'primary',

@@ -27,7 +27,7 @@ export function Arrow({
   leftDisabled,
   rightDisabled,
   ...props
-}: ArrowProps): JSX.Element {
+}: ArrowProps): React.JSX.Element {
   const Icon = isLeft ? ChevronLeft : ChevronRight
   const { buttonSize, iconSize } = ARROW_SIZES[size]
   return (

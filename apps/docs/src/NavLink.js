@@ -25,12 +25,6 @@ const Base = styled.a`
 
   ${(props) => compose(space, color)(props)}
 `
-Base.defaultProps = {
-  pl: 3,
-  pr: 2,
-  py: 1,
-  color: 'gray',
-}
 
 export default withDocs(({ basepath, href, route, ...props }) => {
   if (isAbsoluteURL(href)) {

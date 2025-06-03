@@ -2,6 +2,17 @@
   "name": "@priceline/eslint-config",
   "version": "0.0.1",
   "description": "shared ESLint config",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "github:priceline/design-system",
+    "directory": "tools/eslint-config"
+  },
+  "license": "MIT",
+  "author": "Priceline.com Design System Team",
   "main": "index.js",
   "scripts": {
     "build": "",
@@ -9,17 +20,6 @@
     "lint:fix": "eslint . --fix",
     "test:ci": "echo \"Error: no test specified\" && exit 0"
   },
-  "repository": {
-    "type": "git",
-    "url": "github:priceline/design-system",
-    "directory": "tools/eslint-config"
-  },
-  "keywords": [
-    "eslint",
-    "eslintconfig"
-  ],
-  "author": "Priceline.com Design System Team",
-  "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.22.15",
     "@babel/eslint-parser": "^7.21.8",
@@ -39,14 +39,15 @@
     "eslint-plugin-sonarjs": "^0.18.0",
     "eslint-plugin-storybook": "^0.6.12",
     "prettier": "^2.8.8",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-is": "^18.3.1"
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-is": "^19.1.0"
   },
   "devDependencies": {
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
     "eslint": "^8.48.0",
-    "typescript": "^5.2.2",
-    "react-test-renderer": "^18.3.1"
+    "typescript": "^5.2.2"
   },
   "peerDependencies": {
     "eslint": "^8.42.0",

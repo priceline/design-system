@@ -53,8 +53,9 @@ export type LabelProps = SpaceProps &
   FontWeightProps &
   LineHeightProps &
   TextStyleProps &
-  WidthProps &
-  Partial<Omit<HTMLLabelElement, 'children'>> & {
+  WidthProps & {
+    isLabel?: boolean
+  } & Partial<Omit<HTMLLabelElement, 'children'>> & {
     children?: React.ReactNode
     color?: string
     autoHide?: boolean
@@ -68,7 +69,7 @@ export type LabelProps = SpaceProps &
 /**
  * @public
  */
-export const Label: React.FC<LabelProps> & { isLabel?: boolean } = styled.label.attrs((props) => ({
+export const StyledLabel: React.FC<LabelProps> = styled.label.attrs((props) => ({
   ...typographyAttrs(props),
   ...props,
 }))`
@@ -89,9 +90,11 @@ export const Label: React.FC<LabelProps> & { isLabel?: boolean } = styled.label.
   ${(props) => compose(fontSize, fontWeight, lineHeight, letterSpacing, space, textStyle, width)(props)}
 `
 
-Label.defaultProps = {
-  color: 'text.light',
-  textStyle: 'label',
+/**
+ * @public
+ */
+export function Label({ color = 'text.light', textStyle = 'label', ...props }: LabelProps) {
+  return <StyledLabel color={color} textStyle={textStyle} {...props} />
 }
 
 Label.displayName = 'Label'

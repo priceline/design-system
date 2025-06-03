@@ -2,50 +2,54 @@
   "name": "@priceline/project-change-analyzer",
   "version": "0.0.1",
   "description": "Get information about projects that have changes",
-  "scripts": {
-    "build": "tsc",
-    "demo": "ts-node src/index.ts",
-    "run:core": "ts-node src/cli/releaseNotes.ts --packageName='pcln-design-system'",
-    "run:popover": "ts-node src/cli/releaseNotes.ts --packageName='pcln-popover'",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+  "repository": {
+    "type": "git",
+    "url": "github:pcln/pcln-web",
+    "directory": "tools/project-change-analyzer"
   },
+  "license": "UNLICENSED",
   "main": "lib-commonjs/index.js",
   "module": "lib-esm/index.js",
   "types": "types/index.d.ts",
-  "license": "UNLICENSED",
-  "repository": {
-    "directory": "tools/project-change-analyzer",
-    "type": "git",
-    "url": "github:pcln/pcln-web"
-  },
   "files": [
     "lib-commonjs/",
     "lib-esm/",
     "types/",
     "bin/"
   ],
+  "scripts": {
+    "build": "tsc",
+    "demo": "ts-node src/index.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "run:core": "ts-node src/cli/releaseNotes.ts --packageName='pcln-design-system'",
+    "run:popover": "ts-node src/cli/releaseNotes.ts --packageName='pcln-popover'"
+  },
   "dependencies": {
     "@actions/core": "^1.10.1",
-    "@rushstack/rush-sdk": "^5.112.1",
     "@priceline/eslint-config": "workspace:*",
     "@rushstack/eslint-patch": "^1.6.0",
     "@rushstack/node-core-library": "^3.62.0",
     "@rushstack/package-deps-hash": "^3.2.67",
+    "@rushstack/rush-sdk": "^5.112.1",
     "@types/yargs": "^17.0.10",
     "axios": "^0.27.2",
     "graphql": "^16.5.0",
     "graphql-tag": "^2.12.6",
     "https": "^1.0.0",
-    "yargs": "^17.4.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-is": "^18.3.1"
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-is": "^19.1.0",
+    "yargs": "^17.4.0"
   },
   "devDependencies": {
     "@types/node": "^20.12.7",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
     "eslint": "^8.48.0",
-    "typescript": "^5.3.3",
-    "react-test-renderer": "^18.3.1"
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-is": "^19.1.0",
+    "typescript": "^5.3.3"
   }
 }

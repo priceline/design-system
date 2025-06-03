@@ -13,9 +13,6 @@ const BaseCSS = ({ css }) => (
 BaseCSS.propTypes = {
   css: PropTypes.any,
 }
-BaseCSS.defaultProps = {
-  css: '*{box-sizing:border-box}body{margin:0}',
-}
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {

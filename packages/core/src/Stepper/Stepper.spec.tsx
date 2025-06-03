@@ -1,4 +1,5 @@
 import React from 'react'
+import { render } from '../__test__/testing-library'
 import { Stepper } from './Stepper'
 
 const children = (
@@ -11,12 +12,12 @@ const children = (
 
 describe('Stepper', () => {
   test('renders without crashing', () => {
-    const json = rendererCreateWithTheme(<Stepper />).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Stepper />)
+    expect(asFragment()).toMatchSnapshot()
   })
 
   test('renders with children', () => {
-    const json = rendererCreateWithTheme(<Stepper>{children}</Stepper>).toJSON()
-    expect(json).toMatchSnapshot()
+    const { asFragment } = render(<Stepper>{children}</Stepper>)
+    expect(asFragment()).toMatchSnapshot()
   })
 })
