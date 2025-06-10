@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Tue, 03 Jun 2025 17:09:02 GMT and should not be manually modified.
+This log was last generated on Tue, 10 Jun 2025 18:23:26 GMT and should not be manually modified.
+
+## 6.28.0
+Tue, 10 Jun 2025 18:23:26 GMT
+
+### Minor changes
+
+- replace framer-motion with motion (motion/react). hard dependency instead of peer
 
 ## 6.27.2
 Tue, 03 Jun 2025 17:09:02 GMT
