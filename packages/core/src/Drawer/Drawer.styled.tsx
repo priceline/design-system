@@ -1,19 +1,19 @@
-import styled from 'styled-components'
-import { Flex } from '../Flex/Flex'
-import { theme } from '../theme'
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 import React from 'react'
-import { getPaletteColor } from '../utils'
-import { Box } from '../Box/Box'
-import { IconButton } from '../IconButton/IconButton'
-import { PlacementOptions } from './Drawer'
+import styled from 'styled-components'
 import { Absolute } from '../Absolute/Absolute'
+import { Box } from '../Box/Box'
+import { Flex } from '../Flex/Flex'
+import { IconButton } from '../IconButton/IconButton'
+import { theme } from '../theme'
+import { getPaletteColor } from '../utils'
+import { PlacementOptions } from './Drawer'
 
 const Component = React.forwardRef((props, ref: React.MutableRefObject<HTMLDivElement>) => (
   <Box {...props} ref={ref} />
 ))
 
-const AnimatedComponent = motion(Component)
+const AnimatedComponent = motion.create(Component)
 
 const getBorderRadiusStyles = (placement, isFloating) => {
   const themeRadius = theme.borderRadii['2xl']

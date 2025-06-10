@@ -1,4 +1,4 @@
-import { HTMLMotionProps, motion, Transition } from 'framer-motion'
+import { HTMLMotionProps, motion, Transition } from 'motion/react'
 import React from 'react'
 
 /**

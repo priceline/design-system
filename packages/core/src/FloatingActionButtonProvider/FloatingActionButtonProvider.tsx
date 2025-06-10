@@ -1,6 +1,6 @@
 import React from 'react'
 import { Animate, type MotionVariant } from '../Animate/Animate'
-import { AnimatePresence } from 'framer-motion'
+import { AnimatePresence } from 'motion/react'
 import { useFloatingActinButton } from './useFloatingActionButton'
 import { FloatingActionButtonProps, FloatingActionButton } from '../FloatingActionButton/FloatingActionButton'
 import { Wrapper } from './FloatingActionButtonProvider.styled'

@@ -74,14 +74,15 @@
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-popover": "^1.0.5",
     "@radix-ui/react-tabs": "^1.0.4",
     "@radix-ui/react-visually-hidden": "^1.0.3",
-    "@radix-ui/react-popover": "^1.0.5",
     "@styled-system/theme-get": "^5.1.2",
     "@types/styled-system": "^5.1.22",
     "deepmerge": "^4.3.1",
     "hoist-non-react-statics": "^3.3.2",
     "lodash": "^4.17.21",
+    "motion": "^12.16.0",
     "react-element-to-jsx-string": "^15.0.0",
     "react-intersection-observer": "^9.5.3",
     "styled-system": "^5.1.5"
@@ -101,8 +102,8 @@
     "@storybook/addon-interactions": "^8.3.0",
     "@storybook/addon-links": "^8.3.0",
     "@storybook/jest": "^0.2.3",
-    "@storybook/test": "^8.3.0",
     "@storybook/react": "^8.3.0",
+    "@storybook/test": "^8.3.0",
     "@storybook/testing-library": "^0.2.2",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
@@ -117,7 +118,6 @@
     "camelcase": "^6.2.0",
     "cross-env": "^7.0.3",
     "eslint": "^8.48.0",
-    "framer-motion": "^11.5.5",
     "jest-styled-components": "^7.2.0",
     "npm-run-all": "^4.1.5",
     "pcln-icons": "workspace:*",
@@ -134,7 +134,6 @@
     "typescript": "^5.3.3"
   },
   "peerDependencies": {
-    "framer-motion": ">=6.5.1",
     "pcln-icons": "^6",
     "react": "^17.0.2 || ^18.2.0",
     "react-dom": "^17.0.2 || ^18.2.0",

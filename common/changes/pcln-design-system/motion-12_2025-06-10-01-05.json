@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "replace framer-motion with motion (motion/react). hard dependency instead of peer",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
