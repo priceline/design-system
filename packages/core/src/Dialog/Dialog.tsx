@@ -1,5 +1,5 @@
 import * as Dialog from '@radix-ui/react-dialog'
-import { AnimatePresence } from 'framer-motion'
+import { AnimatePresence } from 'motion/react'
 import React, { useEffect } from 'react'
 import { OverflowProps } from 'styled-system'
 import type { BorderRadius, ColorSchemes, PaletteColor, ZIndex } from '../theme/theme'

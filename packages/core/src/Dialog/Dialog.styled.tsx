@@ -1,7 +1,7 @@
 import * as Dialog from '@radix-ui/react-dialog'
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden'
 import themeGet from '@styled-system/theme-get'
-import { Transition, motion } from 'framer-motion'
+import { Transition, motion } from 'motion/react'
 import React, { ReactElement } from 'react'
 import styled from 'styled-components'
 import { overflowX, overflowY, zIndex } from 'styled-system'

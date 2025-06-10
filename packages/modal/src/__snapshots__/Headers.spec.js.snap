@@ -150,7 +150,7 @@ exports[`ModalHeader render 1`] = `
           >
             <div
               class="c9"
-              style="will-change: transform; transform: scale(0);"
+              style="transform: scale(0);"
             />
             <svg
               aria-hidden="true"

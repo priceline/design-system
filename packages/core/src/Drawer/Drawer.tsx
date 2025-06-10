@@ -4,7 +4,7 @@ import { Flex } from '../Flex/Flex'
 import { Text } from '../Text/Text'
 import { DrawerRoot, DrawerWrapper, HeaderButton } from './Drawer.styled'
 import { ChevronDown, Close } from 'pcln-icons'
-import { AnimatePresence, motion, useDragControls } from 'framer-motion'
+import { AnimatePresence, motion, useDragControls } from 'motion/react'
 import { SpaceProps, LayoutProps } from 'styled-system'
 import { useScrollWithShadow } from '../useScrollWithShadows/useScrollWithShadow'
 import { theme } from '../theme'
@@ -106,8 +106,8 @@ export const Drawer: React.FC<DrawerProps> = ({
               props?.maxHeight
                 ? props.maxHeight
                 : isMobile
-                  ? ['290px', '400px', '480px', 'calc(100vh - 64px)']
-                  : (props.height ?? '100%')
+                ? ['290px', '400px', '480px', 'calc(100vh - 64px)']
+                : props.height ?? '100%'
             }
             maxWidth={isMobile ? '100%' : ['400px', '600px', '800px', '100%']}
             width={isMobile ? '100%' : props.width}
