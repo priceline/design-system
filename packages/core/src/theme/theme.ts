@@ -735,6 +735,8 @@ export const colorSchemeNames = [
   'headingBase',
   'headingLight',
   'headingOnPrimaryLight',
+  'promoSecondary',
+  'promoSecondaryDark',
 ] as const
 
 /**

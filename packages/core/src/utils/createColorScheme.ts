@@ -1,8 +1,19 @@
 import { ColorSchemes, PaletteFamilies } from '../theme'
 
 export const createColorScheme = ({ palette }: { palette: PaletteFamilies }): ColorSchemes => {
-  const { primary, secondary, background, success, warning, caution, text, highlight, promoPrimary, alert } =
-    palette
+  const {
+    primary,
+    secondary,
+    background,
+    success,
+    warning,
+    caution,
+    text,
+    highlight,
+    promoPrimary,
+    promoSecondary,
+    alert,
+  } = palette
 
   return {
     // Primary
@@ -187,6 +198,19 @@ export const createColorScheme = ({ palette }: { palette: PaletteFamilies }): Co
       background: promoPrimary.light,
       backgroundName: 'promoPrimary.light',
       foreground: promoPrimary.dark,
+    },
+
+    // Promo Secondary
+    //////////////////////////////////////////////
+    promoSecondary: {
+      background: promoSecondary.base,
+      backgroundName: 'promoSecondary.base',
+      foreground: text.lightest,
+    },
+    promoSecondaryDark: {
+      background: promoSecondary.dark,
+      backgroundName: 'promoSecondary.dark',
+      foreground: text.lightest,
     },
 
     // Alert
