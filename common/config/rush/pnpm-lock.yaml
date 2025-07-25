@@ -80,8 +80,8 @@ importers:
         specifier: ^4.2.1
         version: 4.2.1
       chromatic:
-        specifier: ^10.9.6
-        version: 10.9.6
+        specifier: ^13.1.2
+        version: 13.1.2
       core-js:
         specifier: ^3.37.1
         version: 3.37.1
@@ -1616,7 +1616,7 @@ packages:
     dependencies:
       '@babel/compat-data': 7.23.5
       '@babel/helper-validator-option': 7.23.5
-      browserslist: 4.25.0
+      browserslist: 4.25.1
       lru-cache: 5.1.1
       semver: 6.3.1
 
@@ -1626,7 +1626,7 @@ packages:
     dependencies:
       '@babel/compat-data': 7.23.5
       '@babel/helper-validator-option': 7.23.5
-      browserslist: 4.25.0
+      browserslist: 4.25.1
       lru-cache: 5.1.1
       semver: 6.3.1
 
@@ -8542,8 +8542,8 @@ packages:
     peerDependencies:
       postcss: ^8.1.0
     dependencies:
-      browserslist: 4.25.0
-      caniuse-lite: 1.0.30001721
+      browserslist: 4.25.1
+      caniuse-lite: 1.0.30001727
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -8854,15 +8854,15 @@ packages:
     resolution: {integrity: sha512-nfulgvOR6S4gt9UKCeGJOuSGBPGiFT6oQ/2UBnvTY/5aQ1PnksW72fhZkM30DzoRRv2WpwZf1vHHEr3mtuXIWQ==}
     dev: true
 
-  /browserslist@4.25.0:
-    resolution: {integrity: sha512-PJ8gYKeS5e/whHBh8xrwYK+dAvEj7JXtz6uTucnMRB8OiGTsKccFekoRrjajPBHV8oOY+2tI4uxeceSimKwMFA==}
+  /browserslist@4.25.1:
+    resolution: {integrity: sha512-KGj0KoOMXLpSNkkEI6Z6mShmQy0bc1I+T7K9N81k4WWMrfz+6fQ6es80B/YLAeRoKvjYE1YSHHOW1qe9xIVzHw==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001721
-      electron-to-chromium: 1.5.166
+      caniuse-lite: 1.0.30001727
+      electron-to-chromium: 1.5.191
       node-releases: 2.0.19
-      update-browserslist-db: 1.1.3(browserslist@4.25.0)
+      update-browserslist-db: 1.1.3(browserslist@4.25.1)
 
   /bser@2.1.1:
     resolution: {integrity: sha512-gQxTNE/GAfIIrmHLUE3oJyp5FO6HRBfhjnw4/wMmA63ZGDJnWBmgY/lyQBpnDUkGmAhbSe39tx2d/iTOAfglwQ==}
@@ -8984,13 +8984,13 @@ packages:
   /caniuse-api@3.0.0:
     resolution: {integrity: sha512-bsTwuIg/BZZK/vreVTYYbSWoe2F+71P7K5QGEX+pT250DZbfU1MQ5prOKpPR+LL6uWKK3KMwMCAS74QB3Um1uw==}
     dependencies:
-      browserslist: 4.25.0
-      caniuse-lite: 1.0.30001721
+      browserslist: 4.25.1
+      caniuse-lite: 1.0.30001727
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
 
-  /caniuse-lite@1.0.30001721:
-    resolution: {integrity: sha512-cOuvmUVtKrtEaoKiO0rSc29jcjwMwX5tOHDy4MgVFEWiUXj4uBMJkwI8MDySkgXidpMiHUcviogAvFi4pA2hDQ==}
+  /caniuse-lite@1.0.30001727:
+    resolution: {integrity: sha512-pB68nIHmbN6L/4C6MH1DokyR3bYqFwjaSs/sWDHGj4CTcFtQUQMuJftVwWkXq7mNWOybD3KhUv3oWHoGxgP14Q==}
 
   /cat-names@3.1.0:
     resolution: {integrity: sha512-cW5oH6EdBF8g/XovpPyM/5CHne6tsX63IBqGVpeZxDcHrIUpqmbXhRkptsMwHXiwSyDd+/bEndsib3kn4Q1qtQ==}
@@ -9086,12 +9086,12 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
 
-  /chromatic@10.9.6:
-    resolution: {integrity: sha512-1MoT+/U+vQwEiq2GuehPyStbqhxqHmM1B9pdpVU1dKh26userQg1FyOFYifkTgy+9reo2w2p7sAbc0JRd2kzlA==}
+  /chromatic@13.1.2:
+    resolution: {integrity: sha512-jgVptQabJHOnzmmvLjbtfutREkWGhDDk2gVqMH6N+V7z56oIy4Sd2/U7ZxNvnVFPinZQMSjSdUce4b6JIP64Dg==}
     hasBin: true
     peerDependencies:
-      '@chromatic-com/cypress': ^0.5.2 || ^1.0.0
-      '@chromatic-com/playwright': ^0.5.2 || ^1.0.0
+      '@chromatic-com/cypress': ^0.*.* || ^1.0.0
+      '@chromatic-com/playwright': ^0.*.* || ^1.0.0
     peerDependenciesMeta:
       '@chromatic-com/cypress':
         optional: true
@@ -9350,7 +9350,7 @@ packages:
   /core-js-compat@3.34.0:
     resolution: {integrity: sha512-4ZIyeNbW/Cn1wkMMDy+mvrRUxrwFNjKwbhCfQpDd+eLgYipDqp8oGFGtLmhh18EDPKA0g3VUBYOxQGGwvWLVpA==}
     dependencies:
-      browserslist: 4.25.0
+      browserslist: 4.25.1
 
   /core-js@2.6.12:
     resolution: {integrity: sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==}
@@ -10003,8 +10003,8 @@ packages:
   /ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  /electron-to-chromium@1.5.166:
-    resolution: {integrity: sha512-QPWqHL0BglzPYyJJ1zSSmwFFL6MFXhbACOCcsCdUMCkzPdS9/OIBVxg516X/Ado2qwAq8k0nJJ7phQPCqiaFAw==}
+  /electron-to-chromium@1.5.191:
+    resolution: {integrity: sha512-xcwe9ELcuxYLUFqZZxL19Z6HVKcvNkIwhbHUz7L3us6u12yR+7uY89dSl570f/IqNthx8dAw3tojG7i4Ni4tDA==}
 
   /emittery@0.13.1:
     resolution: {integrity: sha512-DeWwawk6r5yR9jFgnDKYt4sLS0LmHJJi3ZOnb5/JdbYwj3nW+FxQnHIjhBKz8YLC7oRNPVM9NQ47I3CVx34eqQ==}
@@ -14158,9 +14158,6 @@ packages:
   /picocolors@1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
 
-  /picocolors@1.0.1:
-    resolution: {integrity: sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==}
-
   /picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
@@ -14231,7 +14228,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      browserslist: 4.25.0
+      browserslist: 4.25.1
       caniuse-api: 3.0.0
       colord: 2.9.3
       postcss: 8.4.32
@@ -14243,7 +14240,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      browserslist: 4.25.0
+      browserslist: 4.25.1
       postcss: 8.4.32
       postcss-value-parser: 4.2.0
 
@@ -14308,7 +14305,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      browserslist: 4.25.0
+      browserslist: 4.25.1
       caniuse-api: 3.0.0
       cssnano-utils: 3.1.0(postcss@8.4.32)
       postcss: 8.4.32
@@ -14340,7 +14337,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      browserslist: 4.25.0
+      browserslist: 4.25.1
       cssnano-utils: 3.1.0(postcss@8.4.32)
       postcss: 8.4.32
       postcss-value-parser: 4.2.0
@@ -14503,7 +14500,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      browserslist: 4.25.0
+      browserslist: 4.25.1
       postcss: 8.4.32
       postcss-value-parser: 4.2.0
 
@@ -14542,7 +14539,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      browserslist: 4.25.0
+      browserslist: 4.25.1
       caniuse-api: 3.0.0
       postcss: 8.4.32
 
@@ -16313,7 +16310,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      browserslist: 4.25.0
+      browserslist: 4.25.1
       postcss: 8.4.32
       postcss-selector-parser: 6.0.13
 
@@ -16408,7 +16405,7 @@ packages:
       css-select: 4.3.0
       css-tree: 1.1.3
       csso: 4.2.0
-      picocolors: 1.0.1
+      picocolors: 1.1.1
       stable: 0.1.8
 
   /symbol-tree@3.2.4:
@@ -16941,13 +16938,13 @@ packages:
       isobject: 3.0.1
     dev: false
 
-  /update-browserslist-db@1.1.3(browserslist@4.25.0):
+  /update-browserslist-db@1.1.3(browserslist@4.25.1):
     resolution: {integrity: sha512-UxhIZQ+QInVdunkDAaiazvvT/+fXL5Osr0JZlJulepYu6Jd7qJtDZjlur0emRlT71EN3ScPoE7gvsuIKKNavKw==}
     hasBin: true
     peerDependencies:
       browserslist: latest
     dependencies:
-      browserslist: 4.25.0
+      browserslist: 4.25.1
       escalade: 3.2.0
       picocolors: 1.1.1
 
@@ -17336,7 +17333,7 @@ packages:
       '@webassemblyjs/wasm-parser': 1.11.6
       acorn: 8.11.2
       acorn-import-assertions: 1.9.0(acorn@8.11.2)
-      browserslist: 4.25.0
+      browserslist: 4.25.1
       chrome-trace-event: 1.0.3
       enhanced-resolve: 5.15.0
       es-module-lexer: 1.4.1

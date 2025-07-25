@@ -1,8 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>power</title>
-    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        
-        <path d="M16.01,7 L16,3 L14,3 L14,7 L10,7 L10,3 L8,3 L8,7 L7.99,7 C7,6.99 6,7.99 6,8.99 L6,14.48 L9.5,18 L9.5,21 L14.5,21 L14.5,18 L18,14.49 L18,8.99 C18,7.99 17,6.99 16.01,7 Z"  fill="#001833"></path>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M460-200h40v-74l140-140v-186H320v186l140 140v74Zm-80 40v-80L263-357q-11-11-17-25.5t-6-30.5v-187q0-33 23.5-56.5T320-680h40l-40 40v-160q0-17 11.5-28.5T360-840q17 0 28.5 11.5T400-800v120h160v-120q0-17 11.5-28.5T600-840q17 0 28.5 11.5T640-800v160l-40-40h40q33 0 56.5 23.5T720-600v187q0 16-6 30.5T697-357L580-240v80q0 17-11.5 28.5T540-120H420q-17 0-28.5-11.5T380-160Zm100-240Z"/></svg>

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "UXPT-10383: rounded Material SVGs from filled to unfilled",
+      "type": "major"
+    }
+  ],
+  "packageName": "pcln-icons"
+}

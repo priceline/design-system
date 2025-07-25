@@ -1,8 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>viewList</title>
-    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        
-        <path d="M4,14 L8,14 L8,10 L4,10 L4,14 Z M4,19 L8,19 L8,15 L4,15 L4,19 Z M4,9 L8,9 L8,5 L4,5 L4,9 Z M9,14 L21,14 L21,10 L9,10 L9,14 Z M9,19 L21,19 L21,15 L9,15 L9,19 Z M9,5 L9,9 L21,9 L21,5 L9,5 Z"  fill="#001833"></path>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-280v-400q0-33 23.5-56.5T200-760h560q33 0 56.5 23.5T840-680v400q0 33-23.5 56.5T760-200H200q-33 0-56.5-23.5T120-280Zm80-320h80v-80h-80v80Zm160 0h400v-80H360v80Zm0 160h400v-80H360v80Zm0 160h400v-80H360v80Zm-160 0h80v-80h-80v80Zm0-160h80v-80h-80v80Z"/></svg>

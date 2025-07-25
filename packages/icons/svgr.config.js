@@ -49,7 +49,6 @@ module.exports = {
     },
   },
   svgProps: {
-    viewBox: '0 0 24 24',
     height: '{size}',
     width: '{size}',
     title: '{title}',
@@ -65,7 +64,8 @@ module.exports = {
   },
   svgoConfig: {
     plugins: {
-      removeAttrs: { attrs: '(fill|viewBox)' },
+      removeAttrs: { attrs: '(fill)' },
+      removeDimensions: true,
     },
   },
   prettierConfig: {
