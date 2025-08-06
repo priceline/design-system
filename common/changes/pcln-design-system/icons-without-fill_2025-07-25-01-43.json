@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "update snapshots that depend on pcln-icons",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

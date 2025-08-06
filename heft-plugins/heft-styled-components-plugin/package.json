@@ -40,6 +40,6 @@
   },
   "peerDependencies": {
     "@rushstack/heft": "^0.66.3",
-    "styled-components": "^5.3.11"
+    "styled-components": ">=5.3.11"
   }
 }

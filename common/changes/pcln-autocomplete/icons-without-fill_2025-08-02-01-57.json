@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "allow styled-components 6 as a peer",
+      "type": "patch",
+      "packageName": "pcln-autocomplete"
+    }
+  ],
+  "packageName": "pcln-autocomplete",
+  "email": "steven.dalonzo@priceline.com"
+}

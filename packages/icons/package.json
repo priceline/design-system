@@ -62,7 +62,7 @@
     "pcln-design-system": "^6.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "styled-components": ">=5.3.7 <6",
+    "styled-components": ">=5.3.11",
     "styled-system": "^5.0.0"
   }
 }

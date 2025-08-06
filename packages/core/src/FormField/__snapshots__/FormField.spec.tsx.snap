@@ -179,12 +179,12 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
             height="24"
             role="img"
             tabindex="-1"
-            viewBox="0 0 24 24"
+            viewBox="0 -960 960 960"
             width="24"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+              d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160zm640-480L501-453q-5 3-10.5 4.5T480-447q-5 0-10.5-1.5T459-453L160-640v400h640v-400zM480-520l320-200H160l320 200zM160-640v10-59 1-32 32-.5 58.5-10 400-400z"
             />
           </svg>
         </div>
@@ -395,12 +395,12 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
             height="24"
             role="img"
             tabindex="-1"
-            viewBox="0 0 24 24"
+            viewBox="0 -960 960 960"
             width="24"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+              d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160zm640-480L501-453q-5 3-10.5 4.5T480-447q-5 0-10.5-1.5T459-453L160-640v400h640v-400zM480-520l320-200H160l320 200zM160-640v10-59 1-32 32-.5 58.5-10 400-400z"
             />
           </svg>
         </div>
@@ -429,12 +429,12 @@ exports[`FormField disabled state renders select with icon - disabled 1`] = `
             height="24"
             role="img"
             tabindex="-1"
-            viewBox="0 0 24 24"
+            viewBox="0 -960 960 960"
             width="24"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+              d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5z"
             />
           </svg>
         </div>
@@ -757,12 +757,12 @@ exports[`FormField renders with Icon 1`] = `
         height={24}
         role="img"
         tabIndex={-1}
-        viewBox="0 0 24 24"
+        viewBox="0 -960 960 960"
         width={24}
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+          d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160zm640-480L501-453q-5 3-10.5 4.5T480-447q-5 0-10.5-1.5T459-453L160-640v400h640v-400zM480-520l320-200H160l320 200zM160-640v10-59 1-32 32-.5 58.5-10 400-400z"
         />
       </svg>
     </div>
@@ -954,12 +954,12 @@ exports[`FormField renders with Label autoHide prop 1`] = `
         height={24}
         role="img"
         tabIndex={-1}
-        viewBox="0 0 24 24"
+        viewBox="0 -960 960 960"
         width={24}
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+          d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160zm640-480L501-453q-5 3-10.5 4.5T480-447q-5 0-10.5-1.5T459-453L160-640v400h640v-400zM480-520l320-200H160l320 200zM160-640v10-59 1-32 32-.5 58.5-10 400-400z"
         />
       </svg>
     </div>
@@ -1159,12 +1159,12 @@ exports[`FormField renders with Select  1`] = `
         height={24}
         role="img"
         tabIndex={-1}
-        viewBox="0 0 24 24"
+        viewBox="0 -960 960 960"
         width={24}
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+          d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5z"
         />
       </svg>
     </div>
@@ -1349,12 +1349,12 @@ exports[`FormField renders with Select and Icon 1`] = `
         height={24}
         role="img"
         tabIndex={-1}
-        viewBox="0 0 24 24"
+        viewBox="0 -960 960 960"
         width={24}
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+          d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160zm640-480L501-453q-5 3-10.5 4.5T480-447q-5 0-10.5-1.5T459-453L160-640v400h640v-400zM480-520l320-200H160l320 200zM160-640v10-59 1-32 32-.5 58.5-10 400-400z"
         />
       </svg>
     </div>
@@ -1390,12 +1390,12 @@ exports[`FormField renders with Select and Icon 1`] = `
         height={24}
         role="img"
         tabIndex={-1}
-        viewBox="0 0 24 24"
+        viewBox="0 -960 960 960"
         width={24}
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M7.4 8l4.6 4.6L16.6 8 18 9.4l-6 6-6-6L7.4 8z"
+          d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5z"
         />
       </svg>
     </div>

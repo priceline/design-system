@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#001833;}
-</style>
-<path class="st0" d="M10,16v-1H3v4c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2v-4h-7v1H10z M20,7h-4V5l-2-2h-4L8,5v2H4
-	C2.9,7,2,7.9,2,9v3c0,1.1,0.9,2,2,2h6v-2h4v2h6c1.1,0,2-0.9,2-2V9C22,7.9,21.1,7,20,7z M14,7h-4V5h4V7z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm240-600h160v-80H400v80Zm400 360H600v40q0 17-11.5 28.5T560-280H400q-17 0-28.5-11.5T360-320v-40H160v160h640v-160Zm-360 0h80v-80h-80v80Zm-280-80h200v-40q0-17 11.5-28.5T400-520h160q17 0 28.5 11.5T600-480v40h200v-200H160v200Zm320 40Z"/></svg>
