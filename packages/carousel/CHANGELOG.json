@@ -2,6 +2,37 @@
   "name": "pcln-carousel",
   "entries": [
     {
+      "version": "3.4.5",
+      "tag": "pcln-carousel_v3.4.5",
+      "date": "Wed, 06 Aug 2025 14:30:51 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "allow styled-components 6 as a peer",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "6cbca71bac76d5ff92fa375e039df37f222f7be5"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.28.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" to `6.3.5`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" to `7.0.0`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^6.28.0` to `6.28.1`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-icons\" from `^6.11.0` to `7.0.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.4.4",
       "tag": "pcln-carousel_v3.4.4",
       "date": "Tue, 10 Jun 2025 18:23:26 GMT",

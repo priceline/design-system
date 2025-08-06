@@ -1,6 +1,17 @@
 # Change Log - pcln-icons
 
-This log was last generated on Tue, 03 Jun 2025 17:09:02 GMT and should not be manually modified.
+This log was last generated on Wed, 06 Aug 2025 14:30:51 GMT and should not be manually modified.
+
+## 7.0.0
+Wed, 06 Aug 2025 14:30:51 GMT
+
+### Breaking changes
+
+- UXPT-10383: rounded Material SVGs from filled to unfilled
+
+### Patches
+
+- allow styled-components 6 as a peer
 
 ## 6.11.0
 Tue, 03 Jun 2025 17:09:02 GMT

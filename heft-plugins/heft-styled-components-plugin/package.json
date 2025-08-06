@@ -1,6 +1,6 @@
 {
   "name": "heft-styled-components-plugin",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A Heft plugin to transpile Heft outputs with babel and babel-plugin-styled-components",
   "repository": {
     "type": "git",

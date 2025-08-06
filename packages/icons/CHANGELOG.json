@@ -2,6 +2,27 @@
   "name": "pcln-icons",
   "entries": [
     {
+      "version": "7.0.0",
+      "tag": "pcln-icons_v7.0.0",
+      "date": "Wed, 06 Aug 2025 14:30:51 GMT",
+      "comments": {
+        "major": [
+          {
+            "comment": "UXPT-10383: rounded Material SVGs from filled to unfilled",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "6cbca71bac76d5ff92fa375e039df37f222f7be5"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "allow styled-components 6 as a peer",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "6cbca71bac76d5ff92fa375e039df37f222f7be5"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.11.0",
       "tag": "pcln-icons_v6.11.0",
       "date": "Tue, 03 Jun 2025 17:09:02 GMT",

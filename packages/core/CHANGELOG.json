@@ -2,6 +2,25 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.28.1",
+      "tag": "pcln-design-system_v6.28.1",
+      "date": "Wed, 06 Aug 2025 14:30:51 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "update snapshots that depend on pcln-icons",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "6cbca71bac76d5ff92fa375e039df37f222f7be5"
+          },
+          {
+            "comment": "allow styled-components 6 as a peer",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "6cbca71bac76d5ff92fa375e039df37f222f7be5"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.28.0",
       "tag": "pcln-design-system_v6.28.0",
       "date": "Tue, 10 Jun 2025 18:23:26 GMT",

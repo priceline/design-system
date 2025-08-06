@@ -2,6 +2,20 @@
   "name": "heft-styled-components-plugin",
   "entries": [
     {
+      "version": "0.2.1",
+      "tag": "heft-styled-components-plugin_v0.2.1",
+      "date": "Wed, 06 Aug 2025 14:30:51 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "allow styled-components 6 as a peer",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "6cbca71bac76d5ff92fa375e039df37f222f7be5"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.2.0",
       "tag": "heft-styled-components-plugin_v0.2.0",
       "date": "Thu, 13 Feb 2025 20:17:16 GMT",

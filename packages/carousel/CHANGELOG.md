@@ -1,6 +1,13 @@
 # Change Log - pcln-carousel
 
-This log was last generated on Tue, 10 Jun 2025 18:23:26 GMT and should not be manually modified.
+This log was last generated on Wed, 06 Aug 2025 14:30:51 GMT and should not be manually modified.
+
+## 3.4.5
+Wed, 06 Aug 2025 14:30:51 GMT
+
+### Patches
+
+- allow styled-components 6 as a peer
 
 ## 3.4.4
 Tue, 10 Jun 2025 18:23:26 GMT
