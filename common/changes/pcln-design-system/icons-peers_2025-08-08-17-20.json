@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "all packages with peers on pcln-icons should accept v6 or v7",
+      "type": "patch",
+      "packageName": "pcln-design-system"
+    }
+  ],
+  "packageName": "pcln-design-system",
+  "email": "steven.dalonzo@priceline.com"
+}
