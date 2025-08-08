@@ -2,6 +2,20 @@
   "name": "pcln-design-system",
   "entries": [
     {
+      "version": "6.28.2",
+      "tag": "pcln-design-system_v6.28.2",
+      "date": "Fri, 08 Aug 2025 17:41:21 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "all packages with peers on pcln-icons should accept v6 or v7",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "5b652d22ff0d7eba2e49f5d027f55333fc8b2ff8"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.28.1",
       "tag": "pcln-design-system_v6.28.1",
       "date": "Wed, 06 Aug 2025 14:30:51 GMT",

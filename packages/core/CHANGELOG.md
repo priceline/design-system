@@ -1,6 +1,13 @@
 # Change Log - pcln-design-system
 
-This log was last generated on Wed, 06 Aug 2025 14:30:51 GMT and should not be manually modified.
+This log was last generated on Fri, 08 Aug 2025 17:41:21 GMT and should not be manually modified.
+
+## 6.28.2
+Fri, 08 Aug 2025 17:41:21 GMT
+
+### Patches
+
+- all packages with peers on pcln-icons should accept v6 or v7
 
 ## 6.28.1
 Wed, 06 Aug 2025 14:30:51 GMT

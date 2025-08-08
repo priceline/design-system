@@ -2,6 +2,34 @@
   "name": "pcln-menu",
   "entries": [
     {
+      "version": "6.2.6",
+      "tag": "pcln-menu_v6.2.6",
+      "date": "Fri, 08 Aug 2025 17:41:21 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "all packages with peers on pcln-icons should accept v6 or v7",
+            "author": "Steve Dalonzo <steven.dalonzo@priceline.com>",
+            "commit": "5b652d22ff0d7eba2e49f5d027f55333fc8b2ff8"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"pcln-design-system\" to `6.28.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" to `6.3.6`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-design-system\" from `^6.28.1` to `6.28.2`"
+          },
+          {
+            "comment": "Updating dependency \"pcln-popover\" from `^6.3.5` to `6.3.6`"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.2.5",
       "tag": "pcln-menu_v6.2.5",
       "date": "Wed, 06 Aug 2025 14:30:51 GMT",
