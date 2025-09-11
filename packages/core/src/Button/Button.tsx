@@ -317,31 +317,36 @@ function getPaddingProps({ IconLeft, IconRight, size, variation, hasChildren }: 
 /**
  * Use the <Button /> component to render a primitive button. Use the `variation` prop to change the look of the button.
  */
-const StyledButton: React.FC<StyledButtonProps> = styled.button.attrs((props) => {
-  const {
-    width,
-    height,
-    title,
-    'aria-label': ariaLabel,
-    borderRadius,
-    IconLeft,
-    IconRight,
-    size,
-    variation,
-    hasChildren,
-  } = props
+const StyledButton: React.FC<StyledButtonProps> = styled.button
+  .withConfig({
+    shouldForwardProp: (prop, defaultValidatorFn) => prop.startsWith('gv-') || defaultValidatorFn(prop),
+  })
+  .attrs((props) => {
+    const {
+      width,
+      height,
+      title,
+      'aria-label': ariaLabel,
+      borderRadius,
+      IconLeft,
+      IconRight,
+      size,
+      variation,
+      hasChildren,
+    } = props
 
-  const paddingProps = getPaddingProps({ IconLeft, IconRight, size, variation, hasChildren })
+    const paddingProps = getPaddingProps({ IconLeft, IconRight, size, variation, hasChildren })
 
-  return {
-    borderRadius,
-    ...boxShadowAttrs(props),
-    width,
-    height,
-    'aria-label': ariaLabel || title,
-    ...paddingProps,
-  }
-})`
+    return {
+      borderRadius,
+      ...boxShadowAttrs(props),
+      width,
+      height,
+      'aria-label': ariaLabel || title,
+      ...props,
+      ...paddingProps,
+    }
+  })`
   ${buttonStyles}
 
   ${(props) => compose(width, height, space, boxShadow)(props)}

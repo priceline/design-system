@@ -62,6 +62,16 @@ export const Playground: ButtonStory = {
   },
 }
 
+export const Attrs: ButtonStory = {
+  render: () => (
+    <StoryStage>
+      <Button size='extraLarge' gv-criticalpath='true' gv-hotelid='1234'>
+        Extra Large
+      </Button>
+    </StoryStage>
+  ),
+}
+
 export const Size: ButtonStory = {
   render: () => (
     <StoryStage>

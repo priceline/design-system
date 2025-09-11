@@ -114,7 +114,7 @@ exports[`Stepper renders with children 1`] = `
   className="c0 c1"
 >
   <button
-    className="c2 c3"
+    className="c2 c3 sc-kAyceB c3"
     color="primary"
     size="medium"
   >
@@ -150,7 +150,7 @@ exports[`Stepper renders with children 1`] = `
     </div>
   </button>
   <button
-    className="c2 c3"
+    className="c2 c3 sc-kAyceB c3"
     color="primary"
     size="medium"
   >
@@ -168,7 +168,7 @@ exports[`Stepper renders with children 1`] = `
     </div>
   </button>
   <button
-    className="c2 c3"
+    className="c2 c3 sc-kAyceB c3"
     color="primary"
     size="medium"
   >

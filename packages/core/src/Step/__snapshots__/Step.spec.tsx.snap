@@ -90,7 +90,7 @@ exports[`Step should handle onClick 1`] = `
     class="c0"
   >
     <button
-      class="c1 c2"
+      class="c1 c2 sc-imWYAI c2"
       color="primary"
       data-testid="Step"
     >
@@ -214,7 +214,7 @@ exports[`Step should render a completed step correctly 1`] = `
     class="c0"
   >
     <button
-      class="c1 c2"
+      class="c1 c2 sc-imWYAI c2"
       color="primary"
       data-testid="Step"
     >
@@ -357,7 +357,7 @@ exports[`Step should render a step that is "active" and "completed" correctly 1`
     class="c0"
   >
     <button
-      class="c1 c2"
+      class="c1 c2 sc-imWYAI c2"
       color="primary"
       data-testid="Step"
     >
@@ -486,7 +486,7 @@ exports[`Step should render an active step correctly 1`] = `
     class="c0"
   >
     <button
-      class="c1 c2"
+      class="c1 c2 sc-imWYAI c2"
       color="primary"
       data-testid="Step"
     >
@@ -596,7 +596,7 @@ exports[`Step should render correctly with no props without throwing 1`] = `
     class="c0"
   >
     <button
-      class="c1 c2"
+      class="c1 c2 sc-imWYAI c2"
       color="primary"
     >
       <div

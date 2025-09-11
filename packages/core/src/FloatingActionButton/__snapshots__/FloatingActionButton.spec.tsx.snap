@@ -97,7 +97,7 @@ exports[`FloatingActionButton it renders 1`] = `
       class="c1"
     >
       <button
-        class="c2 c3"
+        class="c2 c3 sc-gsFSXq c3"
         color="primary"
       >
         <div

@@ -95,7 +95,7 @@ exports[`IconButton renders without props 1`] = `
 }
 
 <button
-  className="c0 c1"
+  className="c0 c1 sc-dcJsrY c1"
   color="primary"
   size="medium"
 >
