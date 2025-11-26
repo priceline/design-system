@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "SITE-25786: add new icons for typeahead",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-icons"
+}
