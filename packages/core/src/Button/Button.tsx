@@ -358,6 +358,14 @@ const ButtonIcon = ({ Component, ...props }) => {
 }
 
 /**
+ * The primary interactive element for triggering actions.
+ *
+ * Supports multiple visual styles via `variation` (fill, outline, subtle, plain,
+ * white, lightFill, link, input) and `size` options (small, medium, large, extraLarge).
+ * Use `IconLeft`/`IconRight` for icon buttons. The `color` prop sets the semantic
+ * color (primary, secondary, warning). Disabled state dims the button and prevents
+ * interaction.
+ *
  * @public
  */
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(

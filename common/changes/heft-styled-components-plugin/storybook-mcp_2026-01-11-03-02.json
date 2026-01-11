@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "heft-styled-components-plugin",
+      "comment": "storybook 10 upgrade",
+      "type": "patch"
+    }
+  ],
+  "packageName": "heft-styled-components-plugin"
+}

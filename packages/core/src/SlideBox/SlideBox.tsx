@@ -31,6 +31,13 @@ export type SlideBoxProps = {
 }
 
 /**
+ * A horizontal scrolling carousel container with arrow navigation.
+ *
+ * Displays children as slides with configurable `visibleSlides` count (responsive
+ * arrays supported). Use `arrowPosition` (top, bottom, side, hide) for navigation
+ * controls. Supports `layout` for uneven slide widths and `stretchHeight` for
+ * equal-height slides.
+ *
  * @public
  */
 export function SlideBox({

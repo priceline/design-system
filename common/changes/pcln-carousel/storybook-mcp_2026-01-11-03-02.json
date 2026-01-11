@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-carousel",
+      "comment": "Storybook 10 + MCP, JSDoc",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-carousel"
+}

@@ -7,48 +7,30 @@ export const defaultArgs = {
 
 export const argTypes = {
   color: {
-    name: 'color',
-    type: { name: 'string' },
     options: colors,
     description: 'Palette color to use',
-    control: {
-      type: 'select',
-    },
+    control: 'select' as const,
   },
 
   borderRadius: {
-    name: 'borderRadius',
-    type: { name: 'string' },
     options: borderRadii,
     description: 'borderRadius',
-    control: {
-      type: 'select',
-    },
+    control: 'select' as const,
   },
 
   rounded: {
-    name: 'rounded',
-    type: { name: 'string' },
     options: rounded,
     description: 'rounded',
-    control: {
-      type: 'select',
-    },
+    control: 'select' as const,
   },
 
   boxShadowSize: {
-    name: 'boxShadowSize',
-    type: { name: 'string' },
     options: shadows,
     description: 'Size of the box shadow',
-    control: {
-      type: 'select',
-    },
+    control: 'select' as const,
   },
 
   boxShadowColor: {
-    name: 'boxShadowColor',
-    type: { name: 'string' },
     options: colors,
     description: 'Palette family for box shadows',
     table: {
@@ -56,19 +38,13 @@ export const argTypes = {
         summary: 'Palette color to use for box-shadow - always uses "dark" shade',
       },
     },
-    control: {
-      type: 'select',
-    },
+    control: 'select' as const,
   },
 
   height: {
-    name: 'height',
-    type: { name: 'string' },
     description: 'height',
   },
   width: {
-    name: 'width',
-    type: { name: 'string' },
     description: 'width',
   },
 }

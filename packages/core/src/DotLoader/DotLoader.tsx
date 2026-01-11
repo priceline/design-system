@@ -105,6 +105,12 @@ export type DotLoaderProps = {
 }
 
 /**
+ * An animated loading indicator with bouncing dots.
+ *
+ * Displays three dots that animate in sequence to indicate loading state.
+ * Commonly used inside buttons during async operations. Customizable via
+ * `size` (small, medium, large), `speed` (slow, medium, fast), and `color`.
+ *
  * @public
  */
 export function DotLoader({

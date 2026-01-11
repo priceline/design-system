@@ -50,6 +50,14 @@ export type DrawerProps = SpaceProps &
     disableEnterAnimation?: boolean
   }
 
+/**
+ * A sliding panel that overlays content from an edge of the viewport.
+ *
+ * Slides in from `placement` (top, bottom, left, right) with optional floating
+ * or anchored positioning. Supports draggable snap points via `snapHeights`,
+ * custom `heading`, close/collapse buttons, and mobile-optimized layouts.
+ * Use for filters, navigation, chat interfaces, or supplementary content.
+ */
 export const Drawer: React.FC<DrawerProps> = ({
   children,
   heading,

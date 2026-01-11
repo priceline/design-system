@@ -31,6 +31,13 @@ export type ShadowEffectProps = {
 }
 
 /**
+ * A wrapper that adds a focus-activated scrim overlay behind its children.
+ *
+ * When children receive focus, a semi-transparent overlay appears behind them,
+ * drawing attention to the focused element. Use `shouldOpenOnFocus` and
+ * `shouldCloseOnBlur` for automatic behavior. Ideal for search inputs or
+ * form fields that need visual emphasis.
+ *
  * @public
  */
 export function ShadowEffect({

@@ -1,20 +1,20 @@
 import React, { type ComponentPropsWithRef } from 'react'
 import styled from 'styled-components'
 import {
-  BorderRadiusProps,
-  BoxShadowProps,
-  DisplayProps,
-  HeightProps,
-  MaxHeightProps,
-  MaxWidthProps,
-  MinHeightProps,
-  MinWidthProps,
-  OverflowProps,
+  type BorderRadiusProps,
+  type BoxShadowProps,
+  type DisplayProps,
+  type HeightProps,
+  type MaxHeightProps,
+  type MaxWidthProps,
+  type MinHeightProps,
+  type MinWidthProps,
+  type OverflowProps,
   type ResponsiveValue,
-  SizeProps,
-  SpaceProps,
-  TextAlignProps,
-  WidthProps,
+  type SizeProps,
+  type SpaceProps,
+  type TextAlignProps,
+  type WidthProps,
   borderRadius,
   boxShadow,
   compose,
@@ -92,11 +92,13 @@ export type BoxProps = Omit<BorderRadiusProps, 'borderRadius'> &
 
 /**
  * @public
+ * Use StyledBox for CSS selector interpolation (e.g., `& > ${StyledBox}`).
+ * Use Box for component usage with ref forwarding.
  */
-export const Box: React.FC<BoxProps> = styled.div.attrs((props) => ({
+export const StyledBox = styled.div.attrs<BoxProps>((props) => ({
   ...borderRadiusAttrs(props),
   ...boxShadowAttrs(props),
-}))`
+}))<BoxProps>`
   ${applyVariations('Box')}
   ${color}
   ${colorScheme}
@@ -119,4 +121,17 @@ export const Box: React.FC<BoxProps> = styled.div.attrs((props) => ({
     )(props)}
 `
 
+/**
+ * The fundamental layout primitive for spacing, sizing, and styling.
+ *
+ * A polymorphic container with styled-system props for margin, padding, width,
+ * height, color, background, and more. Use as the base for custom components
+ * or for quick layout adjustments. Supports `colorScheme` for themed palettes,
+ * `boxShadowSize` for elevation, and `borderRadius` for rounded corners.
+ *
+ * @public
+ */
+export const Box = React.forwardRef<HTMLDivElement, BoxProps>((props, ref) => (
+  <StyledBox ref={ref} {...props} />
+))
 Box.displayName = 'Box'

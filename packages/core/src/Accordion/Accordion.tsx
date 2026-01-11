@@ -41,22 +41,33 @@ export type AccordionItemProps = {
 }
 
 /**
+ * An expandable/collapsible content container built on Radix Accordion.
+ *
+ * Displays a list of items that can be expanded to reveal content. Supports multiple
+ * visual styles via `variation` (default, underline, hug, ladder, card, flatCard) and
+ * can operate in single or multiple expansion mode via `type`. Use `isExternallyControlled`
+ * with `itemsState` and `onToggle` for controlled state management.
+ *
  * @public
  */
-export function Accordion({
-  items,
-  itemsState,
-  isExternallyControlled,
-  onToggle,
-  type = 'multiple',
-  variation = 'default',
-  p = '12px',
-  headerDividerColor,
-  useTextToggle = false,
-  ...props
-}: AccordionProps): React.ReactElement {
+export const Accordion = React.forwardRef<HTMLDivElement, AccordionProps>(function Accordion(
+  {
+    items,
+    itemsState,
+    isExternallyControlled,
+    onToggle,
+    type = 'multiple',
+    variation = 'default',
+    p = '12px',
+    headerDividerColor,
+    useTextToggle = false,
+    ...props
+  },
+  ref
+) {
   return items ? (
     <StyledAccordionRoot
+      ref={ref}
       // @ts-ignore
       type={type}
       defaultValue={itemsState ?? items.map((child) => child.value)}
@@ -113,4 +124,5 @@ export function Accordion({
       })}
     </StyledAccordionRoot>
   ) : null
-}
+})
+Accordion.displayName = 'Accordion'

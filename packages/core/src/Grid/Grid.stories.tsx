@@ -1,6 +1,6 @@
-import { ArgTypes, Primary } from '@storybook/addon-docs'
+import { ArgTypes, Primary } from '@storybook/addon-docs/blocks'
 import { linkTo } from '@storybook/addon-links'
-import type { Meta, StoryObj } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react-vite'
 import React from 'react'
 import { Box } from '../Box/Box'
 import { Hero } from '../DocsUtils/Hero/Hero'

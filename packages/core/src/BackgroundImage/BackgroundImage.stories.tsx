@@ -4,16 +4,17 @@ import { Card } from '../Card/Card'
 import { Text } from '../Text/Text'
 import { BackgroundImage } from './BackgroundImage'
 import { argTypes, defaultArgs } from './BackgroundImage.stories.args'
+import { Meta } from '@storybook/react-vite'
 
-export default {
-  title: 'core / BackgroundImage',
+const meta: Meta<typeof BackgroundImage> = {
+  title: 'BackgroundImage',
   component: BackgroundImage,
   args: defaultArgs,
   argTypes,
   decorators: [
-    (story) => (
+    (Story) => (
       <Box height='600px' width='100%'>
-        {story()}
+        <Story />
       </Box>
     ),
   ],
@@ -21,12 +22,14 @@ export default {
     docs: {
       description: {
         component: `Use the <code>&lt;BackgroundImage /&gt;</code> component to render a
-    background image. Use the *variation* prop to change the attachment mode
-    of the background.`,
+      background image. Use the *variation* prop to change the attachment mode
+      of the background.`,
       },
     },
   },
 }
+
+export default meta
 
 const Template = (args) => <BackgroundImage {...args} />
 

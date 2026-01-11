@@ -1,15 +1,18 @@
-import { Button, Flex, Text, ThemeProvider } from '..'
+import type { Meta } from '@storybook/react-vite'
+import { action } from 'storybook/actions'
 import React from 'react'
+import { Button, Flex, Text, ThemeProvider } from '..'
 import { Popover } from './Popover'
 import { argTypes, defaultArgs } from './Popover.stories.args'
-import { action } from '@storybook/addon-actions'
 
-export default {
+const meta: Meta<typeof Popover> = {
   title: 'Popover',
   component: Popover,
   args: defaultArgs,
-  argTypes: argTypes,
+  argTypes,
 }
+
+export default meta
 
 const TemplateContent = ({ ...args }) => (
   <Flex justifyContent='center' alignItems='center' width={1} my={6}>

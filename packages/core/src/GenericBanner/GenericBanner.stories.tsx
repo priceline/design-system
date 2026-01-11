@@ -1,4 +1,4 @@
-import { action } from '@storybook/addon-actions'
+import { action } from 'storybook/actions'
 import { Emoticon, Rowing, Tea, Warning } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'

@@ -1,4 +1,4 @@
-import { StoryObj } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react-vite'
 import React from 'react'
 import styled from 'styled-components'
 import { Box } from '../Box/Box'
@@ -13,12 +13,14 @@ import { getLinkStylesOn } from '../utils/utils'
 import { LinkProps } from './Link'
 import { argTypes, defaultArgs, sizeOptions, variationOptions } from './Link.stories.args'
 
-export default {
+const meta: Meta<typeof Link> = {
   title: 'Link',
   component: Link,
   args: defaultArgs,
   argTypes,
 }
+
+export default meta
 
 const Template = (args: LinkProps) => <Link {...args} />
 

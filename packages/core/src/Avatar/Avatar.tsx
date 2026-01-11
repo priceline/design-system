@@ -31,6 +31,13 @@ export type AvatarProps = {
 }
 
 /**
+ * Displays a user avatar as a circular image, initials, or default user icon.
+ *
+ * Shows a profile image when `src` is provided, uppercase initials when `initials`
+ * is set, or a fallback user icon. Optionally displays `title` and `subtitle` text
+ * beside the avatar. Supports responsive `size` arrays and theme `colorScheme` for
+ * background styling.
+ *
  * @public
  */
 export function Avatar({

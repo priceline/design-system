@@ -11,6 +11,12 @@ export type BreadcrumbsProps = {
 }
 
 /**
+ * A navigation component showing the user's location in a page hierarchy.
+ *
+ * Renders a horizontal list of links separated by chevrons. Use `Breadcrumbs.Link`
+ * for each level in the hierarchy. The last link is automatically styled as the
+ * current page (non-clickable). Supports optional icons per link.
+ *
  * @public
  */
 export const Breadcrumbs: React.FC<BreadcrumbsProps> & { Link: React.FC<BreadcrumbLinkProps> } = ({

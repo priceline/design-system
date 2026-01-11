@@ -11,6 +11,12 @@ export type StoryHeadingProps = {
 }
 
 /**
+ * A subheading for individual stories within documentation sections.
+ *
+ * Renders a subheading3-styled title with an auto-generated ID combining story
+ * name and title for anchor linking. Use above story examples to label and
+ * provide navigation anchors.
+ *
  * @public
  */
 export const StoryHeading = ({ storyName, storyTitle }: StoryHeadingProps) => (

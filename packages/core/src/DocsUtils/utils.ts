@@ -1,4 +1,4 @@
-import { StoryFn, StoryObj } from '@storybook/react'
+import { StoryFn, StoryObj } from '@storybook/react-vite'
 import kebabCase from 'lodash/kebabCase'
 import reactElementToJSXString from 'react-element-to-jsx-string'
 

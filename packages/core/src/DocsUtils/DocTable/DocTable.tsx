@@ -22,6 +22,12 @@ const Tr = styled.tr`
 `
 
 /**
+ * A styled table for displaying structured data in documentation.
+ *
+ * Renders data rows with configurable columns. Each column specifies a `field`
+ * to access from data objects, a `heading` label, and optional `noWrap` styling.
+ * Use for props tables, token lists, or other tabular documentation content.
+ *
  * @public
  */
 export const DocTable = <T extends object>({ data, columns, ...rest }: DocTableProps<T>) => {

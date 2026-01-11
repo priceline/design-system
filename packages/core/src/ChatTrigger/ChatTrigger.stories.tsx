@@ -1,10 +1,8 @@
-import { expect } from '@storybook/jest'
-import { userEvent, within } from '@storybook/testing-library'
-import { fn } from '@storybook/test'
+import type { Meta } from '@storybook/react-vite'
 import React from 'react'
+import { expect, fn, userEvent, within } from 'storybook/test'
 import { Relative } from '../Relative/Relative'
 import { ChatTrigger } from './ChatTrigger'
-import { Meta } from '@storybook/react/*'
 
 const meta: Meta<typeof ChatTrigger> = {
   title: 'Chat / ChatTrigger',

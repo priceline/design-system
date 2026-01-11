@@ -1,7 +1,7 @@
-import { action } from '@storybook/addon-actions'
-import { Box, Button, Accordion, Text } from 'pcln-design-system'
+import { Accordion, Box, Button, Text } from 'pcln-design-system'
 import { Menu, MenuItem } from 'pcln-menu'
-import React, { useState, useRef } from 'react'
+import React, { useRef, useState } from 'react'
+import { fn } from 'storybook/test'
 import styled from 'styled-components'
 import { Modal, ModalHeader, ScrollLock, SmallModalHeader } from '../src'
 import { currencies } from './mockData'
@@ -64,7 +64,7 @@ export const WithModalHeader = () => {
         <div key={idx}>Line {idx}</div>
       ))}
       <ModalStory
-        header={<ModalHeader title='Modal title' onClose={action('Modal closed!')} />}
+        header={<ModalHeader title='Modal title' onClose={fn()} />}
         height={['90vh', '460px', '560px']}
         width={['80vw', '400px', '500px']}
       />
@@ -81,7 +81,7 @@ export const WithSmallModalHeaderAndWhiteBackgroundModalHeaderWithSetTextStyle =
           <ModalHeader
             bg={null}
             color='background.lightest'
-            onClose={action('Modal closed!')}
+            onClose={fn()}
             pt={2}
             textStyle='heading4'
             title='Modal title'
@@ -143,7 +143,7 @@ export const WithOverflowAndTallContent = () => (
   <StyledModal
     ariaLabel='Storybook modal.'
     isOpen={true}
-    header={<ModalHeader onClose={action('Modal closed!')} />}
+    header={<ModalHeader onClose={fn()} />}
     height='100px'
     enableOverflow
     disableCloseButton

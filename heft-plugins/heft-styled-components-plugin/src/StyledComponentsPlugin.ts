@@ -53,7 +53,10 @@ export default class StyledComponentsPlugin implements IHeftTaskPlugin {
               )} ${inPath} --out-dir ${outPath} --ignore ${ignoreGlobs}`
             )
 
-            if (stderr.length) {
+            // Ignore Node.js deprecation warnings (they go to stderr but aren't errors)
+            const isOnlyDeprecationWarning: boolean =
+              stderr.length > 0 && /^\(node:\d+\) \[DEP\d+\] DeprecationWarning:/.test(stderr)
+            if (stderr.length && !isOnlyDeprecationWarning) {
               logger.emitError(new Error(`Failed to transpile ${name}. Error: ${stderr}`))
             }
 

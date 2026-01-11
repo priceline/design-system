@@ -12,6 +12,12 @@ export type SectionProps = {
 }
 
 /**
+ * A documentation section with a heading and content area.
+ *
+ * Renders a heading2-styled title with an auto-generated kebab-case ID for anchor
+ * linking, followed by children content. Use to organize documentation into
+ * logical sections that can be linked from a TableOfContents.
+ *
  * @public
  */
 export const Section = ({ heading, children }: SectionProps) => (

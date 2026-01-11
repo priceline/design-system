@@ -1,3 +1,4 @@
+import type { Meta } from '@storybook/react-vite'
 import React from 'react'
 import styled from 'styled-components'
 import { Box } from '../Box/Box'
@@ -8,7 +9,7 @@ import { getTextColorOn } from '../utils/utils'
 import { Text } from './Text'
 import { argTypes, defaultArgs } from './Text.stories.args'
 
-export default {
+const meta: Meta<typeof Text> = {
   title: 'Typography / Text',
   component: Text,
 
@@ -23,6 +24,7 @@ export default {
     },
   },
 }
+export default meta
 
 const Template = (args) => (
   <Box>

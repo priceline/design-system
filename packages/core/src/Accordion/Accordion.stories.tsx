@@ -1,9 +1,6 @@
-import { expect } from '@storybook/jest'
-import { userEvent, within } from '@storybook/testing-library'
-import { fn } from '@storybook/test'
-import type { Meta } from '@storybook/react/*'
-
+import type { Meta } from '@storybook/react-vite'
 import React, { useState } from 'react'
+import { expect, fn, userEvent, within } from 'storybook/test'
 import { Button } from '../Button/Button'
 import { Flex } from '../Flex/Flex'
 import { Text } from '../Text/Text'
@@ -29,11 +26,7 @@ export default meta
 
 const items = [
   {
-    headerLabel: (
-      <>
-        <Text>Header Label First Item</Text>
-      </>
-    ),
+    headerLabel: <Text>Header Label First Item</Text>,
     content: (
       <>
         <Text>I am some content</Text>
@@ -44,11 +37,7 @@ const items = [
     value: 'item-1',
   },
   {
-    headerLabel: (
-      <>
-        <Text>Second Header</Text>
-      </>
-    ),
+    headerLabel: <Text>Second Header</Text>,
     headerActions: <Button onClick={() => console.log('test')}>Test Button</Button>,
     content: (
       <>

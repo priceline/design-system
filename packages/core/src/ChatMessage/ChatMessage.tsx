@@ -49,6 +49,13 @@ export type ChatMessageProps = FlexProps & {
 }
 
 /**
+ * A chat bubble component for displaying messages in a conversational interface.
+ *
+ * Three variations: `initial` (with icon badge), `incoming` (left-aligned, light bg),
+ * and `outgoing` (right-aligned, primary bg). Supports optional `header` and `footer`
+ * content positioned above/below the bubble. The `Icon` prop customizes the avatar
+ * icon for initial messages.
+ *
  * @public
  */
 export function ChatMessage({

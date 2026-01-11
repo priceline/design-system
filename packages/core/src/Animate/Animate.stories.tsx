@@ -1,8 +1,7 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
-import { expect } from '@storybook/jest'
-import type { Meta, StoryObj } from '@storybook/react'
-import { userEvent, within } from '@storybook/testing-library'
+import type { Meta, StoryObj } from '@storybook/react-vite'
 import React, { useState } from 'react'
+import { expect, userEvent, within } from 'storybook/test'
 import { Box } from '../Box/Box'
 import { Button } from '../Button/Button'
 import { ChoiceChip } from '../Chip/ChoiceChip/ChoiceChip'

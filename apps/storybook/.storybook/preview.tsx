@@ -1,8 +1,8 @@
-import type { Preview } from '@storybook/react'
+import type { Preview } from '@storybook/react-vite'
+import { decorators } from './decorators'
 import { a11y } from './parameters/a11y'
 import { backgrounds } from './parameters/backgrounds'
 import { viewport } from './parameters/viewport'
-import { decorators } from './decorators'
 
 const preview: Preview = {
   parameters: {

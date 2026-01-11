@@ -17,6 +17,13 @@ export type FloatingActionButtonProps = AbsoluteProps & {
 }
 
 /**
+ * A circular button fixed to the viewport corner for primary actions.
+ *
+ * Displays an icon with optional notification badge and tooltip. Positioned
+ * absolutely by default (use `isAbsolutePosition={false}` for relative).
+ * Common use cases include chat triggers, help buttons, or quick actions
+ * that should persist while scrolling.
+ *
  * @public
  */
 export function FloatingActionButton({

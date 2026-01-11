@@ -116,6 +116,12 @@ export type LayoutProps = GridProps & {
 }
 
 /**
+ * A semantic grid layout component with predefined column variations.
+ *
+ * Use `variation` to set column layouts like "50-50", "33-33-33", "60-40", or "100".
+ * Supports responsive variations via arrays. Automatically handles column stacking
+ * on smaller screens. Use `gap` and `rowGap` for spacing between items.
+ *
  * @public
  */
 export function Layout({ children, gap, rowGap, variation, stretchHeight, ...props }: LayoutProps) {

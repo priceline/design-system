@@ -11,6 +11,11 @@ export type ChatMessageSeparatorProps = {
 }
 
 /**
+ * A visual separator with optional centered text for chat message groups.
+ *
+ * Displays horizontal dividers with an optional message in between (e.g., "Today",
+ * "Yesterday", or timestamps). Use to separate messages by date or conversation topic.
+ *
  * @public
  */
 export function ChatMessageSeparator({ message }: ChatMessageSeparatorProps) {

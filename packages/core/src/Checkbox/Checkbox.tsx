@@ -112,6 +112,12 @@ export type CheckboxProps = ComponentPropsWithRef<'input'> & {
 }
 
 /**
+ * A form control for binary selection (checked/unchecked) with indeterminate state support.
+ *
+ * Renders a styled checkbox input with customizable `size` and `color`. Supports
+ * `indeterminate` state for partial selections (e.g., "select all" with some selected).
+ * Use `unselectedColor` to style the unchecked state. Forwards ref to the input element.
+ *
  * @public
  */
 export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(

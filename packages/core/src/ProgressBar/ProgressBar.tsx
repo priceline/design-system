@@ -21,6 +21,12 @@ export type ProgressBarProps = {
 }
 
 /**
+ * A segmented progress indicator showing completion through colored steps.
+ *
+ * Displays a horizontal bar divided into steps, each with its own color. Use
+ * `currentStep` to indicate progress (0-based index). Commonly used for password
+ * strength indicators, multi-step forms, or process completion tracking.
+ *
  * @public
  */
 export function ProgressBar({ steps, currentStep, stepHeight = '4px', className }: ProgressBarProps) {

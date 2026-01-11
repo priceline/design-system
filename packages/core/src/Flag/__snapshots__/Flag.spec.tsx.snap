@@ -91,7 +91,7 @@ exports[`Flag renders 1`] = `
 }
 
 <div
-  className="c0 c1 "
+  className="c0 c1 sc-dAlyuH bCUNaW"
 >
   <div
     className="c2 c3"
@@ -209,7 +209,7 @@ exports[`Flag renders with theme color as bg color 1`] = `
 }
 
 <div
-  className="c0 c1 "
+  className="c0 c1 sc-dAlyuH bCUNaW"
   width={256}
 >
   <div
@@ -328,7 +328,7 @@ exports[`Flag renders with width prop 1`] = `
 }
 
 <div
-  className="c0 c1 "
+  className="c0 c1 sc-dAlyuH bCUNaW"
   width={256}
 >
   <div

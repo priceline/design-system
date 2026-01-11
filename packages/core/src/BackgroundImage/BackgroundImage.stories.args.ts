@@ -8,13 +8,11 @@ const image =
 export const defaultArgs = {
   height: '320px',
   image,
-  variation: 'static',
+  variation: 'static' as const,
 }
 
 export const argTypes = {
   variation: {
-    name: 'variation',
-    type: { name: 'string', required: false },
     description: 'Control attachment mode of background',
     table: {
       type: {
@@ -23,43 +21,29 @@ export const argTypes = {
       },
       defaultValue: { summary: 'fill' },
     },
-    control: {
-      type: 'select',
-      options: variations,
-    },
+    control: 'select' as const,
+    options: variations,
   },
 
   borderRadius: {
-    name: 'borderRadius',
-    type: { name: 'string' },
     options: borderRadii,
     description: 'borderRadius',
-    control: {
-      type: 'select',
-    },
+    control: 'select' as const,
   },
 
   rounded: {
-    name: 'rounded',
-    type: { name: 'string' },
     options: rounded,
     description: 'rounded',
-    control: {
-      type: 'select',
-    },
+    control: 'select' as const,
   },
 
   height: {
-    name: 'height',
-    type: { name: 'string', required: false },
     description: 'height',
     table: {
       defaultValue: { summary: undefined },
     },
   },
   width: {
-    name: 'width',
-    type: { name: 'string', required: false },
     description: 'width',
     table: {
       defaultValue: { summary: undefined },
@@ -67,8 +51,6 @@ export const argTypes = {
   },
 
   image: {
-    name: 'image',
-    type: { name: 'string', required: false },
     description: 'url of background image',
     table: {
       defaultValue: { summary: undefined },
@@ -76,13 +58,9 @@ export const argTypes = {
   },
 
   backgroundPosition: {
-    name: 'backgroundPosition',
-    type: { name: 'string', required: false },
     description: 'background position',
     options: backgroundPositionList,
-    control: {
-      type: 'select',
-    },
+    control: 'select' as const,
     table: {
       defaultValue: { summary: 'center' },
     },

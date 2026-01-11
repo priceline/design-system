@@ -32,6 +32,12 @@ export type FilterChipProps = SpaceProps &
   }
 
 /**
+ * A toggleable chip for multi-select filtering (checkbox-like behavior).
+ *
+ * Use for filters where multiple options can be active simultaneously (like amenities:
+ * free WiFi, free parking). Shows a checkmark when `selected` and `showActionIcon` is true.
+ * Supports `variation` styles (outline, shadow). Manage selection state via `onClick`.
+ *
  * @public
  */
 export function FilterChip({

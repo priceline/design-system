@@ -1,9 +1,11 @@
-import { action } from '@storybook/addon-actions'
+import type { ArgTypes } from '@storybook/react-vite'
+import { fn } from 'storybook/test'
 import { colors } from '../__test__/mocks/colors'
+import { LabelProps } from './Label'
 
 const actions = {
   noAction: null,
-  basicAction: action('Label Clicked'),
+  basicAction: fn(),
 }
 
 export const defaultArgs = {
@@ -14,7 +16,7 @@ export const defaultArgs = {
   width: 'auto',
 }
 
-export const argTypes = {
+export const argTypes: Partial<ArgTypes<LabelProps>> = {
   color: {
     name: 'color',
     options: Object.keys(colors),

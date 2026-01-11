@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-slider",
+      "comment": "Storybook 10 + MCP, JSDoc, refactor defaultProps",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-slider"
+}

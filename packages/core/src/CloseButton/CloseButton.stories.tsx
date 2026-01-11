@@ -1,15 +1,12 @@
-import type { Meta, StoryObj } from '@storybook/react'
-import { userEvent, within } from '@storybook/testing-library'
+import type { Meta, StoryObj } from '@storybook/react-vite'
 import React from 'react'
+import { userEvent, within } from 'storybook/test'
 import { Flex } from '../Flex/Flex'
 import { Grid } from '../Grid/Grid'
 import { Text } from '../Text/Text'
 import { paletteColors } from '../theme/theme'
 import { CloseButton, type CloseButtonProps } from './CloseButton'
 import { argTypes, defaultArgs } from './CloseButton.stories.args'
-import { CloseButtonSize } from './CloseButton.styled'
-
-type CloseButtonStory = StoryObj<CloseButtonProps>
 
 const meta: Meta<typeof CloseButton> = {
   title: 'CloseButton',
@@ -20,27 +17,29 @@ const meta: Meta<typeof CloseButton> = {
 
 export default meta
 
+type Story = StoryObj<CloseButtonProps>
+
 const templateColumns = Array.from(Array(6).keys()).map((x) => `repeat(${x + 1}, 1fr)`)
 
-const BasicTemplate = (args) => <CloseButton {...args} />
-export const Playground = BasicTemplate.bind({})
+export const Playground: Story = {
+  render: (args) => <CloseButton {...args} />,
+}
 
-const SizesTemplate = (args) => (
+const SizesTemplate = ({ bg, ...args }: CloseButtonProps & { bg?: string }) => (
   <Grid templateColumns={templateColumns} gap={3} overflow='hidden'>
-    {['sm', 'md', 'lg'].map((x) => (
-      <Flex key={x} alignItems='center' p={3} overflow='auto' style={{ gap: '.25rem' }} bg={args.bg}>
-        <CloseButton key={x} {...args} size={x as CloseButtonSize} />
-        <Text>{x}</Text>
+    {(['sm', 'md', 'lg'] as const).map((size) => (
+      <Flex key={size} alignItems='center' p={3} overflow='auto' style={{ gap: '.25rem' }} bg={bg}>
+        <CloseButton {...args} size={size} />
+        <Text>{size}</Text>
       </Flex>
     ))}
   </Grid>
 )
 
-export const NoVariant: CloseButtonStory = {
-  render: SizesTemplate.bind({}),
+export const NoVariant: Story = {
+  render: (args) => <SizesTemplate {...(args as CloseButtonProps & { bg?: string })} />,
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
-
     await userEvent.tab()
     await userEvent.hover(canvas.queryAllByTitle('close')[2])
   },
@@ -49,33 +48,32 @@ export const NoVariant: CloseButtonStory = {
   },
 }
 
-export const VariantFilled: CloseButtonStory = {
-  render: SizesTemplate.bind({}),
-}
-VariantFilled.args = {
-  variant: 'filled',
+export const VariantFilled: Story = {
+  render: (args) => <SizesTemplate {...(args as CloseButtonProps & { bg?: string })} />,
+  args: {
+    variant: 'filled',
+  },
 }
 
-export const VariantWhite: CloseButtonStory = {
-  render: SizesTemplate.bind({}),
+export const VariantWhite: Story = {
+  render: (args) => <SizesTemplate {...(args as CloseButtonProps & { bg?: string })} />,
+  args: {
+    variant: 'white',
+    bg: 'background.dark',
+  },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
-
     await userEvent.hover(canvas.queryAllByTitle('close')[2])
   },
 }
-VariantWhite.args = {
-  variant: 'white',
-  bg: 'background.dark',
-}
 
-export const OnColors: CloseButtonStory = {
+export const OnColors: Story = {
   render: (args) => (
     <Grid templateColumns={templateColumns} gap={3} overflow='hidden'>
-      {paletteColors.map((x) => (
-        <Flex key={x} alignItems='center' bg={x} p={3} overflow='auto' style={{ gap: '.25rem' }}>
-          <CloseButton key={x} {...args} />
-          <Text>{x}</Text>
+      {paletteColors.map((color) => (
+        <Flex key={color} alignItems='center' bg={color} p={3} overflow='auto' style={{ gap: '.25rem' }}>
+          <CloseButton {...args} />
+          <Text>{color}</Text>
         </Flex>
       ))}
     </Grid>

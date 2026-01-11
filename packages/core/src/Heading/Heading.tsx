@@ -1,6 +1,13 @@
 import React from 'react'
 import { Text } from '../Text/Text'
 
+/**
+ * Semantic heading component for titles and section headers.
+ *
+ * Renders as an `<h3>` by default. Use dot notation (`Heading.h1` through `Heading.h6`)
+ * for specific heading levels. Inherits all Text props for typography control.
+ * Use `enableTextShadow` for drop shadow effects on hero text.
+ */
 export const Heading = (props) => <Text as='h3' {...props} />
 
 Heading.displayName = 'Heading'

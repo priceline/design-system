@@ -135,6 +135,14 @@ const DialogInnerWrapper = styled(Flex)`
   height: 100%;
 `
 
+/**
+ * A centered overlay dialog for focused content or user interactions.
+ *
+ * Built on @reach/dialog with animated entry/exit transitions. Supports custom
+ * headers via `ModalHeader` or `SmallModalHeader`, configurable vertical alignment,
+ * and responsive width/height. Use `imgMode` for full-bleed image content or
+ * `enableOverflow` for content that exceeds the modal height.
+ */
 const Modal = ({
   ariaLabel,
   ariaLabelledBy,

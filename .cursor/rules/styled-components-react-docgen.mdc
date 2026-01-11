@@ -1,0 +1,117 @@
+---
+alwaysApply: true
+---
+
+# Styled Components React Docgen Pattern
+
+When creating styled-components that need to be properly parsed by Storybook's react-docgen tool, follow this pattern to ensure component definitions are correctly identified.
+
+## Pattern Overview
+
+Wrap styled-components in a named React component to help docgen tools identify the component and its props. This resolves the "No suitable component definition found" error in Storybook.
+
+## Implementation Steps
+
+### 1. Define Props Interface/Type
+
+```typescript
+export interface MyComponentProps {
+  primary?: boolean;
+  size: 'small' | 'large';
+  // ... other props
+}
+```
+
+Or use a type alias:
+
+```typescript
+export type MyComponentProps = SomeBaseProps & {
+  // ... additional props
+}
+```
+
+### 2. Create the Styled Component
+
+Create the styled component with props as a generic type parameter:
+
+```typescript
+const StyledComponent = styled.div<MyComponentProps>`
+  background: ${(props) => (props.primary ? 'hotpink' : 'turquoise')};
+  font-size: ${(props) => (props.size === 'small' ? '1em' : '2em')};
+  
+  // ... other styles
+`.attrs((props) => ({
+  // ... attrs if needed
+}))
+```
+
+**Note:** If using `.attrs()`, chain it after the template literal, not before.
+
+### 3. Wrap in React Component
+
+#### For components WITHOUT ref forwarding:
+
+```typescript
+export const MyComponent: React.FC<MyComponentProps> = (props) => (
+  <StyledComponent {...props} />
+)
+MyComponent.displayName = 'MyComponent'
+```
+
+#### For components WITH ref forwarding (recommended for most cases):
+
+If your props extend `ComponentPropsWithRef<'div'>` or you need ref support:
+
+```typescript
+export const MyComponent = React.forwardRef<HTMLDivElement, MyComponentProps>(
+  (props, ref) => <StyledComponent ref={ref} {...props} />
+)
+MyComponent.displayName = 'MyComponent'
+```
+
+### 4. Complete Example
+
+```typescript
+import React, { type ComponentPropsWithRef } from 'react'
+import styled from 'styled-components'
+
+// 1. Define props interface/type
+export type MyComponentProps = ComponentPropsWithRef<'div'> & {
+  primary?: boolean
+  size: 'small' | 'large'
+}
+
+// 2. Create styled component with props generic
+const StyledMyComponent = styled.div<MyComponentProps>`
+  background: ${(props) => (props.primary ? 'hotpink' : 'turquoise')};
+  font-size: ${(props) => (props.size === 'small' ? '1em' : '2em')};
+`.attrs((props) => ({
+  // attrs if needed
+}))
+
+// 3. Wrap and export as named React component
+export const MyComponent = React.forwardRef<HTMLDivElement, MyComponentProps>(
+  (props, ref) => <StyledMyComponent ref={ref} {...props} />
+)
+MyComponent.displayName = 'MyComponent'
+```
+
+## Benefits
+
+- ✅ Storybook's react-docgen can correctly identify the component
+- ✅ Props are properly documented in Storybook
+- ✅ TypeScript types are preserved
+- ✅ Ref forwarding works correctly when needed
+- ✅ Component name appears correctly in React DevTools
+
+## When to Use This Pattern
+
+- All styled-components that are exported and used in Storybook
+- Components that need proper prop documentation
+- Components that extend `ComponentPropsWithRef` (use `forwardRef`)
+
+## When NOT to Use
+
+- Internal/private styled components that aren't exported
+- Simple styled components that don't need Storybook documentation
+- Components that are only used internally within a single file

@@ -30,6 +30,12 @@ export type ChoiceChipProps = SpaceProps &
   }
 
 /**
+ * A selectable chip for mutually exclusive choices (radio-button behavior).
+ *
+ * Use in a group where only one option can be selected at a time (like trip type:
+ * round-trip vs one-way). Supports `selected` state, optional icon/image, and
+ * `variation` styles (outline, shadow). Manage selection state externally via `onClick`.
+ *
  * @public
  */
 export function ChoiceChip({

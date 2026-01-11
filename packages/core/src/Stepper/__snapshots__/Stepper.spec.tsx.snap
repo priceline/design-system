@@ -111,7 +111,7 @@ exports[`Stepper renders with children 1`] = `
 }
 
 <div
-  className="c0 c1"
+  className="c0 c1 sc-imWYAI c1"
 >
   <button
     className="c2 c3 sc-kAyceB c3"
@@ -201,6 +201,6 @@ exports[`Stepper renders without crashing 1`] = `
 }
 
 <div
-  className="c0 c1"
+  className="c0 c1 sc-imWYAI c1"
 />
 `;

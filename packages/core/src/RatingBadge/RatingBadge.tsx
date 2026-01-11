@@ -4,14 +4,6 @@ import { borderRadius, compose, fontWeight } from 'styled-system'
 import { Box, type BoxProps } from '../Box/Box'
 import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
 
-const defaultProps = {
-  fontWeight: 'bold',
-  px: 2,
-  color: 'alert',
-  borderRadius: 'md',
-  bg: 'alert',
-}
-
 /**
  * @public
  */
@@ -40,16 +32,35 @@ function getBgAndColorProps({ color, bg }) {
   }
 }
 
-/**
- * @public
- */
-export const RatingBadge: React.FC<RatingBadgeProps> = styled(Box).attrs((props) => ({
+const StyledRatingBadge = styled(Box).attrs<RatingBadgeProps>((props) => ({
   ...getBgAndColorProps(props),
   ...borderRadiusAttrs(props),
-}))`
+}))<RatingBadgeProps>`
   display: inline-block;
   line-height: 1.5;
   ${(props) => compose(fontWeight, borderRadius)(props)}
 `
 
-RatingBadge.defaultProps = defaultProps
+/**
+ * A compact badge for displaying numerical ratings or scores.
+ *
+ * Renders a small rounded badge with bold text, typically for hotel/product ratings.
+ * Supports `color` for semantic styling or `colorScheme` for themed palettes.
+ * Default styling uses alert color with white text.
+ *
+ * @public
+ */
+export const RatingBadge = React.forwardRef<HTMLDivElement, RatingBadgeProps>(
+  ({ fontWeight = 'bold', px = 2, color = 'alert', borderRadius = 'md', bg = 'alert', ...props }, ref) => (
+    <StyledRatingBadge
+      ref={ref}
+      fontWeight={fontWeight}
+      px={px}
+      color={color}
+      borderRadius={borderRadius}
+      bg={bg}
+      {...props}
+    />
+  )
+)
+RatingBadge.displayName = 'RatingBadge'

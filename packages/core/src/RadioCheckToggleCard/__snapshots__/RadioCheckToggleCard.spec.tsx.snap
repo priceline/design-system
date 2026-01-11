@@ -160,12 +160,12 @@ exports[`RadioCheckToggleCard Checkbox Card should render checked state UI corre
         value="example-1"
       />
       <div
-        class="c2 c3 c4"
+        class="c2 c3 c4 sc-jlZhew c4"
         color="background.lightest"
         data-testid="rdt-card-main"
       >
         <div
-          class="c5 c6"
+          class="c5 c6 sc-cwHptR c6"
           data-testid="rdt-card-header"
         >
           <div
@@ -364,12 +364,12 @@ exports[`RadioCheckToggleCard Checkbox Card should render unchecked state UI cor
         value="example-1"
       />
       <div
-        class="c2 c3 c4"
+        class="c2 c3 c4 sc-jlZhew c4"
         color="background.lightest"
         data-testid="rdt-card-main"
       >
         <div
-          class="c5 c6"
+          class="c5 c6 sc-cwHptR c6"
           data-testid="rdt-card-header"
         >
           <div
@@ -569,12 +569,12 @@ exports[`RadioCheckToggleCard Radio Card should render checked state UI correctl
         value="example-1"
       />
       <div
-        class="c2 c3 c4"
+        class="c2 c3 c4 sc-jlZhew c4"
         color="background.lightest"
         data-testid="rdt-card-main"
       >
         <div
-          class="c5 c6"
+          class="c5 c6 sc-cwHptR c6"
           data-testid="rdt-card-header"
         >
           <div
@@ -773,12 +773,12 @@ exports[`RadioCheckToggleCard Radio Card should render unchecked state UI correc
         value="example-1"
       />
       <div
-        class="c2 c3 c4"
+        class="c2 c3 c4 sc-jlZhew c4"
         color="background.lightest"
         data-testid="rdt-card-main"
       >
         <div
-          class="c5 c6"
+          class="c5 c6 sc-cwHptR c6"
           data-testid="rdt-card-header"
         >
           <div
@@ -860,7 +860,7 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   width: 45px;
 }
 
-.c16 {
+.c15 {
   border-radius: 9999px;
   width: calc(100% + 8px);
 }
@@ -897,7 +897,7 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   flex-direction: row;
 }
 
-.c17 {
+.c16 {
   position: absolute;
   left: -4px;
   top: -4px;
@@ -955,7 +955,7 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
   min-width: 45px;
 }
 
-.c12 .c13:focus-visible + .c15 {
+.c12 .c13:focus-visible + .c17 {
   opacity: 1;
 }
 
@@ -1074,12 +1074,12 @@ exports[`RadioCheckToggleCard Toggle Card should render checked state UI correct
         value="example-1"
       />
       <div
-        class="c2 c3 c4"
+        class="c2 c3 c4 sc-jlZhew c4"
         color="background.lightest"
         data-testid="rdt-card-main"
       >
         <div
-          class="c5 c6"
+          class="c5 c6 sc-cwHptR c6"
           data-testid="rdt-card-header"
         >
           <div
@@ -1193,7 +1193,7 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   width: 45px;
 }
 
-.c16 {
+.c15 {
   border-radius: 9999px;
   width: calc(100% + 8px);
 }
@@ -1230,7 +1230,7 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   flex-direction: row;
 }
 
-.c17 {
+.c16 {
   position: absolute;
   left: -4px;
   top: -4px;
@@ -1288,7 +1288,7 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
   min-width: 45px;
 }
 
-.c12 .c13:focus-visible + .c15 {
+.c12 .c13:focus-visible + .c17 {
   opacity: 1;
 }
 
@@ -1406,12 +1406,12 @@ exports[`RadioCheckToggleCard Toggle Card should render unchecked state UI corre
         value="example-1"
       />
       <div
-        class="c2 c3 c4"
+        class="c2 c3 c4 sc-jlZhew c4"
         color="secondary.lightest"
         data-testid="rdt-card-main"
       >
         <div
-          class="c5 c6"
+          class="c5 c6 sc-cwHptR c6"
           data-testid="rdt-card-header"
         >
           <div
@@ -1641,12 +1641,12 @@ exports[`RadioCheckToggleCard common should render bold title correctly 1`] = `
         value="example-1"
       />
       <div
-        class="c2 c3 c4"
+        class="c2 c3 c4 sc-jlZhew c4"
         color="background.lightest"
         data-testid="rdt-card-main"
       >
         <div
-          class="c5 c6"
+          class="c5 c6 sc-cwHptR c6"
           data-testid="rdt-card-header"
         >
           <div
@@ -1850,12 +1850,12 @@ exports[`RadioCheckToggleCard common should render children correctly 1`] = `
         value="example-1"
       />
       <div
-        class="c2 c3 c4"
+        class="c2 c3 c4 sc-jlZhew c4"
         color="background.lightest"
         data-testid="rdt-card-main"
       >
         <div
-          class="c5 c6"
+          class="c5 c6 sc-cwHptR c6"
           data-testid="rdt-card-header"
         >
           <div
@@ -2059,12 +2059,12 @@ exports[`RadioCheckToggleCard common should render children next to title correc
         value="example-1"
       />
       <div
-        class="c2 c3 c4"
+        class="c2 c3 c4 sc-jlZhew c4"
         color="background.lightest"
         data-testid="rdt-card-main"
       >
         <div
-          class="c5 c6"
+          class="c5 c6 sc-cwHptR c6"
           data-testid="rdt-card-header"
         >
           <div
@@ -2268,12 +2268,12 @@ exports[`RadioCheckToggleCard common should render default UI correctly 1`] = `
         value="example-1"
       />
       <div
-        class="c2 c3 c4"
+        class="c2 c3 c4 sc-jlZhew c4"
         color="background.lightest"
         data-testid="rdt-card-main"
       >
         <div
-          class="c5 c6"
+          class="c5 c6 sc-cwHptR c6"
           data-testid="rdt-card-header"
         >
           <div
@@ -2472,12 +2472,12 @@ exports[`RadioCheckToggleCard common should render left button UI correctly 1`] 
         value="example-1"
       />
       <div
-        class="c2 c3 c4"
+        class="c2 c3 c4 sc-jlZhew c4"
         color="background.lightest"
         data-testid="rdt-card-main"
       >
         <div
-          class="c5 c6"
+          class="c5 c6 sc-cwHptR c6"
           data-testid="rdt-card-header"
         >
           <div

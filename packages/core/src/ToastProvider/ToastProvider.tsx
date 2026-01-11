@@ -55,7 +55,16 @@ export type ToastProviderProps = {
 
 let id = 0
 
-function _ToastProvider({
+/**
+ * A context provider for managing toast notifications throughout an application.
+ *
+ * Wrap your app with ToastProvider to enable the `useToast` hook. Toasts render
+ * in a portal with configurable animations, positioning (top/bottom), lifespan,
+ * and max visible count. Use `addToast` from the hook to show notifications.
+ *
+ * @public
+ */
+function ToastProviderBase({
   children,
   domRootId = 'root',
   enterAnimation = 'slideInLeft',
@@ -117,7 +126,5 @@ function _ToastProvider({
     </ToastContext.Provider>
   )
 }
-/**
- * @public
- */
-export const ToastProvider = withTheme(_ToastProvider)
+
+export const ToastProvider = withTheme(ToastProviderBase)

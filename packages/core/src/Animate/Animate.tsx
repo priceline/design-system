@@ -132,6 +132,13 @@ export type AnimateProps = {
 }
 
 /**
+ * A motion wrapper that applies preset animations to children using Framer Motion.
+ *
+ * Choose from motion variants like `fadeIn`, `slideInLeft`, `scaleFromCenter`, `pulse`,
+ * `spin`, and more for entrance, exit, or interaction effects. Combine with transition
+ * variants (`default`, `spring`, `slow`, `comeAndGo`) to control timing and easing.
+ * Use `override` for custom motion props when presets don't fit.
+ *
  * @public
  */
 export const Animate = (props: AnimateProps) => {

@@ -1,8 +1,7 @@
-import React from 'react'
-import { action } from '@storybook/addon-actions'
+import { fn } from 'storybook/test'
 import { Button, IconButton } from 'pcln-design-system'
 import { InformationOutline } from 'pcln-icons'
-import { fn } from '@storybook/test'
+import React from 'react'
 
 const Children = {
   Button: <Button>Popover</Button>,

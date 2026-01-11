@@ -125,25 +125,25 @@ const SelectBase: React.FC<SelectProps> = styled.select.attrs(borderRadiusAttrs)
   ${(props) => compose(space, fontSize, borderRadius)(props)}
 `
 
-SelectBase.defaultProps = {
-  fontSize: [2, null, 1],
-  m: 0,
-  size: 'lg',
-}
-
 /**
+ * A styled dropdown select input for choosing from predefined options.
+ *
+ * Renders a native `<select>` with custom styling and chevron icon. Available
+ * in `input` (bordered) and `subtle` (minimal) variations. Supports validation
+ * colors and multiple sizes. Use with Label for accessible form controls.
+ *
  * @public
  */
 export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
-  ({ variation = 'input', ...props }, ref) => (
+  ({ variation = 'input', fontSize = [2, null, 1], m = 0, size = 'lg', ...props }, ref) => (
     <Flex width={1} alignItems='center'>
-      <SelectBase {...props} ref={ref} variation={variation} />
+      <SelectBase {...props} ref={ref} variation={variation} fontSize={fontSize} m={m} size={size} />
       <ClickableIcon ml={-32} color='text.light' />
     </Flex>
   )
-)
+) as React.ForwardRefExoticComponent<SelectProps & React.RefAttributes<HTMLSelectElement>> & {
+  isField?: boolean
+}
 
 Select.displayName = 'Select'
-
-// @ts-ignore
 Select.isField = true

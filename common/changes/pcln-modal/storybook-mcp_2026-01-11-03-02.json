@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-modal",
+      "comment": "Storybook 10 + MCP, JSDoc",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-modal"
+}

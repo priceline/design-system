@@ -1,0 +1,146 @@
+---
+alwaysApply: true
+---
+
+# Styled-Components with forwardRef Pattern
+
+**ALL exported styled-components must use this pattern** to ensure proper ref forwarding, theme token resolution, and React 19 compatibility. This applies to every component, not just those with default props.
+
+## Why This Matters
+
+1. **Refs don't forward** through styled wrappers without explicit handling
+2. **Theme token resolution breaks** - `.attrs()` from the inner styled-component don't automatically transform props at the outer level
+3. **`defaultProps` is deprecated** in React 19 for function components
+4. **Storybook react-docgen** needs a named React component to properly parse props
+
+## The Pattern
+
+```typescript
+import React, { type ComponentPropsWithRef } from 'react'
+
+// 1. Define props with ComponentPropsWithRef for ref support
+export type MyComponentProps = ComponentPropsWithRef<'div'> & {
+  color?: string
+  size?: 'sm' | 'md' | 'lg'
+}
+
+// 2. Create the styled component (internal, not exported)
+const StyledMyComponent = styled(Box).attrs<MyComponentProps>((props) => ({
+  // Add theme attrs if using borderRadius or boxShadow tokens
+  ...borderRadiusAttrs(props),
+  ...boxShadowAttrs(props),
+}))<MyComponentProps>`
+  /* your styles */
+`
+
+// 3. Export with forwardRef wrapper, using inline defaults
+/**
+ * JSDoc comment goes here, immediately before the export.
+ */
+export const MyComponent = React.forwardRef<HTMLDivElement, MyComponentProps>(
+  ({ color = 'primary', size = 'md', ...props }, ref) => (
+    <StyledMyComponent ref={ref} color={color} size={size} {...props} />
+  )
+)
+MyComponent.displayName = 'MyComponent'
+```
+
+## Simple Components (No Default Props)
+
+Even components without default props need the forwardRef pattern:
+
+```typescript
+export type SrOnlyProps = ComponentPropsWithRef<'span'>
+
+const StyledSrOnly = styled.span`
+  /* styles */
+`
+
+export const SrOnly = React.forwardRef<HTMLSpanElement, SrOnlyProps>((props, ref) => (
+  <StyledSrOnly ref={ref} {...props} />
+))
+SrOnly.displayName = 'SrOnly'
+```
+
+## Compound Components
+
+For components with sub-components (like `Text.span`, `List.ol`):
+
+```typescript
+const TextSpan = React.forwardRef<HTMLSpanElement, TextSpanProps>((props, ref) => (
+  <StyledSpan ref={ref} {...props} />
+))
+TextSpan.displayName = 'Text.span'
+
+export const Text = React.forwardRef<HTMLDivElement, TextProps>((props, ref) => (
+  <StyledText ref={ref} {...props} />
+)) as React.ForwardRefExoticComponent<TextProps & React.RefAttributes<HTMLDivElement>> & {
+  span: typeof TextSpan
+}
+Text.displayName = 'Text'
+
+Text.span = TextSpan
+```
+
+## Static Properties
+
+For components with static properties (like `Label.isLabel`, `TextArea.isField`):
+
+```typescript
+export const Label = React.forwardRef<HTMLLabelElement, LabelProps>(
+  ({ color = 'text.light', ...props }, ref) => (
+    <StyledLabel ref={ref} color={color} {...props} />
+  )
+) as React.ForwardRefExoticComponent<LabelProps & React.RefAttributes<HTMLLabelElement>> & {
+  isLabel?: boolean
+}
+Label.displayName = 'Label'
+Label.isLabel = true
+```
+
+## Migrating defaultProps to Inline Defaults
+
+React 19 deprecates `defaultProps`. Migrate them to inline parameter defaults:
+
+### Before (deprecated)
+
+```typescript
+export const Card = styled(Box)<CardProps>`...`
+
+Card.defaultProps = {
+  borderRadius: 'xsm',
+  boxShadowSize: 'sm',
+}
+```
+
+### After (React 19 compatible)
+
+```typescript
+const StyledCard = styled(Box)<CardProps>`...`
+
+export const Card = React.forwardRef<HTMLDivElement, CardProps>(
+  ({ borderRadius = 'xsm', boxShadowSize = 'sm', ...props }, ref) => (
+    <StyledCard ref={ref} borderRadius={borderRadius} boxShadowSize={boxShadowSize} {...props} />
+  )
+)
+```
+
+## When to Add Theme Attrs
+
+Add `borderRadiusAttrs(props)` if your component:
+- Has a `borderRadius` prop that accepts theme tokens (`'xsm'`, `'sm'`, `'md'`, etc.)
+
+Add `boxShadowAttrs(props)` if your component:
+- Uses `boxShadowSize` or `boxShadowColor` props
+
+## Checklist for ALL Components
+
+- [ ] Use `ComponentPropsWithRef<'element'>` in props type (not `ComponentPropsWithoutRef`)
+- [ ] Create internal `Styled*` component (not exported directly)
+- [ ] Wrap export with `React.forwardRef`
+- [ ] Move any `defaultProps` to inline defaults in the forwardRef signature
+- [ ] Place JSDoc comment immediately before the exported component
+- [ ] Set `displayName`
+- [ ] Add `borderRadiusAttrs` if using borderRadius tokens
+- [ ] Add `boxShadowAttrs` if using boxShadow tokens
+- [ ] Use type assertion for compound components or static properties

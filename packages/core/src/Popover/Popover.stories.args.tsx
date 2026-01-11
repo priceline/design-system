@@ -1,7 +1,8 @@
-import React from 'react'
-import { action } from '@storybook/addon-actions'
-import { Button, IconButton } from '..'
 import { InformationOutline } from 'pcln-icons'
+import React from 'react'
+import { fn } from 'storybook/test'
+import { Button } from '../Button/Button'
+import { IconButton } from '../IconButton/IconButton'
 
 const Children = {
   Button: <Button>Popover</Button>,
@@ -14,13 +15,13 @@ const Children = {
   ),
 }
 
-export const defaultArgs = {
+export const defaultArgs: Record<string, unknown> = {
   borderRadius: 'lg',
   children: 'Button',
   openOnFocus: false,
-  placement: 'top',
-  onClose: action('Popover Close'),
-  onOpen: action('Popover Open'),
+  placement: 'top' as const,
+  onClose: fn(),
+  onOpen: fn(),
   disableFloating: false,
 }
 
@@ -28,32 +29,22 @@ export const argTypes = {
   children: {
     options: Object.keys(Children),
     mapping: Children,
-    control: {
-      type: 'select',
-    },
+    control: 'select' as const,
   },
-  color: {
-    type: 'string',
-  },
+  color: {},
   disableFloating: {
-    name: 'disableFloating',
     description: 'Disable floating-ui',
     table: {
       defaultValue: { summary: 'Sets crossAxis and mainAxis in the floating-ui' },
     },
-    type: { name: 'boolean', required: false },
-    control: { type: 'boolean' },
+    control: 'boolean' as const,
   },
   width: {
-    name: 'width',
-    type: { name: 'string', required: false },
     description: 'Popover width',
   },
   onClose: { action: true },
   onMinimize: { action: true },
   placement: {
-    name: 'placement',
-    type: { name: 'string', required: true },
     options: [
       'top',
       'top-start',
@@ -68,36 +59,26 @@ export const argTypes = {
       'right-start',
       'right-end',
     ],
-    control: { type: 'select' },
+    control: 'select' as const,
   },
   overlayOpacity: {
-    name: 'overlayOpacity',
-    type: { name: 'number', required: false },
     description: 'Overlay opacity',
-    control: { type: 'number' },
+    control: 'number' as const,
   },
   toggleIsOpenOnClick: {
-    name: 'toggleIsOpenOnClick',
-    type: { name: 'boolean', required: false },
     description: 'Toggle isOpen on click',
-    control: { type: 'boolean' },
+    control: 'boolean' as const,
   },
   isOpen: {
-    name: 'isOpen',
-    type: { name: 'boolean', required: false },
     description: 'Is the popover open?',
-    control: { type: 'boolean' },
+    control: 'boolean' as const,
   },
   openOnHover: {
-    name: 'openOnHover',
-    type: { name: 'boolean', required: false },
     description: 'Open the popover when trigger is hovered',
-    control: { type: 'boolean' },
+    control: 'boolean' as const,
   },
   maxWidth: {
-    name: 'maxWidth',
-    type: { name: 'string', required: false },
     description: 'Popover max width',
-    control: { type: 'text' },
+    control: 'text' as const,
   },
 }

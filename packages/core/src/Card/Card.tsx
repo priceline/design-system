@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { border, BorderProps } from 'styled-system'
 import { Box, type BoxProps } from '../Box/Box'
+import { borderRadiusAttrs } from '../utils/attrs/borderRadiusAttrs'
 import { applyVariations, getPaletteColor } from '../utils/utils'
 
 const styleAsButton = ({ as, ...props }) =>
@@ -25,7 +26,9 @@ export type CardProps = BoxProps &
 /**
  * @public
  */
-export const Card: React.FC<CardProps> = styled(Box)`
+const StyledCard = styled(Box).attrs<CardProps>((props) => ({
+  ...borderRadiusAttrs(props),
+}))<CardProps>`
   ${applyVariations('Card')}
   ${styleAsButton}
 
@@ -34,11 +37,28 @@ export const Card: React.FC<CardProps> = styled(Box)`
   ${border};
 `
 
-Card.defaultProps = {
-  borderColor: 'border',
-  borderRadius: 'xsm',
-  borderStyle: 'solid',
-  borderWidth: 1,
-}
-
+/**
+ * A container component for grouping related content with a border and optional shadow.
+ *
+ * Extends `Box` with default border styling. Use `boxShadowSize` for elevation levels
+ * (sm, md, lg). Can be rendered as a button with `as="button"` for clickable cards
+ * with hover effects. Supports all Box props plus border customization.
+ *
+ * @public
+ */
+export const Card = React.forwardRef<HTMLDivElement, CardProps>(
+  (
+    { borderColor = 'border', borderRadius = 'xsm', borderStyle = 'solid', borderWidth = 1, ...props },
+    ref
+  ) => (
+    <StyledCard
+      ref={ref}
+      borderColor={borderColor}
+      borderRadius={borderRadius}
+      borderStyle={borderStyle}
+      borderWidth={borderWidth}
+      {...props}
+    />
+  )
+)
 Card.displayName = 'Card'

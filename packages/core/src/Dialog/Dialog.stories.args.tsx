@@ -1,4 +1,4 @@
-import { ArgTypes } from '@storybook/react'
+import { ArgTypes } from '@storybook/react-vite'
 import React from 'react'
 import { Button } from '../Button/Button'
 import { Grid } from '../Grid/Grid'

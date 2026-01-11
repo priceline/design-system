@@ -1,12 +1,9 @@
-import React, { useState } from 'react'
 import { Text } from 'pcln-design-system'
-import { fireEvent, within, userEvent } from '@storybook/testing-library'
-import { expect } from '@storybook/jest'
-
-import MenuList from './MenuList'
-import MenuItem from '../MenuItem'
-
+import React, { useState } from 'react'
+import { expect, fireEvent, userEvent, within } from 'storybook/test'
 import { currencies } from '../../test/mocks/Menu'
+import MenuItem from '../MenuItem'
+import MenuList from './MenuList'
 import { argTypes, defaultArgs } from './MenuList.stories.args'
 
 export default {

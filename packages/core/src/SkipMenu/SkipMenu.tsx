@@ -28,6 +28,13 @@ export type SkipMenuProps = {
 }
 
 /**
+ * An accessibility component providing keyboard-navigable skip links.
+ *
+ * Renders hidden links that become visible on focus, allowing keyboard users
+ * to skip directly to main content sections. Provide `skipLinks` array with
+ * `label` and `targetId` for each section. Essential for screen reader and
+ * keyboard accessibility compliance.
+ *
  * @public
  */
 export function SkipMenu({ className, skipLinks, ...props }: SkipMenuProps) {

@@ -71,6 +71,12 @@ export type GenericBannerProps = AlignItemsProps &
   }
 
 /**
+ * A flexible banner component for inline alerts, promotions, or announcements.
+ *
+ * Supports customizable layout with optional `heading`, `text`, `iconLeft`/`iconRight`,
+ * and call-to-action via `ctaText` with `URLProps` or `buttonClick`. Use `colorScheme`
+ * for themed styling. The entire banner can be clickable when `buttonClick` is provided.
+ *
  * @public
  */
 export function GenericBanner({

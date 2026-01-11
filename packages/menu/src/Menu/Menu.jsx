@@ -5,6 +5,13 @@ import { ChevronDown } from 'pcln-icons'
 import Popover from 'pcln-popover'
 import MenuList from '../MenuList'
 
+/**
+ * A dropdown menu triggered by a button with popover-based content.
+ *
+ * Displays a list of selectable options via `MenuItem` children. Supports single
+ * or two-column layouts via `size`, custom trigger via `buttonNode`, and keyboard
+ * navigation. Use for navigation menus, currency selectors, or action dropdowns.
+ */
 function Menu({
   id,
   buttonNode,

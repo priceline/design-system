@@ -45,6 +45,12 @@ export type DoDontProps = {
 }
 
 /**
+ * A side-by-side comparison showing recommended and discouraged patterns.
+ *
+ * Displays two examples with "DO" (green) and "DON'T" (red) visual indicators.
+ * Use in documentation to illustrate best practices and common mistakes.
+ * Provide optional text descriptions via `doText` and `dontText`.
+ *
  * @public
  */
 export const DoDont = ({ doExample, dontExample, doText, dontText }: DoDontProps) => (

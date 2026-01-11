@@ -9,6 +9,12 @@ export type IconFieldProps = {
 }
 
 /**
+ * A wrapper that positions icons alongside an input or select element.
+ *
+ * Automatically detects icon and input children and positions them appropriately.
+ * Icons placed before the input appear on the left; after the input, on the right.
+ * Use for search inputs, date pickers, or any input needing visual affordances.
+ *
  * @public
  */
 export function IconField(props: IconFieldProps) {

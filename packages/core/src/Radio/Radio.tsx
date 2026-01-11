@@ -73,6 +73,12 @@ export type RadioProps = ComponentPropsWithoutRef<'input'> & {
 }
 
 /**
+ * A radio button input for mutually exclusive single-selection.
+ *
+ * Use within a group sharing the same `name` attribute where only one option
+ * can be selected at a time. Supports custom `size` and `color`. Pair with
+ * Label component for accessible form controls.
+ *
  * @public
  */
 export const Radio: React.FC<RadioProps> = React.forwardRef<HTMLInputElement, RadioProps>(

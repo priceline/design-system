@@ -44,6 +44,14 @@ export type MappedTabProps = {
   isActive?: string
   onTabSelect?: () => void
 }
+
+/**
+ * A tabbed interface for switching between content panels.
+ *
+ * Three visual types: `button` (default), `chip` (pill-shaped), and `radio` (radio style).
+ * Supports horizontal/vertical orientation, icons, and responsive sizing. Each tab in
+ * `tabsData` can have its own icon, text, and content. Use `defaultValue` to set initial selection.
+ */
 export const Tab = ({
   tabsData,
   orientation = 'horizontal',

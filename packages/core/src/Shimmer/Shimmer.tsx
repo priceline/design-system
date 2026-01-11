@@ -56,6 +56,12 @@ export type ShimmerProps = BoxProps & {
 }
 
 /**
+ * An animated loading placeholder with a sweeping highlight effect.
+ *
+ * Displays a gradient animation that moves across the element to indicate
+ * loading state. Use to build skeleton loaders for content placeholders.
+ * Available in `base`, `light`, and `dark` variations for different backgrounds.
+ *
  * @public
  */
 export function Shimmer({

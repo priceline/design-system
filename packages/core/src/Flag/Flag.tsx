@@ -78,6 +78,12 @@ export type FlagProps = SpaceProps &
   }
 
 /**
+ * A ribbon-style banner that extends to the left edge with a pointed tail.
+ *
+ * Use for promotional labels, badges, or callouts on cards. The flag shape
+ * includes a folded corner effect. Customize with `bg` for background color
+ * and `color` for text. Supports responsive padding via styled-system props.
+ *
  * @public
  */
 export const Flag: React.FC<FlagProps> = ({

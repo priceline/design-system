@@ -113,7 +113,16 @@ export type TooltipProps = BoxProps & {
   zIndex?: number | string
 }
 
-function _Tooltip({
+/**
+ * A small label that appears on hover or focus to provide additional context.
+ *
+ * Position using boolean props (`top`/`bottom` and `left`/`center`/`right`).
+ * Style with `color` for semantic colors or `colorScheme` for themed palettes.
+ * Includes a directional arrow pointing toward the trigger element.
+ *
+ * @public
+ */
+function TooltipBase({
   borderRadius = 'md',
   children,
   color = 'background.lightest',
@@ -140,7 +149,4 @@ function _Tooltip({
   )
 }
 
-/**
- * @public
- */
-export const Tooltip = withTheme(_Tooltip)
+export const Tooltip = withTheme(TooltipBase)

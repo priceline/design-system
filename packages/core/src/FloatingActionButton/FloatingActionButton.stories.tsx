@@ -1,11 +1,9 @@
-import { expect } from '@storybook/jest'
-import { userEvent, within } from '@storybook/testing-library'
-import { fn } from '@storybook/test'
+import type { Meta } from '@storybook/react-vite'
 import { Cars, Chat } from 'pcln-icons'
 import React from 'react'
+import { expect, fn, userEvent, within } from 'storybook/test'
 import { Relative } from '../Relative/Relative'
 import { FloatingActionButton } from './FloatingActionButton'
-import { Meta } from '@storybook/react/*'
 
 const meta: Meta<typeof FloatingActionButton> = {
   title: 'FloatingActionButton',

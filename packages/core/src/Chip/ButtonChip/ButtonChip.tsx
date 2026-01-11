@@ -42,6 +42,12 @@ export type ButtonChipProps = Omit<ChipContentProps, 'action' | 'ref'> & {
 }
 
 /**
+ * A clickable chip component that triggers an action when pressed.
+ *
+ * A button-style chip with optional label, icon, facet, or image. Use for triggering
+ * actions rather than selection. Supports `variation` styles (outline, shadow) and
+ * `expanded` state for active appearance. Can render custom content as children.
+ *
  * @public
  */
 export const ButtonChip: React.FC<ButtonChipProps> = React.forwardRef<HTMLButtonElement, ButtonChipProps>(

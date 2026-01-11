@@ -14,6 +14,12 @@ export type HeroProps = {
 }
 
 /**
+ * A documentation hero banner with title, description, and illustration.
+ *
+ * Displays a prominent header section with component name, description text,
+ * and an image on a colored background. Use at the top of component documentation
+ * pages to introduce the component visually.
+ *
  * @public
  */
 export const Hero = ({ name, children, img }: HeroProps) => (

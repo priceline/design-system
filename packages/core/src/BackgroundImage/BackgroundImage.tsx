@@ -1,4 +1,8 @@
-import React, { type ComponentPropsWithoutRef } from 'react'
+import React, {
+  type ComponentPropsWithoutRef,
+  type ForwardRefExoticComponent,
+  type RefAttributes,
+} from 'react'
 import styled, { css } from 'styled-components'
 import {
   BorderRadiusProps,
@@ -44,7 +48,7 @@ export type BackgroundImageProps = WidthProps &
 /**
  * @public
  */
-export const BackgroundImage: React.FC<BackgroundImageProps> = styled.div.attrs(borderRadiusAttrs)`
+const StyledBackgroundImage = styled.div.attrs(borderRadiusAttrs)<BackgroundImageProps>`
   background-position: ${(props) => props.backgroundPosition};
   background-size: cover;
   background-repeat: no-repeat;
@@ -54,9 +58,25 @@ export const BackgroundImage: React.FC<BackgroundImageProps> = styled.div.attrs(
   ${(props) => compose(height, width, borderRadius)(props)}
 `
 
-BackgroundImage.defaultProps = {
-  variation: 'static',
-  backgroundPosition: 'center',
-}
-
+/**
+ * A container with a responsive background image and optional parallax effect.
+ *
+ * Renders a `div` with a cover-fit background image. Use `variation="parallax"` for
+ * fixed attachment scrolling or `"static"` for normal scroll. Supports responsive
+ * `width`/`height`, `borderRadius`, and custom `backgroundPosition`.
+ *
+ * @public
+ */
+export const BackgroundImage: ForwardRefExoticComponent<
+  BackgroundImageProps & RefAttributes<HTMLDivElement>
+> = React.forwardRef<HTMLDivElement, BackgroundImageProps>(
+  ({ variation = 'static', backgroundPosition = 'center', ...props }, ref) => (
+    <StyledBackgroundImage
+      ref={ref}
+      variation={variation}
+      backgroundPosition={backgroundPosition}
+      {...props}
+    />
+  )
+)
 BackgroundImage.displayName = 'BackgroundImage'

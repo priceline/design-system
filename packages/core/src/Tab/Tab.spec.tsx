@@ -1,8 +1,8 @@
+import { userEvent } from '@testing-library/user-event'
+import { Departure } from 'pcln-icons'
 import React from 'react'
 import { render, screen } from '../__test__/testing-library'
-import { userEvent } from '@storybook/testing-library'
 import { Tab } from './Tab'
-import { Departure } from 'pcln-icons'
 
 describe('Tab', () => {
   const tabsData = [

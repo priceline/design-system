@@ -10,7 +10,7 @@ export {
 export { Badge, type BadgeProps } from './Badge/Badge'
 export { Banner, type BannerProps } from './Banner/Banner'
 export { BlockLink } from './BlockLink/BlockLink'
-export { Box, type BoxProps } from './Box/Box'
+export { Box, StyledBox, type BoxProps } from './Box/Box'
 export { BreadcrumbLink, type BreadcrumbLinkProps } from './Breadcrumbs/BreadcrumbLink'
 export { Breadcrumbs, type BreadcrumbsProps } from './Breadcrumbs/Breadcrumbs'
 export {
@@ -73,7 +73,12 @@ export {
   type DotLoaderSizes,
   type DotLoaderSpeeds,
 } from './DotLoader/DotLoader'
-export { Drawer, type DrawerProps, type PlacementOptions, type SnapPositionChangeParams } from './Drawer/Drawer'
+export {
+  Drawer,
+  type DrawerProps,
+  type PlacementOptions,
+  type SnapPositionChangeParams,
+} from './Drawer/Drawer'
 export { Flag, type FlagProps } from './Flag/Flag'
 export { Flex, type FlexProps } from './Flex/Flex'
 export {
@@ -84,7 +89,14 @@ export { FormField, FormField as InputField, type FormFieldProps } from './FormF
 export { GenericBanner, type GenericBannerNode, type GenericBannerProps } from './GenericBanner/GenericBanner'
 export { Grid, type GridProps } from './Grid/Grid'
 export { Heading } from './Heading/Heading'
-export { Hide, type HideProps } from './Hide/Hide'
+export {
+  Hide,
+  HideText,
+  type HideBreakpointProps,
+  type HideComponent,
+  type HideProps,
+  type HideTextProps,
+} from './Hide/Hide'
 export { Hug, type HugProps } from './Hug/Hug'
 export { Icon } from './Icon/Icon'
 export { IconButton, type IconButtonProps } from './IconButton/IconButton'
@@ -92,7 +104,7 @@ export { IconField, type IconFieldProps } from './IconField/IconField'
 export { Image, type ImageProps } from './Image/Image'
 export { Input, type InputProps, type InputHelperTextProps, type InputWithRef } from './Input/Input'
 export { InputGroup, type InputGroupProps } from './InputGroup/InputGroup'
-export { Label, type LabelProps } from './Label/Label'
+export { Label, type LabelComponent, type LabelProps } from './Label/Label'
 export {
   ALLOWED_GAP_VALUES,
   ALLOWED_LAYOUT_VALUES,
@@ -105,10 +117,13 @@ export { Link, type LinkProps } from './Link/Link'
 export {
   List,
   listStyles,
+  OrderedList,
   tabSpacingSize,
+  UnorderedList,
   type ListIndentSize,
   type ListListStyle,
   type ListProps,
+  type OrderedListProps,
 } from './List/List'
 export { Motion, type MotionProps } from './Motion/Motion'
 export { PasswordInput, type PasswordInputProps } from './PasswordInput/PasswordInput'
@@ -149,7 +164,19 @@ export { Step, type StepProps } from './Step/Step'
 export { Stepper, type StepperProps } from './Stepper/Stepper'
 export { Swatch, type SwatchProps } from './Swatch/Swatch'
 export { Tab, type TabDataProps, type TabProps } from './Tab/Tab'
-export { Text, type TextProps } from './Text/Text'
+export {
+  Text,
+  TextParagraph,
+  TextSpan,
+  TextStrike,
+  type TextComponent,
+  type TextHelperProps,
+  type TextParagraphProps,
+  type TextProps,
+  type TextSpanProps,
+  type TextStrikeProps,
+  type TextSystemProps,
+} from './Text/Text'
 export { TextArea, type TextAreaProps } from './TextArea/TextArea'
 export { Base, ThemeProvider, type ThemeProviderProps } from './ThemeProvider/ThemeProvider'
 export { Toast, type ToastProps } from './Toast/Toast'

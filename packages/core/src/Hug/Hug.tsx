@@ -16,6 +16,12 @@ export type HugProps = CardProps & {
 }
 
 /**
+ * A card container with a colored header banner for promotional or highlighted content.
+ *
+ * Displays a header area with optional `icon` and `text`, followed by children content.
+ * The header "hugs" the content below. Use `colorScheme` for themed styling or custom
+ * `bg`/`color` combinations. Commonly used for deals, special offers, or featured items.
+ *
  * @public
  */
 export function Hug({

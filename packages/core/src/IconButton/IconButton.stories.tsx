@@ -1,4 +1,4 @@
-import { action } from '@storybook/addon-actions'
+import { action } from 'storybook/actions'
 import { Calendar } from 'pcln-icons'
 import React from 'react'
 import { Button } from '../Button/Button'

@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import {
   Absolute,
   BackgroundImage,
@@ -15,11 +14,10 @@ import {
 } from 'pcln-design-system'
 import { Close } from 'pcln-icons'
 import React from 'react'
+import { expect, userEvent, within } from 'storybook/test'
 import styled from 'styled-components'
 import Popover from './Popover'
 import { argTypes, defaultArgs } from './Popover.stories.args'
-import { within, userEvent } from '@storybook/testing-library'
-import { expect } from '@storybook/jest'
 
 export default {
   title: 'pcln-popover / Popover',

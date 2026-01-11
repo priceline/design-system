@@ -49,6 +49,12 @@ const StyledGrid = styled.div<GridProps>`
 `
 
 /**
+ * A CSS Grid container for two-dimensional layouts.
+ *
+ * Extends `Box` with grid-specific props: `templateColumns`, `templateRows`,
+ * `templateAreas`, `gap`, `placeItems`, and more. Use for complex layouts requiring
+ * both row and column control. Supports responsive values for all grid properties.
+ *
  * @public
  */
 export const Grid = (props: GridProps) => <StyledGrid {...props} />

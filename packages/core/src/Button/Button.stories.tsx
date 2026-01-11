@@ -1,6 +1,6 @@
-import { ArgTypes } from '@storybook/addon-docs'
+import { ArgTypes } from '@storybook/addon-docs/blocks'
 import { linkTo } from '@storybook/addon-links'
-import type { Meta, StoryObj } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Calendar, Check, ChevronDown, ChevronLeft, ChevronRight, Guests, Search, User } from 'pcln-icons'
 import React from 'react'
 import { Box } from '../Box/Box'

@@ -1,17 +1,17 @@
 /* eslint-disable no-script-url */
-import type { Meta, StoryObj } from '@storybook/react'
-import { userEvent, within } from '@storybook/testing-library'
+import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Discount } from 'pcln-icons'
 import React, { useState } from 'react'
+import { userEvent, within } from 'storybook/test'
 import { Box } from '../Box/Box'
 import { Breadcrumbs } from '../Breadcrumbs/Breadcrumbs'
 import { Button } from '../Button/Button'
+import { Flex } from '../Flex/Flex'
 import { Grid, type GridProps } from '../Grid/Grid'
 import { Text } from '../Text/Text'
+import { Tooltip } from '../Tooltip/Tooltip'
 import { Dialog, type DialogProps } from './Dialog'
 import { argTypes, defaultArgs } from './Dialog.stories.args'
-import { Flex } from '../Flex/Flex'
-import { Tooltip } from '../Tooltip/Tooltip'
 
 type DialogStory = StoryObj<DialogProps>
 
@@ -100,10 +100,9 @@ export const WithTooltip: DialogStory = {
           top center tooltip
         </Tooltip>
       </Box>
-    )
-  }
+    ),
+  },
 }
-
 
 const ExampleImage = () => (
   <img

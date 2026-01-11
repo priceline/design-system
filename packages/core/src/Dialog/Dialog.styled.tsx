@@ -176,14 +176,14 @@ export const DialogContent = ({
   onOpenChange,
   shouldDisableTabIndex,
 }: DialogProps) => {
-  const headerSizeArray = [
+  const headerSizeArray: string[] = [
     headerIcon ? 'heading5' : 'heading4', // xs
     headerIcon ? 'heading5' : 'heading4', // sm
     headerIcon ? 'heading5' : 'heading4', // md
     headerIcon ? 'heading5' : 'heading4', // lg
     headerIcon ? 'heading4' : 'heading3', // xl
     headerIcon ? 'heading4' : 'heading3', // xxl
-  ] as const
+  ]
 
   const { boxShadow, onScrollHandler } = useScrollWithShadow()
 

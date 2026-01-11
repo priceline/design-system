@@ -31,6 +31,12 @@ export type CloseButtonProps = IStyledSystemProps & {
 export type MotionButtonProps = HTMLMotionProps<'button'> & CloseButtonProps
 
 /**
+ * A circular button with an X icon for dismissing dialogs, banners, or overlays.
+ *
+ * Available in multiple sizes (sm, md, lg or custom number) and variants (default,
+ * filled, white). The `animate` prop enables hover/tap animations. Use in modals,
+ * alerts, and dismissible containers.
+ *
  * @public
  */
 export const CloseButton = ({

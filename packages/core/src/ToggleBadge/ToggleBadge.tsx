@@ -17,10 +17,7 @@ export type ToggleBadgeProps = {
   FontSizeProps &
   ComponentPropsWithRef<'button'>
 
-/**
- * @public
- */
-export const ToggleBadge: React.FC<ToggleBadgeProps> = styled.button.attrs(borderRadiusAttrs)`
+const StyledToggleBadge = styled.button.attrs(borderRadiusAttrs)<ToggleBadgeProps>`
   border-radius: ${(props) => props.theme.radius};
   border: 0;
   display: inline-block;
@@ -38,16 +35,44 @@ export const ToggleBadge: React.FC<ToggleBadgeProps> = styled.button.attrs(borde
   ${(props) => compose(space, fontSize, borderRadius)(props)}
 `
 
+/**
+ * A toggle button styled as a badge for selection states.
+ *
+ * Displays a clickable badge that changes appearance when `selected`. Use for
+ * filter chips, tag selection, or any toggleable option. Supports custom colors
+ * and the unselected background via `unSelectedBg`.
+ *
+ * @public
+ */
+export const ToggleBadge = React.forwardRef<HTMLButtonElement, ToggleBadgeProps>(
+  (
+    {
+      borderRadius = 'full',
+      selected = false,
+      px = 2,
+      py = 1,
+      mx = 1,
+      my = 1,
+      fontSize = 0,
+      color = 'primary',
+      unSelectedBg = 'transparent',
+      ...props
+    },
+    ref
+  ) => (
+    <StyledToggleBadge
+      ref={ref}
+      borderRadius={borderRadius}
+      selected={selected}
+      px={px}
+      py={py}
+      mx={mx}
+      my={my}
+      fontSize={fontSize}
+      color={color}
+      unSelectedBg={unSelectedBg}
+      {...props}
+    />
+  )
+)
 ToggleBadge.displayName = 'ToggleBadge'
-
-ToggleBadge.defaultProps = {
-  borderRadius: 'full',
-  selected: false,
-  px: 2,
-  py: 1,
-  mx: 1,
-  my: 1,
-  fontSize: 0,
-  color: 'primary',
-  unSelectedBg: 'transparent',
-}

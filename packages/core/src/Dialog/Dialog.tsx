@@ -39,6 +39,13 @@ export type DialogProps = Omit<OverflowProps, 'overflow'> & {
 }
 
 /**
+ * A modal overlay that interrupts the user workflow for important content or actions.
+ *
+ * Built on Radix Dialog with customizable header (icon, text, close button), footer,
+ * and content areas. Supports `sheet` mode for mobile-friendly bottom sheets, multiple
+ * `size` options, and `scrimColor` for backdrop styling. Use `hugColor` for accent
+ * border. Can be controlled or uncontrolled via `open`/`onOpenChange`.
+ *
  * @public
  */
 const PclnDialog = ({

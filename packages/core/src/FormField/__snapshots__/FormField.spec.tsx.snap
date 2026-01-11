@@ -31,9 +31,9 @@ exports[`FormField disabled state renders input with icon - disabled 1`] = `
   margin: 0;
   padding: 14px 12px 14px 12px;
   border-color: #c0cad5;
+  padding-left: 40px;
   font-size: 16px;
   border-radius: 12px;
-  padding-left: 40px;
 }
 
 .c9::-webkit-input-placeholder {
@@ -624,9 +624,9 @@ exports[`FormField renders with Icon 1`] = `
   margin: 0;
   padding: 14px 12px 14px 12px;
   border-color: #c0cad5;
+  padding-left: 40px;
   font-size: 16px;
   border-radius: 12px;
-  padding-left: 40px;
 }
 
 .c7::-webkit-input-placeholder {
@@ -821,9 +821,9 @@ exports[`FormField renders with Label autoHide prop 1`] = `
   margin: 0;
   padding: 14px 12px 14px 12px;
   border-color: #c0cad5;
+  padding-left: 40px;
   font-size: 16px;
   border-radius: 12px;
-  padding-left: 40px;
 }
 
 .c7::-webkit-input-placeholder {

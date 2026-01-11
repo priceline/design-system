@@ -1,40 +1,36 @@
-import { action } from '@storybook/addon-actions'
+import { fn } from 'storybook/test'
 import { colors } from '../__test__/mocks/colors'
 
 export const sizeOptions = ['small', 'medium', 'large', 'extraLarge']
 export const variationOptions = ['fill', 'link', 'outline', 'plain', 'subtle', 'white', 'lightFill', 'input']
 
-export const defaultArgs = {
+export const defaultArgs: Record<string, unknown> = {
   children: 'Hello There',
   color: 'primary',
   disabled: false,
   href: 'https://www.priceline.com/',
-  size: 'medium',
-  target: '_blank',
-  variation: 'link',
-  onClick: action('Clicked Link'),
+  size: 'medium' as const,
+  target: '_blank' as const,
+  variation: 'link' as const,
+  onClick: fn(),
 }
 
 export const argTypes = {
   color: {
-    name: 'color',
     options: Object.keys(colors),
     mapping: colors,
-    control: 'select',
+    control: 'select' as const,
   },
   size: {
-    name: 'size',
     options: sizeOptions,
-    control: 'select',
+    control: 'select' as const,
   },
   target: {
-    name: 'target',
     options: ['_blank', '_self'],
-    control: 'radio',
+    control: 'radio' as const,
   },
   variation: {
-    name: 'variation',
     options: variationOptions,
-    control: 'select',
+    control: 'select' as const,
   },
 }

@@ -43,6 +43,13 @@ function moveFocus(currentFocus, traversalFunction) {
   nextFocus?.focus()
 }
 
+/**
+ * A container for MenuItem components with keyboard navigation support.
+ *
+ * Renders items in single or two-column layout via `size` prop. Handles arrow
+ * key navigation between items automatically. Use within Menu for dropdown
+ * menus or standalone for selection lists.
+ */
 function MenuList({ id, children, color, size = 'singleColumn', height, handleClose }) {
   const listRef = useRef(null)
   const currentItemRef = useRef(null)

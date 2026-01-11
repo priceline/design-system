@@ -169,6 +169,12 @@ const buttonIcon = (cardType: TCardTypes) => {
 }
 
 /**
+ * A card-style selection control combining a card with radio, checkbox, or toggle.
+ *
+ * Wraps content in a selectable card with visual feedback. Choose `cardType` for
+ * the input style: radio (single select), checkbox (multi select), or toggle (switch).
+ * Position the control via `hPosition` (left/right) and `vPosition` (top/center).
+ *
  * @public
  */
 export function RadioCheckToggleCard({

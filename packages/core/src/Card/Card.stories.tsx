@@ -1,5 +1,5 @@
-import { ArgTypes, Canvas, Primary } from '@storybook/addon-docs'
-import type { Meta, StoryObj } from '@storybook/react'
+import { ArgTypes, Canvas, Primary } from '@storybook/addon-docs/blocks'
+import type { Meta, StoryObj } from '@storybook/react-vite'
 import React from 'react'
 import styled from 'styled-components'
 import { Button } from '../Button/Button'

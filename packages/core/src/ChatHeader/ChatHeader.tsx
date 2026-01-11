@@ -33,6 +33,12 @@ export type ChatHeaderProps = {
 }
 
 /**
+ * A header bar for chat interfaces with close and optional minimize controls.
+ *
+ * Renders children (typically a title) on the left with action buttons on the right.
+ * The minimize button only appears on desktop breakpoints (lg+). Use at the top of
+ * chat windows, drawers, or floating chat panels.
+ *
  * @public
  */
 export function ChatHeader({ children, onClose, onMinimize }: ChatHeaderProps) {

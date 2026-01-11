@@ -1,11 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { within } from '@storybook/testing-library'
-import { expect } from '@storybook/jest'
+import { expect, fn } from 'storybook/test'
 import { Flex, Card, Container, Image, Text, Box, BackgroundImage, Relative, Badge } from 'pcln-design-system'
 import Popover from 'pcln-popover'
 import styled from 'styled-components'
-import { action } from '@storybook/addon-actions'
 import { Carousel } from './Carousel'
 import { ArrowButton } from './ArrowButton'
 
@@ -121,13 +119,11 @@ Basic.args = {
   mobileVisibleSlides: [1.1, 2.1, 2.1],
   showDots: false,
   showForwardBackBtns: true,
-  onSlideChange: action('Slide Change'),
+  onSlideChange: fn(),
   buttonSize: '60px',
   sideButtonMargin: '-30px',
 }
-Basic.play = async ({ canvasElement }) => {
-  const canvas = within(canvasElement)
-
+Basic.play = async ({ canvas }) => {
   expect(canvas.queryByTestId('slide-box')).not.toBeInTheDocument()
 }
 
@@ -194,7 +190,7 @@ OverflowAllowed.args = {
   showDots: false,
   showForwardBackBtns: true,
   arrowPositions: 'bottom',
-  onSlideChange: action('Slide Change'),
+  onSlideChange: fn(),
   buttonSize: '60px',
   sideButtonMargin: '-30px',
   overflowAllowancePxX: 46,
@@ -267,7 +263,7 @@ OverflowBackground.args = {
   showDots: false,
   showForwardBackBtns: true,
   arrowPositions: 'bottom',
-  onSlideChange: action('Slide Change'),
+  onSlideChange: fn(),
   buttonSize: '60px',
   sideButtonMargin: '-30px',
   overflowAllowancePxX: 8,
@@ -282,16 +278,14 @@ NodesByArrows.args = {
   mobileVisibleSlides: [1.1, 2.1, 2.1],
   showDots: false,
   showForwardBackBtns: true,
-  onSlideChange: action('Slide Change'),
+  onSlideChange: fn(),
   buttonSize: '60px',
   arrowsPosition: 'bottom',
   nodeBesideArrowsLeft: <Badge>Left Content</Badge>,
   nodeBesideArrowsRight: <Badge>Right Content</Badge>,
   arrowsAlignment: 'right',
 }
-NodesByArrows.play = async ({ canvasElement }) => {
-  const canvas = within(canvasElement)
-
+NodesByArrows.play = async ({ canvas }) => {
   expect(canvas.queryByTestId('slide-box')).not.toBeInTheDocument()
 }
 

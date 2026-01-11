@@ -1,13 +1,12 @@
+import type { Meta } from '@storybook/react-vite'
+import { ArrowDown, ArrowUp } from 'pcln-icons'
 import React from 'react'
-import { action } from '@storybook/addon-actions'
-import { within } from '@storybook/testing-library'
-import { expect } from '@storybook/jest'
-import { FloatingActionButtonProvider } from './FloatingActionButtonProvider'
-import { ArrowUp, ArrowDown } from 'pcln-icons'
-import { Box } from '../Box/Box'
+import { expect, fn, within } from 'storybook/test'
 import { animateArgs } from '../Animate/Animate.args'
+import { Box } from '../Box/Box'
+import { FloatingActionButtonProvider } from './FloatingActionButtonProvider'
 
-export default {
+const meta: Meta<typeof FloatingActionButtonProvider> = {
   title: 'Core / FloatingActionButtonProvider',
   component: FloatingActionButtonProvider,
   argTypes: {
@@ -28,13 +27,15 @@ export default {
     floatingActionButtons: [
       {
         tooltip: 'Tooltip Text',
-        onClick: action('Clicked FAB'),
+        onClick: fn(),
         icon: ArrowUp,
         key: 'up_arrow',
       },
     ],
   },
 }
+
+export default meta
 
 export const Default = {
   render: (args) => (
@@ -89,13 +90,13 @@ export const MultipleSamePosition = {
         floatingActionButtons={[
           {
             tooltip: 'Tooltip Text',
-            onClick: action('Clicked FAB'),
+            onClick: fn(),
             icon: ArrowUp,
             key: 'up_arrow',
           },
           {
             tooltip: 'Tooltip Text',
-            onClick: action('Clicked FAB'),
+            onClick: fn(),
             icon: ArrowDown,
             mt: 2,
             key: 'down_arrow',

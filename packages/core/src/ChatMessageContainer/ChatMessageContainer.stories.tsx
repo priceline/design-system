@@ -1,4 +1,4 @@
-import type { StoryObj } from '@storybook/react'
+import type { StoryObj } from '@storybook/react-vite'
 import React from 'react'
 import { Box } from '../Box/Box'
 import { ChatMessageContainer, type ChatMessageContainerProps } from './ChatMessageContainer'

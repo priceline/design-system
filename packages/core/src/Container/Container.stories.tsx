@@ -1,44 +1,42 @@
+import type { Meta, StoryObj } from '@storybook/react-vite'
 import React from 'react'
 import { Box } from '../Box/Box'
 import { Flex } from '../Flex/Flex'
-import { Container } from './Container'
+import { Container, type ContainerProps } from './Container'
 import { argTypes } from './Container.stories.args'
 
-export default {
+const meta: Meta<typeof Container> = {
   title: 'Container',
   component: Container,
   argTypes,
-}
-
-export const DefaultAlignWithThemeMaxWidth = () => (
-  <Container>
-    <Box p={4} bg='lightGray' height='100vh'>
-      Container Component
-    </Box>
-  </Container>
-)
-
-export const InputMaxWidth = () => (
-  <Container maxWidth={500}>
-    <Box p={4} bg='lightGray' height='100vh'>
-      Container Component
-    </Box>
-  </Container>
-)
-
-const Template = (args) => (
-  <Flex width='100%' color='primary'>
-    {/*  @ts-ignore */}
-    <Container {...args} style={{ border: '1px solid' }}>
-      {/*  @ts-ignore */}
-      <Box color='background.light' height='100vh' style={{ border: '1px solid' }}>
+  args: {
+    children: (
+      <Box p={4} bg='lightGray' height='100vh'>
         Container Component
       </Box>
-    </Container>
-  </Flex>
-)
+    ),
+  },
+}
 
-export const SizeProp = Template.bind({})
-SizeProp.args = {
-  size: 'md',
+export default meta
+
+type Story = StoryObj<ContainerProps>
+
+export const DefaultAlignWithThemeMaxWidth: Story = {}
+
+export const InputMaxWidth: Story = {
+  args: { maxWidth: 500 },
+}
+
+export const SizeProp: Story = {
+  args: { size: 'md' },
+  render: (args) => (
+    <Flex width='100%' color='primary'>
+      <Container {...args} style={{ border: '1px solid' }}>
+        <Box color='background.light' height='100vh' style={{ border: '1px solid' }}>
+          Container Component
+        </Box>
+      </Container>
+    </Flex>
+  ),
 }

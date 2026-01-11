@@ -1,3 +1,4 @@
+import type { Meta } from '@storybook/react-vite'
 import React from 'react'
 import { Flex } from '../Flex/Flex'
 import { Input } from '../Input/Input'
@@ -5,7 +6,7 @@ import { Radio } from '../Radio/Radio'
 import { Label, LabelProps } from './Label'
 import { argTypes, defaultArgs } from './Label.stories.args'
 
-export default {
+const meta: Meta<typeof Label> = {
   title: 'Label',
   component: Label,
   args: defaultArgs,
@@ -18,6 +19,7 @@ export default {
     },
   },
 }
+export default meta
 
 const Template = (args: LabelProps) => <Label {...args} />
 

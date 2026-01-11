@@ -91,20 +91,15 @@ export type LinkProps = WidthProps &
     variation?: ButtonVariations
   }
 
-/**
- * @public
- */
-export const Link: React.FC<LinkProps> = styled.a.attrs(
-  ({ color, disabled, href, target, onClick, ...props }) => ({
-    color: disabled ? 'text.light' : color,
-    disabled,
-    href: !disabled ? href : undefined,
-    rel: target === '_blank' ? 'noopener' : null,
-    target,
-    onClick: !disabled ? onClick : () => {},
-    ...props,
-  })
-)`
+const StyledLink = styled.a.attrs<LinkProps>(({ color, disabled, href, target, onClick, ...props }) => ({
+  color: disabled ? 'text.light' : color,
+  disabled,
+  href: !disabled ? href : undefined,
+  rel: target === '_blank' ? 'noopener' : null,
+  target,
+  onClick: !disabled ? onClick : () => {},
+  ...props,
+}))<LinkProps>`
   ${applyVariations('Link', variations)}
 
   ${(props) =>
@@ -120,10 +115,18 @@ export const Link: React.FC<LinkProps> = styled.a.attrs(
   ${(props) => compose(space, width)(props)}
 `
 
+/**
+ * A styled anchor element for navigation and external links.
+ *
+ * Supports multiple visual `variation` styles (fill, outline, subtle, plain, white,
+ * lightFill, link) similar to Button. Use `color` for semantic styling and `size`
+ * for consistent sizing. Automatically handles disabled state styling.
+ *
+ * @public
+ */
+export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
+  ({ color = 'primary', variation = 'link', size = 'medium', ...props }, ref) => (
+    <StyledLink ref={ref} color={color} variation={variation} size={size} {...props} />
+  )
+)
 Link.displayName = 'Link'
-
-Link.defaultProps = {
-  color: 'primary',
-  variation: 'link',
-  size: 'medium',
-}

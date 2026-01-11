@@ -55,6 +55,13 @@ export type ThemeProviderProps = {
 }
 
 /**
+ * The root provider component that supplies the design system theme.
+ *
+ * Wraps your application with styled-components ThemeProvider and applies the
+ * PCLN design tokens. Supports custom `breakpoints` for responsive design and
+ * theme overrides via the `theme` prop. Required at the root of any app using
+ * the design system.
+ *
  * @public
  */
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ theme, customBreakpoints, ...props }) => {

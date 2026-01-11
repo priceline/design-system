@@ -17,6 +17,12 @@ export type StoryStageProps = {
 }
 
 /**
+ * A container that adds consistent spacing around story examples.
+ *
+ * Wraps children with automatic 16px margins between elements. Use in Storybook
+ * stories to provide consistent spacing when displaying multiple component
+ * examples or variations.
+ *
  * @public
  */
 export const StoryStage = ({ children, ...rest }: StoryStageProps) => <Stage {...rest}>{children}</Stage>

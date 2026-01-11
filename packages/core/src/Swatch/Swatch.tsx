@@ -23,6 +23,12 @@ export type SwatchProps = {
 }
 
 /**
+ * A color picker displaying a row of clickable color swatches.
+ *
+ * Renders circular color samples from the `colors` array. Use `onClick` to handle
+ * color selection. Swatches wrap when they exceed container width. Ideal for
+ * product customization or theme selection interfaces.
+ *
  * @public
  */
 export function Swatch({ colors, onClick, ...props }: SwatchProps): React.ReactElement {

@@ -4,6 +4,13 @@ import upperFirst from 'lodash.upperfirst'
 import PropTypes from 'prop-types'
 import * as icons from './index'
 
+/**
+ * @deprecated Use named icon imports instead (e.g., `import { Flights } from 'pcln-icons'`).
+ *
+ * A dynamic icon component that renders icons by name. Supports accessible labels
+ * via `title`, `desc`, and their ID props. Icons are rendered as flex containers
+ * with customizable `size` and `color` props.
+ */
 const BaseIcon = ({ name, title, desc, titleId, descId, size = 24, ...props }) => {
   const isDev = process.env.NODE_ENV !== 'production'
 

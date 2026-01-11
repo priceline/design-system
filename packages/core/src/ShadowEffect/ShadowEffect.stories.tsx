@@ -1,4 +1,4 @@
-import { action } from '@storybook/addon-actions'
+import { action } from 'storybook/actions'
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Input } from '../Input/Input'

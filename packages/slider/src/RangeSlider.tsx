@@ -5,16 +5,17 @@ import React from 'react'
 import Range from 'rc-slider'
 import styleSlider from './styleSlider'
 
-const _RangeSlider = styleSlider(Range)
+const StyledRangeSlider = styleSlider(Range)
 
-const RangeSlider = (props) => {
-  return <_RangeSlider {...props} />
-}
-
-RangeSlider.defaultProps = {
-  allowCross: false,
-  color: 'primary',
-  range: true,
+/**
+ * A dual-handle slider for selecting a value range (min/max).
+ *
+ * Built on rc-slider with design system styling. Pass `value` as an array
+ * of two or more numbers. Use `color` prop for semantic colors and
+ * `ariaLabelForHandle` array for accessibility. Handles cannot cross by default.
+ */
+const RangeSlider = ({ allowCross = false, color = 'primary', range = true, ...props }) => {
+  return <StyledRangeSlider allowCross={allowCross} color={color} range={range} {...props} />
 }
 
 RangeSlider.propTypes = {

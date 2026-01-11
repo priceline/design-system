@@ -79,6 +79,13 @@ export type BannerProps = BoxProps & {
 }
 
 /**
+ * A prominent message bar for alerts, notifications, or announcements.
+ *
+ * Displays a colored banner with optional icon, header, text, and close button.
+ * Semantic colors (green/success, red/error, orange/warning, blue/info) include
+ * appropriate icons. Use `onClose` to enable dismissal. Supports `colorScheme`
+ * for themed styling or custom `bg`/`color` combinations.
+ *
  * @public
  */
 export function Banner({
@@ -95,13 +102,14 @@ export function Banner({
 }: BannerProps): React.ReactElement {
   const bannerColor = bannerColors[!bg && color === 'green' ? color : bg] || {}
   const Icon = icon || bannerColor.icon
-  const finalColor = !bannerColor.color ? color : bannerColor.color
-
-  let finalHeader = null
-
-  if (header) {
-    finalHeader = React.isValidElement(header) ? header : <Text textStyle='display2'>{header}</Text>
-  }
+  const finalColor = bannerColor.color ?? color
+  const finalHeader = header ? (
+    React.isValidElement(header) ? (
+      header
+    ) : (
+      <Text textStyle='display2'>{header}</Text>
+    )
+  ) : null
 
   return (
     <StyledBox {...props} textAlign={textAlign} bg={bannerColor.backgroundColor || bg} color={finalColor}>

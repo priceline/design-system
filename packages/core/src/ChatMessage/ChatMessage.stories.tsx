@@ -1,4 +1,4 @@
-import type { StoryObj } from '@storybook/react'
+import type { StoryObj } from '@storybook/react-vite'
 import { Overnight } from 'pcln-icons'
 import React from 'react'
 import { Flex } from '../Flex/Flex'

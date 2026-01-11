@@ -58,6 +58,12 @@ const labelPaddingTop = (size) => {
 }
 
 /**
+ * A form input wrapper that positions labels, icons, and inputs together.
+ *
+ * Orchestrates child elements (Label, Input/Select, icons) into a cohesive form control.
+ * Icons placed before the input appear on the left; after the input, on the right.
+ * Passes `disabled` and `readOnly` states to all child form elements automatically.
+ *
  * @public
  */
 export function FormField({ children, disabled, readOnly, ...props }: FormFieldProps) {

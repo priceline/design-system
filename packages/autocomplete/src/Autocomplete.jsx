@@ -1,15 +1,8 @@
-import React from 'react'
-import Downshift from 'downshift'
-import styled from 'styled-components'
-import {
-  Flex,
-  Card,
-  Label as PclnLabel,
-  Input as PclnInput,
-  getPaletteColor,
-  deprecatedColorValue,
-} from 'pcln-design-system'
 import { themeGet } from '@styled-system/theme-get'
+import Downshift from 'downshift'
+import { Card, Flex, Input as PclnInput, Label as PclnLabel, getPaletteColor } from 'pcln-design-system'
+import React from 'react'
+import styled from 'styled-components'
 
 export const AutocompleteContext = React.createContext()
 
@@ -28,7 +21,7 @@ Label.isLabel = true
 export const Input = withAutocomplete(PclnInput, ({ getInputProps }) => getInputProps())
 Input.isField = true
 
-const MenuCard = styled(Card)`
+const StyledMenuCard = styled(Card)`
   background-color: ${getPaletteColor('background.lightest')};
   position: absolute;
   top: 100%;
@@ -38,17 +31,23 @@ const MenuCard = styled(Card)`
   overflow-y: auto;
 `
 
-MenuCard.defaultProps = {
-  height: '256px',
-  borderWidth: 0,
-  boxShadowSize: 'lg',
-  mt: 1,
-  borderRadius: 'xl',
-}
-
-MenuCard.propTypes = {
-  bg: deprecatedColorValue(),
-}
+const MenuCard = ({
+  height = '256px',
+  borderWidth = 0,
+  boxShadowSize = 'lg',
+  mt = 1,
+  borderRadius = 'xl',
+  ...props
+}) => (
+  <StyledMenuCard
+    height={height}
+    borderWidth={borderWidth}
+    boxShadowSize={boxShadowSize}
+    mt={mt}
+    borderRadius={borderRadius}
+    {...props}
+  />
+)
 
 const MenuRoot = React.forwardRef((props, ref) => <MenuCard {...props} innerRef={ref} />)
 MenuRoot.displayName = 'Autocomplete_MenuRoot'
@@ -75,7 +74,7 @@ export const Menu = ({ children, ...props }) => (
   />
 )
 
-const ItemRoot = styled(Flex)`
+const StyledItemRoot = styled(Flex)`
   cursor: pointer;
   &[aria-selected='true'] {
     background-color: ${getPaletteColor('primary.light')};
@@ -89,9 +88,9 @@ const ItemRoot = styled(Flex)`
   }
 `
 
-ItemRoot.defaultProps = {
-  alignItems: 'center',
-}
+const ItemRoot = ({ alignItems = 'center', ...props }) => (
+  <StyledItemRoot alignItems={alignItems} {...props} />
+)
 
 export const Item = (props) => (
   <AutocompleteContext.Consumer
@@ -109,21 +108,24 @@ export const Item = (props) => (
   />
 )
 
-export const Autocomplete = ({ children, style, ...props }) => {
+/**
+ * A typeahead input component built on Downshift for accessible autocomplete behavior.
+ *
+ * Compound component with `Autocomplete.Label`, `Autocomplete.Input`, `Autocomplete.Menu`,
+ * and `Autocomplete.Item` subcomponents. The `match` prop filters items as the user types.
+ * The dropdown menu overlays content below it and highlights items on hover/keyboard navigation.
+ */
+export const Autocomplete = ({ children, style, match = () => true, ...props }) => {
   return (
     <Downshift
       {...props}
       children={(state) => (
         <div style={{ position: 'relative', ...style }}>
-          <AutocompleteContext.Provider value={{ ...props, ...state }} children={children} />
+          <AutocompleteContext.Provider value={{ ...props, match, ...state }} children={children} />
         </div>
       )}
     />
   )
-}
-
-Autocomplete.defaultProps = {
-  match: () => true,
 }
 
 Autocomplete.Label = Label

@@ -19,6 +19,12 @@ export type StepperProps = {
 }
 
 /**
+ * A container for Step components showing progress through a multi-step process.
+ *
+ * Wraps multiple Step children with connectors between them. Use for checkout flows,
+ * form wizards, or any sequential process. Steps display active, completed, and
+ * upcoming states automatically based on their props.
+ *
  * @public
  */
 export function Stepper({ className, children, ...props }: StepperProps): React.ReactElement {

@@ -1,7 +1,6 @@
-import { expect, jest } from '@storybook/jest'
-import type { StoryObj } from '@storybook/react'
-import { userEvent, within } from '@storybook/testing-library'
+import type { StoryObj } from '@storybook/react-vite'
 import React from 'react'
+import { expect, fn, userEvent, within } from 'storybook/test'
 import { ChatActionContainer, ChatActionContainerProps } from './ChatActionContainer'
 
 export default {
@@ -14,26 +13,26 @@ type ChatActionContainerStory = StoryObj<ChatActionContainerProps>
 const twoChatActions = [
   {
     label: 'Yes',
-    onClick: jest.fn(),
+    onClick: fn(),
   },
   {
     label: 'No',
-    onClick: jest.fn(),
+    onClick: fn(),
   },
 ]
 
 const threeChatActions = [
   {
     label: 'Send a copy of my itinerary',
-    onClick: jest.fn(),
+    onClick: fn(),
   },
   {
     label: 'Cancel my Trip',
-    onClick: jest.fn(),
+    onClick: fn(),
   },
   {
     label: 'Reset my Password',
-    onClick: jest.fn(),
+    onClick: fn(),
   },
 ]
 

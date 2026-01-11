@@ -20,6 +20,12 @@ export type ToastProps = {
 } & Omit<FlexProps, 'id'>
 
 /**
+ * A dismissible notification message that appears temporarily.
+ *
+ * Two variations: `fill` (solid background) and `border` (left accent border).
+ * Supports optional icon, auto-dismiss via `lifespan` (ms), and close button.
+ * Use with `ToastProvider` and `useToast` hook for managed toast notifications.
+ *
  * @public
  */
 export function Toast({

@@ -1,6 +1,6 @@
 import { TabProps } from './Tab'
 import { DefaultContent, DefaultContent2, DefaultContent3 } from '../__test__/mocks/tabContent'
-import { ArgTypes } from '@storybook/react/*'
+import { ArgTypes } from '@storybook/react-vite'
 
 export const defaultArgs: Partial<TabProps> = {
   size: 'md',

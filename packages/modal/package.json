@@ -30,7 +30,6 @@
     "@priceline/babel-preset": "workspace:*",
     "@priceline/eslint-config": "workspace:*",
     "@rushstack/eslint-patch": "^1.6.0",
-    "@storybook/addon-actions": "^8.3.0",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
     "cross-env": "^7.0.3",

@@ -7,13 +7,9 @@ import { applyVariations, borders, getPaletteColor } from '../utils/utils'
 /**
  * @public
  */
-export type TextAreaProps = SpaceProps &
-  ComponentPropsWithRef<'textarea'> & { isField?: boolean }
+export type TextAreaProps = SpaceProps & ComponentPropsWithRef<'textarea'>
 
-/**
- * @public
- */
-export const TextArea: React.FC<TextAreaProps> & { isField?: boolean } = styled.textarea`
+const StyledTextArea = styled.textarea<TextAreaProps>`
   appearance: none;
   display: block;
   width: 100%;
@@ -44,5 +40,19 @@ export const TextArea: React.FC<TextAreaProps> & { isField?: boolean } = styled.
   ${borders} ${space};
 `
 
+/**
+ * A multi-line text input for longer form content.
+ *
+ * Renders a styled `<textarea>` with validation `color` states (primary, secondary,
+ * warning, error). Use with Label for accessible form controls. Supports all
+ * standard textarea attributes like `rows`, `placeholder`, and `maxLength`.
+ *
+ * @public
+ */
+export const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>((props, ref) => (
+  <StyledTextArea ref={ref} {...props} />
+)) as React.ForwardRefExoticComponent<TextAreaProps & React.RefAttributes<HTMLTextAreaElement>> & {
+  isField?: boolean
+}
 TextArea.displayName = 'TextArea'
 TextArea.isField = true

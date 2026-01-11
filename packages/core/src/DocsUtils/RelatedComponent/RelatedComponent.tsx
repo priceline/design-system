@@ -14,6 +14,12 @@ export type RelatedComponentProps = {
 }
 
 /**
+ * A clickable card linking to a related component in documentation.
+ *
+ * Displays a preview area with children content, component name, and optional
+ * description. Use within `RelatedComponentContainer` to show related or similar
+ * components at the bottom of documentation pages.
+ *
  * @public
  */
 export const RelatedComponent = ({ name, desc, children, onClick }: RelatedComponentProps) => (
@@ -45,6 +51,11 @@ export type RelatedComponentContainerProps = {
 }
 
 /**
+ * A grid container for displaying multiple RelatedComponent cards.
+ *
+ * Automatically creates equal-width columns based on the number of children.
+ * Use to group related component links at the end of documentation pages.
+ *
  * @public
  */
 export const RelatedComponentContainer = ({ children }: RelatedComponentContainerProps) => (

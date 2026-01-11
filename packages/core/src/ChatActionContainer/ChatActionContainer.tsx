@@ -25,6 +25,12 @@ export interface IChatAction {
 }
 
 /**
+ * A container that renders chat action buttons in a responsive layout.
+ *
+ * Displays action buttons in a 2-column grid when exactly 2 actions are provided,
+ * otherwise uses a flex layout with wrapping. Each action has a `label` and `onClick`
+ * handler. Use within chat interfaces for quick-reply or suggested action buttons.
+ *
  * @public
  */
 export function ChatActionContainer({ chatActions }: ChatActionContainerProps) {

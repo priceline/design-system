@@ -35,10 +35,6 @@
     "@priceline/eslint-config": "workspace:*",
     "@reach/component-component": "^0.16.0",
     "@rushstack/eslint-patch": "^1.6.0",
-    "@storybook/addon-actions": "^8.3.0",
-    "@storybook/test": "^8.3.0",
-    "@storybook/jest": "^0.2.3",
-    "@storybook/testing-library": "^0.2.2",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
     "core-js": "^3.37.1",
@@ -57,6 +53,7 @@
     "react-is": "^18.3.1",
     "react-test-renderer": "^18.3.1",
     "rimraf": "^3.0.2",
+    "storybook": "10.2.0-alpha.14",
     "styled-components": "^5.3.11",
     "styled-system": "^5.1.5"
   },

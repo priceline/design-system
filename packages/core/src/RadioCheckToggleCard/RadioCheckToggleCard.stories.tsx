@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react'
+import { Meta, StoryObj } from '@storybook/react-vite'
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Box } from '../Box/Box'
@@ -11,7 +11,13 @@ import { Text } from '../Text/Text'
 import { ThemeProvider } from '../ThemeProvider/ThemeProvider'
 import { theme } from '../theme/theme'
 import { getPaletteColor } from '../utils/utils'
-import { RadioCheckToggleCard, TCardTypes, THPositions, TVPositions } from './RadioCheckToggleCard'
+import {
+  RadioCheckToggleCard,
+  type RadioCheckToggleCardProps,
+  TCardTypes,
+  THPositions,
+  TVPositions,
+} from './RadioCheckToggleCard'
 import { argTypes } from './RadioCheckToggleCard.stories.args'
 
 type Story = StoryObj<typeof RadioCheckToggleCard>
@@ -933,47 +939,51 @@ const meta: Meta<typeof RadioCheckToggleCard> = {
 }
 export default meta
 
+const renderCardTypeVariants = (args: RadioCheckToggleCardProps & { cardType?: string }) => (
+  <Section heading={args.cardType}>
+    <Flex flexDirection='column' style={{ maxWidth: '350px', gap: '16px' }}>
+      <RadioCheckToggleCard value='example-1' isSelected={false} onChange={() => {}} {...args}>
+        <Box width='100%' height='75px' />
+      </RadioCheckToggleCard>
+
+      <RadioCheckToggleCard value='example-2' isSelected={false} onChange={() => {}} {...args}>
+        <Text textStyle='paragraph'>
+          I am some content. I am some content. I am some content. I am some content.
+        </Text>
+      </RadioCheckToggleCard>
+
+      <RadioCheckToggleCard value='example-3' isSelected={false} onChange={() => {}} {...args}>
+        <Text textStyle='paragraph'>
+          I am some content. I am some content. I am some content. I am some content.
+        </Text>
+        <Button mt={2} width='100%'>
+          Button
+        </Button>
+      </RadioCheckToggleCard>
+
+      <RadioCheckToggleCard value='example-4' isSelected={false} onChange={() => {}} {...args}>
+        {exampleImage()}
+      </RadioCheckToggleCard>
+    </Flex>
+  </Section>
+)
+
+const cardTypeBaseArgs = { cardType: 'radio' as const, name: 'radio-card', title: 'Title' }
+
 export const Radio: Story = {
-  args: { cardType: 'radio', name: 'radio-card', title: 'Title' },
+  args: cardTypeBaseArgs,
   argTypes,
-  render: (args) => (
-    <Section heading={args.cardType}>
-      <Flex flexDirection='column' style={{ maxWidth: '350px', gap: '16px' }}>
-        <RadioCheckToggleCard value='example-1' isSelected={false} onChange={(e) => {}} {...args}>
-          <Box width='100%' height='75px' />
-        </RadioCheckToggleCard>
-
-        <RadioCheckToggleCard value='example-2' isSelected={false} onChange={(e) => {}} {...args}>
-          <Text textStyle='paragraph'>
-            I am some content. I am some content. I am some content. I am some content.
-          </Text>
-        </RadioCheckToggleCard>
-
-        <RadioCheckToggleCard value='example-3' isSelected={false} onChange={(e) => {}} {...args}>
-          <Text textStyle='paragraph'>
-            I am some content. I am some content. I am some content. I am some content.
-          </Text>
-          <Button mt={2} width='100%'>
-            Button
-          </Button>
-        </RadioCheckToggleCard>
-
-        <RadioCheckToggleCard value='example-4' isSelected={false} onChange={(e) => {}} {...args}>
-          {exampleImage()}
-        </RadioCheckToggleCard>
-      </Flex>
-    </Section>
-  ),
+  render: (args) => renderCardTypeVariants(args),
 }
 
 export const Checkbox: Story = {
-  args: { ...Radio.args, cardType: 'checkbox', name: 'checkbox-card' },
+  args: { ...cardTypeBaseArgs, cardType: 'checkbox', name: 'checkbox-card' },
   argTypes,
-  render: Radio.render,
+  render: (args) => renderCardTypeVariants(args),
 }
 
 export const Toggle: Story = {
-  args: { ...Radio.args, cardType: 'toggle', name: 'toggle-card' },
+  args: { ...cardTypeBaseArgs, cardType: 'toggle', name: 'toggle-card' },
   argTypes,
-  render: Radio.render,
+  render: (args) => renderCardTypeVariants(args),
 }

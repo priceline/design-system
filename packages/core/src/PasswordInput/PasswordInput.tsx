@@ -38,6 +38,12 @@ export type PasswordInputProps = Omit<FlexProps, 'onChange'> & {
 }
 
 /**
+ * A password input with visibility toggle, validation, and strength indicator.
+ *
+ * Includes an eye icon to toggle password visibility. Enable `hasProgressBar` to
+ * display password strength based on `regexChecks` (uppercase, lowercase, numbers,
+ * special chars, length). The `onChange` callback provides both value and isValid state.
+ *
  * @public
  */
 export function PasswordInput({

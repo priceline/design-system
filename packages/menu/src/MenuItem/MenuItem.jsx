@@ -36,6 +36,13 @@ const MenuButton = styled(Button).attrs(borderRadiusAttrs)`
   ${borderRadius};
 `
 
+/**
+ * An individual selectable item within a Menu or MenuList.
+ *
+ * Displays content with optional icon and selection checkmark. Use `selected`
+ * to show the checked state. Supports single-line or multi-line content as
+ * children. Customize accent color via `color` prop (defaults to primary).
+ */
 const MenuItem = React.forwardRef(function MenuItem(
   { id, color = 'primary', icon, selected, children, handleClose, onClick, ...props },
   ref

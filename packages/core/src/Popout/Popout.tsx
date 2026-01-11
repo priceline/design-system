@@ -35,6 +35,12 @@ const PopoutModal = styled(Box)`
 `
 
 /**
+ * A floating panel that appears on trigger click and dismisses on outside click.
+ *
+ * Renders content in a portal positioned relative to the trigger element. Unlike
+ * Popover, Popout is simpler with just trigger/content without arrows or overlays.
+ * Use for dropdown menus, action sheets, or any ephemeral floating content.
+ *
  * @public
  */
 export function Popout(props: PopoutProps) {

@@ -132,6 +132,12 @@ export type SpinnerProps = GradientRingProps & {
 }
 
 /**
+ * A circular loading indicator with optional center icon and gradient effect.
+ *
+ * Displays an animated rotating ring. Available in `small`, `medium`, `large`
+ * sizes or custom dimensions. Place an icon as children to show in the center.
+ * Enable `useGradient` for a gradient stroke effect instead of solid color.
+ *
  * @public
  */
 export function Spinner({

@@ -55,6 +55,13 @@ function parsePlacement(placement: PopoverProps['placement']): {
   }
 }
 
+/**
+ * A floating tooltip-style panel with arrow and optional overlay.
+ *
+ * Built on Radix Popover with customizable `placement` (12 positions), optional
+ * arrow, scrim overlay, and close button. Use for contextual help, form guidance,
+ * or rich tooltips. Can be controlled via `isOpen` or uncontrolled with `openOnMount`.
+ */
 const DsPopover = ({
   borderRadius = 'xl',
   children,

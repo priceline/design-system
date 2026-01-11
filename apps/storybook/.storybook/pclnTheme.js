@@ -1,4 +1,4 @@
-import { create } from '@storybook/theming'
+import { create } from 'storybook/theming'
 import { createTheme } from 'pcln-design-system'
 
 const theme = createTheme()

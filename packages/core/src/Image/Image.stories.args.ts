@@ -1,4 +1,4 @@
-import { ArgTypes } from '@storybook/react/*'
+import { ArgTypes } from '@storybook/react-vite'
 import { borderRadii, colors, objectFits, objectPositions, rounded, shadows } from '../storybook/args'
 
 export const argTypes: ArgTypes = {

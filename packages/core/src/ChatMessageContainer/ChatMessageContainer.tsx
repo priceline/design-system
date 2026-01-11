@@ -26,6 +26,12 @@ export interface ChatMessageContainerProps {
 }
 
 /**
+ * A scrollable container that renders a list of chat messages.
+ *
+ * Displays messages as ChatMessage components aligned left (incoming/initial) or
+ * right (outgoing) based on their `variation`. Use `messageMaxWidth` to control
+ * the maximum width of message bubbles. Provides vertical scrolling for overflow.
+ *
  * @public
  */
 export function ChatMessageContainer({ messageMaxWidth = '90%', messages }: ChatMessageContainerProps) {

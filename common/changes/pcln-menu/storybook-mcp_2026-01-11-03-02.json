@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-menu",
+      "comment": "added JSDoc for storybook mcp",
+      "type": "none"
+    }
+  ],
+  "packageName": "pcln-menu"
+}

@@ -89,7 +89,7 @@ export type BadgeProps = SpaceProps &
 /**
  * @public
  */
-export const Badge: React.FC<BadgeProps> = styled.div.attrs(borderRadiusAttrs)`
+const StyledBadge = styled.div.attrs(borderRadiusAttrs)<BadgeProps>`
   display: inline-block;
   ${({ theme }) => applySizes(sizes, undefined, theme.mediaQueries)};
   ${applyVariations('Badge')};
@@ -102,11 +102,26 @@ export const Badge: React.FC<BadgeProps> = styled.div.attrs(borderRadiusAttrs)`
   ${(props) => compose(space, borderRadius)(props)}
 `
 
-Badge.defaultProps = {
-  size: 'medium',
-  px: 2,
-  borderRadius: 'full',
-  textTransform: 'uppercase',
-}
-
+/**
+ * A small label for status, category, or count information.
+ *
+ * Displays compact text with background color. Supports multiple `size` variants
+ * (captionSmall, captionMedium, small, medium), `colorScheme` for themed colors,
+ * and custom `bg`/`color` combinations. Text is uppercase by default but can be
+ * changed via `textTransform`.
+ *
+ * @public
+ */
+export const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(
+  ({ size = 'medium', px = 2, borderRadius = 'full', textTransform = 'uppercase', ...props }, ref) => (
+    <StyledBadge
+      ref={ref}
+      size={size}
+      px={px}
+      borderRadius={borderRadius}
+      textTransform={textTransform}
+      {...props}
+    />
+  )
+)
 Badge.displayName = 'Badge'

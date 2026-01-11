@@ -32,6 +32,12 @@ export type IconButtonProps = ButtonProps & {
 }
 
 /**
+ * A button that displays only an icon without text.
+ *
+ * Wraps an icon in a clickable button with transparent background by default.
+ * Use for toolbar actions, close buttons, or compact UI controls. Always provide
+ * an `aria-label` for accessibility since there's no visible text.
+ *
  * @public
  */
 export const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(({ icon, ...props }, ref) => {

@@ -22,7 +22,7 @@ exports[`BlockLink renders 1`] = `
 }
 
 <a
-  className="c0 c1"
+  className="c0 c1 sc-dcJsrY c1"
   color="primary"
   rel={null}
   size="medium"

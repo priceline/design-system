@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import { ArgTypes, Primary } from '@storybook/addon-docs'
-import { Meta, StoryObj } from '@storybook/react'
+import { ArgTypes, Primary } from '@storybook/addon-docs/blocks'
+import { Meta, StoryObj } from '@storybook/react-vite'
 import React from 'react'
 import { Box } from '../Box/Box'
 import { DocTable } from '../DocsUtils/DocTable/DocTable'

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-autocomplete",
+      "comment": "Storybook 10 + MCP, clean up defaultProps, add JSDoc comments",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-autocomplete"
+}

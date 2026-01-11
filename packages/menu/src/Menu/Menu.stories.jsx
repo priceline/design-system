@@ -1,12 +1,12 @@
-import { userEvent, within } from '@storybook/testing-library'
-import React, { useState } from 'react'
-import { argTypes, defaultArgs } from './Menu.stories.args'
-import { Bed as BedIcon } from 'pcln-icons'
 import { Absolute, Box, Button, ButtonChip, Dialog, Divider, Flex, Link, Text } from 'pcln-design-system'
-import { listItems, currencies } from '../../test/mocks/Menu'
-import Menu from './Menu'
+import { Bed as BedIcon } from 'pcln-icons'
+import React, { useState } from 'react'
+import { userEvent, within } from 'storybook/test'
+import { currencies, listItems } from '../../test/mocks/Menu'
 import MenuItem from '../MenuItem'
 import MenuList from '../MenuList'
+import Menu from './Menu'
+import { argTypes, defaultArgs } from './Menu.stories.args'
 
 export default {
   title: 'pcln-menu / Menu',

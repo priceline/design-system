@@ -1,4 +1,4 @@
-import { ArgTypes } from '@storybook/react'
+import { ArgTypes } from '@storybook/react-vite'
 import { paletteColors, shadows } from '../theme/theme'
 import type { CloseButtonProps } from './CloseButton'
 import { closeButtonSizes, closeButtonVariants } from './CloseButton.styled'

@@ -1,4 +1,4 @@
-import { Meta } from '@storybook/react'
+import { Meta } from '@storybook/react-vite'
 import React from 'react'
 import { Flex } from '../Flex/Flex'
 import { colorSchemeNames } from '../storybook/args'

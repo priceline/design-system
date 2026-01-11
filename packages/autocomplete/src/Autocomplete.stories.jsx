@@ -1,15 +1,12 @@
 /* eslint-disable react/no-children-prop */
-import React from 'react'
 import Component from '@reach/component-component'
-import { within, userEvent } from '@storybook/testing-library'
-import { expect } from '@storybook/jest'
-import us from 'us'
-
+import catNames from 'cat-names'
 import { Box, Text, ThemeProvider } from 'pcln-design-system'
 import { Pin as PinIcon } from 'pcln-icons'
-
-import catNames from 'cat-names'
-import { Autocomplete, Label, Input, Menu, Item } from '.'
+import React from 'react'
+import { expect, userEvent, within } from 'storybook/test'
+import us from 'us'
+import { Autocomplete, Input, Item, Label, Menu } from '.'
 
 const usStates = us.STATES.map((state) => (
   <Autocomplete.Item key={state.name} item={state}>

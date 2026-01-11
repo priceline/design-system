@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { type ComponentPropsWithRef } from 'react'
 import styled from 'styled-components'
 import {
   FontSizeProps,
@@ -54,24 +54,20 @@ export type LabelProps = SpaceProps &
   LineHeightProps &
   TextStyleProps &
   WidthProps &
-  Partial<Omit<HTMLLabelElement, 'children'>> & {
+  Omit<ComponentPropsWithRef<'label'>, 'color'> & {
     children?: React.ReactNode
     color?: string
     autoHide?: boolean
     nowrap?: boolean
-    for?: string
     as?: unknown
     truncate?: boolean
-    onClick?: (evt: unknown) => void
+    bg?: string
   }
 
-/**
- * @public
- */
-export const Label: React.FC<LabelProps> & { isLabel?: boolean } = styled.label.attrs((props) => ({
+const StyledLabel = styled.label.attrs<LabelProps>((props) => ({
   ...typographyAttrs(props),
   ...props,
-}))`
+}))<LabelProps>`
   display: block;
   width: 100%;
   margin: 0;
@@ -89,10 +85,25 @@ export const Label: React.FC<LabelProps> & { isLabel?: boolean } = styled.label.
   ${(props) => compose(fontSize, fontWeight, lineHeight, letterSpacing, space, textStyle, width)(props)}
 `
 
-Label.defaultProps = {
-  color: 'text.light',
-  textStyle: 'label',
+export type LabelComponent = React.ForwardRefExoticComponent<
+  LabelProps & React.RefAttributes<HTMLLabelElement>
+> & {
+  isLabel?: boolean
 }
 
+/**
+ * A form label for associating text with input elements.
+ *
+ * Use `htmlFor` to link the label to an input by ID, or wrap the input as a child.
+ * Supports `autoHide` to show only when the associated input has a value. The `nowrap`
+ * prop prevents text wrapping for inline layouts like radio button groups.
+ *
+ * @public
+ */
+export const Label: LabelComponent = React.forwardRef<HTMLLabelElement, LabelProps>(
+  ({ color = 'text.light', textStyle = 'label', ...props }, ref) => (
+    <StyledLabel ref={ref} color={color} textStyle={textStyle} {...props} />
+  )
+) as LabelComponent
 Label.displayName = 'Label'
 Label.isLabel = true

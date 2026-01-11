@@ -30,6 +30,12 @@ export type StepProps = {
 }
 
 /**
+ * An individual step indicator for multi-step processes.
+ *
+ * Displays a step with optional `active` and `completed` states. Use with `Stepper`
+ * container for multi-step flows like checkout or form wizards. Steps can be made
+ * clickable via `onClick` for navigation between steps.
+ *
  * @public
  */
 export function Step({

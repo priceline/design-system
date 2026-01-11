@@ -1,5 +1,5 @@
 import themeGet from '@styled-system/theme-get'
-import React from 'react'
+import React, { type ComponentPropsWithRef } from 'react'
 import styled, { css } from 'styled-components'
 import {
   BorderRadiusProps,
@@ -59,7 +59,8 @@ const variations = {
  */
 export type StampProps = SpaceProps &
   FontSizeProps &
-  BorderRadiusProps & {
+  BorderRadiusProps &
+  Omit<ComponentPropsWithRef<'div'>, 'color'> & {
     bg?: string
     borderColor?: string
     children?: React.ReactNode
@@ -69,10 +70,7 @@ export type StampProps = SpaceProps &
     colorScheme?: ColorSchemeName
   }
 
-/**
- * @public
- */
-export const Stamp: React.FC<StampProps> = styled.div.attrs(borderRadiusAttrs)`
+const StyledStamp = styled.div.attrs<StampProps>(borderRadiusAttrs)<StampProps>`
   display: inline-flex;
   align-items: center;
   vertical-align: top;
@@ -91,15 +89,42 @@ export const Stamp: React.FC<StampProps> = styled.div.attrs(borderRadiusAttrs)`
   ${(props) => compose(space, fontSize, borderRadius)(props)}
 `
 
+/**
+ * A bordered inline label for tags, categories, or status indicators.
+ *
+ * Similar to Badge but with a border instead of solid background. Available in
+ * `small` and `medium` sizes with support for icons alongside text. Customize
+ * with `color`, `bg`, `borderColor`, or `colorScheme` for themed styling.
+ *
+ * @public
+ */
+export const Stamp = React.forwardRef<HTMLDivElement, StampProps>(
+  (
+    {
+      px = 1,
+      py = 0,
+      color = 'border.light',
+      bg = 'background.light',
+      borderColor = 'border.base',
+      borderRadius = 'md',
+      size = 'medium',
+      variation = 'outline',
+      ...props
+    },
+    ref
+  ) => (
+    <StyledStamp
+      ref={ref}
+      px={px}
+      py={py}
+      color={color}
+      bg={bg}
+      borderColor={borderColor}
+      borderRadius={borderRadius}
+      size={size}
+      variation={variation}
+      {...props}
+    />
+  )
+)
 Stamp.displayName = 'Stamp'
-
-Stamp.defaultProps = {
-  px: 1,
-  py: 0,
-  color: 'border.light',
-  bg: 'background.light',
-  borderColor: 'border.base',
-  borderRadius: 'md',
-  size: 'medium',
-  variation: 'outline',
-}

@@ -97,20 +97,34 @@ export type InputWithRef = ForwardRefExoticComponent<Omit<InputProps, 'ref'> & R
 }
 
 /**
+ * A styled text input for forms with validation states and helper text.
+ *
+ * Supports `color` prop for validation states (primary, secondary, warning, error).
+ * Available in multiple `size` options (sm, md, lg, xl). Use `Input.HelperText` for
+ * contextual help or error messages below the field. Works with FormField and Label.
+ *
  * @public
  */
-export const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
-  const { helperText, color, ...restProps } = props
-  return (
-    <>
-      <StyledInput {...restProps} color={color} ref={ref} />
-      {helperText &&
-        React.cloneElement(helperText, {
-          color: helperText.props.color || color,
-        })}
-    </>
-  )
-}) as InputWithRef
+export const Input = React.forwardRef<HTMLInputElement, InputProps>(
+  ({ fontSize = [2, null, 1], borderRadius = 'lg', size = 'lg', helperText, color, ...restProps }, ref) => {
+    return (
+      <>
+        <StyledInput
+          {...restProps}
+          fontSize={fontSize}
+          borderRadius={borderRadius}
+          size={size}
+          color={color}
+          ref={ref}
+        />
+        {helperText &&
+          React.cloneElement(helperText, {
+            color: helperText.props.color || color,
+          })}
+      </>
+    )
+  }
+) as InputWithRef
 
 const HelperText: React.FC<InputHelperTextProps> = styled(Text).attrs(() => ({
   mt: 2,
@@ -123,8 +137,3 @@ Input.HelperText.displayName = INPUT_ERROR_TEXT
 
 Input.displayName = 'Input'
 Input.isField = true
-Input.defaultProps = {
-  fontSize: [2, null, 1],
-  borderRadius: 'lg',
-  size: 'lg',
-}

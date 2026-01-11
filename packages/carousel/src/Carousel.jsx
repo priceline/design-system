@@ -38,6 +38,14 @@ ChangeDetector.propTypes = {
   onSlideChange: PropTypes.func,
 }
 
+/**
+ * A responsive image/content carousel with navigation arrows and optional dots.
+ *
+ * Built on pure-react-carousel with support for responsive `visibleSlides`, custom
+ * `layout` patterns (like "25-50-25"), and flexible arrow positioning (side, top,
+ * bottom). Supports horizontal/vertical orientation, infinite scroll, and controlled
+ * slide navigation via `currentSlide`.
+ */
 export const Carousel = ({
   children,
   showDots = false,

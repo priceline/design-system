@@ -21,6 +21,13 @@ export type FloatingActionButtonProviderProps = MarginProps & {
   floatingActionButtons: Array<FloatingActionButtonPropWrapper>
 }
 
+/**
+ * A container that manages multiple floating action buttons with scroll/delay visibility.
+ *
+ * Positions FABs at `bottomRight`, `topRight`, or `centerRight` of the viewport.
+ * Use `hideUntilScrollPercent` to show FABs after scrolling or `delayDisplayMs` for
+ * timed appearance. Animates entry with configurable `animationVariant`.
+ */
 export const FloatingActionButtonProvider: React.FC<FloatingActionButtonProviderProps> = (
   {
     animationVariant = 'slideInBottom',

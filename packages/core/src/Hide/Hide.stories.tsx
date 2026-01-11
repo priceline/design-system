@@ -1,12 +1,14 @@
+import type { Meta } from '@storybook/react-vite'
 import React from 'react'
 import { Box } from '../Box/Box'
 import { Flex } from '../Flex/Flex'
 import { Hide } from './Hide'
 
-export default {
+const meta: Meta<typeof Hide> = {
   title: 'Hide',
   component: Hide,
 }
+export default meta
 
 export const _Hide = () => (
   <Flex justifyContent='space-between'>

@@ -1,4 +1,4 @@
-import { ArgTypes } from '@storybook/react/*'
+import { ArgTypes } from '@storybook/react-vite'
 import { RadioCheckToggleCardHPositions, RadioCheckToggleCardVPositions } from './RadioCheckToggleCard'
 
 export const argTypes: ArgTypes = {

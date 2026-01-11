@@ -1,3 +1,4 @@
+import React, { type ComponentPropsWithRef } from 'react'
 import styled, { css } from 'styled-components'
 import {
   DisplayProps,
@@ -35,6 +36,7 @@ import {
   width,
   zIndex,
 } from 'styled-system'
+import type { ColorSchemeName } from '../theme/theme'
 import { textAlignAttrs } from '../utils/attrs/textAlignAttrs'
 import { typographyAttrs } from '../utils/attrs/typographyAttrs'
 import { applyVariations, colorScheme, getPaletteColor, textTransform, textWrap } from '../utils/utils'
@@ -72,6 +74,9 @@ export const textShadow = (props) => {
   return props.enableTextShadow ? { textShadow: props.theme.textShadows[textShadowSize] } : null
 }
 
+/**
+ * @public
+ */
 export type TextProps = DisplayProps &
   FontSizeProps &
   FontStyleProps &
@@ -87,13 +92,65 @@ export type TextProps = DisplayProps &
   TextAlignProps &
   TextStyleProps &
   WidthProps &
-  ZIndexProps & {
+  ZIndexProps &
+  Omit<ComponentPropsWithRef<'div'>, 'color'> & {
+    as?: React.ElementType
     bg?: string
+    bold?: boolean | boolean[]
+    caps?: boolean | boolean[]
     children?: React.ReactNode
     color?: string
+    colorScheme?: ColorSchemeName
+    enableTextShadow?: boolean
+    italic?: boolean
+    regular?: boolean
+    textColor?: string
+    textDecoration?: string
+    textShadowSize?: string
+    textTransform?: string
+    textWrap?: string
   }
 
-const textProps: React.FC<TextProps> = css`
+export type TextHelperProps = {
+  as?: React.ElementType
+  bg?: string
+  bold?: boolean | boolean[]
+  caps?: boolean | boolean[]
+  children?: React.ReactNode
+  color?: string
+  colorScheme?: ColorSchemeName
+  enableTextShadow?: boolean
+  italic?: boolean
+  regular?: boolean
+  textColor?: string
+  textDecoration?: string
+  textShadowSize?: string
+  textTransform?: string
+  textWrap?: string
+}
+
+export type TextSystemProps = DisplayProps &
+  FontSizeProps &
+  FontStyleProps &
+  FontWeightProps &
+  HeightProps &
+  LineHeightProps &
+  MaxHeightProps &
+  MaxWidthProps &
+  MinHeightProps &
+  MinWidthProps &
+  OverflowProps &
+  SpaceProps &
+  TextAlignProps &
+  TextStyleProps &
+  WidthProps &
+  ZIndexProps
+
+export type TextSpanProps = TextSystemProps & TextHelperProps & Omit<ComponentPropsWithRef<'span'>, 'color'>
+export type TextParagraphProps = TextSystemProps & TextHelperProps & Omit<ComponentPropsWithRef<'p'>, 'color'>
+export type TextStrikeProps = TextSystemProps & TextHelperProps & Omit<ComponentPropsWithRef<'s'>, 'color'>
+
+const textStyles = css<TextProps>`
   ${applyVariations('Text')}
   color: ${getPaletteColor('base')};
   ${(props) => (props.bg ? `background-color: ${getPaletteColor(props.bg, 'base')(props)};` : '')}
@@ -134,32 +191,60 @@ const textAttrs = (props: TextProps) => ({
   ...textAlignAttrs(props),
 })
 
+const StyledText = styled.div.attrs<TextProps>(textAttrs)<TextProps>`
+  ${textStyles}
+`
+
+const StyledSpan = styled.span.attrs<TextSpanProps>(textAttrs)<TextSpanProps>`
+  ${textStyles}
+`
+
+const StyledParagraph = styled.p.attrs<TextParagraphProps>(textAttrs)<TextParagraphProps>`
+  ${textStyles}
+`
+
+const StyledStrike = styled.s.attrs<TextStrikeProps>(textAttrs)<TextStrikeProps>`
+  ${textStyles}
+`
+
+export const TextSpan = React.forwardRef<HTMLSpanElement, TextSpanProps>((props, ref) => (
+  <StyledSpan ref={ref} {...props} />
+))
+TextSpan.displayName = 'Text.span'
+
+export const TextParagraph = React.forwardRef<HTMLParagraphElement, TextParagraphProps>((props, ref) => (
+  <StyledParagraph ref={ref} {...props} />
+))
+TextParagraph.displayName = 'Text.p'
+
+export const TextStrike = React.forwardRef<HTMLElement, TextStrikeProps>((props, ref) => (
+  <StyledStrike ref={ref} {...props} />
+))
+TextStrike.displayName = 'Text.s'
+
+export type TextComponent = React.ForwardRefExoticComponent<
+  TextProps & React.RefAttributes<HTMLDivElement>
+> & {
+  span: typeof TextSpan
+  p: typeof TextParagraph
+  s: typeof TextStrike
+}
+
 /**
+ * The core typography component for all text content.
+ *
+ * Supports `textStyle` presets (heading1-6, subheading1-6, paragraph, etc.) or granular
+ * control via `fontSize`, `fontWeight`, `bold`, `italic`. Use dot notation (`Text.p`,
+ * `Text.span`, `Text.s`) for semantic HTML elements. Responsive values supported for
+ * all typography props.
+ *
  * @public
  */
-export const Text = styled.div.attrs(textAttrs)`
-  ${textProps}
-`
-
-const Span = styled.span.attrs(textAttrs)`
-  ${textProps}
-`
-
-const Paragraph = styled.p.attrs(textAttrs)`
-  ${textProps}
-`
-
-const Strike = styled.s.attrs(textAttrs)`
-  ${textProps}
-`
-
+export const Text: TextComponent = React.forwardRef<HTMLDivElement, TextProps>((props, ref) => (
+  <StyledText ref={ref} {...props} />
+)) as TextComponent
 Text.displayName = 'Text'
 
-Text.span = Span
-Text.span.displayName = 'Text.span'
-
-Text.p = Paragraph
-Text.p.displayName = 'Text.p'
-
-Text.s = Strike
-Text.s.displayName = 'Text.s'
+Text.span = TextSpan
+Text.p = TextParagraph
+Text.s = TextStrike

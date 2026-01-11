@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Storybook 10 + MCP + meta + CSF3, refactor defaultProps, refactor styled-components attrs forwarding, JSDoc comments, bundler tsconfig, misc TS fixes",
+      "type": "major"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}

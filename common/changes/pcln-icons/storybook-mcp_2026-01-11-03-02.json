@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-icons",
+      "comment": "fix local dev under storybook 10/vite",
+      "type": "patch"
+    }
+  ],
+  "packageName": "pcln-icons"
+}

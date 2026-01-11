@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Box, BoxProps } from '../Box/Box'
-import { Text } from '../Text/Text'
+import { Text, type TextProps } from '../Text/Text'
 
 const getMaxWidth = (em) => parseInt(em) - 0.01
 
@@ -32,10 +32,7 @@ const hidden = (key) => (props) =>
       }
     : null
 
-/**
- * @public
- */
-export type HideProps = BoxProps & {
+export type HideBreakpointProps = {
   xs?: boolean
   sm?: boolean
   md?: boolean
@@ -48,7 +45,14 @@ export type HideProps = BoxProps & {
 /**
  * @public
  */
-export const Hide: React.FC<HideProps> & { text: React.FC<HideProps> } = styled(Box)`
+export type HideProps = BoxProps & HideBreakpointProps
+
+/**
+ * @public
+ */
+export type HideTextProps = TextProps & HideBreakpointProps
+
+const StyledHide = styled(Box)<HideProps>`
   ${hidden('xs')}
   ${hidden('sm')}
   ${hidden('md')}
@@ -58,8 +62,7 @@ export const Hide: React.FC<HideProps> & { text: React.FC<HideProps> } = styled(
   ${hidden('print')};
 `
 
-Hide.displayName = 'Hide'
-Hide.text = styled(Text)`
+const StyledHideText = styled(Text)<HideTextProps>`
   display: inline;
   ${hidden('xs')}
   ${hidden('sm')}
@@ -69,3 +72,30 @@ Hide.text = styled(Text)`
   ${hidden('xxl')}
   ${hidden('print')};
 `
+
+export const HideText = React.forwardRef<HTMLDivElement, HideTextProps>((props, ref) => (
+  <StyledHideText ref={ref} {...props} />
+))
+HideText.displayName = 'Hide.text'
+
+export type HideComponent = React.ForwardRefExoticComponent<
+  HideProps & React.RefAttributes<HTMLDivElement>
+> & {
+  text: typeof HideText
+}
+
+/**
+ * Conditionally hides content at specified responsive breakpoints or for print.
+ *
+ * Pass boolean props (`xs`, `sm`, `md`, `lg`, `xl`, `xxl`, `print`) to hide content
+ * at those breakpoints. Extends `Box` for layout flexibility. Use `Hide.text` for
+ * inline text that needs responsive visibility control.
+ *
+ * @public
+ */
+export const Hide: HideComponent = React.forwardRef<HTMLDivElement, HideProps>((props, ref) => (
+  <StyledHide ref={ref} {...props} />
+)) as HideComponent
+Hide.displayName = 'Hide'
+
+Hide.text = HideText
