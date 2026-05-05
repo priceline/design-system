@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-slider",
+      "comment": "Remove unused deps rc-tooltip and rc-util from direct dependencies",
+      "type": "minor"
+    }
+  ],
+  "packageName": "pcln-slider"
+}

@@ -29,8 +29,6 @@
     "classnames": "^2.3.2",
     "prop-types": "^15.8.1",
     "rc-slider": "^10.2.0",
-    "rc-tooltip": "^3.7.3",
-    "rc-util": "^4.0.4",
     "shallowequal": "^1.1.0",
     "styled-system": "^5.1.5",
     "warning": "^4.0.3"
