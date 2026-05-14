@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "heft-styled-components-plugin",
+      "comment": "export babel configurations",
+      "type": "patch"
+    }
+  ],
+  "packageName": "heft-styled-components-plugin"
+}
