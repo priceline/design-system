@@ -50,15 +50,15 @@ export function Toast({
   return (
     <Relative>
       <LeftBorderFlex
-        {...props}
+        p={3}
         alignItems='center'
         borderRadius='lg'
         boxShadowSize='xl'
         color={color}
         justifyContent='space-between'
         variation={variation}
-        p={3}
         iconUsesColorScheme={!icon?.props.color}
+        {...props}
       >
         {icon && <Flex mr={3}>{React.cloneElement(icon, { color: variation === 'border' && color })}</Flex>}
         <Flex width='100%'>
