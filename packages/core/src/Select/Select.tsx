@@ -1,4 +1,4 @@
-import themeGet from '@styled-system/theme-get'
+import themeGet from 'styled-system/theme-get'
 import { ChevronDown } from 'pcln-icons'
 import React, { type ComponentPropsWithRef } from 'react'
 import styled, { css } from 'styled-components'

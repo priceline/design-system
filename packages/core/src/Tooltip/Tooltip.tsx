@@ -1,4 +1,4 @@
-import { themeGet } from '@styled-system/theme-get'
+import { themeGet } from 'styled-system/theme-get'
 import React from 'react'
 import styled, { withTheme } from 'styled-components'
 import { Box, BoxProps } from '../Box/Box'

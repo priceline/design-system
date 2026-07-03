@@ -1,4 +1,4 @@
-import themeGet from '@styled-system/theme-get'
+import themeGet from 'styled-system/theme-get'
 import styled, { css } from 'styled-components'
 import { compose, fontSize, space } from 'styled-system'
 import { Box, type BoxProps } from '../Box/Box'

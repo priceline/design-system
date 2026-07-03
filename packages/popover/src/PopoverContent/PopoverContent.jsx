@@ -1,4 +1,4 @@
-import { themeGet } from '@styled-system/theme-get'
+import { themeGet } from 'styled-system/theme-get'
 import { Box, ThemeProvider, borderRadiusAttrs } from 'pcln-design-system'
 import PropTypes from 'prop-types'
 import React, { useCallback, useEffect, useLayoutEffect, useState } from 'react'

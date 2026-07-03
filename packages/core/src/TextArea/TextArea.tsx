@@ -1,4 +1,4 @@
-import themeGet from '@styled-system/theme-get'
+import themeGet from 'styled-system/theme-get'
 import React, { type ComponentPropsWithRef } from 'react'
 import styled from 'styled-components'
 import { space, SpaceProps } from 'styled-system'
@@ -7,8 +7,7 @@ import { applyVariations, borders, getPaletteColor } from '../utils/utils'
 /**
  * @public
  */
-export type TextAreaProps = SpaceProps &
-  ComponentPropsWithRef<'textarea'> & { isField?: boolean }
+export type TextAreaProps = SpaceProps & ComponentPropsWithRef<'textarea'> & { isField?: boolean }
 
 /**
  * @public

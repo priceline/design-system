@@ -1,4 +1,4 @@
-import themeGet from '@styled-system/theme-get'
+import themeGet from 'styled-system/theme-get'
 import { ForwardRefComponent, HTMLMotionProps, motion } from 'motion/react'
 import { Close } from 'pcln-icons'
 import React from 'react'

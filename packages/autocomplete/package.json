@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "downshift": "^7.6.2",
-    "styled-system": "^5.1.5"
+    "styled-system": "npm:@soroush.tech/styled-system@^5.6.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.23.4",
@@ -35,7 +35,6 @@
     "@rushstack/eslint-patch": "^1.6.0",
     "@storybook/jest": "^0.2.3",
     "@storybook/testing-library": "^0.2.2",
-    "@styled-system/theme-get": "^5.1.2",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
     "cat-names": "^3.1.0",

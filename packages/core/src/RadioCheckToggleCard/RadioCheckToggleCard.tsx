@@ -1,4 +1,4 @@
-import { themeGet } from '@styled-system/theme-get'
+import { themeGet } from 'styled-system/theme-get'
 import { BoxChecked, BoxEmpty, Check, RadioChecked, RadioEmpty } from 'pcln-icons'
 import React from 'react'
 import styled from 'styled-components'

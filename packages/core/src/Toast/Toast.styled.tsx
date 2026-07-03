@@ -1,4 +1,4 @@
-import { themeGet } from '@styled-system/theme-get'
+import { themeGet } from 'styled-system/theme-get'
 import styled, { css } from 'styled-components'
 import { Flex, type FlexProps } from '../Flex/Flex'
 import { IconButton } from '../IconButton/IconButton'

@@ -1,4 +1,4 @@
-import themeGet from '@styled-system/theme-get'
+import themeGet from 'styled-system/theme-get'
 import { PricelineSparkle } from 'pcln-icons'
 import React from 'react'
 import styled, { css } from 'styled-components'
