@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { themeGet } from '@styled-system/theme-get'
+import { themeGet } from 'styled-system/theme-get'
 import { getPaletteColor, Box } from 'pcln-design-system'
 import { CarouselWrapper } from '../Carousel.styles'
 

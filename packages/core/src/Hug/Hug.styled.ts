@@ -1,4 +1,4 @@
-import { themeGet } from '@styled-system/theme-get'
+import { themeGet } from 'styled-system/theme-get'
 import styled from 'styled-components'
 import { Box } from '../Box/Box'
 import { Card } from '../Card/Card'

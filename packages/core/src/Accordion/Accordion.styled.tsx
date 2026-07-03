@@ -1,5 +1,5 @@
 import * as Accordion from '@radix-ui/react-accordion'
-import { themeGet } from '@styled-system/theme-get'
+import { themeGet } from 'styled-system/theme-get'
 import { ChevronDown } from 'pcln-icons'
 import styled, { keyframes } from 'styled-components'
 import { space } from 'styled-system'

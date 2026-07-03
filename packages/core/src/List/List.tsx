@@ -1,4 +1,4 @@
-import themeGet from '@styled-system/theme-get'
+import themeGet from 'styled-system/theme-get'
 import React, { type ComponentPropsWithoutRef } from 'react'
 import styled, { css } from 'styled-components'
 import { compose, fontSize, space, width, type FontSizeProps, type SpaceProps } from 'styled-system'

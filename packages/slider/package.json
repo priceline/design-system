@@ -30,7 +30,7 @@
     "prop-types": "^15.8.1",
     "rc-slider": "^10.2.0",
     "shallowequal": "^1.1.0",
-    "styled-system": "^5.1.5",
+    "styled-system": "npm:@soroush.tech/styled-system@^5.6.0",
     "warning": "^4.0.3"
   },
   "devDependencies": {
@@ -42,7 +42,6 @@
     "@rushstack/eslint-config": "^3.5.0",
     "@rushstack/eslint-patch": "^1.6.0",
     "@rushstack/heft": "^0.66.3",
-    "@styled-system/prop-types": "^5.1.5",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
     "@types/jest": "^29.5.11",

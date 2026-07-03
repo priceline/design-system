@@ -1,4 +1,4 @@
-import themeGet from '@styled-system/theme-get'
+import themeGet from 'styled-system/theme-get'
 import React, { useMemo } from 'react'
 import styled from 'styled-components'
 import { Button } from '../Button/Button'

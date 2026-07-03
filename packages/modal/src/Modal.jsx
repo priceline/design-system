@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { Transition } from 'react-transition-group'
 import { color, width, height, compose } from 'styled-system'
-import { themeGet } from '@styled-system/theme-get'
+import { themeGet } from 'styled-system/theme-get'
 import { DialogOverlay, DialogContent } from '@reach/dialog'
 import { Box, CloseButton, deprecatedColorValue, Flex } from 'pcln-design-system'
 

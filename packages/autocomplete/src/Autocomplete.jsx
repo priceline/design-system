@@ -9,7 +9,7 @@ import {
   getPaletteColor,
   deprecatedColorValue,
 } from 'pcln-design-system'
-import { themeGet } from '@styled-system/theme-get'
+import { themeGet } from 'styled-system/theme-get'
 
 export const AutocompleteContext = React.createContext()
 

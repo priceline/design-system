@@ -1,4 +1,4 @@
-import themeGet from '@styled-system/theme-get'
+import themeGet from 'styled-system/theme-get'
 import { css } from 'styled-components'
 import { mediaQueries, type PaletteFamilyName, type PaletteColor, PaletteFamilyVariation } from '../theme'
 

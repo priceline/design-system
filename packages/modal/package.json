@@ -21,7 +21,6 @@
   },
   "dependencies": {
     "@reach/dialog": "^0.16.2",
-    "@styled-system/theme-get": "^5.1.2",
     "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
@@ -49,7 +48,7 @@
     "react-test-renderer": "^18.3.1",
     "rimraf": "^3.0.2",
     "styled-components": "^5.3.11",
-    "styled-system": "^5.1.5"
+    "styled-system": "npm:@soroush.tech/styled-system@^5.6.0"
   },
   "peerDependencies": {
     "pcln-design-system": "^6.29.0",
