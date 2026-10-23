@@ -31,7 +31,9 @@ BasicBannerAllInline.args = {
       COVID-19
     </Text.span>
   ),
-  text: <Text.span>Update: Your travel may be impacted. Please review this hotels important info.</Text.span>,
+  text: (
+    <Text.span>Update: Your travel may be impacted. Please review this hotel's important info.</Text.span>
+  ),
   iconLeft: <Warning />,
   color: 'caution.light',
 }
@@ -94,7 +96,7 @@ export const BannerWithOnClick = () => (
     }
     text={
       <Text.span textColor='primary.base' mr={1}>
-        Update: Your travel may be impacted. Please review this hotels important info.
+        Update: Your travel may be impacted. Please review this hotel's important info.
       </Text.span>
     }
     buttonClick={action('clicked on the banner or the read more link-button')}
@@ -113,7 +115,7 @@ export const BannerWithOnClickAndCTA = () => (
     }
     text={
       <Text.span textColor='primary.base' mr={1}>
-        Update: Your travel may be impacted. Please review this hotels important info.
+        Update: Your travel may be impacted. Please review this hotel's important info.
       </Text.span>
     }
     ctaText={
@@ -139,7 +141,7 @@ export const BannerWithOnClickButtonStyleCta = () => (
     }
     text={
       <Text.span mr={1} textColor='primary.base'>
-        Update: Your travel may be impacted. Please review this hotels important info.
+        Update: Your travel may be impacted. Please review this hotel's important info.
       </Text.span>
     }
     ctaText={
@@ -270,7 +272,7 @@ export const ColorScheme = () => {
         </Text.span>
       }
       text={
-        <Text.span>Update: Your travel may be impacted. Please review this hotels important info.</Text.span>
+        <Text.span>Update: Your travel may be impacted. Please review this hotel's important info.</Text.span>
       }
       iconLeft={<Warning />}
     />

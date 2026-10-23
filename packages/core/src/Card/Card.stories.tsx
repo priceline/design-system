@@ -241,7 +241,7 @@ const meta: Meta<typeof Card> = {
             <ArgTypes />
           </Section>
 
-          <Section heading='Variatons'>
+          <Section heading='Variations'>
             <StoryHeading storyName='Support for focus and hover states' storyTitle={meta.title} />
             <Text textStyle='paragraph'>
               The easiest way to make a card focusable and have a hover state is by passing the prop as =
