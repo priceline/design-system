@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "pcln-design-system",
+      "comment": "Fix typos in Card and GenericBanner stories",
+      "type": "none"
+    }
+  ],
+  "packageName": "pcln-design-system"
+}
